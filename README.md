@@ -46,7 +46,7 @@ This project modernizes **XBRL Global Ledger (XBRL GL)** by enabling it to be ex
 
 ## 📚 User Guide
 
-See [docs/user-guide.adoc](docs/user-guide.adoc) for a full walkthrough, including Mermaid flowcharts, CLI examples, and script documentation.
+See [docs/USER-GUIDE.md](docs/USER-GUIDE.md) for a full walkthrough, including Mermaid flowcharts, CLI examples, and script documentation.
 
 ## 🚀 Quick Start
 
