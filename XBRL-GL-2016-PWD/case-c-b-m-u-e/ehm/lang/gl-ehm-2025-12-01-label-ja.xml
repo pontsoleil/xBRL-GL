@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"
+    xmlns="http://www.xbrl.org/2003/linkbase"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+        <!-- gl-ehm:measurableClassID  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_measurableClassID" xlink:label="measurableClassID"/>
+        <label xlink:type="resource" xlink:label="measurableClassID_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_measurableClassID_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="measurableClassID_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="measurableClassID" xlink:to="measurableClassID_lbl"/>
+        <!-- gl-ehm:measurableClassDescription  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_measurableClassDescription" xlink:label="measurableClassDescription"/>
+        <label xlink:type="resource" xlink:label="measurableClassDescription_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_measurableClassDescription_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="measurableClassDescription_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="measurableClassDescription" xlink:to="measurableClassDescription_lbl"/>
+        <!-- gl-ehm:costingMethodCode  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_costingMethodCode" xlink:label="costingMethodCode"/>
+        <label xlink:type="resource" xlink:label="costingMethodCode_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_costingMethodCode_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="costingMethodCode_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="costingMethodCode" xlink:to="costingMethodCode_lbl"/>
+        <!-- gl-ehm:costingMethodDescription  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_costingMethodDescription" xlink:label="costingMethodDescription"/>
+        <label xlink:type="resource" xlink:label="costingMethodDescription_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_costingMethodDescription_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="costingMethodDescription_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="costingMethodDescription" xlink:to="costingMethodDescription_lbl"/>
+        <!-- gl-ehm:geospatialCoordinate  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_geospatialCoordinate" xlink:label="geospatialCoordinate"/>
+        <label xlink:type="resource" xlink:label="geospatialCoordinate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_geospatialCoordinate_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="geospatialCoordinate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="geospatialCoordinate" xlink:to="geospatialCoordinate_lbl"/>
+        <!-- gl-ehm:serialLot  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLot" xlink:label="serialLot"/>
+        <label xlink:type="resource" xlink:label="serialLot_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLot_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLot_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLot" xlink:to="serialLot_lbl"/>
+        <!-- gl-ehm:serialLotCode  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotCode" xlink:label="serialLotCode"/>
+        <label xlink:type="resource" xlink:label="serialLotCode_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotCode_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotCode_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotCode" xlink:to="serialLotCode_lbl"/>
+        <!-- gl-ehm:serialLotDescription  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotDescription" xlink:label="serialLotDescription"/>
+        <label xlink:type="resource" xlink:label="serialLotDescription_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotDescription_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotDescription_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotDescription" xlink:to="serialLotDescription_lbl"/>
+        <!-- gl-ehm:serialLotNumber  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotNumber" xlink:label="serialLotNumber"/>
+        <label xlink:type="resource" xlink:label="serialLotNumber_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotNumber_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotNumber_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotNumber" xlink:to="serialLotNumber_lbl"/>
+        <!-- gl-ehm:nextSerialLotNumber  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_nextSerialLotNumber" xlink:label="nextSerialLotNumber"/>
+        <label xlink:type="resource" xlink:label="nextSerialLotNumber_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_nextSerialLotNumber_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="nextSerialLotNumber_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="nextSerialLotNumber" xlink:to="nextSerialLotNumber_lbl"/>
+        <!-- gl-ehm:serialLotQuantity  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotQuantity" xlink:label="serialLotQuantity"/>
+        <label xlink:type="resource" xlink:label="serialLotQuantity_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotQuantity_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotQuantity_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotQuantity" xlink:to="serialLotQuantity_lbl"/>
+        <!-- gl-ehm:serialLotOriginalQuantity  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotOriginalQuantity" xlink:label="serialLotOriginalQuantity"/>
+        <label xlink:type="resource" xlink:label="serialLotOriginalQuantity_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotOriginalQuantity_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotOriginalQuantity_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotOriginalQuantity" xlink:to="serialLotOriginalQuantity_lbl"/>
+        <!-- gl-ehm:serialLotRemainingQuantity  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotRemainingQuantity" xlink:label="serialLotRemainingQuantity"/>
+        <label xlink:type="resource" xlink:label="serialLotRemainingQuantity_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotRemainingQuantity_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotRemainingQuantity_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotRemainingQuantity" xlink:to="serialLotRemainingQuantity_lbl"/>
+        <!-- gl-ehm:serialLotOrigination  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotOrigination" xlink:label="serialLotOrigination"/>
+        <label xlink:type="resource" xlink:label="serialLotOrigination_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotOrigination_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotOrigination_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotOrigination" xlink:to="serialLotOrigination_lbl"/>
+        <!-- gl-ehm:serialLotExpiration  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotExpiration" xlink:label="serialLotExpiration"/>
+        <label xlink:type="resource" xlink:label="serialLotExpiration_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotExpiration_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotExpiration_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotExpiration" xlink:to="serialLotExpiration_lbl"/>
+        <!-- gl-ehm:serialLotManufacturer  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotManufacturer" xlink:label="serialLotManufacturer"/>
+        <label xlink:type="resource" xlink:label="serialLotManufacturer_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotManufacturer_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotManufacturer_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotManufacturer" xlink:to="serialLotManufacturer_lbl"/>
+        <!-- gl-ehm:serialLotBatchDescription  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotBatchDescription" xlink:label="serialLotBatchDescription"/>
+        <label xlink:type="resource" xlink:label="serialLotBatchDescription_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotBatchDescription_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotBatchDescription_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotBatchDescription" xlink:to="serialLotBatchDescription_lbl"/>
+        <!-- gl-ehm:serialLotWarrantyStartDate  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotWarrantyStartDate" xlink:label="serialLotWarrantyStartDate"/>
+        <label xlink:type="resource" xlink:label="serialLotWarrantyStartDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotWarrantyStartDate_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotWarrantyStartDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotWarrantyStartDate" xlink:to="serialLotWarrantyStartDate_lbl"/>
+        <!-- gl-ehm:serialLotWarrantyEndDate  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotWarrantyEndDate" xlink:label="serialLotWarrantyEndDate"/>
+        <label xlink:type="resource" xlink:label="serialLotWarrantyEndDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotWarrantyEndDate_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotWarrantyEndDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotWarrantyEndDate" xlink:to="serialLotWarrantyEndDate_lbl"/>
+        <!-- gl-ehm:serialLotWarrantyPeriod  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotWarrantyPeriod" xlink:label="serialLotWarrantyPeriod"/>
+        <label xlink:type="resource" xlink:label="serialLotWarrantyPeriod_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotWarrantyPeriod_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotWarrantyPeriod_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotWarrantyPeriod" xlink:to="serialLotWarrantyPeriod_lbl"/>
+        <!-- gl-ehm:serialLotWarrantyPeriodUnit  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotWarrantyPeriodUnit" xlink:label="serialLotWarrantyPeriodUnit"/>
+        <label xlink:type="resource" xlink:label="serialLotWarrantyPeriodUnit_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotWarrantyPeriodUnit_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotWarrantyPeriodUnit_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotWarrantyPeriodUnit" xlink:to="serialLotWarrantyPeriodUnit_lbl"/>
+        <!-- gl-ehm:serialLotWarrantyVendor  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotWarrantyVendor" xlink:label="serialLotWarrantyVendor"/>
+        <label xlink:type="resource" xlink:label="serialLotWarrantyVendor_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotWarrantyVendor_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotWarrantyVendor_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotWarrantyVendor" xlink:to="serialLotWarrantyVendor_lbl"/>
+        <!-- gl-ehm:serialLotWarrantyContract  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotWarrantyContract" xlink:label="serialLotWarrantyContract"/>
+        <label xlink:type="resource" xlink:label="serialLotWarrantyContract_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotWarrantyContract_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotWarrantyContract_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotWarrantyContract" xlink:to="serialLotWarrantyContract_lbl"/>
+        <!-- gl-ehm:serialLotComment  -->
+        <loc xlink:type="locator" xlink:href="../gl-ehm-2025-12-01.xsd#gl-ehm_serialLotComment" xlink:label="serialLotComment"/>
+        <label xlink:type="resource" xlink:label="serialLotComment_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-ehm_serialLotComment_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="serialLotComment_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="serialLotComment" xlink:to="serialLotComment_lbl"/>
+  </labelLink>
+</linkbase>

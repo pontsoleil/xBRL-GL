@@ -27,16 +27,16 @@
                 "entity": "ns0:Example Co.",
                 "gl-plt:d_cor_accountingEntries": "$accountingEntries",
                 "gl-plt:d_cor_entryHeader": "$entryHeader",
-                "gl-plt:d_cor_entryDetail": "$entryDetail",
-                "gl-plt:d_cor_account": "$account",
-                "gl-plt:d_cor_accountSub": "$accountSub"
+                "gl-plt:d_cor_entryDtl": "$entryDtl",
+                "gl-plt:d_cor_accountID": "$accountID",
+                "gl-plt:d_cor_subaccount": "$subaccount"
             },
             "columns": {
                 "accountingEntries": {},
                 "entryHeader": {},
-                "entryDetail": {},
-                "account": {},
-                "accountSub": {},
+                "entryDtl": {},
+                "accountID": {},
+                "subaccount": {},
                 "entriesType": {
                     "dimensions": {
                         "concept": "gl-cor:entriesType"

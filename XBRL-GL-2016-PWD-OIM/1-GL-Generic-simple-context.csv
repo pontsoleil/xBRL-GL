@@ -1,0 +1,4 @@
+﻿accountingEntries,entryHeader,entryDetail,entriesType,language,creationDate,entriesComment,periodCoveredStart,periodCoveredEnd,amount,amountCurrency,summaryReportingElement,detailMatchingElement,summaryReportingTaxonomyIDRef,measurableQualifier
+1,,,other,iso639:en,2009-02-27,Sample SRCD instance - Generic Simple Context,2007-07-01,2008-06-30,,,,,,
+1,1,1,,,,,,,,,p0:elmtA,gl-bus:measurableQualifier,p0,Key
+1,1,2,,,,,,,1000,iso4217:AUD,p0:elmtB,,p0,

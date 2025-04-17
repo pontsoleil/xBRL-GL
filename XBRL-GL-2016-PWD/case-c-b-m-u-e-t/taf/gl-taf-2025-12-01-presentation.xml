@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <!-- Originating Document  - Heading -->
+    <loc xlink:type="locator" xlink:href="gl-taf-2025-12-01.xsd#gl-taf_originatingDocumentStructure" xlink:label="gl-taf_originatingDocumentStructure" xlink:title="loc: gl-taf_originatingDocumentStructure"/>
+    <loc xlink:type="locator" xlink:href="gl-taf-2025-12-01.xsd#gl-taf_originatingDocumentType" xlink:label="gl-taf_originatingDocumentType" xlink:title="presentation: gl-taf_originatingDocumentStructure to gl-taf_originatingDocumentType Originating Document Type"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="gl-taf_originatingDocumentStructure" xlink:to="gl-taf_originatingDocumentType" xlink:title="presentation: gl-taf_originatingDocumentStructure to gl-taf_originatingDocumentType" use="optional" order="10"/>
+    <loc xlink:type="locator" xlink:href="gl-taf-2025-12-01.xsd#gl-taf_originatingDocumentNumber" xlink:label="gl-taf_originatingDocumentNumber" xlink:title="presentation: gl-taf_originatingDocumentStructure to gl-taf_originatingDocumentNumber Originating Document Number"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="gl-taf_originatingDocumentStructure" xlink:to="gl-taf_originatingDocumentNumber" xlink:title="presentation: gl-taf_originatingDocumentStructure to gl-taf_originatingDocumentNumber" use="optional" order="20"/>
+    <loc xlink:type="locator" xlink:href="gl-taf-2025-12-01.xsd#gl-taf_originatingDocumentDate" xlink:label="gl-taf_originatingDocumentDate" xlink:title="presentation: gl-taf_originatingDocumentStructure to gl-taf_originatingDocumentDate Originating Document Date"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="gl-taf_originatingDocumentStructure" xlink:to="gl-taf_originatingDocumentDate" xlink:title="presentation: gl-taf_originatingDocumentStructure to gl-taf_originatingDocumentDate" use="optional" order="30"/>
+    <loc xlink:type="locator" xlink:href="gl-taf-2025-12-01.xsd#gl-taf_originatingDocumentIdentifierType" xlink:label="gl-taf_originatingDocumentIdentifierType" xlink:title="presentation: gl-taf_originatingDocumentStructure to gl-taf_originatingDocumentIdentifierType Originating Document Identifier Type"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="gl-taf_originatingDocumentStructure" xlink:to="gl-taf_originatingDocumentIdentifierType" xlink:title="presentation: gl-taf_originatingDocumentStructure to gl-taf_originatingDocumentIdentifierType" use="optional" order="40"/>
+    <loc xlink:type="locator" xlink:href="gl-taf-2025-12-01.xsd#gl-taf_originatingDocumentIdentifierCode" xlink:label="gl-taf_originatingDocumentIdentifierCode" xlink:title="presentation: gl-taf_originatingDocumentStructure to gl-taf_originatingDocumentIdentifierCode Originating Document Identifier Code"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="gl-taf_originatingDocumentStructure" xlink:to="gl-taf_originatingDocumentIdentifierCode" xlink:title="presentation: gl-taf_originatingDocumentStructure to gl-taf_originatingDocumentIdentifierCode" use="optional" order="50"/>
+    <loc xlink:type="locator" xlink:href="gl-taf-2025-12-01.xsd#gl-taf_originatingDocumentIdentifierTaxCode" xlink:label="gl-taf_originatingDocumentIdentifierTaxCode" xlink:title="presentation: gl-taf_originatingDocumentStructure to gl-taf_originatingDocumentIdentifierTaxCode Originating Document Identifier Tax Code"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="gl-taf_originatingDocumentStructure" xlink:to="gl-taf_originatingDocumentIdentifierTaxCode" xlink:title="presentation: gl-taf_originatingDocumentStructure to gl-taf_originatingDocumentIdentifierTaxCode" use="optional" order="60"/>
+  </presentationLink>
+</linkbase>

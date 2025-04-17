@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"
+    xmlns="http://www.xbrl.org/2003/linkbase"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+        <!-- gl-muc:defaultCurrency Default Currency -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_defaultCurrency" xlink:label="defaultCurrency"/>
+        <label xlink:type="resource" xlink:label="defaultCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_defaultCurrency_en" xml:lang="en">Default Currency</label>
+        <label xlink:type="resource" xlink:label="defaultCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The default currency related to the amount can be entered here instead of the XBRL instance specified way, especially important in multi-currency situations. Recommend ISO 4217 coding</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="defaultCurrency" xlink:to="defaultCurrency_lbl"/>
+        <!-- gl-muc:amountCurrency Currency -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountCurrency" xlink:label="amountCurrency"/>
+        <label xlink:type="resource" xlink:label="amountCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountCurrency_en" xml:lang="en">Currency</label>
+        <label xlink:type="resource" xlink:label="amountCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The currency related to the amount can be entered here instead of the XBRL instance specified way, especially important in multi-currency situations. Recommend ISO 4217 coding.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountCurrency" xlink:to="amountCurrency_lbl"/>
+        <!-- gl-muc:amountOriginalExchangeRateDate Original Exchange Rate Date -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountOriginalExchangeRateDate" xlink:label="amountOriginalExchangeRateDate"/>
+        <label xlink:type="resource" xlink:label="amountOriginalExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountOriginalExchangeRateDate_en" xml:lang="en">Original Exchange Rate Date</label>
+        <label xlink:type="resource" xlink:label="amountOriginalExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Date of exchange rate used to record the original transaction.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountOriginalExchangeRateDate" xlink:to="amountOriginalExchangeRateDate_lbl"/>
+        <!-- gl-muc:amountOriginalAmount Amount in Original Currency -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountOriginalAmount" xlink:label="amountOriginalAmount"/>
+        <label xlink:type="resource" xlink:label="amountOriginalAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountOriginalAmount_en" xml:lang="en">Amount in Original Currency</label>
+        <label xlink:type="resource" xlink:label="amountOriginalAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Amount in original (as opposed to home) currency, for multi-currency tracking.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountOriginalAmount" xlink:to="amountOriginalAmount_lbl"/>
+        <!-- gl-muc:amountOriginalCurrency Original Currency -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountOriginalCurrency" xlink:label="amountOriginalCurrency"/>
+        <label xlink:type="resource" xlink:label="amountOriginalCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountOriginalCurrency_en" xml:lang="en">Original Currency</label>
+        <label xlink:type="resource" xlink:label="amountOriginalCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The currency used to track original, as opposed to home, amounts. Recommended ISO 4217 coding.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountOriginalCurrency" xlink:to="amountOriginalCurrency_lbl"/>
+        <!-- gl-muc:amountOriginalExchangeRate Original Exchange Rate -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountOriginalExchangeRate" xlink:label="amountOriginalExchangeRate"/>
+        <label xlink:type="resource" xlink:label="amountOriginalExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountOriginalExchangeRate_en" xml:lang="en">Original Exchange Rate</label>
+        <label xlink:type="resource" xlink:label="amountOriginalExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Exchange rate at time of original transaction (expressed as national currency divided by original currency)</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountOriginalExchangeRate" xlink:to="amountOriginalExchangeRate_lbl"/>
+        <!-- gl-muc:amountOriginalExchangeRateSource Original Exchange Rate Source -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountOriginalExchangeRateSource" xlink:label="amountOriginalExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="amountOriginalExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountOriginalExchangeRateSource_en" xml:lang="en">Original Exchange Rate Source</label>
+        <label xlink:type="resource" xlink:label="amountOriginalExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Source of Exchange Rate - for example, Reuters, Bloomberg</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountOriginalExchangeRateSource" xlink:to="amountOriginalExchangeRateSource_lbl"/>
+        <!-- gl-muc:amountOriginalExchangeRateComment Original Exchange Rate Comment -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountOriginalExchangeRateComment" xlink:label="amountOriginalExchangeRateComment"/>
+        <label xlink:type="resource" xlink:label="amountOriginalExchangeRateComment_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountOriginalExchangeRateComment_en" xml:lang="en">Original Exchange Rate Comment</label>
+        <label xlink:type="resource" xlink:label="amountOriginalExchangeRateComment_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Comment about exchange rate used for recording original transaction.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountOriginalExchangeRateComment" xlink:to="amountOriginalExchangeRateComment_lbl"/>
+        <!-- gl-muc:amountOriginalTriangulationAmount Original Amount in Triangulation Currency -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountOriginalTriangulationAmount" xlink:label="amountOriginalTriangulationAmount"/>
+        <label xlink:type="resource" xlink:label="amountOriginalTriangulationAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountOriginalTriangulationAmount_en" xml:lang="en">Original Amount in Triangulation Currency</label>
+        <label xlink:type="resource" xlink:label="amountOriginalTriangulationAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If triangulation is used, amount in triangulation currency, for multi-currency tracking. Debit is entered as positive, credit as negative.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountOriginalTriangulationAmount" xlink:to="amountOriginalTriangulationAmount_lbl"/>
+        <!-- gl-muc:amountOriginalTriangulationCurrency Original Triangulation Currency -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountOriginalTriangulationCurrency" xlink:label="amountOriginalTriangulationCurrency"/>
+        <label xlink:type="resource" xlink:label="amountOriginalTriangulationCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountOriginalTriangulationCurrency_en" xml:lang="en">Original Triangulation Currency</label>
+        <label xlink:type="resource" xlink:label="amountOriginalTriangulationCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The currency used for triangulation, if used. May often be EUR or USD. Recommended ISO 4217 coding.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountOriginalTriangulationCurrency" xlink:to="amountOriginalTriangulationCurrency_lbl"/>
+        <!-- gl-muc:amountOriginalTriangulationExchangeRate National to Triangulation Currency Exchange Rate -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountOriginalTriangulationExchangeRate" xlink:label="amountOriginalTriangulationExchangeRate"/>
+        <label xlink:type="resource" xlink:label="amountOriginalTriangulationExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountOriginalTriangulationExchangeRate_en" xml:lang="en">National to Triangulation Currency Exchange Rate</label>
+        <label xlink:type="resource" xlink:label="amountOriginalTriangulationExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Exchange rate between national currency and triangulation currency at time of original transaction (expressed as national currency divided by triangulation currency)</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountOriginalTriangulationExchangeRate" xlink:to="amountOriginalTriangulationExchangeRate_lbl"/>
+        <!-- gl-muc:amountOriginalTriangulationExchangeRateSource National to Triangulation Currency Exchange Rate Source -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountOriginalTriangulationExchangeRateSource" xlink:label="amountOriginalTriangulationExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="amountOriginalTriangulationExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountOriginalTriangulationExchangeRateSource_en" xml:lang="en">National to Triangulation Currency Exchange Rate Source</label>
+        <label xlink:type="resource" xlink:label="amountOriginalTriangulationExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Source of Exchange Rate for triangulation amount at time of original transaction - for example, Reuters, Bloomberg</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountOriginalTriangulationExchangeRateSource" xlink:to="amountOriginalTriangulationExchangeRateSource_lbl"/>
+        <!-- gl-muc:amountOriginalTriangulationExchangeRateType National to Triangulation Currency Exchange Rate Type -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountOriginalTriangulationExchangeRateType" xlink:label="amountOriginalTriangulationExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="amountOriginalTriangulationExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountOriginalTriangulationExchangeRateType_en" xml:lang="en">National to Triangulation Currency Exchange Rate Type</label>
+        <label xlink:type="resource" xlink:label="amountOriginalTriangulationExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Type of Exchange Rate for triangulation amount at time of original transaction - for example, spot rate, forward contract etc.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountOriginalTriangulationExchangeRateType" xlink:to="amountOriginalTriangulationExchangeRateType_lbl"/>
+        <!-- gl-muc:originalTriangulationExchangeRate Original to Triangulation Currency Exchange Rate -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_originalTriangulationExchangeRate" xlink:label="originalTriangulationExchangeRate"/>
+        <label xlink:type="resource" xlink:label="originalTriangulationExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_originalTriangulationExchangeRate_en" xml:lang="en">Original to Triangulation Currency Exchange Rate</label>
+        <label xlink:type="resource" xlink:label="originalTriangulationExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Exchange rate between original currency and triangulation currency at time of original transaction (expressed as original currency divided by triangulation currency)</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="originalTriangulationExchangeRate" xlink:to="originalTriangulationExchangeRate_lbl"/>
+        <!-- gl-muc:originalExchangeRateTriangulationSource Original to Triangulation Currency Exchange Rate Source -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_originalExchangeRateTriangulationSource" xlink:label="originalExchangeRateTriangulationSource"/>
+        <label xlink:type="resource" xlink:label="originalExchangeRateTriangulationSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_originalExchangeRateTriangulationSource_en" xml:lang="en">Original to Triangulation Currency Exchange Rate Source</label>
+        <label xlink:type="resource" xlink:label="originalExchangeRateTriangulationSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Source of Exchange Rate for triangulation from original currency to triangulation currency at time of original transaction - for example, Reuters, Bloomberg</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="originalExchangeRateTriangulationSource" xlink:to="originalExchangeRateTriangulationSource_lbl"/>
+        <!-- gl-muc:originalExchangeRateTriangulationType Original to Triangulation Currency Exchange Rate Type -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_originalExchangeRateTriangulationType" xlink:label="originalExchangeRateTriangulationType"/>
+        <label xlink:type="resource" xlink:label="originalExchangeRateTriangulationType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_originalExchangeRateTriangulationType_en" xml:lang="en">Original to Triangulation Currency Exchange Rate Type</label>
+        <label xlink:type="resource" xlink:label="originalExchangeRateTriangulationType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Type of Exchange Rate for triangulation from original currency to triangulation currency at time of original transaction - for example, spot rate, forward contract etc.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="originalExchangeRateTriangulationType" xlink:to="originalExchangeRateTriangulationType_lbl"/>
+        <!-- gl-muc:multicurrencyDetail Multicurrency Detail -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDetail" xlink:label="multicurrencyDetail"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDetail_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDetail_en" xml:lang="en">Multicurrency Detail</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDetail_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Section to provide additional information related to home currencies that differ from original currencies and related exchange rates - typically this will be used to record exchange rates and amounts in currencies and/or on dates other than those of the original transaction. This structure allows recording of exchange rates using a third currency as a triangulation currency. This is often EUR but is not restricted to being so. This structure may be repeated as many times as necessary to record amounts in foreign currencies on the same or different dates.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDetail" xlink:to="multicurrencyDetail_lbl"/>
+        <!-- gl-muc:multicurrencyDetailExchangeRateDate Date of Exchange Rate -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDetailExchangeRateDate" xlink:label="multicurrencyDetailExchangeRateDate"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDetailExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDetailExchangeRateDate_en" xml:lang="en">Date of Exchange Rate</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDetailExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Date of exchange rate (other than original transaction date) on which amount is expressed as amountRestatedAmount or amountTriangulationAmount</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDetailExchangeRateDate" xlink:to="multicurrencyDetailExchangeRateDate_lbl"/>
+        <!-- gl-muc:amountRestatedAmount Restated Amount -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountRestatedAmount" xlink:label="amountRestatedAmount"/>
+        <label xlink:type="resource" xlink:label="amountRestatedAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountRestatedAmount_en" xml:lang="en">Restated Amount</label>
+        <label xlink:type="resource" xlink:label="amountRestatedAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The amount in the foreign currency identified by amountRestatedCurrency as of multicurrencyDetailExchangeRateDate.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountRestatedAmount" xlink:to="amountRestatedAmount_lbl"/>
+        <!-- gl-muc:amountRestatedCurrency Currency of Restated Amount -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountRestatedCurrency" xlink:label="amountRestatedCurrency"/>
+        <label xlink:type="resource" xlink:label="amountRestatedCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountRestatedCurrency_en" xml:lang="en">Currency of Restated Amount</label>
+        <label xlink:type="resource" xlink:label="amountRestatedCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The currency in which amountRestatedAmount is expressed. Recommended ISO 4217 coding.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountRestatedCurrency" xlink:to="amountRestatedCurrency_lbl"/>
+        <!-- gl-muc:amountRestatedExchangeRate Restated Amount Exchange Rate -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountRestatedExchangeRate" xlink:label="amountRestatedExchangeRate"/>
+        <label xlink:type="resource" xlink:label="amountRestatedExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountRestatedExchangeRate_en" xml:lang="en">Restated Amount Exchange Rate</label>
+        <label xlink:type="resource" xlink:label="amountRestatedExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Exchange rate used to convert amountRestatedAmount as of multicurrencyDetailExchangeRateDate (expressed as national currency divided by foreign currency)</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountRestatedExchangeRate" xlink:to="amountRestatedExchangeRate_lbl"/>
+        <!-- gl-muc:amountRestatedExchangeRateSource Restated Amount Exchange Rate Source -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountRestatedExchangeRateSource" xlink:label="amountRestatedExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="amountRestatedExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountRestatedExchangeRateSource_en" xml:lang="en">Restated Amount Exchange Rate Source</label>
+        <label xlink:type="resource" xlink:label="amountRestatedExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Source of Exchange Rate for restated amount - for example, Reuters, Bloomberg</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountRestatedExchangeRateSource" xlink:to="amountRestatedExchangeRateSource_lbl"/>
+        <!-- gl-muc:amountRestatedExchangeRateType Restated Amount Exchange Rate Type -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountRestatedExchangeRateType" xlink:label="amountRestatedExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="amountRestatedExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountRestatedExchangeRateType_en" xml:lang="en">Restated Amount Exchange Rate Type</label>
+        <label xlink:type="resource" xlink:label="amountRestatedExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Type of Exchange Rate for restated amount - for example, spot rate, forward contract etc.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountRestatedExchangeRateType" xlink:to="amountRestatedExchangeRateType_lbl"/>
+        <!-- gl-muc:amountTriangulationAmount Amount in Triangulation Currency -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountTriangulationAmount" xlink:label="amountTriangulationAmount"/>
+        <label xlink:type="resource" xlink:label="amountTriangulationAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountTriangulationAmount_en" xml:lang="en">Amount in Triangulation Currency</label>
+        <label xlink:type="resource" xlink:label="amountTriangulationAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The amount in the triangulation currency identified by amountTriangulationCurrency as of multicurrencyDetailExchangeRateDate.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountTriangulationAmount" xlink:to="amountTriangulationAmount_lbl"/>
+        <!-- gl-muc:amountTriangulationCurrency Triangulation Currency -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountTriangulationCurrency" xlink:label="amountTriangulationCurrency"/>
+        <label xlink:type="resource" xlink:label="amountTriangulationCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountTriangulationCurrency_en" xml:lang="en">Triangulation Currency</label>
+        <label xlink:type="resource" xlink:label="amountTriangulationCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The currency used for tringulation between amountRestatedCurrency and the home currency. Recommended ISO 4217 coding.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountTriangulationCurrency" xlink:to="amountTriangulationCurrency_lbl"/>
+        <!-- gl-muc:amountTriangulationExchangeRate Triangulation Exchange Rate -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountTriangulationExchangeRate" xlink:label="amountTriangulationExchangeRate"/>
+        <label xlink:type="resource" xlink:label="amountTriangulationExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountTriangulationExchangeRate_en" xml:lang="en">Triangulation Exchange Rate</label>
+        <label xlink:type="resource" xlink:label="amountTriangulationExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Exchange rate used to convert amountTriangulationAmount as of multicurrencyDetailExchangeRateDate (expressed as national currency divided by triangulation currency)</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountTriangulationExchangeRate" xlink:to="amountTriangulationExchangeRate_lbl"/>
+        <!-- gl-muc:amountTriangulationExchangeRateSource Triangulation Exchange Rate Source -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountTriangulationExchangeRateSource" xlink:label="amountTriangulationExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="amountTriangulationExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountTriangulationExchangeRateSource_en" xml:lang="en">Triangulation Exchange Rate Source</label>
+        <label xlink:type="resource" xlink:label="amountTriangulationExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Source of Exchange Rate for triangulation amount - for example, Reuters, Bloomberg</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountTriangulationExchangeRateSource" xlink:to="amountTriangulationExchangeRateSource_lbl"/>
+        <!-- gl-muc:amountTriangulationExchangeRateType Triangulation Exchange Rate Type -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_amountTriangulationExchangeRateType" xlink:label="amountTriangulationExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="amountTriangulationExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_amountTriangulationExchangeRateType_en" xml:lang="en">Triangulation Exchange Rate Type</label>
+        <label xlink:type="resource" xlink:label="amountTriangulationExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Type of Exchange Rate for triangulation amount - for example, spot rate, forward contract etc.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="amountTriangulationExchangeRateType" xlink:to="amountTriangulationExchangeRateType_lbl"/>
+        <!-- gl-muc:restatedTriangulationExchangeRate Restated Triangulation Exchange Rate -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_restatedTriangulationExchangeRate" xlink:label="restatedTriangulationExchangeRate"/>
+        <label xlink:type="resource" xlink:label="restatedTriangulationExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_restatedTriangulationExchangeRate_en" xml:lang="en">Restated Triangulation Exchange Rate</label>
+        <label xlink:type="resource" xlink:label="restatedTriangulationExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Exchange rate used to convert from amountRestatedAmount to amountTriangulationAmount as of multicurrencyDetailExchangeRateDate (expressed as foreign currency divided by triangulation currency)</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="restatedTriangulationExchangeRate" xlink:to="restatedTriangulationExchangeRate_lbl"/>
+        <!-- gl-muc:restatedExchangeRateTriangulationSource Restated Triangulation Exchange Rate Source -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_restatedExchangeRateTriangulationSource" xlink:label="restatedExchangeRateTriangulationSource"/>
+        <label xlink:type="resource" xlink:label="restatedExchangeRateTriangulationSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_restatedExchangeRateTriangulationSource_en" xml:lang="en">Restated Triangulation Exchange Rate Source</label>
+        <label xlink:type="resource" xlink:label="restatedExchangeRateTriangulationSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Source of Exchange Rate for converting between foreign currency and triangulation currency - for example, Reuters, Bloomberg</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="restatedExchangeRateTriangulationSource" xlink:to="restatedExchangeRateTriangulationSource_lbl"/>
+        <!-- gl-muc:restatedExchangeRateTriangulationType Restated Triangulation Exchange Rate Type -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_restatedExchangeRateTriangulationType" xlink:label="restatedExchangeRateTriangulationType"/>
+        <label xlink:type="resource" xlink:label="restatedExchangeRateTriangulationType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_restatedExchangeRateTriangulationType_en" xml:lang="en">Restated Triangulation Exchange Rate Type</label>
+        <label xlink:type="resource" xlink:label="restatedExchangeRateTriangulationType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Type of Exchange Rate for converting between foreign currency and triangulation currency - for example, spot rate, forward contract etc.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="restatedExchangeRateTriangulationType" xlink:to="restatedExchangeRateTriangulationType_lbl"/>
+        <!-- gl-muc:multicurrencyDetailComment Multicurrency Detail Comment -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDetailComment" xlink:label="multicurrencyDetailComment"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDetailComment_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDetailComment_en" xml:lang="en">Multicurrency Detail Comment</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDetailComment_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Comment describing the enclosing multicurrencyDetail tuple's contents. May include reason for recording additional exchange rates other than that used at the time of the original transaction.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDetailComment" xlink:to="multicurrencyDetailComment_lbl"/>
+        <!-- gl-muc:taxAmountForeignCurrency Tax Amount in Foreign Currency -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxAmountForeignCurrency" xlink:label="taxAmountForeignCurrency"/>
+        <label xlink:type="resource" xlink:label="taxAmountForeignCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxAmountForeignCurrency_en" xml:lang="en">Tax Amount in Foreign Currency</label>
+        <label xlink:type="resource" xlink:label="taxAmountForeignCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency, the amount of tax in that currency</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxAmountForeignCurrency" xlink:to="taxAmountForeignCurrency_lbl"/>
+        <!-- gl-muc:taxCurrency Tax Foreign Currency -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxCurrency" xlink:label="taxCurrency"/>
+        <label xlink:type="resource" xlink:label="taxCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxCurrency_en" xml:lang="en">Tax Foreign Currency</label>
+        <label xlink:type="resource" xlink:label="taxCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency, that currency</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxCurrency" xlink:to="taxCurrency_lbl"/>
+        <!-- gl-muc:taxExchangeRateDate Tax Exchange Rate Date -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxExchangeRateDate" xlink:label="taxExchangeRateDate"/>
+        <label xlink:type="resource" xlink:label="taxExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxExchangeRateDate_en" xml:lang="en">Tax Exchange Rate Date</label>
+        <label xlink:type="resource" xlink:label="taxExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency, the date or date and time of the exchange rate used</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxExchangeRateDate" xlink:to="taxExchangeRateDate_lbl"/>
+        <!-- gl-muc:taxExchangeRate Tax Exchange Rate -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxExchangeRate" xlink:label="taxExchangeRate"/>
+        <label xlink:type="resource" xlink:label="taxExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxExchangeRate_en" xml:lang="en">Tax Exchange Rate</label>
+        <label xlink:type="resource" xlink:label="taxExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency, the exchange rate used expressed as national currency divided by foreign currency</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxExchangeRate" xlink:to="taxExchangeRate_lbl"/>
+        <!-- gl-muc:taxExchangeRateSource Tax Exchange Rate Source -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxExchangeRateSource" xlink:label="taxExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="taxExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxExchangeRateSource_en" xml:lang="en">Tax Exchange Rate Source</label>
+        <label xlink:type="resource" xlink:label="taxExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency, source of exchange rate - for example, Reuters, Bloomberg</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxExchangeRateSource" xlink:to="taxExchangeRateSource_lbl"/>
+        <!-- gl-muc:taxExchangeRateType Tax Exchange Rate Type -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxExchangeRateType" xlink:label="taxExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="taxExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxExchangeRateType_en" xml:lang="en">Tax Exchange Rate Type</label>
+        <label xlink:type="resource" xlink:label="taxExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency, type of exchange rate - for example, spot rate, forward contract etc.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxExchangeRateType" xlink:to="taxExchangeRateType_lbl"/>
+        <!-- gl-muc:taxExchangeRateComment Tax Exchange Rate Comment -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxExchangeRateComment" xlink:label="taxExchangeRateComment"/>
+        <label xlink:type="resource" xlink:label="taxExchangeRateComment_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxExchangeRateComment_en" xml:lang="en">Tax Exchange Rate Comment</label>
+        <label xlink:type="resource" xlink:label="taxExchangeRateComment_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency, comment about exchange rate used</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxExchangeRateComment" xlink:to="taxExchangeRateComment_lbl"/>
+        <!-- gl-muc:taxAmountTriangulationCurrency Tax Amount in Triangulation Currency -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxAmountTriangulationCurrency" xlink:label="taxAmountTriangulationCurrency"/>
+        <label xlink:type="resource" xlink:label="taxAmountTriangulationCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxAmountTriangulationCurrency_en" xml:lang="en">Tax Amount in Triangulation Currency</label>
+        <label xlink:type="resource" xlink:label="taxAmountTriangulationCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency and triangulation is used, the amount of that tax in the triangulation currency</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxAmountTriangulationCurrency" xlink:to="taxAmountTriangulationCurrency_lbl"/>
+        <!-- gl-muc:taxTriangulationCurrency Tax Triangulation Currency -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxTriangulationCurrency" xlink:label="taxTriangulationCurrency"/>
+        <label xlink:type="resource" xlink:label="taxTriangulationCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxTriangulationCurrency_en" xml:lang="en">Tax Triangulation Currency</label>
+        <label xlink:type="resource" xlink:label="taxTriangulationCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency and triangulation is used, the triangulation currency</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxTriangulationCurrency" xlink:to="taxTriangulationCurrency_lbl"/>
+        <!-- gl-muc:taxTriangulationExchangeRate Tax Triangulation Currency Exchange Rate -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxTriangulationExchangeRate" xlink:label="taxTriangulationExchangeRate"/>
+        <label xlink:type="resource" xlink:label="taxTriangulationExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxTriangulationExchangeRate_en" xml:lang="en">Tax Triangulation Currency Exchange Rate</label>
+        <label xlink:type="resource" xlink:label="taxTriangulationExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency and triangulation is used, the exchange rate used expressed as national currency divided by triangulation currency</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxTriangulationExchangeRate" xlink:to="taxTriangulationExchangeRate_lbl"/>
+        <!-- gl-muc:taxTriangulationExchangeRateSource Tax Triangulation Currency Exchange Rate Source -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxTriangulationExchangeRateSource" xlink:label="taxTriangulationExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="taxTriangulationExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxTriangulationExchangeRateSource_en" xml:lang="en">Tax Triangulation Currency Exchange Rate Source</label>
+        <label xlink:type="resource" xlink:label="taxTriangulationExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency and triangulation is used, source of exchange rate - for example, Reuters, Bloomberg</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxTriangulationExchangeRateSource" xlink:to="taxTriangulationExchangeRateSource_lbl"/>
+        <!-- gl-muc:taxTriangulationExchangeRateType Tax Triangulation Currency Exchange Rate Type -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxTriangulationExchangeRateType" xlink:label="taxTriangulationExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="taxTriangulationExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxTriangulationExchangeRateType_en" xml:lang="en">Tax Triangulation Currency Exchange Rate Type</label>
+        <label xlink:type="resource" xlink:label="taxTriangulationExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency and triangulation is used, type of exchange rate - for example, spot rate, forward contract etc.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxTriangulationExchangeRateType" xlink:to="taxTriangulationExchangeRateType_lbl"/>
+        <!-- gl-muc:taxForeignTriangulationExchangeRate Tax Foreign to Triangulation Currency Exchange Rate -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxForeignTriangulationExchangeRate" xlink:label="taxForeignTriangulationExchangeRate"/>
+        <label xlink:type="resource" xlink:label="taxForeignTriangulationExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxForeignTriangulationExchangeRate_en" xml:lang="en">Tax Foreign to Triangulation Currency Exchange Rate</label>
+        <label xlink:type="resource" xlink:label="taxForeignTriangulationExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency and triangulation is used,  the exchange rate used expressed as foreign currency divided by triangulation currency</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxForeignTriangulationExchangeRate" xlink:to="taxForeignTriangulationExchangeRate_lbl"/>
+        <!-- gl-muc:taxForeignTriangulationExchangeRateSource Tax Foreign to Triangulation Currency Exchange Rate Source -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxForeignTriangulationExchangeRateSource" xlink:label="taxForeignTriangulationExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="taxForeignTriangulationExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxForeignTriangulationExchangeRateSource_en" xml:lang="en">Tax Foreign to Triangulation Currency Exchange Rate Source</label>
+        <label xlink:type="resource" xlink:label="taxForeignTriangulationExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency and triangulation is used, source of exchange rate - for example, Reuters, Bloomberg</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxForeignTriangulationExchangeRateSource" xlink:to="taxForeignTriangulationExchangeRateSource_lbl"/>
+        <!-- gl-muc:taxForeignTriangulationExchangeRateType Tax Foreign to Triangulation Currency Exchange Rate Type -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxForeignTriangulationExchangeRateType" xlink:label="taxForeignTriangulationExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="taxForeignTriangulationExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxForeignTriangulationExchangeRateType_en" xml:lang="en">Tax Foreign to Triangulation Currency Exchange Rate Type</label>
+        <label xlink:type="resource" xlink:label="taxForeignTriangulationExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the tax is in a foreign currency and triangulation is used, type of exchange rate - for example, spot rate, forward contract etc.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxForeignTriangulationExchangeRateType" xlink:to="taxForeignTriangulationExchangeRateType_lbl"/>
+  </labelLink>
+</linkbase>

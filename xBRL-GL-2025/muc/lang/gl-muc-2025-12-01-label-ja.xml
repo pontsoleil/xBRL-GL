@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"
+    xmlns="http://www.xbrl.org/2003/linkbase"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+        <!-- gl-muc:multicurrencyDtl 【多通貨明細】 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtl" xlink:label="multicurrencyDtl"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtl_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtl_ja" xml:lang="en">【多通貨明細】</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtl_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">原取引時の通貨と異なる、自国通貨と換算レートに関する追加情報のセクション。－現在および原取引時の、換算レートおよび金額の記録に使用される。
+トライアンギュレーション通貨としての第三通貨の換算レートを記録できる。EURの場合が多いがそれに限らない。この構造は、同日または異なる日の外貨での金額を記録する必要がある限り、繰り返し指定可能。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtl" xlink:to="multicurrencyDtl_lbl"/>
+        <!-- gl-muc:foreignToLocalCurrencyConversion  -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToLocalCurrencyConversion" xlink:label="foreignToLocalCurrencyConversion"/>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToLocalCurrencyConversion_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToLocalCurrencyConversion" xlink:to="foreignToLocalCurrencyConversion_lbl"/>
+        <!-- gl-muc:triangulationToLocalConversion  -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_triangulationToLocalConversion" xlink:label="triangulationToLocalConversion"/>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_triangulationToLocalConversion_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="triangulationToLocalConversion" xlink:to="triangulationToLocalConversion_lbl"/>
+        <!-- gl-muc:foreignToTriangulationConversion  -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToTriangulationConversion" xlink:label="foreignToTriangulationConversion"/>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToTriangulationConversion_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToTriangulationConversion" xlink:to="foreignToTriangulationConversion_lbl"/>
+        <!-- gl-muc:foreignToLocalCurrencyConversionAmount 換算された金額 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToLocalCurrencyConversionAmount" xlink:label="foreignToLocalCurrencyConversionAmount"/>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToLocalCurrencyConversionAmount_ja" xml:lang="en">換算された金額</label>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">通貨換算後の金額。換算先の通貨で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToLocalCurrencyConversionAmount" xlink:to="foreignToLocalCurrencyConversionAmount_lbl"/>
+        <!-- gl-muc:foreignToLocalCurrencyConversionCurrency 金額の通貨 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToLocalCurrencyConversionCurrency" xlink:label="foreignToLocalCurrencyConversionCurrency"/>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToLocalCurrencyConversionCurrency_ja" xml:lang="en">金額の通貨</label>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算された金額が表される通貨。ISO 4217通貨コードで識別される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToLocalCurrencyConversionCurrency" xlink:to="foreignToLocalCurrencyConversionCurrency_lbl"/>
+        <!-- gl-muc:foreignToLocalCurrencyConversionExchangeRate 換算レート -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToLocalCurrencyConversionExchangeRate" xlink:label="foreignToLocalCurrencyConversionExchangeRate"/>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToLocalCurrencyConversionExchangeRate_ja" xml:lang="en">換算レート</label>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算に使用された為替レート。換算対象通貨1単位あたりの自国通貨（または機能通貨）で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToLocalCurrencyConversionExchangeRate" xlink:to="foreignToLocalCurrencyConversionExchangeRate_lbl"/>
+        <!-- gl-muc:foreignToLocalCurrencyConversionExchangeRateSource 為替レートの出典 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToLocalCurrencyConversionExchangeRateSource" xlink:label="foreignToLocalCurrencyConversionExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToLocalCurrencyConversionExchangeRateSource_ja" xml:lang="en">為替レートの出典</label>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートの取得元。ReutersやBloombergなどの金融情報提供機関を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToLocalCurrencyConversionExchangeRateSource" xlink:to="foreignToLocalCurrencyConversionExchangeRateSource_lbl"/>
+        <!-- gl-muc:foreignToLocalCurrencyConversionExchangeRateType 為替レートの種類 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToLocalCurrencyConversionExchangeRateType" xlink:label="foreignToLocalCurrencyConversionExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToLocalCurrencyConversionExchangeRateType_ja" xml:lang="en">為替レートの種類</label>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">使用された為替レートの種類。スポットレートやフォワードレートなどの区分を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToLocalCurrencyConversionExchangeRateType" xlink:to="foreignToLocalCurrencyConversionExchangeRateType_lbl"/>
+        <!-- gl-muc:foreignToLocalCurrencyConversionExchangeRateDate 適用されたレートの日付 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToLocalCurrencyConversionExchangeRateDate" xlink:label="foreignToLocalCurrencyConversionExchangeRateDate"/>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToLocalCurrencyConversionExchangeRateDate_ja" xml:lang="en">適用されたレートの日付</label>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">当該為替レートが適用された日付、または換算に有効となった日付。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToLocalCurrencyConversionExchangeRateDate" xlink:to="foreignToLocalCurrencyConversionExchangeRateDate_lbl"/>
+        <!-- gl-muc:foreignToLocalCurrencyConversionExchangeRateDesc 説明文 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToLocalCurrencyConversionExchangeRateDesc" xlink:label="foreignToLocalCurrencyConversionExchangeRateDesc"/>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToLocalCurrencyConversionExchangeRateDesc_ja" xml:lang="en">説明文</label>
+        <label xlink:type="resource" xlink:label="foreignToLocalCurrencyConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートまたは換算処理に関する補足的な文脈や説明を提供する説明文。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToLocalCurrencyConversionExchangeRateDesc" xlink:to="foreignToLocalCurrencyConversionExchangeRateDesc_lbl"/>
+        <!-- gl-muc:triangulationToLocalConversionAmount 換算された金額 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_triangulationToLocalConversionAmount" xlink:label="triangulationToLocalConversionAmount"/>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_triangulationToLocalConversionAmount_ja" xml:lang="en">換算された金額</label>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">通貨換算後の金額。換算先の通貨で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="triangulationToLocalConversionAmount" xlink:to="triangulationToLocalConversionAmount_lbl"/>
+        <!-- gl-muc:triangulationToLocalConversionCurrency 金額の通貨 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_triangulationToLocalConversionCurrency" xlink:label="triangulationToLocalConversionCurrency"/>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_triangulationToLocalConversionCurrency_ja" xml:lang="en">金額の通貨</label>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算された金額が表される通貨。ISO 4217通貨コードで識別される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="triangulationToLocalConversionCurrency" xlink:to="triangulationToLocalConversionCurrency_lbl"/>
+        <!-- gl-muc:triangulationToLocalConversionExchangeRate 換算レート -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_triangulationToLocalConversionExchangeRate" xlink:label="triangulationToLocalConversionExchangeRate"/>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_triangulationToLocalConversionExchangeRate_ja" xml:lang="en">換算レート</label>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算に使用された為替レート。換算対象通貨1単位あたりの自国通貨（または機能通貨）で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="triangulationToLocalConversionExchangeRate" xlink:to="triangulationToLocalConversionExchangeRate_lbl"/>
+        <!-- gl-muc:triangulationToLocalConversionExchangeRateSource 為替レートの出典 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_triangulationToLocalConversionExchangeRateSource" xlink:label="triangulationToLocalConversionExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_triangulationToLocalConversionExchangeRateSource_ja" xml:lang="en">為替レートの出典</label>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートの取得元。ReutersやBloombergなどの金融情報提供機関を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="triangulationToLocalConversionExchangeRateSource" xlink:to="triangulationToLocalConversionExchangeRateSource_lbl"/>
+        <!-- gl-muc:triangulationToLocalConversionExchangeRateType 為替レートの種類 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_triangulationToLocalConversionExchangeRateType" xlink:label="triangulationToLocalConversionExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_triangulationToLocalConversionExchangeRateType_ja" xml:lang="en">為替レートの種類</label>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">使用された為替レートの種類。スポットレートやフォワードレートなどの区分を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="triangulationToLocalConversionExchangeRateType" xlink:to="triangulationToLocalConversionExchangeRateType_lbl"/>
+        <!-- gl-muc:triangulationToLocalConversionExchangeRateDate 適用されたレートの日付 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_triangulationToLocalConversionExchangeRateDate" xlink:label="triangulationToLocalConversionExchangeRateDate"/>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_triangulationToLocalConversionExchangeRateDate_ja" xml:lang="en">適用されたレートの日付</label>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">当該為替レートが適用された日付、または換算に有効となった日付。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="triangulationToLocalConversionExchangeRateDate" xlink:to="triangulationToLocalConversionExchangeRateDate_lbl"/>
+        <!-- gl-muc:triangulationToLocalConversionExchangeRateDesc 説明文 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_triangulationToLocalConversionExchangeRateDesc" xlink:label="triangulationToLocalConversionExchangeRateDesc"/>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_triangulationToLocalConversionExchangeRateDesc_ja" xml:lang="en">説明文</label>
+        <label xlink:type="resource" xlink:label="triangulationToLocalConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートまたは換算処理に関する補足的な文脈や説明を提供する説明文。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="triangulationToLocalConversionExchangeRateDesc" xlink:to="triangulationToLocalConversionExchangeRateDesc_lbl"/>
+        <!-- gl-muc:foreignToTriangulationConversionAmount 換算された金額 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToTriangulationConversionAmount" xlink:label="foreignToTriangulationConversionAmount"/>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToTriangulationConversionAmount_ja" xml:lang="en">換算された金額</label>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">通貨換算後の金額。換算先の通貨で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToTriangulationConversionAmount" xlink:to="foreignToTriangulationConversionAmount_lbl"/>
+        <!-- gl-muc:foreignToTriangulationConversionCurrency 金額の通貨 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToTriangulationConversionCurrency" xlink:label="foreignToTriangulationConversionCurrency"/>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToTriangulationConversionCurrency_ja" xml:lang="en">金額の通貨</label>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算された金額が表される通貨。ISO 4217通貨コードで識別される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToTriangulationConversionCurrency" xlink:to="foreignToTriangulationConversionCurrency_lbl"/>
+        <!-- gl-muc:foreignToTriangulationConversionExchangeRate 換算レート -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToTriangulationConversionExchangeRate" xlink:label="foreignToTriangulationConversionExchangeRate"/>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToTriangulationConversionExchangeRate_ja" xml:lang="en">換算レート</label>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算に使用された為替レート。換算対象通貨1単位あたりの自国通貨（または機能通貨）で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToTriangulationConversionExchangeRate" xlink:to="foreignToTriangulationConversionExchangeRate_lbl"/>
+        <!-- gl-muc:foreignToTriangulationConversionExchangeRateSource 為替レートの出典 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToTriangulationConversionExchangeRateSource" xlink:label="foreignToTriangulationConversionExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToTriangulationConversionExchangeRateSource_ja" xml:lang="en">為替レートの出典</label>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートの取得元。ReutersやBloombergなどの金融情報提供機関を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToTriangulationConversionExchangeRateSource" xlink:to="foreignToTriangulationConversionExchangeRateSource_lbl"/>
+        <!-- gl-muc:foreignToTriangulationConversionExchangeRateType 為替レートの種類 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToTriangulationConversionExchangeRateType" xlink:label="foreignToTriangulationConversionExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToTriangulationConversionExchangeRateType_ja" xml:lang="en">為替レートの種類</label>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">使用された為替レートの種類。スポットレートやフォワードレートなどの区分を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToTriangulationConversionExchangeRateType" xlink:to="foreignToTriangulationConversionExchangeRateType_lbl"/>
+        <!-- gl-muc:foreignToTriangulationConversionExchangeRateDate 適用されたレートの日付 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToTriangulationConversionExchangeRateDate" xlink:label="foreignToTriangulationConversionExchangeRateDate"/>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToTriangulationConversionExchangeRateDate_ja" xml:lang="en">適用されたレートの日付</label>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">当該為替レートが適用された日付、または換算に有効となった日付。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToTriangulationConversionExchangeRateDate" xlink:to="foreignToTriangulationConversionExchangeRateDate_lbl"/>
+        <!-- gl-muc:foreignToTriangulationConversionExchangeRateDesc 説明文 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_foreignToTriangulationConversionExchangeRateDesc" xlink:label="foreignToTriangulationConversionExchangeRateDesc"/>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_foreignToTriangulationConversionExchangeRateDesc_ja" xml:lang="en">説明文</label>
+        <label xlink:type="resource" xlink:label="foreignToTriangulationConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートまたは換算処理に関する補足的な文脈や説明を提供する説明文。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="foreignToTriangulationConversionExchangeRateDesc" xlink:to="foreignToTriangulationConversionExchangeRateDesc_lbl"/>
+        <!-- gl-muc:entryDtlMulticurrencyDtl 【多通貨明細】 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_entryDtlMulticurrencyDtl" xlink:label="entryDtlMulticurrencyDtl"/>
+        <label xlink:type="resource" xlink:label="entryDtlMulticurrencyDtl_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_entryDtlMulticurrencyDtl_ja" xml:lang="en">【多通貨明細】</label>
+        <label xlink:type="resource" xlink:label="entryDtlMulticurrencyDtl_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">原取引時の通貨と異なる、自国通貨と換算レートに関する追加情報のセクション。－現在および原取引時の、換算レートおよび金額の記録に使用される。
+トライアンギュレーション通貨としての第三通貨の換算レートを記録できる。EURの場合が多いがそれに限らない。この構造は、同日または異なる日の外貨での金額を記録する必要がある限り、繰り返し指定可能。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="entryDtlMulticurrencyDtl" xlink:to="entryDtlMulticurrencyDtl_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToLocalCurrencyConversion  -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToLocalCurrencyConversion" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversion"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToLocalCurrencyConversion_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToLocalCurrencyConversion" xlink:to="multicurrencyDtlForeignToLocalCurrencyConversion_lbl"/>
+        <!-- gl-muc:multicurrencyDtlTriangulationToLocalConversion  -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlTriangulationToLocalConversion" xlink:label="multicurrencyDtlTriangulationToLocalConversion"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlTriangulationToLocalConversion_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlTriangulationToLocalConversion" xlink:to="multicurrencyDtlTriangulationToLocalConversion_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToTriangulationConversion  -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToTriangulationConversion" xlink:label="multicurrencyDtlForeignToTriangulationConversion"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToTriangulationConversion_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToTriangulationConversion" xlink:to="multicurrencyDtlForeignToTriangulationConversion_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToLocalCurrencyConversionAmount 換算された金額 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToLocalCurrencyConversionAmount" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionAmount"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToLocalCurrencyConversionAmount_ja" xml:lang="en">換算された金額</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">通貨換算後の金額。換算先の通貨で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToLocalCurrencyConversionAmount" xlink:to="multicurrencyDtlForeignToLocalCurrencyConversionAmount_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToLocalCurrencyConversionCurrency 金額の通貨 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToLocalCurrencyConversionCurrency" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionCurrency"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToLocalCurrencyConversionCurrency_ja" xml:lang="en">金額の通貨</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算された金額が表される通貨。ISO 4217通貨コードで識別される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToLocalCurrencyConversionCurrency" xlink:to="multicurrencyDtlForeignToLocalCurrencyConversionCurrency_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToLocalCurrencyConversionExchangeRate 換算レート -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToLocalCurrencyConversionExchangeRate" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRate"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToLocalCurrencyConversionExchangeRate_ja" xml:lang="en">換算レート</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算に使用された為替レート。換算対象通貨1単位あたりの自国通貨（または機能通貨）で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRate" xlink:to="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRate_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateSource 為替レートの出典 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateSource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateSource_ja" xml:lang="en">為替レートの出典</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートの取得元。ReutersやBloombergなどの金融情報提供機関を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateSource" xlink:to="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateSource_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateType 為替レートの種類 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateType" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateType_ja" xml:lang="en">為替レートの種類</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">使用された為替レートの種類。スポットレートやフォワードレートなどの区分を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateType" xlink:to="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateType_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDate 適用されたレートの日付 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDate" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDate"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDate_ja" xml:lang="en">適用されたレートの日付</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">当該為替レートが適用された日付、または換算に有効となった日付。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDate" xlink:to="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDate_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDesc 説明文 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDesc" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDesc"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDesc_ja" xml:lang="en">説明文</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートまたは換算処理に関する補足的な文脈や説明を提供する説明文。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDesc" xlink:to="multicurrencyDtlForeignToLocalCurrencyConversionExchangeRateDesc_lbl"/>
+        <!-- gl-muc:multicurrencyDtlTriangulationToLocalConversionAmount 換算された金額 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlTriangulationToLocalConversionAmount" xlink:label="multicurrencyDtlTriangulationToLocalConversionAmount"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlTriangulationToLocalConversionAmount_ja" xml:lang="en">換算された金額</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">通貨換算後の金額。換算先の通貨で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlTriangulationToLocalConversionAmount" xlink:to="multicurrencyDtlTriangulationToLocalConversionAmount_lbl"/>
+        <!-- gl-muc:multicurrencyDtlTriangulationToLocalConversionCurrency 金額の通貨 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlTriangulationToLocalConversionCurrency" xlink:label="multicurrencyDtlTriangulationToLocalConversionCurrency"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlTriangulationToLocalConversionCurrency_ja" xml:lang="en">金額の通貨</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算された金額が表される通貨。ISO 4217通貨コードで識別される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlTriangulationToLocalConversionCurrency" xlink:to="multicurrencyDtlTriangulationToLocalConversionCurrency_lbl"/>
+        <!-- gl-muc:multicurrencyDtlTriangulationToLocalConversionExchangeRate 換算レート -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlTriangulationToLocalConversionExchangeRate" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRate"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlTriangulationToLocalConversionExchangeRate_ja" xml:lang="en">換算レート</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算に使用された為替レート。換算対象通貨1単位あたりの自国通貨（または機能通貨）で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlTriangulationToLocalConversionExchangeRate" xlink:to="multicurrencyDtlTriangulationToLocalConversionExchangeRate_lbl"/>
+        <!-- gl-muc:multicurrencyDtlTriangulationToLocalConversionExchangeRateSource 為替レートの出典 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlTriangulationToLocalConversionExchangeRateSource" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlTriangulationToLocalConversionExchangeRateSource_ja" xml:lang="en">為替レートの出典</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートの取得元。ReutersやBloombergなどの金融情報提供機関を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlTriangulationToLocalConversionExchangeRateSource" xlink:to="multicurrencyDtlTriangulationToLocalConversionExchangeRateSource_lbl"/>
+        <!-- gl-muc:multicurrencyDtlTriangulationToLocalConversionExchangeRateType 為替レートの種類 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlTriangulationToLocalConversionExchangeRateType" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlTriangulationToLocalConversionExchangeRateType_ja" xml:lang="en">為替レートの種類</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">使用された為替レートの種類。スポットレートやフォワードレートなどの区分を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlTriangulationToLocalConversionExchangeRateType" xlink:to="multicurrencyDtlTriangulationToLocalConversionExchangeRateType_lbl"/>
+        <!-- gl-muc:multicurrencyDtlTriangulationToLocalConversionExchangeRateDate 適用されたレートの日付 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlTriangulationToLocalConversionExchangeRateDate" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRateDate"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlTriangulationToLocalConversionExchangeRateDate_ja" xml:lang="en">適用されたレートの日付</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">当該為替レートが適用された日付、または換算に有効となった日付。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlTriangulationToLocalConversionExchangeRateDate" xlink:to="multicurrencyDtlTriangulationToLocalConversionExchangeRateDate_lbl"/>
+        <!-- gl-muc:multicurrencyDtlTriangulationToLocalConversionExchangeRateDesc 説明文 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlTriangulationToLocalConversionExchangeRateDesc" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRateDesc"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlTriangulationToLocalConversionExchangeRateDesc_ja" xml:lang="en">説明文</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlTriangulationToLocalConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートまたは換算処理に関する補足的な文脈や説明を提供する説明文。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlTriangulationToLocalConversionExchangeRateDesc" xlink:to="multicurrencyDtlTriangulationToLocalConversionExchangeRateDesc_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToTriangulationConversionAmount 換算された金額 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToTriangulationConversionAmount" xlink:label="multicurrencyDtlForeignToTriangulationConversionAmount"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToTriangulationConversionAmount_ja" xml:lang="en">換算された金額</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">通貨換算後の金額。換算先の通貨で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToTriangulationConversionAmount" xlink:to="multicurrencyDtlForeignToTriangulationConversionAmount_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToTriangulationConversionCurrency 金額の通貨 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToTriangulationConversionCurrency" xlink:label="multicurrencyDtlForeignToTriangulationConversionCurrency"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToTriangulationConversionCurrency_ja" xml:lang="en">金額の通貨</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算された金額が表される通貨。ISO 4217通貨コードで識別される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToTriangulationConversionCurrency" xlink:to="multicurrencyDtlForeignToTriangulationConversionCurrency_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToTriangulationConversionExchangeRate 換算レート -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToTriangulationConversionExchangeRate" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRate"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToTriangulationConversionExchangeRate_ja" xml:lang="en">換算レート</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算に使用された為替レート。換算対象通貨1単位あたりの自国通貨（または機能通貨）で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToTriangulationConversionExchangeRate" xlink:to="multicurrencyDtlForeignToTriangulationConversionExchangeRate_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToTriangulationConversionExchangeRateSource 為替レートの出典 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToTriangulationConversionExchangeRateSource" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToTriangulationConversionExchangeRateSource_ja" xml:lang="en">為替レートの出典</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートの取得元。ReutersやBloombergなどの金融情報提供機関を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToTriangulationConversionExchangeRateSource" xlink:to="multicurrencyDtlForeignToTriangulationConversionExchangeRateSource_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToTriangulationConversionExchangeRateType 為替レートの種類 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToTriangulationConversionExchangeRateType" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToTriangulationConversionExchangeRateType_ja" xml:lang="en">為替レートの種類</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">使用された為替レートの種類。スポットレートやフォワードレートなどの区分を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToTriangulationConversionExchangeRateType" xlink:to="multicurrencyDtlForeignToTriangulationConversionExchangeRateType_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToTriangulationConversionExchangeRateDate 適用されたレートの日付 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToTriangulationConversionExchangeRateDate" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRateDate"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToTriangulationConversionExchangeRateDate_ja" xml:lang="en">適用されたレートの日付</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">当該為替レートが適用された日付、または換算に有効となった日付。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToTriangulationConversionExchangeRateDate" xlink:to="multicurrencyDtlForeignToTriangulationConversionExchangeRateDate_lbl"/>
+        <!-- gl-muc:multicurrencyDtlForeignToTriangulationConversionExchangeRateDesc 説明文 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_multicurrencyDtlForeignToTriangulationConversionExchangeRateDesc" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRateDesc"/>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_multicurrencyDtlForeignToTriangulationConversionExchangeRateDesc_ja" xml:lang="en">説明文</label>
+        <label xlink:type="resource" xlink:label="multicurrencyDtlForeignToTriangulationConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートまたは換算処理に関する補足的な文脈や説明を提供する説明文。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="multicurrencyDtlForeignToTriangulationConversionExchangeRateDesc" xlink:to="multicurrencyDtlForeignToTriangulationConversionExchangeRateDesc_lbl"/>
+        <!-- gl-muc:taxInfoForeignToLocalCurrencyConversion  -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToLocalCurrencyConversion" xlink:label="taxInfoForeignToLocalCurrencyConversion"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToLocalCurrencyConversion_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToLocalCurrencyConversion" xlink:to="taxInfoForeignToLocalCurrencyConversion_lbl"/>
+        <!-- gl-muc:taxInfoTriangulationToLocalConversion  -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoTriangulationToLocalConversion" xlink:label="taxInfoTriangulationToLocalConversion"/>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoTriangulationToLocalConversion_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoTriangulationToLocalConversion" xlink:to="taxInfoTriangulationToLocalConversion_lbl"/>
+        <!-- gl-muc:taxInfoForeignToTriangulationConversion  -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToTriangulationConversion" xlink:label="taxInfoForeignToTriangulationConversion"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToTriangulationConversion_ja" xml:lang="en"></label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja"></label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToTriangulationConversion" xlink:to="taxInfoForeignToTriangulationConversion_lbl"/>
+        <!-- gl-muc:taxInfoForeignToLocalCurrencyConversionAmount 換算された金額 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToLocalCurrencyConversionAmount" xlink:label="taxInfoForeignToLocalCurrencyConversionAmount"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToLocalCurrencyConversionAmount_ja" xml:lang="en">換算された金額</label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">通貨換算後の金額。換算先の通貨で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToLocalCurrencyConversionAmount" xlink:to="taxInfoForeignToLocalCurrencyConversionAmount_lbl"/>
+        <!-- gl-muc:taxInfoForeignToLocalCurrencyConversionCurrency 金額の通貨 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToLocalCurrencyConversionCurrency" xlink:label="taxInfoForeignToLocalCurrencyConversionCurrency"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToLocalCurrencyConversionCurrency_ja" xml:lang="en">金額の通貨</label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算された金額が表される通貨。ISO 4217通貨コードで識別される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToLocalCurrencyConversionCurrency" xlink:to="taxInfoForeignToLocalCurrencyConversionCurrency_lbl"/>
+        <!-- gl-muc:taxInfoForeignToLocalCurrencyConversionExchangeRate 換算レート -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToLocalCurrencyConversionExchangeRate" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRate"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToLocalCurrencyConversionExchangeRate_ja" xml:lang="en">換算レート</label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算に使用された為替レート。換算対象通貨1単位あたりの自国通貨（または機能通貨）で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToLocalCurrencyConversionExchangeRate" xlink:to="taxInfoForeignToLocalCurrencyConversionExchangeRate_lbl"/>
+        <!-- gl-muc:taxInfoForeignToLocalCurrencyConversionExchangeRateSource 為替レートの出典 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToLocalCurrencyConversionExchangeRateSource" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToLocalCurrencyConversionExchangeRateSource_ja" xml:lang="en">為替レートの出典</label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートの取得元。ReutersやBloombergなどの金融情報提供機関を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToLocalCurrencyConversionExchangeRateSource" xlink:to="taxInfoForeignToLocalCurrencyConversionExchangeRateSource_lbl"/>
+        <!-- gl-muc:taxInfoForeignToLocalCurrencyConversionExchangeRateType 為替レートの種類 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToLocalCurrencyConversionExchangeRateType" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToLocalCurrencyConversionExchangeRateType_ja" xml:lang="en">為替レートの種類</label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">使用された為替レートの種類。スポットレートやフォワードレートなどの区分を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToLocalCurrencyConversionExchangeRateType" xlink:to="taxInfoForeignToLocalCurrencyConversionExchangeRateType_lbl"/>
+        <!-- gl-muc:taxInfoForeignToLocalCurrencyConversionExchangeRateDate 適用されたレートの日付 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToLocalCurrencyConversionExchangeRateDate" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRateDate"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToLocalCurrencyConversionExchangeRateDate_ja" xml:lang="en">適用されたレートの日付</label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">当該為替レートが適用された日付、または換算に有効となった日付。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToLocalCurrencyConversionExchangeRateDate" xlink:to="taxInfoForeignToLocalCurrencyConversionExchangeRateDate_lbl"/>
+        <!-- gl-muc:taxInfoForeignToLocalCurrencyConversionExchangeRateDesc 説明文 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToLocalCurrencyConversionExchangeRateDesc" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRateDesc"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToLocalCurrencyConversionExchangeRateDesc_ja" xml:lang="en">説明文</label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToLocalCurrencyConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートまたは換算処理に関する補足的な文脈や説明を提供する説明文。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToLocalCurrencyConversionExchangeRateDesc" xlink:to="taxInfoForeignToLocalCurrencyConversionExchangeRateDesc_lbl"/>
+        <!-- gl-muc:taxInfoTriangulationToLocalConversionAmount 換算された金額 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoTriangulationToLocalConversionAmount" xlink:label="taxInfoTriangulationToLocalConversionAmount"/>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoTriangulationToLocalConversionAmount_ja" xml:lang="en">換算された金額</label>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">通貨換算後の金額。換算先の通貨で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoTriangulationToLocalConversionAmount" xlink:to="taxInfoTriangulationToLocalConversionAmount_lbl"/>
+        <!-- gl-muc:taxInfoTriangulationToLocalConversionCurrency 金額の通貨 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoTriangulationToLocalConversionCurrency" xlink:label="taxInfoTriangulationToLocalConversionCurrency"/>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoTriangulationToLocalConversionCurrency_ja" xml:lang="en">金額の通貨</label>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算された金額が表される通貨。ISO 4217通貨コードで識別される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoTriangulationToLocalConversionCurrency" xlink:to="taxInfoTriangulationToLocalConversionCurrency_lbl"/>
+        <!-- gl-muc:taxInfoTriangulationToLocalConversionExchangeRate 換算レート -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoTriangulationToLocalConversionExchangeRate" xlink:label="taxInfoTriangulationToLocalConversionExchangeRate"/>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoTriangulationToLocalConversionExchangeRate_ja" xml:lang="en">換算レート</label>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算に使用された為替レート。換算対象通貨1単位あたりの自国通貨（または機能通貨）で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoTriangulationToLocalConversionExchangeRate" xlink:to="taxInfoTriangulationToLocalConversionExchangeRate_lbl"/>
+        <!-- gl-muc:taxInfoTriangulationToLocalConversionExchangeRateSource 為替レートの出典 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoTriangulationToLocalConversionExchangeRateSource" xlink:label="taxInfoTriangulationToLocalConversionExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoTriangulationToLocalConversionExchangeRateSource_ja" xml:lang="en">為替レートの出典</label>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートの取得元。ReutersやBloombergなどの金融情報提供機関を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoTriangulationToLocalConversionExchangeRateSource" xlink:to="taxInfoTriangulationToLocalConversionExchangeRateSource_lbl"/>
+        <!-- gl-muc:taxInfoTriangulationToLocalConversionExchangeRateType 為替レートの種類 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoTriangulationToLocalConversionExchangeRateType" xlink:label="taxInfoTriangulationToLocalConversionExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoTriangulationToLocalConversionExchangeRateType_ja" xml:lang="en">為替レートの種類</label>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">使用された為替レートの種類。スポットレートやフォワードレートなどの区分を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoTriangulationToLocalConversionExchangeRateType" xlink:to="taxInfoTriangulationToLocalConversionExchangeRateType_lbl"/>
+        <!-- gl-muc:taxInfoTriangulationToLocalConversionExchangeRateDate 適用されたレートの日付 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoTriangulationToLocalConversionExchangeRateDate" xlink:label="taxInfoTriangulationToLocalConversionExchangeRateDate"/>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoTriangulationToLocalConversionExchangeRateDate_ja" xml:lang="en">適用されたレートの日付</label>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">当該為替レートが適用された日付、または換算に有効となった日付。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoTriangulationToLocalConversionExchangeRateDate" xlink:to="taxInfoTriangulationToLocalConversionExchangeRateDate_lbl"/>
+        <!-- gl-muc:taxInfoTriangulationToLocalConversionExchangeRateDesc 説明文 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoTriangulationToLocalConversionExchangeRateDesc" xlink:label="taxInfoTriangulationToLocalConversionExchangeRateDesc"/>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoTriangulationToLocalConversionExchangeRateDesc_ja" xml:lang="en">説明文</label>
+        <label xlink:type="resource" xlink:label="taxInfoTriangulationToLocalConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートまたは換算処理に関する補足的な文脈や説明を提供する説明文。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoTriangulationToLocalConversionExchangeRateDesc" xlink:to="taxInfoTriangulationToLocalConversionExchangeRateDesc_lbl"/>
+        <!-- gl-muc:taxInfoForeignToTriangulationConversionAmount 換算された金額 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToTriangulationConversionAmount" xlink:label="taxInfoForeignToTriangulationConversionAmount"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToTriangulationConversionAmount_ja" xml:lang="en">換算された金額</label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversionAmount_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">通貨換算後の金額。換算先の通貨で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToTriangulationConversionAmount" xlink:to="taxInfoForeignToTriangulationConversionAmount_lbl"/>
+        <!-- gl-muc:taxInfoForeignToTriangulationConversionCurrency 金額の通貨 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToTriangulationConversionCurrency" xlink:label="taxInfoForeignToTriangulationConversionCurrency"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToTriangulationConversionCurrency_ja" xml:lang="en">金額の通貨</label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversionCurrency_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算された金額が表される通貨。ISO 4217通貨コードで識別される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToTriangulationConversionCurrency" xlink:to="taxInfoForeignToTriangulationConversionCurrency_lbl"/>
+        <!-- gl-muc:taxInfoForeignToTriangulationConversionExchangeRate 換算レート -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToTriangulationConversionExchangeRate" xlink:label="taxInfoForeignToTriangulationConversionExchangeRate"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToTriangulationConversionExchangeRate_ja" xml:lang="en">換算レート</label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversionExchangeRate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">換算に使用された為替レート。換算対象通貨1単位あたりの自国通貨（または機能通貨）で表される。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToTriangulationConversionExchangeRate" xlink:to="taxInfoForeignToTriangulationConversionExchangeRate_lbl"/>
+        <!-- gl-muc:taxInfoForeignToTriangulationConversionExchangeRateSource 為替レートの出典 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToTriangulationConversionExchangeRateSource" xlink:label="taxInfoForeignToTriangulationConversionExchangeRateSource"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToTriangulationConversionExchangeRateSource_ja" xml:lang="en">為替レートの出典</label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversionExchangeRateSource_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートの取得元。ReutersやBloombergなどの金融情報提供機関を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToTriangulationConversionExchangeRateSource" xlink:to="taxInfoForeignToTriangulationConversionExchangeRateSource_lbl"/>
+        <!-- gl-muc:taxInfoForeignToTriangulationConversionExchangeRateType 為替レートの種類 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToTriangulationConversionExchangeRateType" xlink:label="taxInfoForeignToTriangulationConversionExchangeRateType"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToTriangulationConversionExchangeRateType_ja" xml:lang="en">為替レートの種類</label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversionExchangeRateType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">使用された為替レートの種類。スポットレートやフォワードレートなどの区分を含む。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToTriangulationConversionExchangeRateType" xlink:to="taxInfoForeignToTriangulationConversionExchangeRateType_lbl"/>
+        <!-- gl-muc:taxInfoForeignToTriangulationConversionExchangeRateDate 適用されたレートの日付 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToTriangulationConversionExchangeRateDate" xlink:label="taxInfoForeignToTriangulationConversionExchangeRateDate"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToTriangulationConversionExchangeRateDate_ja" xml:lang="en">適用されたレートの日付</label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversionExchangeRateDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">当該為替レートが適用された日付、または換算に有効となった日付。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToTriangulationConversionExchangeRateDate" xlink:to="taxInfoForeignToTriangulationConversionExchangeRateDate_lbl"/>
+        <!-- gl-muc:taxInfoForeignToTriangulationConversionExchangeRateDesc 説明文 -->
+        <loc xlink:type="locator" xlink:href="../gl-muc-2025-12-01.xsd#gl-muc_taxInfoForeignToTriangulationConversionExchangeRateDesc" xlink:label="taxInfoForeignToTriangulationConversionExchangeRateDesc"/>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-muc_taxInfoForeignToTriangulationConversionExchangeRateDesc_ja" xml:lang="en">説明文</label>
+        <label xlink:type="resource" xlink:label="taxInfoForeignToTriangulationConversionExchangeRateDesc_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">為替レートまたは換算処理に関する補足的な文脈や説明を提供する説明文。</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="taxInfoForeignToTriangulationConversionExchangeRateDesc" xlink:to="taxInfoForeignToTriangulationConversionExchangeRateDesc_lbl"/>
+  </labelLink>
+</linkbase>

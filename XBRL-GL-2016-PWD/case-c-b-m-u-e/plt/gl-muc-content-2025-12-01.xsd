@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<schema targetNamespace="http://www.xbrl.org/int/gl/muc/2025-12-01" elementFormDefault="qualified" attributeFormDefault="unqualified"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:gl-muc="http://www.xbrl.org/int/gl/muc/2025-12-01">
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <include schemaLocation="../muc/gl-muc-2025-12-01.xsd"/>
+  <!-- tuple data type -->
+  <group name="multicurrencyDetailGroup">
+    <sequence>
+      <element ref="gl-muc:multicurrencyDetailExchangeRateDate" minOccurs="0"/>
+      <element ref="gl-muc:amountRestatedAmount" minOccurs="0"/>
+      <element ref="gl-muc:amountRestatedCurrency" minOccurs="0"/>
+      <element ref="gl-muc:amountRestatedExchangeRate" minOccurs="0"/>
+      <element ref="gl-muc:amountRestatedExchangeRateSource" minOccurs="0"/>
+      <element ref="gl-muc:amountRestatedExchangeRateType" minOccurs="0"/>
+      <element ref="gl-muc:amountTriangulationAmount" minOccurs="0"/>
+      <element ref="gl-muc:amountTriangulationCurrency" minOccurs="0"/>
+      <element ref="gl-muc:amountTriangulationExchangeRate" minOccurs="0"/>
+      <element ref="gl-muc:amountTriangulationExchangeRateSource" minOccurs="0"/>
+      <element ref="gl-muc:amountTriangulationExchangeRateType" minOccurs="0"/>
+      <element ref="gl-muc:restatedTriangulationExchangeRate" minOccurs="0"/>
+      <element ref="gl-muc:restatedExchangeRateTriangulationSource" minOccurs="0"/>
+      <element ref="gl-muc:restatedExchangeRateTriangulationType" minOccurs="0"/>
+      <element ref="gl-muc:multicurrencyDetailComment" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="multicurrencyDetailComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-muc:multicurrencyDetailGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

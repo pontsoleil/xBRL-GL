@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<schema targetNamespace="http://www.xbrl.org/int/gl/ehm/2025-12-01" elementFormDefault="qualified" attributeFormDefault="unqualified"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:gl-ehm="http://www.xbrl.org/int/gl/ehm/2025-12-01">
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <include schemaLocation="../ehm/gl-ehm-2025-12-01.xsd"/>
+  <!-- tuple data type -->
+  <group name="serialLotGroup">
+    <sequence>
+      <element ref="gl-ehm:serialLotCode" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotDescription" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotNumber" minOccurs="0"/>
+      <element ref="gl-ehm:nextSerialLotNumber" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotQuantity" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotOriginalQuantity" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotRemainingQuantity" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotOrigination" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotExpiration" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotManufacturer" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotBatchDescription" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotWarrantyStartDate" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotWarrantyEndDate" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotWarrantyPeriod" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotWarrantyPeriodUnit" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotWarrantyVendor" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotWarrantyContract" minOccurs="0"/>
+      <element ref="gl-ehm:serialLotComment" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="serialLotComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-ehm:serialLotGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

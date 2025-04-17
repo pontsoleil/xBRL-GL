@@ -1,0 +1,195 @@
+{
+    "documentInfo": {
+        "documentType": "https://xbrl.org/2021/xbrl-csv",
+        "namespaces": {
+            "xbrli": "http://www.xbrl.org/2003/instance",
+            "xbrll": "http://www.xbrl.org/2003/linkbase",
+            "xlink": "http://www.w3.org/1999/xlink",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "gl-cor": "http://www.xbrl.org/int/gl/cor/2025-12-01",
+            "gl-muc": "http://www.xbrl.org/int/gl/muc/2025-12-01",
+            "gl-bus": "http://www.xbrl.org/int/gl/bus/2025-12-01",
+            "gl-usk": "http://www.xbrl.org/int/gl/usk/2025-12-01",
+            "gl-ehm": "http://www.xbrl.org/int/gl/ehm/2025-12-01",
+            "gl-taf": "http://www.xbrl.org/int/gl/taf/2025-12-01",
+            "gl-srcd": "http://www.xbrl.org/int/gl/srcd/2025-12-01",
+            "gl-plt": "http://www.xbrl.org/int/gl/plt/2025-12-01",
+            "iso4217": "http://www.xbrl.org/2003/iso4217",
+            "iso639": "http://www.xbrl.org/2005/iso639",
+            "ns0": "http://example.com"
+        },
+        "taxonomy": ["../XBRL-GL-2016-PWD/case-c-b-m-u-e-t-s/plt/gl-plt-oim-2025-12-01.xsd"]
+    },
+    "tableTemplates": {
+        "xbrl-gl_template": {
+            "dimensions": {
+                "period": "2025-05-17T00:00:00",
+                "entity": "ns0:Example Co.",
+                "gl-plt:d_cor_accountingEntries": "$accountingEntries",
+                "gl-plt:d_cor_entryHeader": "$entryHeader",
+                "gl-plt:d_cor_entryDetail": "$entryDetail",
+                "gl-plt:d_cor_account": "$account",
+                "gl-plt:d_cor_accountSub": "$accountSub"
+            },
+            "columns": {
+                "accountingEntries": {},
+                "entryHeader": {},
+                "entryDetail": {},
+                "account": {},
+                "accountSub": {},
+                "entriesType": {
+                    "dimensions": {
+                        "concept": "gl-cor:entriesType"
+                    }
+                },
+                "uniqueID": {
+                    "dimensions": {
+                        "concept": "gl-cor:uniqueID"
+                    }
+                },
+                "language": {
+                    "dimensions": {
+                        "concept": "gl-cor:language"
+                    }
+                },
+                "creationDate": {
+                    "dimensions": {
+                        "concept": "gl-cor:creationDate"
+                    }
+                },
+                "creator": {
+                    "dimensions": {
+                        "concept": "gl-bus:creator"
+                    }
+                },
+                "entriesComment": {
+                    "dimensions": {
+                        "concept": "gl-cor:entriesComment"
+                    }
+                },
+                "periodCoveredEnd": {
+                    "dimensions": {
+                        "concept": "gl-cor:periodCoveredEnd"
+                    }
+                },
+                "sourceApplication": {
+                    "dimensions": {
+                        "concept": "gl-bus:sourceApplication"
+                    }
+                },
+                "targetApplication": {
+                    "dimensions": {
+                        "concept": "gl-bus:targetApplication"
+                    }
+                },
+                "defaultCurrency": {
+                    "dimensions": {
+                        "concept": "gl-muc:defaultCurrency"
+                    }
+                },
+                "sourceJournalID": {
+                    "dimensions": {
+                        "concept": "gl-cor:sourceJournalID"
+                    }
+                },
+                "entryType": {
+                    "dimensions": {
+                        "concept": "gl-cor:entryType"
+                    }
+                },
+                "entryNumber": {
+                    "dimensions": {
+                        "concept": "gl-cor:entryNumber"
+                    }
+                },
+                "entryComment": {
+                    "dimensions": {
+                        "concept": "gl-cor:entryComment"
+                    }
+                },
+                "budgetScenarioText": {
+                    "dimensions": {
+                        "concept": "gl-bus:budgetScenarioText"
+                    }
+                },
+                "budgetScenario": {
+                    "dimensions": {
+                        "concept": "gl-bus:budgetScenario"
+                    }
+                },
+                "lineNumber": {
+                    "dimensions": {
+                        "concept": "gl-cor:lineNumber"
+                    }
+                },
+                "accountMainID": {
+                    "dimensions": {
+                        "concept": "gl-cor:accountMainID"
+                    }
+                },
+                "accountMainDescription": {
+                    "dimensions": {
+                        "concept": "gl-cor:accountMainDescription"
+                    }
+                },
+                "accountType": {
+                    "dimensions": {
+                        "concept": "gl-cor:accountType"
+                    }
+                },
+                "accountSubDescription": {
+                    "dimensions": {
+                        "concept": "gl-cor:accountSubDescription"
+                    }
+                },
+                "accountSubID": {
+                    "dimensions": {
+                        "concept": "gl-cor:accountSubID"
+                    }
+                },
+                "accountSubType": {
+                    "dimensions": {
+                        "concept": "gl-cor:accountSubType"
+                    }
+                },
+                "amount": {
+                    "dimensions": {
+                        "concept": "gl-cor:amount",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "detailComment": {
+                    "dimensions": {
+                        "concept": "gl-cor:detailComment"
+                    }
+                },
+                "jobCode": {
+                    "dimensions": {
+                        "concept": "gl-usk:jobCode"
+                    }
+                },
+                "jobDescription": {
+                    "dimensions": {
+                        "concept": "gl-usk:jobDescription"
+                    }
+                },
+                "jobPhaseCode": {
+                    "dimensions": {
+                        "concept": "gl-usk:jobPhaseCode"
+                    }
+                },
+                "jobPhaseDescription": {
+                    "dimensions": {
+                        "concept": "gl-usk:jobPhaseDescription"
+                    }
+                }
+            }
+        }
+    },
+    "tables": {
+        "xbrl-gl_table": {
+            "template": "xbrl-gl_template",
+            "url": "Job-budget-v-actual.csv"
+        }
+    }
+}

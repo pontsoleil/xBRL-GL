@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<schema targetNamespace="http://www.xbrl.org/int/gl/cor/2025-12-01" attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:link="http://www.xbrl.org/2003/linkbase"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+  xmlns:gl-cor="http://www.xbrl.org/int/gl/cor/2025-12-01"
+>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+  <annotation>
+    <appinfo>
+      <link:linkbaseRef xlink:type="simple" xlink:href="gl-cor-2025-12-01-presentation.xml" xlink:title="Presentation Links, all" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"/>
+    </appinfo>
+  </annotation>
+  <!-- item element -->
+  <element name="accountingEntries" id="gl-cor_accountingEntries" type="gl-cor:accountingEntriesComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="documentInfo" id="gl-cor_documentInfo" type="gl-cor:documentInfoComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="entityInformation" id="gl-cor_entityInformation" type="gl-cor:entityInformationComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="entryHeader" id="gl-cor_entryHeader" type="gl-cor:entryHeaderComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="entriesType" id="gl-cor_entriesType" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="uniqueID" id="gl-cor_uniqueID" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="revisesUniqueID" id="gl-cor_revisesUniqueID" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="revisesUniqueIDAction" id="gl-cor_revisesUniqueIDAction" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="language" id="gl-cor_language" type="xbrli:QNameItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="creationDate" id="gl-cor_creationDate" type="xbrli:dateTimeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="entriesComment" id="gl-cor_entriesComment" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="periodCoveredStart" id="gl-cor_periodCoveredStart" type="xbrli:dateTimeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="periodCoveredEnd" id="gl-cor_periodCoveredEnd" type="xbrli:dateTimeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="postedDate" id="gl-cor_postedDate" type="xbrli:dateTimeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="enteredBy" id="gl-cor_enteredBy" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="enteredDate" id="gl-cor_enteredDate" type="xbrli:dateTimeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="sourceJournalID" id="gl-cor_sourceJournalID" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="entryType" id="gl-cor_entryType" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="entryNumber" id="gl-cor_entryNumber" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="entryComment" id="gl-cor_entryComment" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="qualifierEntry" id="gl-cor_qualifierEntry" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="qualifierEntryDescription" id="gl-cor_qualifierEntryDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="bookTaxDifference" id="gl-cor_bookTaxDifference" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="entryNumberCounter" id="gl-cor_entryNumberCounter" type="xbrli:decimalItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="entryDetail" id="gl-cor_entryDetail" type="gl-cor:entryDetailComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="lineNumber" id="gl-cor_lineNumber" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="lineNumberCounter" id="gl-cor_lineNumberCounter" type="xbrli:decimalItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="account" id="gl-cor_account" type="gl-cor:accountComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="amount" id="gl-cor_amount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="signOfAmount" id="gl-cor_signOfAmount" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="debitCreditCode" id="gl-cor_debitCreditCode" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="postingDate" id="gl-cor_postingDate" type="xbrli:dateTimeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierReference" id="gl-cor_identifierReference" type="gl-cor:identifierReferenceComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="documentType" id="gl-cor_documentType" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="documentTypeDescription" id="gl-cor_documentTypeDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="invoiceType" id="gl-cor_invoiceType" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="documentNumber" id="gl-cor_documentNumber" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="documentApplyToNumber" id="gl-cor_documentApplyToNumber" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="documentReference" id="gl-cor_documentReference" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="documentDate" id="gl-cor_documentDate" type="xbrli:dateTimeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="postingStatus" id="gl-cor_postingStatus" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="postingStatusDescription" id="gl-cor_postingStatusDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="xbrlInfo" id="gl-cor_xbrlInfo" type="gl-cor:xbrlInfoComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="detailComment" id="gl-cor_detailComment" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="dateAcknowledged" id="gl-cor_dateAcknowledged" type="xbrli:dateTimeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="confirmedDate" id="gl-cor_confirmedDate" type="xbrli:dateTimeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="shipFrom" id="gl-cor_shipFrom" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="shipReceivedDate" id="gl-cor_shipReceivedDate" type="xbrli:dateTimeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="maturityDate" id="gl-cor_maturityDate" type="xbrli:dateTimeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="terms" id="gl-cor_terms" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="taxes" id="gl-cor_taxes" type="gl-cor:taxesComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="accountMainID" id="gl-cor_accountMainID" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="accountMainDescription" id="gl-cor_accountMainDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="mainAccountType" id="gl-cor_mainAccountType" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="mainAccountTypeDescription" id="gl-cor_mainAccountTypeDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="parentAccountMainID" id="gl-cor_parentAccountMainID" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="accountPurposeCode" id="gl-cor_accountPurposeCode" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="accountPurposeDescription" id="gl-cor_accountPurposeDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="accountType" id="gl-cor_accountType" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="accountTypeDescription" id="gl-cor_accountTypeDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="accountSub" id="gl-cor_accountSub" type="gl-cor:accountSubComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="accountActive" id="gl-cor_accountActive" type="xbrli:booleanItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="accountSubDescription" id="gl-cor_accountSubDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="accountSubID" id="gl-cor_accountSubID" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="accountSubType" id="gl-cor_accountSubType" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="segmentParentTuple" id="gl-cor_segmentParentTuple" type="gl-cor:segmentParentTupleComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="parentSubaccountCode" id="gl-cor_parentSubaccountCode" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="parentSubaccountType" id="gl-cor_parentSubaccountType" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="reportingTreeIdentifier" id="gl-cor_reportingTreeIdentifier" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="parentSubaccountProportion" id="gl-cor_parentSubaccountProportion" type="xbrli:pureItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierCode" id="gl-cor_identifierCode" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierExternalReference" id="gl-cor_identifierExternalReference" type="gl-cor:identifierExternalReferenceComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="identifierOrganizationType" id="gl-cor_identifierOrganizationType" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierOrganizationTypeDescription" id="gl-cor_identifierOrganizationTypeDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierDescription" id="gl-cor_identifierDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierType" id="gl-cor_identifierType" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierCategory" id="gl-cor_identifierCategory" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierEMail" id="gl-cor_identifierEMail" type="gl-cor:identifierEMailComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="identifierPhoneNumber" id="gl-cor_identifierPhoneNumber" type="gl-cor:identifierPhoneNumberComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="identifierFaxNumber" id="gl-cor_identifierFaxNumber" type="gl-cor:identifierFaxNumberComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="identifierContactInformationStructure" id="gl-cor_identifierContactInformationStructure" type="gl-cor:identifierContactInformationStructureComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="identifierActive" id="gl-cor_identifierActive" type="xbrli:booleanItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierAuthorityCode" id="gl-cor_identifierAuthorityCode" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierAuthority" id="gl-cor_identifierAuthority" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierAuthorityVerificationDate" id="gl-cor_identifierAuthorityVerificationDate" type="xbrli:dateTimeItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierEmailAddressUsage" id="gl-cor_identifierEmailAddressUsage" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierEmailAddress" id="gl-cor_identifierEmailAddress" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierPhoneNumberDescription" id="gl-cor_identifierPhoneNumberDescription" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierPhone" id="gl-cor_identifierPhone" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierFaxNumberUsage" id="gl-cor_identifierFaxNumberUsage" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierFax" id="gl-cor_identifierFax" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierContactPrefix" id="gl-cor_identifierContactPrefix" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierContactLastName" id="gl-cor_identifierContactLastName" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierContactFirstName" id="gl-cor_identifierContactFirstName" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierContactSuffix" id="gl-cor_identifierContactSuffix" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierContactAttentionLine" id="gl-cor_identifierContactAttentionLine" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierContactPositionRole" id="gl-cor_identifierContactPositionRole" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierContactPhone" id="gl-cor_identifierContactPhone" type="gl-cor:identifierContactPhoneComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="identifierContactFax" id="gl-cor_identifierContactFax" type="gl-cor:identifierContactFaxComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="identifierContactEmail" id="gl-cor_identifierContactEmail" type="gl-cor:identifierContactEmailComplexType" substitutionGroup="xbrli:tuple" nillable="false"/>
+  <element name="identifierContactType" id="gl-cor_identifierContactType" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierContactPhoneNumberDescription" id="gl-cor_identifierContactPhoneNumberDescription" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierContactPhoneNumber" id="gl-cor_identifierContactPhoneNumber" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierContactFaxNumberUsage" id="gl-cor_identifierContactFaxNumberUsage" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierContactFaxNumber" id="gl-cor_identifierContactFaxNumber" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierContactEmailAddressUsage" id="gl-cor_identifierContactEmailAddressUsage" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="identifierContactEmailAddress" id="gl-cor_identifierContactEmailAddress" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="xbrlInclude" id="gl-cor_xbrlInclude" type="xbrli:tokenItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="summaryReportingElement" id="gl-cor_summaryReportingElement" type="xbrli:QNameItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="detailMatchingElement" id="gl-cor_detailMatchingElement" type="xbrli:QNameItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="taxAuthority" id="gl-cor_taxAuthority" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="taxTableCode" id="gl-cor_taxTableCode" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="taxDescription" id="gl-cor_taxDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="taxAmount" id="gl-cor_taxAmount" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="taxBasis" id="gl-cor_taxBasis" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="taxExchangeRate" id="gl-cor_taxExchangeRate" type="xbrli:pureItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="taxPercentageRate" id="gl-cor_taxPercentageRate" type="xbrli:pureItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="taxCode" id="gl-cor_taxCode" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+  <element name="taxCommentExemption" id="gl-cor_taxCommentExemption" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant"/>
+</schema>

@@ -1,0 +1,12 @@
+﻿accountingEntries,entryHeader,entryDetail,entriesType,uniqueID,language,creationDate,creator,entriesComment,periodCoveredStart,periodCoveredEnd,sourceApplication,defaultCurrency,sourceJournalID,sourceJournalDescription,lineNumber,accountMainID,accountMainDescription,accountPurposeCode,accountType,amount,postingDate,measurableCode,measurableID,measurableDescription,measurableQuantity,measurableQualifier,dmJurisdiction,dmMethodType,dmLifeLength
+1,,,assets,001,iso639:en,2005-08-30,XBRL GL Working Group,A best practice fixed asset listing document,2005-06-01,2005-06-30,Sage FAS,iso4217:usd,ot,Fixed Assets,,,,,,,,,,,,,,,
+1,1,1,,,,,,,,,,,,,1,1400,Land,usgaap,account,5000,1917-02-02,FA,L012,Main Sculley Street Land,1,LAND,other,,
+1,1,2,,,,,,,,,,,,,2,1400,Land,tax,account,5000,1917-02-02,FA,L012,Main Sculley Street Land,1,LAND,F,,
+1,1,3,,,,,,,,,,,,,3,1420,Buildings,usgaap,account,200000,1949-03-15,FA,B001,Main Sculley Street Complex,1,BLDGS,other,SL,100
+1,1,4,,,,,,,,,,,,,4,1420,Buildings,tax,account,190000,1949-03-15,FA,B001,Main Sculley Street Complex,1,BLDGS,F,SL,50
+1,1,5,,,,,,,,,,,,,5,1430,Equipment,usgaap,account,100000,1973-07-01,FA,E987G,Latini Model C-3 Lollipop Machine,1,EQUIP,other,DDB,7
+1,1,6,,,,,,,,,,,,,6,1430,Equipment,tax,account,9500,1973-07-01,FA,E987G,Latini Model C-3 Lollipop Machine,1,EQUIP,F,MACRS,5
+1,1,7,,,,,,,,,,,,,7,1430,Equipment,usgaap,account,60000,1990-09-05,FA,E987G,Solich Caramel Enrober,1,EQUIP,other,DDB,7
+1,1,8,,,,,,,,,,,,,8,1430,Equipment,tax,account,59000,1990-09-05,FA,E987G,Solich Caramel Enrober,1,EQUIP,F,MACRS,5
+1,1,9,,,,,,,,,,,,,9,1430,Equipment,usgaap,account,120000,2004-04-15,FA,E477,Latini Airpop Extruder,1,EQUIP,other,DDB,7
+1,1,10,,,,,,,,,,,,,10,1430,Equipment,tax,account,120000,2004-04-15,FA,E477,Latini Airpop Extruder,1,EQUIP,F,MACRS,5

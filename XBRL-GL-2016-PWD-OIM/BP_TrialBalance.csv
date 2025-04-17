@@ -1,0 +1,88 @@
+accountingEntries,entryHeader,entryDetail,entriesType,uniqueID,language,creationDate,creator,entriesComment,periodCoveredStart,periodCoveredEnd,sourceApplication,defaultCurrency,qualifierEntry,lineNumber,accountMainID,accountMainDescription,accountPurposeCode,accountType,amount,debitCreditCode,postingDate,xbrlInclude,summaryReportingElement
+1,,,trialbalance,001,iso639:en,2005-07-05,XBRL GL Working Group,A best practice trial balance instance document,2005-06-01,2005-06-30,Navision,iso4217:usd,,,,,,,,,,,
+1,1,,,,,,,,,,,,balance-brought-forward,,,,,,,,,,
+1,1,1,,,,,,,,,,,,1,1001,SunTrust Operating,usgaap,account,242678.26,D,2005-06-01,beginning_balance,usfr_pte:UnrestrictedCash
+1,1,2,,,,,,,,,,,,2,1001,SunTrust Operating,usgaap,account,232042.26,D,2005-06-30,ending_balance,usfr_pte:UnrestrictedCash
+1,1,3,,,,,,,,,,,,3,1003,Eagle Bank,usgaap,account,104468.02,D,2005-06-01,beginning_balance,usfr_pte:UnrestrictedCash
+1,1,4,,,,,,,,,,,,4,1003,Eagle Bank,usgaap,account,77033.02,D,2005-06-30,ending_balance,usfr_pte:UnrestrictedCash
+1,1,5,,,,,,,,,,,,5,1100,Accounts Receivable,usgaap,account,168416.25,D,2005-06-01,beginning_balance,usfr_pte:AccountsReceivableTradeNet
+1,1,6,,,,,,,,,,,,6,1100,Accounts Receivable,usgaap,account,156194.25,D,2005-06-30,ending_balance,usfr_pte:AccountsReceivableTradeNet
+1,1,7,,,,,,,,,,,,7,1102,Allowance for Doubtful Acct,usgaap,account,11490.38,C,2005-06-01,beginning_balance,usfr_pte:AllowanceDoubtfulAccounts
+1,1,8,,,,,,,,,,,,8,1102,Allowance for Doubtful Acct,usgaap,account,11490.38,C,2005-06-30,ending_balance,usfr_pte:AllowanceDoubtfulAccounts
+1,1,9,,,,,,,,,,,,9,3000,Opening Bal Equity,usgaap,account,4.01,D,2005-06-01,beginning_balance,usfr_pte:StockholdersEquity
+1,1,10,,,,,,,,,,,,10,3000,Opening Bal Equity,usgaap,account,4.01,D,2005-06-30,ending_balance,usfr_pte:StockholdersEquity
+1,1,11,,,,,,,,,,,,11,3100,Capital Contribution,usgaap,account,676961.30,C,2005-06-01,beginning_balance,usfr_pte:OtherChangesStockholdersEquity
+1,1,12,,,,,,,,,,,,12,3100,Capital Contribution,usgaap,account,676961.30,C,2005-06-30,ending_balance,usfr_pte:OtherChangesStockholdersEquity
+1,1,13,,,,,,,,,,,,13,3200,Capital Distribution,usgaap,account,490000,D,2005-06-01,beginning_balance,usfr_pte:OtherChangesStockholdersEquity
+1,1,14,,,,,,,,,,,,14,3200,Capital Distribution,usgaap,account,490000,D,2005-06-30,ending_balance,usfr_pte:OtherChangesStockholdersEquity
+1,1,15,,,,,,,,,,,,15,3140,Retained Earnings,usgaap,account,163394.25,C,2005-06-01,beginning_balance,usfr_pte:RetainedEarnings
+1,1,16,,,,,,,,,,,,16,3140,Retained Earnings,usgaap,account,163394.25,C,2005-06-30,ending_balance,usfr_pte:RetainedEarnings
+1,1,17,,,,,,,,,,,,17,4100,Outsourcing SVC Fee Revenue,usgaap,account,238073.12,C,2005-06-01,beginning_balance,usfr_pte:SalesRevenueNetServices
+1,1,18,,,,,,,,,,,,18,4100,Outsourcing SVC Fee Revenue,usgaap,account,258362.12,C,2005-06-30,ending_balance,usfr_pte:SalesRevenueNetServices
+1,1,19,,,,,,,,,,,,19,4300,Setup Fee Revenue,usgaap,account,74500,C,2005-06-01,beginning_balance,usfr_pte:SalesRevenueNetServices
+1,1,20,,,,,,,,,,,,20,4300,Setup Fee Revenue,usgaap,account,82571,C,2005-06-30,ending_balance,usfr_pte:SalesRevenueNetServices
+1,1,21,,,,,,,,,,,,21,4500,Hosting and Maint. Fees,usgaap,account,15769.78,C,2005-06-01,beginning_balance,usfr_pte:SalesRevenueNetServices
+1,1,22,,,,,,,,,,,,22,4500,Hosting and Maint. Fees,usgaap,account,16552.78,C,2005-06-30,ending_balance,usfr_pte:SalesRevenueNetServices
+1,1,23,,,,,,,,,,,,23,4400,Revenues Other,usgaap,account,2321.87,C,2005-06-01,beginning_balance,usfr_pte:OtherOperatingRevenue
+1,1,24,,,,,,,,,,,,24,4400,Revenues Other,usgaap,account,4022.87,C,2005-06-30,ending_balance,usfr_pte:OtherOperatingRevenue
+1,1,25,,,,,,,,,,,,25,4200,Transaction Revenues,usgaap,account,7189,C,2005-06-01,beginning_balance,usfr_pte:OtherOperatingRevenue
+1,1,26,,,,,,,,,,,,26,4200,Transaction Revenues,usgaap,account,7406,C,2005-06-30,ending_balance,usfr_pte:OtherOperatingRevenue
+1,1,27,,,,,,,,,,,,27,5010,Salaries and Wages,usgaap,account,52500,D,2005-06-01,beginning_balance,usfr_pte:CostServicesDirectLabor
+1,1,28,,,,,,,,,,,,28,5010,Salaries and Wages,usgaap,account,84932,D,2005-06-30,ending_balance,usfr_pte:CostServicesDirectLabor
+1,1,29,,,,,,,,,,,,29,5490,Fringe Benefits Full Time,usgaap,account,5084,D,2005-06-01,beginning_balance,usfr_pte:CostServicesDirectLabor
+1,1,30,,,,,,,,,,,,30,5490,Fringe Benefits Full Time,usgaap,account,6689,D,2005-06-30,ending_balance,usfr_pte:CostServicesDirectLabor
+1,1,31,,,,,,,,,,,,31,5040,Client Support - DAS,usgaap,account,58870.19,D,2005-06-01,beginning_balance,usfr_pte:CostServicesDirectLabor
+1,1,32,,,,,,,,,,,,32,5040,Client Support - DAS,usgaap,account,87657.19,D,2005-06-30,ending_balance,usfr_pte:CostServicesDirectLabor
+1,1,33,,,,,,,,,,,,33,5091,Fringe Benefit Part Time,usgaap,account,19805.37,D,2005-06-01,beginning_balance,usfr_pte:CostServicesDirectLabor
+1,1,34,,,,,,,,,,,,34,5091,Fringe Benefit Part Time,usgaap,account,26258.37,D,2005-06-30,ending_balance,usfr_pte:CostServicesDirectLabor
+1,1,35,,,,,,,,,,,,35,5050,Subcontractors,usgaap,account,2977.83,D,2005-06-01,beginning_balance,usfr_pte:CostServicesDirectLabor
+1,1,36,,,,,,,,,,,,36,5050,Subcontractors,usgaap,account,4125.83,D,2005-06-30,ending_balance,usfr_pte:CostServicesDirectLabor
+1,1,37,,,,,,,,,,,,37,5450,Software e Hardware Purch and Support,usgaap,account,3081.69,D,2005-06-01,beginning_balance,usfr_pte:CostServicesOther
+1,1,38,,,,,,,,,,,,38,5450,Software e Hardware Purch and Support,usgaap,account,3887.69,D,2005-06-30,ending_balance,usfr_pte:CostServicesOther
+1,1,39,,,,,,,,,,,,39,5600,Rent and Utilities,usgaap,account,9500,D,2005-06-01,beginning_balance,usfr_pte:LeaseRentalExpense
+1,1,40,,,,,,,,,,,,40,5600,Rent and Utilities,usgaap,account,9500,D,2005-06-30,ending_balance,usfr_pte:LeaseRentalExpense
+1,1,41,,,,,,,,,,,,41,5100,Supplies and Office Expenses,usgaap,account,32314.08,D,2005-06-01,beginning_balance,usfr_pte:OtherGeneralAdministrativeExpenses
+1,1,42,,,,,,,,,,,,42,5100,Supplies and Office Expenses,usgaap,account,42437.08,D,2005-06-30,ending_balance,usfr_pte:OtherGeneralAdministrativeExpenses
+1,2,,,,,,,,,,,,standard,,,,,,,,,,
+1,2,1,,,,,,,,,,,,1,1001,SunTrust Operating,usgaap,account,37851,D,,period_change,usfr_pte:UnrestrictedCash
+1,2,2,,,,,,,,,,,,2,1001,SunTrust Operating,usgaap,account,48487,C,,period_change,usfr_pte:UnrestrictedCash
+1,2,3,,,,,,,,,,,,3,1003,Eagle Bank,usgaap,account,5432,D,,period_change,usfr_pte:UnrestrictedCash
+1,2,4,,,,,,,,,,,,4,1003,Eagle Bank,usgaap,account,32867,C,,period_change,usfr_pte:UnrestrictedCash
+1,2,5,,,,,,,,,,,,5,1100,Accounts Receivable,usgaap,account,12654,D,,period_change,usfr_pte:AccountsReceivableTradeNet
+1,2,6,,,,,,,,,,,,6,1100,Accounts Receivable,usgaap,account,24876,C,,period_change,usfr_pte:AccountsReceivableTradeNet
+1,2,7,,,,,,,,,,,,7,1102,Allowance for Doubtful Acct,usgaap,account,0,D,,period_change,usfr_pte:AllowanceDoubtfulAccounts
+1,2,8,,,,,,,,,,,,8,1102,Allowance for Doubtful Acct,usgaap,account,0,C,,period_change,usfr_pte:AllowanceDoubtfulAccounts
+1,2,9,,,,,,,,,,,,9,3000,Opening Bal Equity,usgaap,account,0,D,,period_change,usfr_pte:StockholdersEquity
+1,2,10,,,,,,,,,,,,10,3000,Opening Bal Equity,usgaap,account,0,C,,period_change,usfr_pte:StockholdersEquity
+1,2,11,,,,,,,,,,,,11,3100,Capital Contribution,usgaap,account,0,D,,period_change,usfr_pte:OtherChangesStockholdersEquity
+1,2,12,,,,,,,,,,,,12,3100,Capital Contribution,usgaap,account,0,C,,period_change,usfr_pte:OtherChangesStockholdersEquity
+1,2,13,,,,,,,,,,,,13,3200,Capital Distribution,usgaap,account,0,D,,period_change,usfr_pte:OtherChangesStockholdersEquity
+1,2,14,,,,,,,,,,,,14,3200,Capital Distribution,usgaap,account,0,C,,period_change,usfr_pte:OtherChangesStockholdersEquity
+1,2,15,,,,,,,,,,,,15,3140,Retained Earnings,usgaap,account,0,D,,period_change,usfr_pte:RetainedEarnings
+1,2,16,,,,,,,,,,,,16,3140,Retained Earnings,usgaap,account,0,C,,period_change,usfr_pte:RetainedEarnings
+1,2,17,,,,,,,,,,,,17,4100,Outsourcing SVC Fee Revenue,usgaap,account,0,D,,period_change,usfr_pte:SalesRevenueNetServices
+1,2,18,,,,,,,,,,,,18,4100,Outsourcing SVC Fee Revenue,usgaap,account,20289,C,,period_change,usfr_pte:SalesRevenueNetServices
+1,2,19,,,,,,,,,,,,19,4300,Setup Fee Revenue,usgaap,account,0,D,,period_change,usfr_pte:SalesRevenueNetServices
+1,2,20,,,,,,,,,,,,20,4300,Setup Fee Revenue,usgaap,account,8071,C,,period_change,usfr_pte:SalesRevenueNetServices
+1,2,21,,,,,,,,,,,,21,4500,Hosting and Maint. Fees,usgaap,account,0,D,,period_change,usfr_pte:SalesRevenueNetServices
+1,2,22,,,,,,,,,,,,22,4500,Hosting and Maint. Fees,usgaap,account,783,C,,period_change,usfr_pte:SalesRevenueNetServices
+1,2,23,,,,,,,,,,,,23,4400,Revenues Other,usgaap,account,0,D,,period_change,usfr_pte:OtherOperatingRevenue
+1,2,24,,,,,,,,,,,,24,4400,Revenues Other,usgaap,account,1701,C,,period_change,usfr_pte:OtherOperatingRevenue
+1,2,25,,,,,,,,,,,,25,4200,Transaction Revenues,usgaap,account,0,D,,period_change,usfr_pte:OtherOperatingRevenue
+1,2,26,,,,,,,,,,,,26,4200,Transaction Revenues,usgaap,account,217,C,,period_change,usfr_pte:OtherOperatingRevenue
+1,2,27,,,,,,,,,,,,27,5010,Salaries and Wages,usgaap,account,32432,D,,period_change,usfr_pte:CostServicesDirectLabor
+1,2,28,,,,,,,,,,,,28,5010,Salaries and Wages,usgaap,account,0,C,,period_change,usfr_pte:CostServicesDirectLabor
+1,2,29,,,,,,,,,,,,29,5490,Fringe Benefits Full Time,usgaap,account,1605,D,,period_change,usfr_pte:CostServicesDirectLabor
+1,2,30,,,,,,,,,,,,30,5490,Fringe Benefits Full Time,usgaap,account,0,C,,period_change,usfr_pte:CostServicesDirectLabor
+1,2,31,,,,,,,,,,,,31,5040,Client Support - DAS,usgaap,account,28787,D,,period_change,usfr_pte:CostServicesDirectLabor
+1,2,32,,,,,,,,,,,,32,5040,Client Support - DAS,usgaap,account,0,C,,period_change,usfr_pte:CostServicesDirectLabor
+1,2,33,,,,,,,,,,,,33,5091,Fringe Benefit Part Time,usgaap,account,6453,D,,period_change,usfr_pte:CostServicesDirectLabor
+1,2,34,,,,,,,,,,,,34,5091,Fringe Benefit Part Time,usgaap,account,0,C,,period_change,usfr_pte:CostServicesDirectLabor
+1,2,35,,,,,,,,,,,,35,5050,Subcontractors,usgaap,account,1148,D,,period_change,usfr_pte:CostServicesDirectLabor
+1,2,36,,,,,,,,,,,,36,5050,Subcontractors,usgaap,account,0,C,,period_change,usfr_pte:CostServicesDirectLabor
+1,2,37,,,,,,,,,,,,37,5450,Software e Hardware Purch and Support,usgaap,account,806,D,,period_change,usfr_pte:CostServicesOther
+1,2,38,,,,,,,,,,,,38,5450,Software e Hardware Purch and Support,usgaap,account,0,C,,period_change,usfr_pte:CostServicesOther
+1,2,39,,,,,,,,,,,,39,5600,Rent and Utilities,usgaap,account,0,D,,period_change,usfr_pte:LeaseRentalExpense
+1,2,40,,,,,,,,,,,,40,5600,Rent and Utilities,usgaap,account,0,C,,period_change,usfr_pte:LeaseRentalExpense
+1,2,41,,,,,,,,,,,,41,5100,Supplies and Office Expenses,usgaap,account,10123,D,,period_change,usfr_pte:OtherGeneralAdministrativeExpenses
+1,2,42,,,,,,,,,,,,42,5100,Supplies and Office Expenses,usgaap,account,0,C,,period_change,usfr_pte:OtherGeneralAdministrativeExpenses

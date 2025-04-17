@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<schema targetNamespace="http://www.xbrl.org/int/gl/bus/2025-12-01" elementFormDefault="qualified" attributeFormDefault="unqualified"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xbrli="http://www.xbrl.org/2003/instance"
+  xmlns:gl-bus="http://www.xbrl.org/int/gl/bus/2025-12-01">
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <include schemaLocation="../bus/gl-bus-2025-12-01.xsd"/>
+  <!-- tuple data type -->
+  <group name="phoneGroup">
+    <sequence>
+      <element ref="gl-bus:phoneDesc" minOccurs="0"/>
+      <element ref="gl-bus:phoneNum" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="phoneComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:phoneGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="faxGroup">
+    <sequence>
+      <element ref="gl-bus:faxUsage" minOccurs="0"/>
+      <element ref="gl-bus:faxNum" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="faxComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:faxGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="emailGroup">
+    <sequence>
+      <element ref="gl-bus:emailDescrption" minOccurs="0"/>
+      <element ref="gl-bus:emailAddress" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="emailComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:emailGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="identifiersGroup">
+    <sequence>
+      <element ref="gl-bus:identifiersOrganizationID" minOccurs="0"/>
+      <element ref="gl-bus:identifiersOrganizationDesc" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="identifiersComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:identifiersGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="addressGroup">
+    <sequence>
+      <element ref="gl-bus:addressName" minOccurs="0"/>
+      <element ref="gl-bus:addressDesc" minOccurs="0"/>
+      <element ref="gl-bus:addressPurpose" minOccurs="0"/>
+      <element ref="gl-bus:addressLocationID" minOccurs="0"/>
+      <element ref="gl-bus:addressBuildingNum" minOccurs="0"/>
+      <element ref="gl-bus:addressStreet" minOccurs="0"/>
+      <element ref="gl-bus:addressStreet2" minOccurs="0"/>
+      <element ref="gl-bus:addressCity" minOccurs="0"/>
+      <element ref="gl-bus:addressStateOrProvince" minOccurs="0"/>
+      <element ref="gl-bus:addressCountry" minOccurs="0"/>
+      <element ref="gl-bus:addressZipOrPostalCode" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="addressComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:addressGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="webSiteGroup">
+    <sequence>
+      <element ref="gl-bus:webSiteDescrption" minOccurs="0"/>
+      <element ref="gl-bus:webSiteAddress" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="webSiteComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:webSiteGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="contactGroup">
+    <sequence>
+      <element ref="gl-bus:contactId"/>
+      <element ref="gl-bus:contactPrefix" minOccurs="0"/>
+      <element ref="gl-bus:contactLastName" minOccurs="0"/>
+      <element ref="gl-bus:contactFirstName" minOccurs="0"/>
+      <element ref="gl-bus:contactSuffix" minOccurs="0"/>
+      <element ref="gl-bus:contactAttentionLine" minOccurs="0"/>
+      <element ref="gl-bus:contactPositionRole" minOccurs="0"/>
+      <element ref="gl-bus:contactRoleOfContact" minOccurs="0"/>
+      <element ref="gl-bus:contactLocationIdCrossReference" minOccurs="0"/>
+      <choice>
+        <group ref="gl-bus:contactPhoneGroup" minOccurs="0"/>
+        <element ref="gl-bus:contactPhone" maxOccurs="unbounded"/>
+      </choice>
+      <choice>
+        <group ref="gl-bus:contactFaxGroup" minOccurs="0"/>
+        <element ref="gl-bus:contactFax" maxOccurs="unbounded"/>
+      </choice>
+      <choice>
+        <group ref="gl-bus:contactEmailGroup" minOccurs="0"/>
+        <element ref="gl-bus:contactEmail" maxOccurs="unbounded"/>
+      </choice>
+    </sequence>
+  </group>
+  <complexType name="contactComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:contactGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="accountingMethodGroup">
+    <sequence>
+      <element ref="gl-bus:accountingMethodMethod" minOccurs="0"/>
+      <element ref="gl-bus:accountingMethodDesc" minOccurs="0"/>
+      <element ref="gl-bus:accountingMethodPurpose" minOccurs="0"/>
+      <element ref="gl-bus:accountingMethodPurposeDesc" minOccurs="0"/>
+      <element ref="gl-bus:accountingMethodStartDate" minOccurs="0"/>
+      <element ref="gl-bus:accountingMethodEndDate" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="accountingMethodComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:accountingMethodGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="accountantGroup">
+    <sequence>
+      <element ref="gl-bus:accountantAccountantName" minOccurs="0"/>
+      <element ref="gl-bus:accountantTypeOfEngagement" minOccurs="0"/>
+      <element ref="gl-bus:accountantTypeOfEngagementDesc" minOccurs="0"/>
+      <choice>
+        <group ref="gl-bus:accountantAddressGroup" minOccurs="0"/>
+        <element ref="gl-bus:accountantAddress" maxOccurs="unbounded"/>
+      </choice>
+      <choice>
+        <group ref="gl-bus:accountantContactGroup" minOccurs="0"/>
+        <element ref="gl-bus:accountantContact" maxOccurs="unbounded"/>
+      </choice>
+    </sequence>
+  </group>
+  <complexType name="accountantComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:accountantGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="reportingCalendarGroup">
+    <sequence>
+      <element ref="gl-bus:reportingCalendarCode" minOccurs="0"/>
+      <element ref="gl-bus:reportingCalendarDesc" minOccurs="0"/>
+      <element ref="gl-bus:reportingCalendarTitle" minOccurs="0"/>
+      <element ref="gl-bus:reportingCalendarTypeOfPeriodCode" minOccurs="0"/>
+      <element ref="gl-bus:reportingCalendarDescOfPeriods" minOccurs="0"/>
+      <element ref="gl-bus:reportingCalendarClosedStatus" minOccurs="0"/>
+      <element ref="gl-bus:reportingCalendarPurpose" minOccurs="0"/>
+      <element ref="gl-bus:reportingCalendarPurposeDesc" minOccurs="0"/>
+      <choice>
+        <group ref="gl-bus:reportingCalendarPeriodGroup" minOccurs="0"/>
+        <element ref="gl-bus:reportingCalendarPeriod" maxOccurs="unbounded"/>
+      </choice>
+    </sequence>
+  </group>
+  <complexType name="reportingCalendarComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:reportingCalendarGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="contactPhoneGroup">
+    <sequence>
+      <element ref="gl-bus:contactPhoneDesc" minOccurs="0"/>
+      <element ref="gl-bus:contactPhoneNum" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="contactPhoneComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:contactPhoneGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="contactFaxGroup">
+    <sequence>
+      <element ref="gl-bus:contactFaxUsage" minOccurs="0"/>
+      <element ref="gl-bus:contactFaxNum" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="contactFaxComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:contactFaxGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="contactEmailGroup">
+    <sequence>
+      <element ref="gl-bus:contactEmailDescrption" minOccurs="0"/>
+      <element ref="gl-bus:contactEmailAddress" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="contactEmailComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:contactEmailGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="accountantAddressGroup">
+    <sequence>
+      <element ref="gl-bus:accountantAddressName" minOccurs="0"/>
+      <element ref="gl-bus:accountantAddressDesc" minOccurs="0"/>
+      <element ref="gl-bus:accountantAddressPurpose" minOccurs="0"/>
+      <element ref="gl-bus:accountantAddressLocationID" minOccurs="0"/>
+      <element ref="gl-bus:accountantAddressBuildingNum" minOccurs="0"/>
+      <element ref="gl-bus:accountantAddressStreet" minOccurs="0"/>
+      <element ref="gl-bus:accountantAddressStreet2" minOccurs="0"/>
+      <element ref="gl-bus:accountantAddressCity" minOccurs="0"/>
+      <element ref="gl-bus:accountantAddressStateOrProvince" minOccurs="0"/>
+      <element ref="gl-bus:accountantAddressCountry" minOccurs="0"/>
+      <element ref="gl-bus:accountantAddressZipOrPostalCode" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="accountantAddressComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:accountantAddressGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="accountantContactGroup">
+    <sequence>
+      <element ref="gl-bus:accountantContactId"/>
+      <element ref="gl-bus:accountantContactPrefix" minOccurs="0"/>
+      <element ref="gl-bus:accountantContactLastName" minOccurs="0"/>
+      <element ref="gl-bus:accountantContactFirstName" minOccurs="0"/>
+      <element ref="gl-bus:accountantContactSuffix" minOccurs="0"/>
+      <element ref="gl-bus:accountantContactAttentionLine" minOccurs="0"/>
+      <element ref="gl-bus:accountantContactPositionRole" minOccurs="0"/>
+      <element ref="gl-bus:accountantContactRoleOfContact" minOccurs="0"/>
+      <element ref="gl-bus:accountantContactLocationIdCrossReference" minOccurs="0"/>
+      <choice>
+        <group ref="gl-bus:accountantContactPhoneGroup" minOccurs="0"/>
+        <element ref="gl-bus:accountantContactPhone" maxOccurs="unbounded"/>
+      </choice>
+      <choice>
+        <group ref="gl-bus:accountantContactFaxGroup" minOccurs="0"/>
+        <element ref="gl-bus:accountantContactFax" maxOccurs="unbounded"/>
+      </choice>
+      <choice>
+        <group ref="gl-bus:accountantContactEmailGroup" minOccurs="0"/>
+        <element ref="gl-bus:accountantContactEmail" maxOccurs="unbounded"/>
+      </choice>
+    </sequence>
+  </group>
+  <complexType name="accountantContactComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:accountantContactGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="accountantContactPhoneGroup">
+    <sequence>
+      <element ref="gl-bus:accountantContactPhoneDesc" minOccurs="0"/>
+      <element ref="gl-bus:accountantContactPhoneNum" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="accountantContactPhoneComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:accountantContactPhoneGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="accountantContactFaxGroup">
+    <sequence>
+      <element ref="gl-bus:accountantContactFaxUsage" minOccurs="0"/>
+      <element ref="gl-bus:accountantContactFaxNum" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="accountantContactFaxComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:accountantContactFaxGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="accountantContactEmailGroup">
+    <sequence>
+      <element ref="gl-bus:accountantContactEmailDescrption" minOccurs="0"/>
+      <element ref="gl-bus:accountantContactEmailAddress" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="accountantContactEmailComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:accountantContactEmailGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="reportingCalendarPeriodGroup">
+    <sequence>
+      <element ref="gl-bus:reportingCalendarPeriodReportingID" minOccurs="0"/>
+      <element ref="gl-bus:reportingCalendarPeriodDesc" minOccurs="0"/>
+      <element ref="gl-bus:reportingCalendarPeriodStartDate" minOccurs="0"/>
+      <element ref="gl-bus:reportingCalendarPeriodEndDate" minOccurs="0"/>
+      <element ref="gl-bus:reportingCalendarPeriodClosedDate" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="reportingCalendarPeriodComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:reportingCalendarPeriodGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="measurableGroup">
+    <sequence>
+      <element ref="gl-bus:measurableID" minOccurs="0"/>
+      <element ref="gl-bus:measurableCode" minOccurs="0"/>
+      <element ref="gl-bus:measurableCodeDesc" minOccurs="0"/>
+      <element ref="gl-bus:measurableCategory" minOccurs="0"/>
+      <element ref="gl-bus:measurableSchemaForID" minOccurs="0"/>
+      <element ref="gl-bus:measurableSecondaryID" minOccurs="0"/>
+      <element ref="gl-bus:measurableSchemaForSecondaryID" minOccurs="0"/>
+      <element ref="gl-bus:measurableDesc" minOccurs="0"/>
+      <element ref="gl-bus:measurableQuantity" minOccurs="0"/>
+      <element ref="gl-bus:measurableQualifier" minOccurs="0"/>
+      <element ref="gl-bus:measurableUnitOfMeasure" minOccurs="0"/>
+      <element ref="gl-bus:measurablePerUnitCostPrice" minOccurs="0"/>
+      <element ref="gl-bus:measurableStartTime" minOccurs="0"/>
+      <element ref="gl-bus:measurableEndTime" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="measurableComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:measurableGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="jobInfoGroup">
+    <sequence>
+      <element ref="gl-bus:jobInfoID" minOccurs="0"/>
+      <element ref="gl-bus:jobInfoDesc" minOccurs="0"/>
+      <element ref="gl-bus:jobInfoPhase" minOccurs="0"/>
+      <element ref="gl-bus:jobInfoPhaseDesc" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="jobInfoComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:jobInfoGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="depreciationMortgageGroup">
+    <sequence>
+      <element ref="gl-bus:depreciationMortgageMortgageJurisdiction" minOccurs="0"/>
+      <element ref="gl-bus:depreciationMortgageDepreciationMethod" minOccurs="0"/>
+      <element ref="gl-bus:depreciationMortgageMortgageLife" minOccurs="0"/>
+      <element ref="gl-bus:depreciationMortgageDesc" minOccurs="0"/>
+      <element ref="gl-bus:depreciationMortgageStartDate" minOccurs="0"/>
+      <element ref="gl-bus:depreciationMortgageEndDate" minOccurs="0"/>
+      <element ref="gl-bus:depreciationMortgageAmount" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="depreciationMortgageComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:depreciationMortgageGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="identifierReferenceEmailGroup">
+    <sequence>
+      <element ref="gl-bus:identifierReferenceEmailDescrption" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceEmailAddress" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="identifierReferenceEmailComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:identifierReferenceEmailGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="identifierReferencePhoneGroup">
+    <sequence>
+      <element ref="gl-bus:identifierReferencePhoneDesc" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferencePhoneNum" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="identifierReferencePhoneComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:identifierReferencePhoneGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="identifierReferenceFaxGroup">
+    <sequence>
+      <element ref="gl-bus:identifierReferenceFaxUsage" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceFaxNum" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="identifierReferenceFaxComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:identifierReferenceFaxGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="identifierReferenceAddressGroup">
+    <sequence>
+      <element ref="gl-bus:identifierReferenceAddressName" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceAddressDesc" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceAddressPurpose" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceAddressLocationID" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceAddressBuildingNum" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceAddressStreet" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceAddressStreet2" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceAddressCity" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceAddressStateOrProvince" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceAddressCountry" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceAddressZipOrPostalCode" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="identifierReferenceAddressComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:identifierReferenceAddressGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="identifierReferenceContactGroup">
+    <sequence>
+      <element ref="gl-bus:identifierReferenceContactId"/>
+      <element ref="gl-bus:identifierReferenceContactPrefix" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceContactLastName" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceContactFirstName" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceContactSuffix" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceContactAttentionLine" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceContactPositionRole" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceContactRoleOfContact" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceContactLocationIdCrossReference" minOccurs="0"/>
+      <choice>
+        <group ref="gl-bus:identifierReferenceContactPhoneGroup" minOccurs="0"/>
+        <element ref="gl-bus:identifierReferenceContactPhone" maxOccurs="unbounded"/>
+      </choice>
+      <choice>
+        <group ref="gl-bus:identifierReferenceContactFaxGroup" minOccurs="0"/>
+        <element ref="gl-bus:identifierReferenceContactFax" maxOccurs="unbounded"/>
+      </choice>
+      <choice>
+        <group ref="gl-bus:identifierReferenceContactEmailGroup" minOccurs="0"/>
+        <element ref="gl-bus:identifierReferenceContactEmail" maxOccurs="unbounded"/>
+      </choice>
+    </sequence>
+  </group>
+  <complexType name="identifierReferenceContactComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:identifierReferenceContactGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="identifierReferenceContactPhoneGroup">
+    <sequence>
+      <element ref="gl-bus:identifierReferenceContactPhoneDesc" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceContactPhoneNum" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="identifierReferenceContactPhoneComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:identifierReferenceContactPhoneGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="identifierReferenceContactFaxGroup">
+    <sequence>
+      <element ref="gl-bus:identifierReferenceContactFaxUsage" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceContactFaxNum" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="identifierReferenceContactFaxComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:identifierReferenceContactFaxGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <group name="identifierReferenceContactEmailGroup">
+    <sequence>
+      <element ref="gl-bus:identifierReferenceContactEmailDescrption" minOccurs="0"/>
+      <element ref="gl-bus:identifierReferenceContactEmailAddress" minOccurs="0"/>
+    </sequence>
+  </group>
+  <complexType name="identifierReferenceContactEmailComplexType">
+    <complexContent>
+      <restriction base="anyType">
+        <sequence>
+          <group ref="gl-bus:identifierReferenceContactEmailGroup"/>
+        </sequence>
+        <attribute name="id" type="ID"/>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>
