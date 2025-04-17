@@ -1,7 +1,3 @@
-Here is the proposed `README.md` for your GitHub repository, based on your latest document:
-
----
-
 # Dimensional XBRL-GL and Structured CSV Project
 
 This project modernizes **XBRL Global Ledger (XBRL GL)** by enabling it to be expressed using **xBRL-CSV** format. Through the use of a **dimensional definition linkbase**, this approach allows any XBRL GL XML instance to be represented as a single structured CSV file.
