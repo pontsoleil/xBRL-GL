@@ -1,0 +1,247 @@
+﻿{
+    "documentInfo": {
+        "documentType": "https://xbrl.org/2021/xbrl-csv",
+        "namespaces": {
+            "xbrli": "http://www.xbrl.org/2003/instance",
+            "xbrll": "http://www.xbrl.org/2003/linkbase",
+            "xlink": "http://www.w3.org/1999/xlink",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "gl-cor": "http://www.xbrl.org/int/gl/cor/2025-12-01",
+            "gl-muc": "http://www.xbrl.org/int/gl/muc/2025-12-01",
+            "gl-bus": "http://www.xbrl.org/int/gl/bus/2025-12-01",
+            "gl-usk": "http://www.xbrl.org/int/gl/usk/2025-12-01",
+            "gl-ehm": "http://www.xbrl.org/int/gl/ehm/2025-12-01",
+            "gl-taf": "http://www.xbrl.org/int/gl/taf/2025-12-01",
+            "gl-srcd": "http://www.xbrl.org/int/gl/srcd/2025-12-01",
+            "gl-plt": "http://www.xbrl.org/int/gl/plt/2025-12-01",
+            "iso4217": "http://www.xbrl.org/2003/iso4217",
+            "iso639": "http://www.xbrl.org/2005/iso639",
+            "ns0": "http://example.com"
+        },
+        "taxonomy": "../OIM-CSV/XBRL-GL-2025/gl-['case-c-b-m']/plt/gl-plt-oim-2025-12-01.xsd"
+    },
+    "tableTemplates": {
+        "xbrl-gl_template": {
+            "dimensions": {
+                "period": "2025-05-17T00:00:00",
+                "entity": "ns0:Example Co.",
+                "gl-plt:d_cor_accountingEntries": "$accountingEntries",
+                "gl-plt:d_cor_entryHeader": "$entryHeader",
+                "gl-plt:d_cor_entryDetail": "$entryDetail"
+            },
+            "columns": {
+                "accountingEntries": {},
+                "entryHeader": {},
+                "entryDetail": {},
+                "entriesType": {
+                    "dimensions": {
+                        "concept": "gl-cor:entriesType"
+                    }
+                },
+                "uniqueID": {
+                    "dimensions": {
+                        "concept": "gl-cor:uniqueID"
+                    }
+                },
+                "language": {
+                    "dimensions": {
+                        "concept": "gl-cor:language"
+                    }
+                },
+                "creationDate": {
+                    "dimensions": {
+                        "concept": "gl-cor:creationDate"
+                    }
+                },
+                "creator": {
+                    "dimensions": {
+                        "concept": "gl-bus:creator"
+                    }
+                },
+                "entriesComment": {
+                    "dimensions": {
+                        "concept": "gl-cor:entriesComment"
+                    }
+                },
+                "periodCoveredStart": {
+                    "dimensions": {
+                        "concept": "gl-cor:periodCoveredStart"
+                    }
+                },
+                "periodCoveredEnd": {
+                    "dimensions": {
+                        "concept": "gl-cor:periodCoveredEnd"
+                    }
+                },
+                "sourceApplication": {
+                    "dimensions": {
+                        "concept": "gl-bus:sourceApplication"
+                    }
+                },
+                "defaultCurrency": {
+                    "dimensions": {
+                        "concept": "gl-muc:defaultCurrency"
+                    }
+                },
+                "postedDate": {
+                    "dimensions": {
+                        "concept": "gl-cor:postedDate"
+                    }
+                },
+                "enteredBy": {
+                    "dimensions": {
+                        "concept": "gl-cor:enteredBy"
+                    }
+                },
+                "enteredDate": {
+                    "dimensions": {
+                        "concept": "gl-cor:enteredDate"
+                    }
+                },
+                "sourceJournalID": {
+                    "dimensions": {
+                        "concept": "gl-cor:sourceJournalID"
+                    }
+                },
+                "sourceJournalDescription": {
+                    "dimensions": {
+                        "concept": "gl-bus:sourceJournalDescription"
+                    }
+                },
+                "entryOrigin": {
+                    "dimensions": {
+                        "concept": "gl-bus:entryOrigin"
+                    }
+                },
+                "entryNumber": {
+                    "dimensions": {
+                        "concept": "gl-cor:entryNumber"
+                    }
+                },
+                "entryComment": {
+                    "dimensions": {
+                        "concept": "gl-cor:entryComment"
+                    }
+                },
+                "lineNumber": {
+                    "dimensions": {
+                        "concept": "gl-cor:lineNumber"
+                    }
+                },
+                "amount": {
+                    "dimensions": {
+                        "concept": "gl-cor:amount",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "postingDate": {
+                    "dimensions": {
+                        "concept": "gl-cor:postingDate"
+                    }
+                },
+                "amountMemo": {
+                    "dimensions": {
+                        "concept": "gl-bus:amountMemo"
+                    }
+                },
+                "identifierCode": {
+                    "dimensions": {
+                        "concept": "gl-cor:identifierCode"
+                    }
+                },
+                "identifierDescription": {
+                    "dimensions": {
+                        "concept": "gl-cor:identifierDescription"
+                    }
+                },
+                "identifierType": {
+                    "dimensions": {
+                        "concept": "gl-cor:identifierType"
+                    }
+                },
+                "documentType": {
+                    "dimensions": {
+                        "concept": "gl-cor:documentType"
+                    }
+                },
+                "documentNumber": {
+                    "dimensions": {
+                        "concept": "gl-cor:documentNumber"
+                    }
+                },
+                "documentReference": {
+                    "dimensions": {
+                        "concept": "gl-cor:documentReference"
+                    }
+                },
+                "documentDate": {
+                    "dimensions": {
+                        "concept": "gl-cor:documentDate"
+                    }
+                },
+                "documentReceivedDate": {
+                    "dimensions": {
+                        "concept": "gl-bus:documentReceivedDate"
+                    }
+                },
+                "documentLocation": {
+                    "dimensions": {
+                        "concept": "gl-bus:documentLocation"
+                    }
+                },
+                "detailComment": {
+                    "dimensions": {
+                        "concept": "gl-cor:detailComment"
+                    }
+                },
+                "maturityDate": {
+                    "dimensions": {
+                        "concept": "gl-cor:maturityDate"
+                    }
+                },
+                "terms": {
+                    "dimensions": {
+                        "concept": "gl-cor:terms"
+                    }
+                },
+                "measurableCode": {
+                    "dimensions": {
+                        "concept": "gl-bus:measurableCode"
+                    }
+                },
+                "measurableID": {
+                    "dimensions": {
+                        "concept": "gl-bus:measurableID"
+                    }
+                },
+                "measurableDescription": {
+                    "dimensions": {
+                        "concept": "gl-bus:measurableDescription"
+                    }
+                },
+                "measurableQuantity": {
+                    "dimensions": {
+                        "concept": "gl-bus:measurableQuantity"
+                    }
+                },
+                "measurableUnitOfMeasure": {
+                    "dimensions": {
+                        "concept": "gl-bus:measurableUnitOfMeasure"
+                    }
+                },
+                "measurableCostPerUnit": {
+                    "dimensions": {
+                        "concept": "gl-bus:measurableCostPerUnit",
+                        "unit": "iso4217:USD"
+                    }
+                }
+            }
+        }
+    },
+    "tables": {
+        "xbrl-gl_table": {
+            "template": "xbrl-gl_template",
+            "url": "Vendor_Invoices.csv"
+        }
+    }
+}

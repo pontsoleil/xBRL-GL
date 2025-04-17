@@ -1,0 +1,119 @@
+﻿accountingEntries,entryHeader,entryDetail,account,accountSub,entriesType,uniqueID,language,creationDate,creator,entriesComment,periodCoveredEnd,sourceApplication,targetApplication,defaultCurrency,sourceJournalID,entryType,entryNumber,entryComment,budgetScenarioText,budgetScenario,lineNumber,accountMainID,accountMainDescription,accountType,accountSubDescription,accountSubID,accountSubType,amount,detailComment,jobCode,jobDescription,jobPhaseCode,jobPhaseDescription
+1,,,,,other,JBRPT2005-08-31,iso639:en,2005-08-31,XBRL GL Working Group,A best practice listing of job actual versus budget document,2005-08-31,Timberline,AIA AI EIEIO,iso4217:usd,,,,,,,,,,,,,,,,,,,
+1,1,,,,,,,,,,,,,,ot,budget,1,Job Actual vs. Budget Report - budget items,Original budget,ORIGINAL,,,,,,,,,,,,,
+1,1,1,,,,,,,,,,,,,,,,,,,1,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,500,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",01000,Permits/Surveys
+1,1,1,1,1,,,,,,,,,,,,,,,,,,,,,Permits/Surveys,01000,phase,,,,,,
+1,1,1,1,2,,,,,,,,,,,,,,,,,,,,,Permits,01200,cost code,,,,,,
+1,1,2,,,,,,,,,,,,,,,,,,,2,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,1000,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",01000,Permits/Surveys
+1,1,2,1,1,,,,,,,,,,,,,,,,,,,,,Permits/Surveys,01000,phase,,,,,,
+1,1,2,1,2,,,,,,,,,,,,,,,,,,,,,Surveys,01400,cost code,,,,,,
+1,1,3,,,,,,,,,,,,,,,,,,,3,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,4000,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",02000,Foundation
+1,1,3,1,1,,,,,,,,,,,,,,,,,,,,,Foundation,02000,phase,,,,,,
+1,1,3,1,2,,,,,,,,,,,,,,,,,,,,,Foundation Labor,01700,cost code,,,,,,
+1,1,4,,,,,,,,,,,,,,,,,,,4,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,5000,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",02000,Foundation
+1,1,4,1,1,,,,,,,,,,,,,,,,,,,,,Foundation,02000,phase,,,,,,
+1,1,4,1,2,,,,,,,,,,,,,,,,,,,,,Foundation Material,01800,cost code,,,,,,
+1,1,5,,,,,,,,,,,,,,,,,,,5,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,4000,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",03000,Slab
+1,1,5,1,1,,,,,,,,,,,,,,,,,,,,,Slab,03000,phase,,,,,,
+1,1,5,1,2,,,,,,,,,,,,,,,,,,,,,Slab Labor,01920,cost code,,,,,,
+1,1,6,,,,,,,,,,,,,,,,,,,6,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,5000,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",03000,Slab
+1,1,6,1,1,,,,,,,,,,,,,,,,,,,,,Slab,03000,phase,,,,,,
+1,1,6,1,2,,,,,,,,,,,,,,,,,,,,,Slab Material,01930,cost code,,,,,,
+1,1,7,,,,,,,,,,,,,,,,,,,7,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,4000,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",04000,Masonry
+1,1,7,1,1,,,,,,,,,,,,,,,,,,,,,Masonry,04000,phase,,,,,,
+1,1,7,1,2,,,,,,,,,,,,,,,,,,,,,Masonry Labor,02100,cost code,,,,,,
+1,1,8,,,,,,,,,,,,,,,,,,,8,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,15000,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",04000,Masonry
+1,1,8,1,1,,,,,,,,,,,,,,,,,,,,,Masonry,04000,phase,,,,,,
+1,1,8,1,2,,,,,,,,,,,,,,,,,,,,,Masonry Material,02200,cost code,,,,,,
+1,1,9,,,,,,,,,,,,,,,,,,,9,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,0,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",05000,Tie Beam
+1,1,9,1,1,,,,,,,,,,,,,,,,,,,,,Tie Beam,05000,phase,,,,,,
+1,1,9,1,2,,,,,,,,,,,,,,,,,,,,,Tie Beam Labor,02300,cost code,,,,,,
+1,1,10,,,,,,,,,,,,,,,,,,,10,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,0,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",05000,Tie Beam
+1,1,10,1,1,,,,,,,,,,,,,,,,,,,,,Tie Beam,05000,phase,,,,,,
+1,1,10,1,2,,,,,,,,,,,,,,,,,,,,,Tie Beam Material,02400,cost code,,,,,,
+1,1,11,,,,,,,,,,,,,,,,,,,11,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,8250,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",05000,Tie Beam
+1,1,11,1,1,,,,,,,,,,,,,,,,,,,,,Tie Beam,05000,phase,,,,,,
+1,1,11,1,2,,,,,,,,,,,,,,,,,,,,,Trusses,03100,cost code,,,,,,
+1,1,12,,,,,,,,,,,,,,,,,,,12,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,5000,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",06000,Rough In
+1,1,12,1,1,,,,,,,,,,,,,,,,,,,,,Rough In,06000,phase,,,,,,
+1,1,12,1,2,,,,,,,,,,,,,,,,,,,,,Rough In Carpentry Labor,03200,cost code,,,,,,
+1,1,13,,,,,,,,,,,,,,,,,,,13,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,8000,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",06000,Rough In
+1,1,13,1,1,,,,,,,,,,,,,,,,,,,,,Rough In,06000,phase,,,,,,
+1,1,13,1,2,,,,,,,,,,,,,,,,,,,,,Rough In Carpentry Material,03300,cost code,,,,,,
+1,1,14,,,,,,,,,,,,,,,,,,,14,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,6200,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",06000,Rough In
+1,1,14,1,1,,,,,,,,,,,,,,,,,,,,,Rough In,06000,phase,,,,,,
+1,1,14,1,2,,,,,,,,,,,,,,,,,,,,,Electrical Rough,03400,cost code,,,,,,
+1,1,15,,,,,,,,,,,,,,,,,,,15,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,3000,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",06000,Rough In
+1,1,15,1,1,,,,,,,,,,,,,,,,,,,,,Rough In,06000,phase,,,,,,
+1,1,15,1,2,,,,,,,,,,,,,,,,,,,,,Plumbing Rough,01900,cost code,,,,,,
+1,1,16,,,,,,,,,,,,,,,,,,,16,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,4500,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",07000,Roofing
+1,1,16,1,1,,,,,,,,,,,,,,,,,,,,,Roofing,07000,phase,,,,,,
+1,1,16,1,2,,,,,,,,,,,,,,,,,,,,,Roofing Material,04100,cost code,,,,,,
+1,1,17,,,,,,,,,,,,,,,,,,,17,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,2700,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",07000,Roofing
+1,1,17,1,1,,,,,,,,,,,,,,,,,,,,,Roofing,07000,phase,,,,,,
+1,1,17,1,2,,,,,,,,,,,,,,,,,,,,,Roofing Labor,04200,cost code,,,,,,
+1,1,18,,,,,,,,,,,,,,,,,,,18,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,5200,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",08000,Landscaping
+1,1,18,1,1,,,,,,,,,,,,,,,,,,,,,Trim/Finish,08000,phase,,,,,,
+1,1,18,1,2,,,,,,,,,,,,,,,,,,,,,Landscaping,04400,cost code,,,,,,
+1,2,,,,,,,,,,,,,,ot,budget,2,Job Actual vs. Budget Report - revised budget items,Revised Budget - Change Order,REVISEDCO,,,,,,,,,,,,,
+1,2,1,,,,,,,,,,,,,,,,,,,1,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,6000,"This amount has changed because customer originally intended to do their own tie beam work, then decided to assign it to us",05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",05000,Tie Beam
+1,2,1,1,1,,,,,,,,,,,,,,,,,,,,,Tie Beam,05000,phase,,,,,,
+1,2,1,1,2,,,,,,,,,,,,,,,,,,,,,Tie Beam Labor,02300,cost code,,,,,,
+1,2,2,,,,,,,,,,,,,,,,,,,2,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,9000,"This amount has changed because customer originally intended to do their own tie beam work, then decided to assign it to us",05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",05000,Tie Beam
+1,2,2,1,1,,,,,,,,,,,,,,,,,,,,,Tie Beam,05000,phase,,,,,,
+1,2,2,1,2,,,,,,,,,,,,,,,,,,,,,Tie Beam Material,02400,cost code,,,,,,
+1,3,,,,,,,,,,,,,,ot,standard,3,Job Actual vs. Budget Report - actual budget items,,,,,,,,,,,,,,,
+1,3,1,,,,,,,,,,,,,,,,,,,1,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,490,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",01000,Permits/Surveys
+1,3,1,1,1,,,,,,,,,,,,,,,,,,,,,Permits/Surveys,01000,phase,,,,,,
+1,3,1,1,2,,,,,,,,,,,,,,,,,,,,,Permits,01200,cost code,,,,,,
+1,3,2,,,,,,,,,,,,,,,,,,,2,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,950,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",01000,Permits/Surveys
+1,3,2,1,1,,,,,,,,,,,,,,,,,,,,,Permits/Surveys,01000,phase,,,,,,
+1,3,2,1,2,,,,,,,,,,,,,,,,,,,,,Survey,01400,cost code,,,,,,
+1,3,3,,,,,,,,,,,,,,,,,,,3,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,4050,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",02000,Foundation
+1,3,3,1,1,,,,,,,,,,,,,,,,,,,,,Foundation,02000,phase,,,,,,
+1,3,3,1,2,,,,,,,,,,,,,,,,,,,,,Foundation Labor,01700,cost code,,,,,,
+1,3,4,,,,,,,,,,,,,,,,,,,4,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,4990,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",02000,Foundation
+1,3,4,1,1,,,,,,,,,,,,,,,,,,,,,Foundation,02000,phase,,,,,,
+1,3,4,1,2,,,,,,,,,,,,,,,,,,,,,Foundation Material,01800,cost code,,,,,,
+1,3,5,,,,,,,,,,,,,,,,,,,5,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,4100,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",03000,Slab
+1,3,5,1,1,,,,,,,,,,,,,,,,,,,,,Slab,03000,phase,,,,,,
+1,3,5,1,2,,,,,,,,,,,,,,,,,,,,,Slab Labor,01920,cost code,,,,,,
+1,3,6,,,,,,,,,,,,,,,,,,,6,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,4950,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",03000,Slab
+1,3,6,1,1,,,,,,,,,,,,,,,,,,,,,Slab,03000,phase,,,,,,
+1,3,6,1,2,,,,,,,,,,,,,,,,,,,,,Slab Material,01930,cost code,,,,,,
+1,3,7,,,,,,,,,,,,,,,,,,,7,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,3800,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",04000,Masonry
+1,3,7,1,1,,,,,,,,,,,,,,,,,,,,,Masonry,04000,phase,,,,,,
+1,3,7,1,2,,,,,,,,,,,,,,,,,,,,,Masonry Labor,02100,cost code,,,,,,
+1,3,8,,,,,,,,,,,,,,,,,,,8,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,15015,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",04000,Masonry
+1,3,8,1,1,,,,,,,,,,,,,,,,,,,,,Masonry,04000,phase,,,,,,
+1,3,8,1,2,,,,,,,,,,,,,,,,,,,,,Masonry Material,02200,cost code,,,,,,
+1,3,9,,,,,,,,,,,,,,,,,,,9,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,6200,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",05000,Tie Beam
+1,3,9,1,1,,,,,,,,,,,,,,,,,,,,,Tie Beam,05000,phase,,,,,,
+1,3,9,1,2,,,,,,,,,,,,,,,,,,,,,Tie Beam Labor,02300,cost code,,,,,,
+1,3,10,,,,,,,,,,,,,,,,,,,10,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,8800,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",05000,Tie Beam
+1,3,10,1,1,,,,,,,,,,,,,,,,,,,,,Tie Beam,05000,phase,,,,,,
+1,3,10,1,2,,,,,,,,,,,,,,,,,,,,,Tie Beam Material,02400,cost code,,,,,,
+1,3,11,,,,,,,,,,,,,,,,,,,11,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,8200,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",05000,Tie Beam
+1,3,11,1,1,,,,,,,,,,,,,,,,,,,,,Tie Beam,05000,phase,,,,,,
+1,3,11,1,2,,,,,,,,,,,,,,,,,,,,,Trusses,03100,cost code,,,,,,
+1,3,12,,,,,,,,,,,,,,,,,,,12,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,5030,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",06000,Rough In
+1,3,12,1,1,,,,,,,,,,,,,,,,,,,,,Rough In,06000,phase,,,,,,
+1,3,12,1,2,,,,,,,,,,,,,,,,,,,,,Rough In Carpentry Labor,03200,cost code,,,,,,
+1,3,13,,,,,,,,,,,,,,,,,,,13,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,7000,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",06000,Rough In
+1,3,13,1,1,,,,,,,,,,,,,,,,,,,,,Rough In,06000,phase,,,,,,
+1,3,13,1,2,,,,,,,,,,,,,,,,,,,,,Rough In Carpentry Material,03300,cost code,,,,,,
+1,3,14,,,,,,,,,,,,,,,,,,,14,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,6200,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",06000,Rough In
+1,3,14,1,1,,,,,,,,,,,,,,,,,,,,,Rough In,06000,phase,,,,,,
+1,3,14,1,2,,,,,,,,,,,,,,,,,,,,,Electrical Rough,03400,cost code,,,,,,
+1,3,15,,,,,,,,,,,,,,,,,,,15,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,2800,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",06000,Rough In
+1,3,15,1,1,,,,,,,,,,,,,,,,,,,,,Rough In,06000,phase,,,,,,
+1,3,15,1,2,,,,,,,,,,,,,,,,,,,,,Plumbing Rough,01900,cost code,,,,,,
+1,3,16,,,,,,,,,,,,,,,,,,,16,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,3900,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",07000,Roofing
+1,3,16,1,1,,,,,,,,,,,,,,,,,,,,,Roofing,07000,phase,,,,,,
+1,3,16,1,2,,,,,,,,,,,,,,,,,,,,,Roofing Material,04100,cost code,,,,,,
+1,3,17,,,,,,,,,,,,,,,,,,,17,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,2000,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",07000,Roofing
+1,3,17,1,1,,,,,,,,,,,,,,,,,,,,,Roofing,07000,phase,,,,,,
+1,3,17,1,2,,,,,,,,,,,,,,,,,,,,,Roofing Labor,04200,cost code,,,,,,
+1,3,18,,,,,,,,,,,,,,,,,,,18,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",job,,,,5300,,05-08SAMEPL,"Old Same Place Division, Lot 103, New Old Post Road",08000,Landscaping
+1,3,18,1,1,,,,,,,,,,,,,,,,,,,,,Trim/Finish,08000,phase,,,,,,
+1,3,18,1,2,,,,,,,,,,,,,,,,,,,,,Landscaping,04400,cost code,,,,,,

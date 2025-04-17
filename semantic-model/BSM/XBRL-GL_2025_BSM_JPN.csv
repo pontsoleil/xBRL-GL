@@ -1,0 +1,790 @@
+﻿sequence,level,property_type,identifier,class_term,property_term,representation_term,associated_class,multiplicity,definition,module,table,domain_name,element,label_local,definition_local,xpath,id
+1,1,Class,,Phone,,,,0..*,Phone number information.,gl-bus,0,,,【電話番号】,主要電話番号情報。,,BU01
+2,2,Attribute,,Phone,Description,xbrli:tokenItemType,,0..1,"Entity Phone Number Description such as Main, Investor relations. Enumerated as: bookkeeper, controller, direct, fax, investor-relations, main, switchboard, other.",gl-bus,0,,,電話番号用途,"代表、IR用などの、電話番号の用途。
+[設定値のリスト]
+(bookkeeper：記帳係)、(controller：会計責任者)、(direct：直通)、(fax：FAX)、(investor-relations：IR窓口)、(main：代表)、(switchboard：交換台)、(other：その他)",,BU01_01
+3,2,Attribute,,Phone,Number,xbrli:stringItemType,,0..1,Phone number referred to in Phone Number Description'\.,gl-bus,0,,,電話番号,電話番号用途で示される電話番号。,,BU01_02
+4,1,Class,,Fax,,,,0..*,Fax number information.,gl-bus,0,,,【FAX番号】,FAX番号情報。,,BU02
+5,2,Attribute,,Fax,Usage,xbrli:stringItemType,,0..1,"Fax number usage (e.g. orders, head office, IR)",gl-bus,0,,,FAX番号用途,FAX番号の用途。(注文、本社、IRなど),,BU02_01
+6,2,Attribute,,Fax,Number,xbrli:stringItemType,,0..1,Fax Number,gl-bus,0,,,FAX番号,FAX番号。,,BU02_02
+10,1,Class,,Email,,,,0..*,Email address information.,gl-bus,0,,,【Eメールアドレス】,Eメールアドレス情報。,,BU04
+8,2,Attribute,,Email.URI,Descrption,xbrli:stringItemType,,0..1,"URI address usage (e.g. orders, head office, IR)",gl-bus,0,,,URIアドレス用途,URIアドレスの用途。(注文、本社、IRなど),,BU04_BU03_01
+9,2,Attribute,,Email.URI,Address,xbrli:stringItemType,,0..1,URI Address,gl-bus,0,,,URIアドレス,URIアドレス。,,BU04_BU03_02
+12,1,Class,,Web Site,,,,0..*,Web site information.,gl-bus,0,,,【Webサイト】,ウェブサイト情報。,,BU05
+8,2,Attribute,,Web Site.URI,Descrption,xbrli:stringItemType,,0..1,"URI address usage (e.g. orders, head office, IR)",gl-bus,0,,,URIアドレス用途,URIアドレスの用途。(注文、本社、IRなど),,BU05_BU03_01
+9,2,Attribute,,Web Site.URI,Address,xbrli:stringItemType,,0..1,URI Address,gl-bus,0,,,URIアドレス,URIアドレス。,,BU05_BU03_02
+17,1,Class,,Entered,,,,0..*,Data entry activity record,gl-cor,0,,,【入力活動】,データ入力活動の記録,,CO02
+15,2,Attribute,,Entered.Activity,Date Time,xbrli:dateTimeItemType,,1,Date and time of activity,gl-cor,0,,,日時,実行日時,,CO02_CO01_01
+16,2,Reference Association,,Entered.Activity,,,User,1,System user performing the activity,gl-cor,0,,,システムユーザー,操作ユーザー,,CO02_CO01_02
+19,1,Class,,Approved,,,,0..*,Data entry approval activity record,gl-cor,0,,,【承認活動】,データ入力承認活動の記録,,CO03
+15,2,Attribute,,Approved.Activity,Date Time,xbrli:dateTimeItemType,,1,Date and time of activity,gl-cor,0,,,日時,実行日時,,CO03_CO01_01
+16,2,Reference Association,,Approved.Activity,,,User,1,System user performing the activity,gl-cor,0,,,システムユーザー,操作ユーザー,,CO03_CO01_02
+21,1,Class,,Last Modified,,,,0..*,Last modification activity record,gl-cor,0,,,【最新更新活動】,最新の更新履歴,,CO04
+15,2,Attribute,,Last Modified.Activity,Date Time,xbrli:dateTimeItemType,,1,Date and time of activity,gl-cor,0,,,日時,実行日時,,CO04_CO01_01
+16,2,Reference Association,,Last Modified.Activity,,,User,1,System user performing the activity,gl-cor,0,,,システムユーザー,操作ユーザー,,CO04_CO01_02
+23,1,Class,,Address,,,,0..*,Structure which contains address information.,gl-bus,0,,,【住所】,住所情報。,,BU06
+24,2,Attribute,,Address,Name,xbrli:stringItemType,,0..1,Address Name,gl-bus,0,,,住所名,住所の名前。,,BU06_01
+25,2,Attribute,,Address,Description,xbrli:stringItemType,,0..1,Address Description,gl-bus,0,,,住所説明,住所の説明。,,BU06_02
+26,2,Attribute,,Address,Purpose,xbrli:stringItemType,,0..1,Address Purpose,gl-bus,0,,,住所目的,住所の目的。,,BU06_03
+27,2,Attribute,,Address,Location Identifier,xbrli:stringItemType,,0..1,A code used to identify the location and to associate it with contacts and transactions,gl-bus,0,,,所在地識別子,所在地を識別したり、窓口や取引と関係付けるコード。,,BU06_04
+28,2,Attribute,,Address,Building Number,xbrli:stringItemType,,0..1,Building Number,gl-bus,0,,,住所建物番号,建物番号。,,BU06_05
+29,2,Attribute,,Address,Street,xbrli:stringItemType,,0..1,Street address,gl-bus,0,,,住所通り,住所の通り。,,BU06_06
+30,2,Attribute,,Address,Street2,xbrli:stringItemType,,0..1,Address Detail,gl-bus,0,,,住所詳細,住所詳細。,,BU06_07
+31,2,Attribute,,Address,City,xbrli:stringItemType,,0..1,City,gl-bus,0,,,住所都市,住所の都市。,,BU06_08
+32,2,Attribute,,Address,State or Province,xbrli:stringItemType,,0..1,"State, province or region",gl-bus,0,,,住所州,住所の州や地方。,,BU06_09
+33,2,Attribute,,Address,Country,xbrli:stringItemType,,0..1,Country,gl-bus,0,,,住所国,住所の国。,,BU06_10
+34,2,Attribute,,Address,Zip or Postal Code,xbrli:stringItemType,,0..1,Zip or other postal code,gl-bus,0,,,住所郵便番号,住所の郵便番号。,,BU06_11
+35,2,Attribute,,Address,Active Indicator,xbrli:booleanItemType,,0..1,"Boolean to indicate whether the address is active (=""true"") or inactive (=""false"")",gl-bus,0,,,住所有効性,住所が有効か無効かを示すブール値。,,BU06_12
+36,1,Class,,Document Information,,,,1..1,Parent for descriptive information about the accountingEntries Structure in which it is contained.,gl-cor,0,,,【文書情報】,この会計仕訳に関する情報の親タグ。,,CO05
+37,2,Attribute,PK,Document Information,Audit Number,xbrli:stringItemType,,0..1,Unique identifier for this file.,gl-cor,0,,,監査番号,このファイルの一意識別子。,,CO05_01
+38,2,Attribute,,Document Information,Document Type,xbrli:tokenItemType,,1..1,"account: information to fill in a chart of accounts file.  
+balance: the results of accumulation of a complete and validated list of entries for an account (or a list of account) in a specific period - sometimes called general ledger  
+entries: a list of individual accounting entries, which might be posted/validated or nonposted/validated   
+journal: a self-balancing (Dr = Cr) list of entries for a specific period including beginning balance for that period.  
+ledger: a complete list of entries for a specific account (or list of accounts) for a specific period; note - debits do not have to equal credits.   
+assets: a listing of open receivables, payables, inventory, fixed assets or other information that can be extracted from but are not necessarily included as part of a journal entry.  
+trialBalance: the self-balancing (Dr = Cr) result of accumulation of a complete and validated list of entries for the entity in a complete list of accounts in a specific period. 
+taxtables: aids automated interpretation of instances that represent tax tables; Tax table are defined by using multiple [taxes] structures to gather the population of codes, authorities and rates; through [taxTableCode] cross-references in the [taxes] structure, these ""master file"" tax tables can be referenced. 
+mapping: a collection of mappings between interrelated data sets, such as a local and related corporate standard chart of accounts or detail data mapped to summarized end reporting concepts.   
+versioning: a collection of changes between two versions of the same class of information, such as updates to a master file like a chart of accounts.   
+master_file: a collection of master files, such as the customer or inventory master file.   
+trade_documents: a collection of trade/transactional documents, such as vendor invoices or customer orders.   
+profile_compliant: the meaning of this collection of information can be determined by understanding an established profile and especially an XBRL GL Profile. Profiles are determined through namespace declarations, schemaRef and conventions of those profiles.   
+other: for all other types of representations.
+
+Often sorted by date or by account, these terms have specific, and sometimes different, meanings in different areas. Common practice will drive accounting method/term matches.",gl-cor,0,,,文書種別,"・科目:科目体系ファイルの情報。 ・残高:特定の期間について、勘定科目(または勘定科目リスト)の、完了し検証された仕訳リストの累算結果。時に総勘定元帳と呼ばれる。 ・仕訳:個々の勘定記入のリスト。転記/検証されていることもあり、されていないこともある。 ・仕訳帳:特定の期間における、その期間の開始残高を含む貸借が一致(Dr=Cr)した仕訳のリスト 。 ・元帳:特定の期間における特定の勘定科目(または勘定科目リスト)についての、仕訳の全リスト 。注意－貸借が一致する必要はない。 ・資産:仕訳記入の一部として必ずしも含まれていないが、そこから抽出可能な売掛金、買掛金、在庫、固定資産、その他の情報のリスト。 ・試算表:事業体に対する、特定期間の全勘定科目リストでの、完了し検証された仕訳リストの、貸借が一致（Dr=Cr)した累算結果。 ・税率表:税率表をあらわすデータを自動的に解釈できるようにする。税率表は、コード、税務当局情報、レートをあらわす複数のtaxes構造データを使って定義される。taxTableCodeはtaxes構造データ内で相互に参照されるが、これらのマスタファイルが参照可能。 ・マッピング情報:互いに関係があるデータセットの間の対応関係を集めたもの。例えば、企業グループ内の各会社で使用する勘定科目と全社勘定科目との対応付け、または明細データと最終的な報告書上の要約された科目への対応付け。 ・差分情報:同じクラス（種類）で異なるバージョンを持つ項目の変更・差分情報。例えば、勘定科目一覧のようなマスタファイルの特定科目の更新情報など。  ・マスターファイル:マスタファイルの一覧。例えば、顧客マスタ又は在庫/棚卸マスタなど。  ・取引伝票:取引に用いる情報の集合。例えば、納入業者からのインボイス 又は顧客からの受注情報など。  ・プロファイル情報:確立された文書説明情報及び特にXBRL GLプロファイルを理解し決定するこの情報の集合の意味を示す。説明情報は、名前空間宣言、スキーマ参照及びこれらの規約を通して決定する。  ・その他：その他のすべての表現形式  多くの場合、日付または科目によりソートされる。会計処理方法や用語は慣行により適合させる。 [設定値のリスト] (account：科目)、(balance：残高)、(entries：仕訳)、(journal：仕訳帳)、(ledger：元帳)、(assets：資産)、(trialbalance：試算表)、(taxtables：税率表)、(other：その他)、(Mapping：マッピング情報)、(versioning：差分情報)、(master_file：マスターファイル)、(trade_documents：取引伝票)、(profile_compliant：プロファイル情報)、(other：その他)",,CO05_02
+39,2,Attribute,,Document Information,Revises Audit Number,xbrli:stringItemType,,0..1,"If this batch of information revises a previous batch of information, this field identifies the previous batch that is being revised. 'uniqueID' of the previous batch goes here. Developers should consider exception reporting.",gl-cor,0,,,改訂前監査番号,この仕訳の束が以前の仕訳の束を改訂する場合に、以前の束を示す。元の文書のuniqueIDが指定される。開発者は、例外報告を考慮すべきである。,,CO05_03
+40,2,Attribute,,Document Information,Action to Take with Previous Data,xbrli:tokenItemType,,0..1,Provides guidance on action to take with previous set of data: supersedes - old data should be considered as obsolete/overwritten; supplements - belongs with that data as if it was included with it.,gl-cor,0,,,改訂前データ処置,"以前のデータの束に対する操作のガイダンス。 取替え-古いデータを無効にし上書きする。
+補完-元々含まれていたかのように、そのデータに所属させる。
+[設定値のリスト]
+(supplement：補完)、(supersede：取替え)",,CO05_04
+41,2,Attribute,,Document Information,Language,xbrli:QNameItemType,,0..1,"Primary language of the intellectual content. Where practical, the content of this field should coincide with ISO 639-1988 language codes.",gl-cor,0,,,言語,主要言語。 実用的には、このフィールドの内容はISO639-1988言語コードに一致すべきである。,,CO05_05
+42,2,Attribute,,Document Information,Creation Date,xbrli:dateTimeItemType,,0..1,Date/time file was created.,gl-cor,0,,,作成日付,ファイルが作成された日付/時間。,,CO05_06
+43,2,Attribute,,Document Information,Creator,xbrli:stringItemType,,0..1,Identifies the creator of the XBRL instance.,gl-cor,0,,,作成者,ファイルの作成者の識別子。,,CO05_BU05_07
+44,2,Attribute,,Document Information,Document Comment,xbrli:stringItemType,,0..1,Text for entire document.,gl-cor,0,,,文書コメント,文書全体に対する説明文。,,CO05_08
+45,2,Attribute,,Document Information,Period Covered Start,xbrli:dateTimeItemType,,0..1,"Start of date range for contents. Used as basis for many assumptions about data, including the date as of which open balances are open.",gl-cor,0,,,対象期間開始日付,内容の日付範囲の開始日。 残高の開始日付などの、データに関する多くの仮定の基礎として使用される。,,CO05_09
+46,2,Attribute,,Document Information,Period Covered End,xbrli:dateTimeItemType,,0..1,"End of date range for contents. Used as basis for many assumptions about data, including the date as of which open balances are open.",gl-cor,0,,,対象期間終了日付,内容の日付範囲の終了日。 残高の開始日付などの、データに関する多くの仮定の基礎として使用される。,,CO05_10
+47,2,Attribute,,Document Information,Period Count,xbrli:decimalItemType,,0..1,"Number of periods or buckets, used by postingCode. Used to interpret posting date. It may be preferable to limit entries by period covered to be by individual reporting period.",gl-cor,0,,,期間数,postingCodeで使用される期間又はバケットの数。 転記日付を説明するために使用される。対象期間の仕訳を個々の報告期間に限定することが望ましいかもしれない。,,CO05_BU05_11
+48,2,Attribute,,Document Information,Period Unit,xbrli:tokenItemType,,0..1,"Type of periods covered by periodCount. Enumerated as: daily, weekly, bi-weekly, semi-monthly, monthly, quarterly, thirdly, semiannual, annual, ad-hoc, current-period-only, other.",gl-cor,0,,,期間単位,"periodCountで対象とする期間の種別。
+[設定値のリスト]
+(daily：日次)、(weekly：週次)、(bi-weekly：隔週)、(semi-monthly：半月ごと)、(monthly：月次)、(quarterly：四半期ごと)、(thirdly：年3回)、(semiannual：半年ごと)、(annual：年次)、(ad-hoc：随時)、(current-period-only：当期)、(other：その他)",,CO05_BU05_12
+49,2,Attribute,,Document Information,Period Unit Description,xbrli:stringItemType,,0..1,Free format description of the period unit,gl-cor,0,,,期間単位説明,対象期間単位の説明。,,CO05_BU05_13
+50,2,Attribute,,Document Information,Source Application,xbrli:stringItemType,,0..1,"Product or service that produced this file. Used by many systems (e.g., VAT). Version number can be included or extended.",gl-cor,0,,,作成元アプリケーション,このファイルを作り出した製品又はサービス。 多くのシステム(例えば、VATなど)で、使用される。 バージョン番号を含むことも可能。,,CO05_BU05_14
+51,2,Attribute,,Document Information,Target Application,xbrli:stringItemType,,0..1,Particular use for which file was generated.,gl-cor,0,,,対象アプリケーション,ファイルが作成された用途。,,CO05_BU05_15
+52,2,Attribute,,Document Information,Default Currency,xbrli:QNameItemType,,0..1,"The default currency related to the amount can be entered here instead of the XBRL instance specified way, especially important in multi-currency situations. Recommend ISO 4217 coding",gl-cor,0,,,既定通貨,XBRLインスタンス内に指定する方法のかわりに、金額の既定の通貨を指定可能。多通貨環境で特に重要。ISO4217コード体系を推奨。,,CO05_MC05_16
+53,2,Composition,,Document Information,,,Summary Reporting Taxonomy,0..*,,gl-cor,0,,,【集約報告タクソノミ】,この文書で示されたデータのロールアップ先となる、1つ以上の報告タクソノミの情報を、識別し提供する。,,CO05_SR05_17
+54,1,Class,,Identifiers,,,,0..*,Structure which contains various identifiers for the company.,gl-bus,0,,,【識別子】,組織に関する様々な識別子を含むセクション。,,BU07
+55,2,Attribute,PK,Identifiers,Organization Identifier,xbrli:stringItemType,,0..1,"Code representing the company or organization whose data this file represents: used for situations where one user (e.g., a CPA) needs to keep track of multiple organizations' files (e.g., multiple clients). Can be EIN#, client #, internal/external identifier, SIC code. Codes which identifies the entity. Includes the code identifier of the authority issuing the code, a colon, and the code itself. For example, CIK:01234567 for the CIK number issued by SEC EDGAR.",gl-bus,0,,,事業体識別子,このファイルでデータを表現している会社や組織のコード。ひとりのユーザ(例えば、公認会計士)が複数の組織(例えば、複数の顧客)のファイルを把握する必要がある場合に使用される。 EIN番号、顧客番号、内部/外部識別子、SICコードであってよい。事業体の識別子をコード化する。コードを発行する権威ある組織のコード識別子、コロン、およびコードそのものを含む。 例えば、SEC　EDGARが発行したCIK番号　CIK: 01234567。,,BU07_01
+56,2,Attribute,,Identifiers,Organization Description,xbrli:stringItemType,,0..1,Text for organization identified by organizationIdentifier. Any descriptive information about the code.,gl-bus,0,,,事業体説明,organizationIdentifierによって特定された組織の説明文。 コードに関するなんらかの記述情報。,,BU07_02
+71,1,Class,,Contact,,,,0..*,Information about contacts.,gl-bus,0,,,【担当者情報】,担当者に関する情報。,,BU09
+58,2,Attribute,PK,Contact.Person,ID,xbrli:tokenItemType,,1,A unique and persistent identifier used to distinguish a person within the system.,gl-bus,0,,,識別番号,システム内で個人を識別するための一意かつ永続的な識別子。,,BU09_BU08_01
+59,2,Attribute,,Contact.Person,Prefix,xbrli:stringItemType,,0..1,"Prefix (e.g. Dr., Mr., Mrs.)",gl-bus,0,,,敬称,敬称(Dr.、Mr.、Mrs.など),,BU09_BU08_02
+60,2,Attribute,,Contact.Person,Last Name,xbrli:stringItemType,,0..1,Last or family name,gl-bus,0,,,姓,姓,,BU09_BU08_03
+61,2,Attribute,,Contact.Person,First Name,xbrli:stringItemType,,0..1,First or given name,gl-bus,0,,,名,名、クリスチャンネーム,,BU09_BU08_04
+62,2,Attribute,,Contact.Person,Suffix,xbrli:stringItemType,,0..1,"Suffix (e.g. MD, CPA, Jr.)",gl-bus,0,,,付加名称,付加名称(MD、CPA、Jr.など),,BU09_BU08_05
+63,2,Attribute,,Contact.Person,Attention Line,xbrli:stringItemType,,0..1,Attention Line,gl-bus,0,,,アテンションライン,アテンションライン,,BU09_BU08_06
+64,2,Attribute,,Contact.Person,Position Role,xbrli:stringItemType,,0..1,Position or role,gl-bus,0,,,地位/役職,地位や役職。,,BU09_BU08_07
+65,2,Attribute,,Contact.Person,Role of Contact,xbrli:stringItemType,,0..1,"Role of contact. Examples include: Source Service, Sender, Recipient, Invoicer, Auditor, Accountant",gl-bus,0,,,担当者役割,担当者の役割。例：ソースサービス、送付元、受取人、請求先、監査人、会計事務所。,,BU09_BU08_08
+66,2,Attribute,,Contact.Person,Location ID cross reference,xbrli:stringItemType,,0..1,This code is used to associate the contact with a specific location for the Entity. Its value should be the same as that of the organizationAddressLocationIdentifier,gl-bus,0,,,所在地相互参照情報,担当者と事業体の位置情報を関係付けるためのコード。organizationAddressLocationIdentifierと同じ値であるべき。,,BU09_BU08_09
+67,2,Attribute,,Contact.Person,Contact Active,xbrli:booleanItemType,,0..1,"Boolean to indicate whether the contact is active (=""true"") or inactive (=""false"")",gl-bus,0,,,担当者有効性,担当者が有効か無効かを示すブール値。,,BU09_BU08_10
+68,2,Composition,,Contact.Person,,,Phone,0..*,,gl-bus,0,,,【担当者電話番号】,担当者の電話番号。,,BU09_BU08_11
+69,2,Composition,,Contact.Person,,,Fax,0..*,,gl-bus,0,,,【担当者FAX番号】,担当者のFAX番号の構造体。,,BU09_BU08_12
+70,2,Composition,,Contact.Person,,,Email,0..*,,gl-bus,0,,,【担当者Eメールアドレス】,担当者のEメールアドレスの構造体。,,BU09_BU08_13
+73,1,Class,,User,,,,0..*,Information about contacts.,gl-bus,0,,,【システム利用者情報】,システムの利用者に関する情報。,,BU10
+58,2,Attribute,PK,User.Person,ID,xbrli:tokenItemType,,1,A unique and persistent identifier used to distinguish a person within the system.,gl-bus,0,,,識別番号,システム内で個人を識別するための一意かつ永続的な識別子。,,BU10_BU08_01
+59,2,Attribute,,User.Person,Prefix,xbrli:stringItemType,,0..1,"Prefix (e.g. Dr., Mr., Mrs.)",gl-bus,0,,,敬称,敬称(Dr.、Mr.、Mrs.など),,BU10_BU08_02
+60,2,Attribute,,User.Person,Last Name,xbrli:stringItemType,,0..1,Last or family name,gl-bus,0,,,姓,姓,,BU10_BU08_03
+61,2,Attribute,,User.Person,First Name,xbrli:stringItemType,,0..1,First or given name,gl-bus,0,,,名,名、クリスチャンネーム,,BU10_BU08_04
+62,2,Attribute,,User.Person,Suffix,xbrli:stringItemType,,0..1,"Suffix (e.g. MD, CPA, Jr.)",gl-bus,0,,,付加名称,付加名称(MD、CPA、Jr.など),,BU10_BU08_05
+63,2,Attribute,,User.Person,Attention Line,xbrli:stringItemType,,0..1,Attention Line,gl-bus,0,,,アテンションライン,アテンションライン,,BU10_BU08_06
+64,2,Attribute,,User.Person,Position Role,xbrli:stringItemType,,0..1,Position or role,gl-bus,0,,,地位/役職,地位や役職。,,BU10_BU08_07
+65,2,Attribute,,User.Person,Role of Contact,xbrli:stringItemType,,0..1,"Role of contact. Examples include: Source Service, Sender, Recipient, Invoicer, Auditor, Accountant",gl-bus,0,,,担当者役割,担当者の役割。例：ソースサービス、送付元、受取人、請求先、監査人、会計事務所。,,BU10_BU08_08
+66,2,Attribute,,User.Person,Location ID cross reference,xbrli:stringItemType,,0..1,This code is used to associate the contact with a specific location for the Entity. Its value should be the same as that of the organizationAddressLocationIdentifier,gl-bus,0,,,所在地相互参照情報,担当者と事業体の位置情報を関係付けるためのコード。organizationAddressLocationIdentifierと同じ値であるべき。,,BU10_BU08_09
+67,2,Attribute,,User.Person,Contact Active,xbrli:booleanItemType,,0..1,"Boolean to indicate whether the contact is active (=""true"") or inactive (=""false"")",gl-bus,0,,,担当者有効性,担当者が有効か無効かを示すブール値。,,BU10_BU08_10
+68,2,Composition,,User.Person,,,Phone,0..*,,gl-bus,0,,,【担当者電話番号】,担当者の電話番号。,,BU10_BU08_11
+69,2,Composition,,User.Person,,,Fax,0..*,,gl-bus,0,,,【担当者FAX番号】,担当者のFAX番号の構造体。,,BU10_BU08_12
+70,2,Composition,,User.Person,,,Email,0..*,,gl-bus,0,,,【担当者Eメールアドレス】,担当者のEメールアドレスの構造体。,,BU10_BU08_13
+75,1,Class,,Accounting Method,,,,0..*,Structure for identifying the methods of accounting used by the entity for different reporting purposes,gl-bus,0,,,【会計処理方法】,異なる報告目的に応じて事業体が使用する会計処理方法を識別するためのセクション。,,BU11
+76,2,Attribute,,Accounting Method,Method,xbrli:tokenItemType,,0..1,"For this entity, the method of accounting represented - from: accrual, cash, modified cash, modified accrual, encumbrance, special methods, hybrid methods, other",gl-bus,0,,,会計処理方法,"事業体の会計処理方法を表す。発生基準、現金基準、修正現金基準、修正発生基準、債務基準、特別な方法、混合方法、その他
+[設定値のリスト]
+(accrual：発生基準)、(cash：現金基準)、(modified cash：修正現金基準)、(modified accrual：修正発生基準)、(encumbrance：債務基準)、(special methods：特別な方法)、(hybrid methods：混合方法)、(other：その他)",,BU11_01
+77,2,Attribute,,Accounting Method,Description,xbrli:stringItemType,,0..1,Free format description of the accounting method,gl-bus,0,,,会計処理方法説明,会計処理方法の説明。,,BU11_02
+78,2,Attribute,,Accounting Method,Purpose,xbrli:tokenItemType,,0..1,"For this entity, the reporting purpose represented - from book, tax, management, statutory, other",gl-bus,0,,,会計処理方法目的,"事業体の報告の目的を表す。帳簿、税、管理、スタチュトリ、その他から選択する。
+[設定値のリスト]
+(book：帳簿)、(tax：税)、(management：管理)、(statutory：スタチュトリ)、(other：その他)",,BU11_03
+79,2,Attribute,,Accounting Method,Purpose Description,xbrli:stringItemType,,0..1,Free format description of the accounting method purpose,gl-bus,0,,,会計処理方法目的説明,会計処理方法の目的の説明。,,BU11_04
+80,2,Attribute,,Accounting Method,Start Date,xbrli:dateTimeItemType,,0..1,Accounting Method Start Date,gl-bus,0,,,会計処理方法開始日付,会計処理方法の開始日。,,BU11_05
+81,2,Attribute,,Accounting Method,End Date,xbrli:dateTimeItemType,,0..1,Accounting Method End Date,gl-bus,0,,,会計処理方法終了日付,会計処理方法の終了日。,,BU11_06
+82,1,Class,,Accountant,,,,0..*,Information about the relevant external accountant,gl-bus,0,,,【会計事務所情報】,関連する外部会計事務所に関する情報。,,BU12
+83,2,Attribute,,Accountant,Accountant Name,xbrli:stringItemType,,0..1,Name of the accountant,gl-bus,0,,,会計事務所名,会計事務所の名前。,,BU12_01
+84,2,Attribute,,Accountant,Type of Engagement,xbrli:tokenItemType,,0..1,"Type of engagement being performed by external accountant. Enumerated as: audit, review, compilation, tax, other.",gl-bus,0,,,契約種別,"外部会計事務所によって実行される契約の種別。
+[設定値のリスト]
+(audit：監査)、(review：検査)、(compilation：帳簿作成)、(tax：税)、(other：その他)",,BU12_02
+85,2,Attribute,,Accountant,Type of Engagement Description,xbrli:stringItemType,,0..1,Free format description of the type of engagement,gl-bus,0,,,契約種別説明,契約種別の説明。,,BU12_03
+86,2,Composition,,Accountant,,,Address,0..*,,gl-bus,0,,,【会計事務所住所】,会計事務所の住所情報を含むセクション。,,BU12_04
+87,2,Composition,,Accountant,,,Contact,0..*,,gl-bus,0,,,【会計事務所担当者情報】,会計事務所の担当者情報の構造体。,,BU12_05
+88,1,Class,,Reporting Calendar Period,,,,0..*,A tool to collect a specific set of periods used to summarize results from transactions.,gl-bus,0,,,【報告カレンダー期間】,取引の結果をまとめるための特定の期間を集めるもの。,,BU13
+89,2,Attribute,PK,Reporting Calendar Period,Reporting Identifier,xbrli:stringItemType,,0..1,An identifier for this period in this calendar,gl-bus,0,,,報告期間識別子,このカレンダーにおけるこの期間の識別子。,,BU13_01
+90,2,Attribute,,Reporting Calendar Period,Description,xbrli:stringItemType,,0..1,A description of this specific reporting period in this calendar.,gl-bus,0,,,期間説明,このカレンダーにおけるこの特定の期間の説明。,,BU13_02
+91,2,Attribute,,Reporting Calendar Period,Start Date,xbrli:dateTimeItemType,,0..1,The beginning date/time of a period,gl-bus,0,,,期間開始日付,期間の開始日付/時刻,,BU13_03
+92,2,Attribute,,Reporting Calendar Period,End Date,xbrli:dateTimeItemType,,0..1,The ending date/time of a period,gl-bus,0,,,期間終了日付,期間の終了日付/時刻,,BU13_04
+93,2,Attribute,,Reporting Calendar Period,Closed Date,xbrli:dateTimeItemType,,0..1,"The date/time a period has been closed for activity. If this is present with a nill value (xsi:nill=""true"") then the period is not closed.",gl-bus,0,,,期間締日付,"この期間の活動が締め切られた日付/時刻。この値がニル値(xsi:nill=""true"")であれば、この期間は、締め切られていない。",,BU13_05
+94,1,Class,,Reporting Calendar,,,,0..*,A tool to collect the periods used to summarise results from transactions.,gl-bus,0,,,【報告カレンダー】,取引の結果をまとめるための期間を集めるもの。,,BU14
+95,2,Attribute,PK,Reporting Calendar,Code,xbrli:stringItemType,,0..1,"The code used to identify this specific reporting calendar, unique across periods",gl-bus,0,,,報告カレンダーコード,この報告カレンダーを識別するコード。複数期間にわたって一意。,,BU14_01
+96,2,Attribute,,Reporting Calendar,Description,xbrli:stringItemType,,0..1,A description of the reporting calendar (associated with the reportingCalendarCode given),gl-bus,0,,,報告カレンダー説明,報告カレンダーの説明（reportingCalendarCodeと関係付けられる）。,,BU14_02
+97,2,Attribute,,Reporting Calendar,Title,xbrli:stringItemType,,0..1,A description of the reporting period. The actual beginning and ending dates are found within the 'reportingCalendarPeriod' structure,gl-bus,0,,,報告カレンダータイトル,報告期間の説明。実際の開始日及び終了日はreportingCalendarPeriodに記述する。,,BU14_03
+98,2,Attribute,,Reporting Calendar,Type of Period Code,xbrli:tokenItemType,,0..1,"A code for the type of period involved. Enumerated as: monthly, quarterly, semi-annually, 4-5-4, ad-hoc, other.",gl-bus,0,,,期間種別コード,"報告期間の種別コード。月次、四半期ごと、半期ごと、4-5-4、随時、その他
+[設定値のリスト]
+(monthly：月次)、(quarterly：四半期ごと)、(semi-annually：半期ごと)、(4-5-4：4-5-4)、(ad-hoc：随時)、(other：その他)",,BU14_04
+99,2,Attribute,,Reporting Calendar,Description of periods,xbrli:stringItemType,,0..1,A description of the type of period involved.,gl-bus,0,,,期間種別説明,報告期間の種別の説明。,,BU14_05
+100,2,Attribute,,Reporting Calendar,Closed status,xbrli:tokenItemType,,0..1,"An identifier on whether the reporting calendar is still open for activity. enumerated, ""open"", ""closed"", ""pending""",gl-bus,0,,,締状態,"報告カレンダーがオープンかどうかを示す識別子。オープン、締切り済み、保留中
+[設定値のリスト]
+(open：オープン)、(closed：締切り済み)、(pending：保留中)",,BU14_06
+101,2,Attribute,,Reporting Calendar,Purpose,xbrli:tokenItemType,,0..1,A description of the accounting set of books involved. Uses enumeration from accounting method purpose.,gl-bus,0,,,報告目的,"帳簿の集合の説明。会計処理方法の目的の列挙値を使用する。
+[設定値のリスト]
+(book：帳簿)、(tax：税)、(management：管理)、(statutory：スタチュトリ)、(other：その他)",,BU14_07
+102,2,Attribute,,Reporting Calendar,Purpose Description,xbrli:stringItemType,,0..1,Free format description of the reporting purpose,gl-bus,0,,,報告目的説明,報告目的の説明。,,BU14_08
+103,2,Composition,,Reporting Calendar,,,Reporting Calendar Period,0..*,,gl-bus,0,,,【報告カレンダー期間】,取引の結果をまとめるための特定の期間を集めるもの。,,BU14_09
+104,1,Class,,Entitry Information,,,,0..1,Holder for entity information - information about the reporting organization.,gl-cor,0,,,【事業体情報】,事業体情報（報告組織に関する情報）の入れ物。,,CO06
+105,2,Attribute,,Entitry Information,Default Accounting Method Purpose,xbrli:tokenItemType,,0..1,"If not stated explicitly at the line level, the default reporting purpose - from book, tax, management, statutory, other",gl-cor,0,,,既定会計処理方法目的,"明細レベルで明確に指定しない場合の、既定の報告目的を表す。帳簿、税、管理、スタチュトリ、その他から選択する。
+[設定値のリスト]
+(book：帳簿)、(tax：税)、(management：管理)、(statutory：スタチュトリ)、(other：その他)",,CO06_BU06_01
+106,2,Attribute,,Entitry Information,Default Accounting Method Purpose Description,xbrli:stringItemType,,0..1,Free format description of the default accounting method purpose,gl-cor,0,,,既定会計処理方法目的説明,既定の会計処理方法目的の説明。,,CO06_BU06_02
+107,2,Attribute,,Entitry Information,Business Description,xbrli:stringItemType,,0..1,Description of the nature of the business of the entity.,gl-cor,0,,,業種説明,事業体の事業の種類についての説明。,,CO06_BU06_03
+108,2,Attribute,,Entitry Information,Fiscal Year Start,xbrli:dateItemType,,0..1,"Start of fiscal year. Where appropriate, corporate year period representation permits non-365 or 366 day years (more appropriate for internal sharing than data from external sources), In Europe, some jurisdictions allow 2 year minus 1 day fiscal years.",gl-cor,0,,,会計年度開始日付,会計年度の開始日。妥当であれば、企業の会計年度表示において、366日や365日でない年も許可する（外部ソースからのデータより内部共有のための方が適している）。ヨーロッパでは、2年マイナス1日の会計年度を許可するところもある。,,CO06_BU06_04
+109,2,Attribute,,Entitry Information,Fiscal Year End,xbrli:dateItemType,,0..1,"End of fiscal year. Where appropriate, corporate year period representation permits non-365 or 366 day years (more appropriate for internal sharing than data from external sources), In Europe, some jurisdictions allow 2 year minus 1 day fiscal years.",gl-cor,0,,,会計年度終了日付,会計年度の終了日。妥当であれば、企業の会計年度表示において、366日や365日でない年も許可する（外部ソースからのデータより内部共有のための方が適している）。ヨーロッパでは、2年マイナス1日の会計年度を許可するところもある。,,CO06_BU06_05
+110,2,Composition,,Entitry Information,,,Phone,0..*,,gl-cor,0,,,【事業体電話番号】,事業体の主要電話番号情報。,,CO06_BU06_06
+111,2,Composition,,Entitry Information,,,Fax,0..*,,gl-cor,0,,,【事業体FAX番号】,事業体のFAX番号情報のタプル。,,CO06_BU06_07
+112,2,Composition,,Entitry Information,,,Email,0..*,,gl-cor,0,,,【事業体Eメールアドレス】,事業体のEメールアドレス情報のタプル。,,CO06_BU06_08
+113,2,Composition,,Entitry Information,,,Identifiers,0..*,,gl-cor,0,,,【識別子】,組織に関する様々な識別子を含むセクション。,,CO06_BU06_09
+114,2,Composition,,Entitry Information,,,Address,0..*,,gl-cor,0,,,【住所】,報告事業体の住所構造体。,,CO06_BU06_10
+115,2,Composition,,Entitry Information,,,Web Site,0..*,,gl-cor,0,,,【事業体Webサイト】,事業体の代表ウェブサイト。,,CO06_BU06_11
+116,2,Composition,,Entitry Information,,,Contact,0..*,,gl-cor,0,,,【担当者情報】,担当者に関する情報。,,CO06_BU06_12
+117,2,Composition,,Entitry Information,,,Accounting Method,0..*,,gl-cor,0,,,【会計処理方法】,異なる報告目的に応じて事業体が使用する会計処理方法を識別するためのセクション。,,CO06_BU06_13
+118,2,Composition,,Entitry Information,,,Accountant,0..*,,gl-cor,0,,,【会計事務所情報】,関連する外部会計事務所に関する情報。,,CO06_BU06_14
+119,2,Composition,,Entitry Information,,,Reporting Calendar,0..*,,gl-cor,0,,,【報告カレンダー】,取引の結果をまとめるための期間を集めるもの。,,CO06_BU06_15
+120,1,Class,,Subaccount,,,,0..*,Tuple to hold multiple accountSubIDs and Descriptions,gl-cor,0,,,【サブ科目情報】,複数のaccountSubIDと説明文を含むタプル。,,CO07
+121,2,Attribute,PK,Subaccount,Sub Class,xbrli:stringItemType,,0..1,"Where the primary account was placed in accountMainID, the code used for each profit center, division, business unit, fund, program, branch, project, class, sub-class or other modifier is placed here.",gl-cor,0,,,サブ科目コード,主勘定科目をaccountMainIDに指定したときに、各プロフィットセンタ、事業部、事業体、基金、プログラム、支店、プロジェクト、クラス、su-クラス又は他の修飾子に使用されるコードはここに指定する。,,CO07_01
+122,2,Attribute,,Subaccount,Type,xbrli:tokenItemType,,0..1,"Type of sub-account - profit center, division, business unit, fund, program, branch, project, class, su-class or other modifier is placed here. For example:: Accountability center: Business unit: Class:Department: Project: Fund: Program:Job: Profit center: Branch: Setup class: Division: Unit",gl-cor,0,,,サブ科目種別,小勘定科目の種別。プロフィットセンタ、事業部、事業体、基金、プログラム、支店、プロジェクト、クラス、su-クラス又は他の修飾子がここに配置される。 例えば、責任単位、事業単位、クラス、部、プロジェクト、基金、プログラム、ジョブ、プロフィットセンター、支店、セットアップクラス、部門、ユニット,,CO07_02
+123,2,Attribute,,Subaccount,Description,xbrli:stringItemType,,0..1,The description that accompanies accountSubID belongs here.,gl-cor,0,,,サブ科目説明,accountSubIDに関する説明。,,CO07_03
+124,1,Class,,Segment Parent,,,,0..*,Tuple for showing the detail necessary to roll up from one segment (type of subaccount) to another.),gl-cor,0,,,【親セグメント情報】,セグメント（小勘定科目の種別）間のロールアップ時に必要な詳細情報を示すタプル。,,CO08
+125,2,Attribute,PK,Segment Parent,Parent Subaccount Code,xbrli:stringItemType,,0..1,Subaccount NUMBER this subaccount rolls up to - see also subaccount type it rolls up to.,gl-cor,0,,,親サブ科目コード,この小勘定科目のロールアップ先の小勘定科目の番号-ロールアップ先の小勘定科目の種別も参照。,,CO08_01
+126,2,Attribute,,Segment Parent,Parent Subaccount Type,xbrli:stringItemType,,0..1,The describer of the segment this subaccount rolls up to.,gl-cor,0,,,親サブ科目種別,この小勘定科目のロールアップ先のセグメントの説明。,,CO08_02
+127,2,Attribute,,Segment Parent,Reporting Tree Identifier,xbrli:stringItemType,,0..1,Used for representing descriptions of reporting trees.,gl-cor,0,,,報告系統識別子,報告系統の説明に使用される。,,CO08_03
+128,2,Attribute,,Segment Parent,Parent Subaccount Percentage,xbrli:pureItemType,,0..1,"For partial allocations of amounts to different parents, the percentage of a child that will be allocated to a parent.",gl-cor,0,,,親サブ科目配分パーセンテージ,異なる親科目に配分する場合に、親科目に割り当てるパーセンテージ。,,CO08_04
+129,1,Class,,Account Identifier,,,,0..*,"Tuple: parent container for account numbers and identifiers. No entry is made here, but each detail line may have multiple accounts assigned to it for reporting in different GAAPs, offsetting accounts in Japan, passing along information to consolidation systems about local versus consolidating accounts, etc. For example, the account 4783HG-QOWI-192837-1000 may be expressed so: 
+
+/account/accountMainID 1000  
+/account/accountMainDescription Cash  
+/account/accountSub/accountSubID 4783HG  
+/account/accountSub/accountSubDescription Department  
+/account/accountSub/accountSubID QOWI  
+/account/accountSub/accountSubDescription Branch  
+/account/accountSub/accountSubID 192837  
+/account/accountSub/accountSubDescription Division",gl-cor,0,,,【科目識別子】,"タプル。勘定科目番号と識別子の親コンテナ。 ここには記入されないが、個々の明細行は、異なるGAAPでの報告や、日本の見返勘定や、連結勘定科目に対する個別情報の連結会計システムへの伝達などのための、複数の勘定科目を持ちうる。例えば、勘定科目4783HG-QOWI-192837-1000は、次のように表現されうる。
+/account/accountMainID 1000  
+/account/accountMainDescription Cash  
+/account/accountSub/accountSubID 4783HG  
+/account/accountSub/accountSubDescription Department  
+/account/accountSub/accountSubID QOWI  
+/account/accountSub/accountSubDescription Branch  
+/account/accountSub/accountSubID 192837  
+/account/accountSub/accountSubDescription Division",,CO09
+130,2,Attribute,PK,Account Identifier,Number,xbrli:stringItemType,,0..1,"Main account - the code used to identify the accounting bucket the entry has been assigned to. Examples might be 1000 for Cash, 567GAAZ for Sales Expense or Z for tax payments. Identifiers such as department, branch, division, manager, or other modifiers are noted in the Subaccount area. Before needing to post, account is not necessary. Posting to the general ledger almost always requires an entry here.",gl-cor,0,,,主勘定科目コード,"主勘定科目。仕訳が関連する会計バケットを特定するためのコード。例えば、現金を表す1000、販売費を表す567GAAZ、税を表すZ。
+部門、支店、事業部、マネージャ、その他の識別子は、Subaccount領域に記述される。転記の必要がなければ、勘定科目は必要ではない。総勘定元帳に転記するにはほとんどの場合必要。",,CO09_01
+131,2,Attribute,,Account Identifier,Description,xbrli:stringItemType,,0..1,Description of accountMainID - the human readable describer that accompanies the code used in accountMainID,gl-cor,0,,,主勘定科目説明,主勘定科目コードの説明。主勘定科目コードとして使用されるコードについての、人が読める記述。,,CO09_02
+132,2,Attribute,,Account Identifier,Classification,xbrli:tokenItemType,,0..1,"Account type - FASB Concepts 6 and similar international designs. When xbrlInfo is used to associated other XBRL reporting items, this field is more suited to representing existing systems (audit) than data interchange. Enumerated as: asset, liability, equity, income, gain, expense, loss, contr-to-equity, distr-from-equity, comprehensive-income, other.",gl-cor,0,,,主勘定科目区分,"主勘定科目の種別。FASB Concepts 6および、同様の国際的な様式。xbrlInfoが他のXBRL項目と関係付けられる場合、データ交換より現存システム(audit)を示すべき。
+[設定値のリスト]
+(asset：資産)、(liability：負債)、(equity：資本)、(income：収益)、(gain：利得)、(expense：費用)、(loss：損失)、(contr-to-equity：資本増加)、(distr-from-equity：資本減少)、(comprehensive-income：包括利益)、(other：その他)",,CO09_03
+133,2,Attribute,,Account Identifier,Classification Description,xbrli:stringItemType,,0..1,Free format description of the account classification,gl-cor,0,,,主勘定科目区分説明,主勘定科目の区分の説明。,,CO09_04
+134,2,Reference Association,,Account Identifier,Parent,xbrli:stringItemType,Account Identifier,0..1,Roll up item from child natural account to parent natural account.,gl-cor,0,,,親勘定科目コード,子勘定科目から親勘定科目に包み込む科目。,,CO09_05
+135,2,Attribute,,Account Identifier,Purpose of Account,xbrli:tokenItemType,,0..1,"Code related to usage for account aggregate - Consolidating, European, IFRS, Offsetting, Primary, Tax, USGAAP, Japanese, Other. Japanese companies will use this for the tax required offsetting entry. If left blank, assumes default accounting method for company.",gl-cor,0,,,勘定科目目的,"勘定科目群の使用法を示すコード。連結、European, IFRS, 見返、プライマリ, 税, USGAAP, Japanese,その他。日本企業では、見返仕訳で要求される税務処理に利用するかもしれない。空白の場合、企業の既定の勘定方法とみなす。
+[設定値のリスト]
+(consolidating：連結)、(european：ヨーロッパ)、(ifrs：IFRS)、(offsetting：見返)、(primary：プライマリ)、(tax：税)、(usgaap：US GAAP)、(japanese：日本)、(other：その他)",,CO09_06
+136,2,Attribute,,Account Identifier,Description of Purpose,xbrli:stringItemType,,0..1,Description of usage for aggregate account,gl-cor,0,,,勘定科目目的説明,勘定科目群の使用法の説明。,,CO09_07
+137,2,Attribute,,Account Identifier,Type,xbrli:tokenItemType,,0..1,"Type of account. Enumerated as: account, bank, employee, customer, job, vendor, measurable, statistical, other.",gl-cor,0,,,科目種別,"科目の種別。
+[設定値のリスト]
+(account：勘定科目)、(bank：銀行)、(employee：従業員)、(customer：顧客)、(job：ジョブ)、(vendor：仕入先)、(measurable：計測可能物)、(statistical：統計)、(other：その他)",,CO09_08
+138,2,Attribute,,Account Identifier,Type Description,xbrli:stringItemType,,0..1,Free format description of the account type,gl-cor,0,,,科目種別説明,科目の種別の説明。,,CO09_09
+139,2,Attribute,,Account Identifier,Accounting Method,xbrli:tokenItemType,,0..1,"For this entry, the method of accounting represented - from: accrual, cash, modified cash, modified accrual, encumbrance, special methods, hybrid methods, other",gl-cor,0,,,仕訳会計処理方法,"この仕訳の会計処理方法を表す。発生基準、現金基準、修正現金基準、修正発生基準、債務基準、特別な方法、混合方法、その他
+[設定値のリスト]
+(accrual：発生基準)、(cash：現金基準)、(modified cash：修正現金基準)、(modified accrual：修正発生基準)、(encumbrance：債務基準)、(special methods：特別な方法)、(hybrid methods：混合方法)、(other：その他)",,CO09_BU09_10
+140,2,Attribute,,Account Identifier,Accounting Method Description,xbrli:stringItemType,,0..1,Free format description of the entry accounting method,gl-cor,0,,,仕訳会計処理方法説明,仕訳の会計処理方法の説明。,,CO09_BU09_11
+141,2,Attribute,,Account Identifier,Accounting Method Purpose,xbrli:tokenItemType,,0..1,"For this entry, the reporting purpose represented - from book, tax, management, statutory, other",gl-cor,0,,,仕訳会計処理方法目的,"仕訳の報告の目的を表す。帳簿、税、管理、スタチュトリ、その他
+[設定値のリスト]
+(book：帳簿)、(tax：税)、(management：管理)、(statutory：スタチュトリ)、(other：その他)",,CO09_BU09_12
+142,2,Attribute,,Account Identifier,Accounting Method Purpose Description,xbrli:stringItemType,,0..1,Free format description of the entry accounting method purpose,gl-cor,0,,,仕訳会計処理方法目的説明,仕訳の会計処理方法の目的の説明。,,CO09_BU09_13
+143,2,Attribute,,Account Identifier,Active,xbrli:booleanItemType,,0..1,"Boolean to indicate whether the account is active (=""true"") or inactive (=""false"")",gl-cor,0,,,科目有効性,科目が有効か無効かを示すブール値。,,CO09_14
+144,2,Composition,,Account Identifier,,,Subaccount,0..*,,gl-cor,0,,,【サブ科目情報】,複数のaccountSubIDと説明文を含むタプル。,,CO09_15
+145,1,Class,,External Authority,,,,0..*,Structure containing references to an external authority associated with identifier,gl-cor,0,,,【外部機関】,識別子と関係付けられる外部機関への参照情報を含む構造体。,,CO10
+146,2,Attribute,PK,External Authority,ID Number,xbrli:stringItemType,,0..1,"External Authority (e,g, Tax Authority) ID Number associated with identifierReference",gl-cor,0,,,外部機関付与識別番号,identifierReferenceと関係付けられる、外部機関（たとえば、税務署）によるID番号。,,CO10_01
+147,2,Attribute,,External Authority,Name,xbrli:stringItemType,,0..1,Name of External Authority (e.g. Tax Authority),gl-cor,0,,,外部機関名,外部機関の名前（たとえば、税務署）,,CO10_02
+148,2,Attribute,,External Authority,Verification Date,xbrli:dateTimeItemType,,0..1,Date on which the External Authority last performed a verification,gl-cor,0,,,外部機関認証日付,外部機関が最後に認証した日付。,,CO10_03
+149,1,Class,,Exchange Conversion,,,,,,gl-muc,0,,,,,,MC01
+150,2,Attribute,,Exchange Conversion,Amount,xbrli:monetaryItemType,,1,"The amount after currency conversion, expressed in the target currency.",gl-muc,0,,,換算された金額,通貨換算後の金額。換算先の通貨で表される。,,MC01_01
+151,2,Attribute,,Exchange Conversion,Currency,xbrli:QNameItemType,,1,"The currency in which the converted amount is expressed, identified using the ISO 4217 currency code.",gl-muc,0,,,金額の通貨,換算された金額が表される通貨。ISO 4217通貨コードで識別される。,,MC01_02
+152,2,Attribute,,Exchange Conversion,Exchange Rate,xbrli:pureItemType,,0..1,"The exchange rate used for conversion, expressed as the amount of local (or functional) currency per unit of the target currency.",gl-muc,0,,,換算レート,換算に使用された為替レート。換算対象通貨1単位あたりの自国通貨（または機能通貨）で表される。,,MC01_03
+153,2,Attribute,,Exchange Conversion,Exchange Rate Source,xbrli:stringItemType,,0..1,"The source from which the exchange rate was obtained, such as a financial information provider (e.g., Reuters, Bloomberg).",gl-muc,0,,,為替レートの出典,為替レートの取得元。ReutersやBloombergなどの金融情報提供機関を含む。,,MC01_04
+154,2,Attribute,,Exchange Conversion,Exchange Rate Type,xbrli:stringItemType,,0..1,"The type of exchange rate used, such as spot rate, forward rate, or other applicable rate classifications.",gl-muc,0,,,為替レートの種類,使用された為替レートの種類。スポットレートやフォワードレートなどの区分を含む。,,MC01_05
+155,2,Attribute,,Exchange Conversion,Exchange Rate Date,xbrli:dateTimeItemType,,0..1,The date on which the exchange rate was applied or became effective for the conversion.,gl-muc,0,,,適用されたレートの日付,当該為替レートが適用された日付、または換算に有効となった日付。,,MC01_06
+156,2,Attribute,,Exchange Conversion,Exchange Rate Description,xbrli:stringItemType,,0..1,An optional comment providing additional context or clarification regarding the exchange rate or conversion process.,gl-muc,0,,,説明文,為替レートまたは換算処理に関する補足的な文脈や説明を提供する説明文。,,MC01_07
+157,1,Class,,Foreign to Local Currency Conversion,,,,0..*,,gl-muc,0,,,,,,MC02
+150,2,Attribute,,Foreign to Local Currency Conversion.Exchange Conversion,Amount,xbrli:monetaryItemType,,1,"The amount after currency conversion, expressed in the target currency.",gl-muc,0,,,換算された金額,通貨換算後の金額。換算先の通貨で表される。,,MC02_MC01_01
+151,2,Attribute,,Foreign to Local Currency Conversion.Exchange Conversion,Currency,xbrli:QNameItemType,,1,"The currency in which the converted amount is expressed, identified using the ISO 4217 currency code.",gl-muc,0,,,金額の通貨,換算された金額が表される通貨。ISO 4217通貨コードで識別される。,,MC02_MC01_02
+152,2,Attribute,,Foreign to Local Currency Conversion.Exchange Conversion,Exchange Rate,xbrli:pureItemType,,0..1,"The exchange rate used for conversion, expressed as the amount of local (or functional) currency per unit of the target currency.",gl-muc,0,,,換算レート,換算に使用された為替レート。換算対象通貨1単位あたりの自国通貨（または機能通貨）で表される。,,MC02_MC01_03
+153,2,Attribute,,Foreign to Local Currency Conversion.Exchange Conversion,Exchange Rate Source,xbrli:stringItemType,,0..1,"The source from which the exchange rate was obtained, such as a financial information provider (e.g., Reuters, Bloomberg).",gl-muc,0,,,為替レートの出典,為替レートの取得元。ReutersやBloombergなどの金融情報提供機関を含む。,,MC02_MC01_04
+154,2,Attribute,,Foreign to Local Currency Conversion.Exchange Conversion,Exchange Rate Type,xbrli:stringItemType,,0..1,"The type of exchange rate used, such as spot rate, forward rate, or other applicable rate classifications.",gl-muc,0,,,為替レートの種類,使用された為替レートの種類。スポットレートやフォワードレートなどの区分を含む。,,MC02_MC01_05
+155,2,Attribute,,Foreign to Local Currency Conversion.Exchange Conversion,Exchange Rate Date,xbrli:dateTimeItemType,,0..1,The date on which the exchange rate was applied or became effective for the conversion.,gl-muc,0,,,適用されたレートの日付,当該為替レートが適用された日付、または換算に有効となった日付。,,MC02_MC01_06
+156,2,Attribute,,Foreign to Local Currency Conversion.Exchange Conversion,Exchange Rate Description,xbrli:stringItemType,,0..1,An optional comment providing additional context or clarification regarding the exchange rate or conversion process.,gl-muc,0,,,説明文,為替レートまたは換算処理に関する補足的な文脈や説明を提供する説明文。,,MC02_MC01_07
+159,1,Class,,Triangulation to Local Conversion,,,,0..*,,gl-muc,0,,,,,,MC03
+150,2,Attribute,,Triangulation to Local Conversion.Exchange Conversion,Amount,xbrli:monetaryItemType,,1,"The amount after currency conversion, expressed in the target currency.",gl-muc,0,,,換算された金額,通貨換算後の金額。換算先の通貨で表される。,,MC03_MC01_01
+151,2,Attribute,,Triangulation to Local Conversion.Exchange Conversion,Currency,xbrli:QNameItemType,,1,"The currency in which the converted amount is expressed, identified using the ISO 4217 currency code.",gl-muc,0,,,金額の通貨,換算された金額が表される通貨。ISO 4217通貨コードで識別される。,,MC03_MC01_02
+152,2,Attribute,,Triangulation to Local Conversion.Exchange Conversion,Exchange Rate,xbrli:pureItemType,,0..1,"The exchange rate used for conversion, expressed as the amount of local (or functional) currency per unit of the target currency.",gl-muc,0,,,換算レート,換算に使用された為替レート。換算対象通貨1単位あたりの自国通貨（または機能通貨）で表される。,,MC03_MC01_03
+153,2,Attribute,,Triangulation to Local Conversion.Exchange Conversion,Exchange Rate Source,xbrli:stringItemType,,0..1,"The source from which the exchange rate was obtained, such as a financial information provider (e.g., Reuters, Bloomberg).",gl-muc,0,,,為替レートの出典,為替レートの取得元。ReutersやBloombergなどの金融情報提供機関を含む。,,MC03_MC01_04
+154,2,Attribute,,Triangulation to Local Conversion.Exchange Conversion,Exchange Rate Type,xbrli:stringItemType,,0..1,"The type of exchange rate used, such as spot rate, forward rate, or other applicable rate classifications.",gl-muc,0,,,為替レートの種類,使用された為替レートの種類。スポットレートやフォワードレートなどの区分を含む。,,MC03_MC01_05
+155,2,Attribute,,Triangulation to Local Conversion.Exchange Conversion,Exchange Rate Date,xbrli:dateTimeItemType,,0..1,The date on which the exchange rate was applied or became effective for the conversion.,gl-muc,0,,,適用されたレートの日付,当該為替レートが適用された日付、または換算に有効となった日付。,,MC03_MC01_06
+156,2,Attribute,,Triangulation to Local Conversion.Exchange Conversion,Exchange Rate Description,xbrli:stringItemType,,0..1,An optional comment providing additional context or clarification regarding the exchange rate or conversion process.,gl-muc,0,,,説明文,為替レートまたは換算処理に関する補足的な文脈や説明を提供する説明文。,,MC03_MC01_07
+161,1,Class,,Foreign to Triangulation Conversion,,,,0..*,,gl-muc,0,,,,,,MC04
+150,2,Attribute,,Foreign to Triangulation Conversion.Exchange Conversion,Amount,xbrli:monetaryItemType,,1,"The amount after currency conversion, expressed in the target currency.",gl-muc,0,,,換算された金額,通貨換算後の金額。換算先の通貨で表される。,,MC04_MC01_01
+151,2,Attribute,,Foreign to Triangulation Conversion.Exchange Conversion,Currency,xbrli:QNameItemType,,1,"The currency in which the converted amount is expressed, identified using the ISO 4217 currency code.",gl-muc,0,,,金額の通貨,換算された金額が表される通貨。ISO 4217通貨コードで識別される。,,MC04_MC01_02
+152,2,Attribute,,Foreign to Triangulation Conversion.Exchange Conversion,Exchange Rate,xbrli:pureItemType,,0..1,"The exchange rate used for conversion, expressed as the amount of local (or functional) currency per unit of the target currency.",gl-muc,0,,,換算レート,換算に使用された為替レート。換算対象通貨1単位あたりの自国通貨（または機能通貨）で表される。,,MC04_MC01_03
+153,2,Attribute,,Foreign to Triangulation Conversion.Exchange Conversion,Exchange Rate Source,xbrli:stringItemType,,0..1,"The source from which the exchange rate was obtained, such as a financial information provider (e.g., Reuters, Bloomberg).",gl-muc,0,,,為替レートの出典,為替レートの取得元。ReutersやBloombergなどの金融情報提供機関を含む。,,MC04_MC01_04
+154,2,Attribute,,Foreign to Triangulation Conversion.Exchange Conversion,Exchange Rate Type,xbrli:stringItemType,,0..1,"The type of exchange rate used, such as spot rate, forward rate, or other applicable rate classifications.",gl-muc,0,,,為替レートの種類,使用された為替レートの種類。スポットレートやフォワードレートなどの区分を含む。,,MC04_MC01_05
+155,2,Attribute,,Foreign to Triangulation Conversion.Exchange Conversion,Exchange Rate Date,xbrli:dateTimeItemType,,0..1,The date on which the exchange rate was applied or became effective for the conversion.,gl-muc,0,,,適用されたレートの日付,当該為替レートが適用された日付、または換算に有効となった日付。,,MC04_MC01_06
+156,2,Attribute,,Foreign to Triangulation Conversion.Exchange Conversion,Exchange Rate Description,xbrli:stringItemType,,0..1,An optional comment providing additional context or clarification regarding the exchange rate or conversion process.,gl-muc,0,,,説明文,為替レートまたは換算処理に関する補足的な文脈や説明を提供する説明文。,,MC04_MC01_07
+163,1,Class,,Multicurrency Detail,,,,0..*,Structure to provide additional information related to home currencies that differ from original currencies and related exchange rates - typically this will be used to record exchange rates and amounts in currencies and/or on dates other than those of the original transaction. This structure allows recording of exchange rates using a third currency as a triangulation currency. This is often EUR but is not restricted to being so. This structure may be repeated as many times as necessary to record amounts in foreign currencies on the same or different dates.,gl-muc,0,,,【多通貨明細】,"原取引時の通貨と異なる、自国通貨と換算レートに関する追加情報のセクション。－現在および原取引時の、換算レートおよび金額の記録に使用される。
+トライアンギュレーション通貨としての第三通貨の換算レートを記録できる。EURの場合が多いがそれに限らない。この構造は、同日または異なる日の外貨での金額を記録する必要がある限り、繰り返し指定可能。",,MC05
+164,2,Composition,,Multicurrency Detail,,,Foreign to Local Currency Conversion,0..1,,gl-muc,0,,,,,,MC05_01
+165,2,Composition,,Multicurrency Detail,,,Triangulation to Local Conversion,0..1,,gl-muc,0,,,,,,MC05_02
+166,2,Composition,,Multicurrency Detail,,,Foreign to Triangulation Conversion,0..1,,gl-muc,0,,,,,,MC05_03
+167,1,Class,,Identifier Reference,,,,0..*,"Identification for customer, vendor, or employee.",gl-cor,0,,,【CVE情報】,顧客、仕入先、従業員のための識別子。,,CO11
+168,2,Attribute,PK,Identifier Reference,ID Number,xbrli:stringItemType,,0..1,Internal ID Number associated with identifierReference,gl-cor,0,,,CVE識別番号（内部）,identifierReferenceに関係付けられた、内部ID番号。,,CO11_01
+169,2,Attribute,,Identifier Reference,Purpose,xbrli:stringItemType,,0..1,"Freeform for codes like purchasing, billing, manufacturing at identifier level.",gl-cor,0,,,CVE目的,購買、請求、製造などの、CVE識別子のレベルのコードの自由記述。,,CO11_BU11_02
+170,2,Attribute,,Identifier Reference,Active,xbrli:booleanItemType,,0..1,"Boolean to indicate whether the identifier is active (=""true"") or inactive (=""false"")",gl-cor,0,,,CVE有効性,CVE識別子が有効か無効かを示すブール値。,,CO11_03
+171,2,Attribute,,Identifier Reference,Organization Type,xbrli:tokenItemType,,0..1,"Identifier Organization Type. Enumerated as: individual, organization, other.",gl-cor,0,,,CVE組織種別,"CVE識別子の組織種別。
+[設定値のリスト]
+(individual：個人)、(organization：組織)、(other：その他)",,CO11_04
+172,2,Attribute,,Identifier Reference,Organization Type Description,xbrli:stringItemType,,0..1,Free format description of the identifier organization type,gl-cor,0,,,CVE組織種別説明,CVE識別子の組織種別の説明。,,CO11_05
+173,2,Attribute,,Identifier Reference,Description,xbrli:stringItemType,,0..1,Textual description of identifierReference.,gl-cor,0,,,CVE説明,identifierReferenceの説明。,,CO11_06
+174,2,Attribute,,Identifier Reference,Type,xbrli:tokenItemType,,0..1,"Entity type (enumerated): C, customer, E, employee, V, vendor, O, other, I, salesperson-internal, X, salesperson-external, N, contractor.",gl-cor,0,,,CVE種別,"実体の種別。 [設定値のリスト] (C)、(customer：顧客)、(E)、(employee：従業員)、(V)、(vendor：仕入先)、(O)、(other：その他)、(I)、(salesperson-internal：店舗内販売員)、(X)、(salesperson-external：外交販売員)、(N)、(contractor：請負者)",,CO11_07
+175,2,Attribute,,Identifier Reference,Category,xbrli:stringItemType,,0..1,"For use as Customer, Vendor or Employee Class (such as Residential/Commercial/Institutional/Government or Retail/Wholesale or other classifications used by business).",gl-cor,0,,,CVEカテゴリ,顧客、仕入先、従業員の分類に使用する。　（住居/商業/機関/政府や、小売/卸や、ビジネスで使用されるその他の分類）。,,CO11_08
+176,2,Composition,,Identifier Reference,,,External Authority,0..*,,gl-cor,0,,,【外部機関】,識別子と関係付けられる外部機関への参照情報を含む構造体。,,CO11_09
+177,2,Composition,,Identifier Reference,,,Email,0..*,,gl-cor,0,,,【CVEEメールアドレス】,CVE識別子のEメールアドレス。,,CO11_10
+178,2,Composition,,Identifier Reference,,,Phone,0..*,,gl-cor,0,,,【電話番号】,CVE識別子の電話番号。,,CO11_11
+179,2,Composition,,Identifier Reference,,,Fax,0..*,,gl-cor,0,,,【FAX番号】,CVE識別子のFAX番号の構造体。,,CO11_12
+180,2,Composition,,Identifier Reference,,,Address,0..*,,gl-cor,0,,,【CVE住所】,統合目的やVATのための、顧客、仕入先、従業員の住所(ブロック)。,,CO11_BU11_13
+181,2,Composition,,Identifier Reference,,,Contact,0..*,,gl-cor,0,,,【CVE担当者情報】,CVE識別子の担当者情報の構造体。,,CO11_14
+182,1,Class,,XBRL Information,,,,0..*,This will roll up to XBRL reporting information - this is a parent - repeatable so that the same item can be reported through many taxonomies. Care should be taken to consider what happens if people post to the same account but different XBRL elements.,gl-cor,0,,,【XBRL情報】,XBRLレポート情報へのロールアップ情報。親タグであり、同じ項目が複数のタクソノミを通じて報告されうるように繰り返し可能。同一の勘定科目を異なるXBRL要素に転記した場合にどうなるか、注意深く考慮すべきである。,,CO12
+183,2,Attribute,,XBRL Information,XBRL Allocation,xbrli:tokenItemType,,0..1,"Indicates that the information being given is beginning_balance, ending_balance, period_change.",gl-cor,0,,,XBRL割当,"与えられた情報が、期首残高、期末残高、期中増減のいずれであるかを示す。
+[設定値のリスト]
+(beginning_balance：期首残高)、(ending_balance：期末残高)、(period_change：期中増減)",,CO12_01
+184,2,Attribute,,XBRL Information,Summary Reporting Element,xbrli:QNameItemType,,0..1,Associated XBRL element or XML element within an XML taxonomy - mapping to an XBRL concept.,gl-cor,0,,,集約報告エレメント,関係付けられた、XMLタクソノミ中のXBRL要素または、XML要素。XBRLコンセプトへのマッピング。,,CO12_02
+185,2,Attribute,,XBRL Information,Detail Matching Element,xbrli:QNameItemType,,0..1,Associated XBRL element in XBRL-GL instance.,gl-cor,0,,,明細対応エレメント,関係付けられた、XBRL-GLインスタンス中のXBRL要素。,,CO12_03
+186,2,Attribute,,XBRL Information,Summary Tuple Path,xbrli:stringItemType,,0..1,Specific filter for parent tuple structure. This value must be valid XPath. And the result of the XPath must be resolved to a node.,gl-cor,0,,,集約タプルパス,親タグ構造を特定するフィルタ。妥当なXPath記述でなければならない。XPathの結果はノードでなければならない。,,CO12_SR12_04
+187,2,Attribute,,XBRL Information,Detailed Content Filter,xbrli:stringItemType,,0..1,"Filtering mechanism. This value must be valid XPath. And the result of the XPath must be resolved to boolean. If the resulting value is false, the entry  must not mapped into specified facts in F/S.",gl-cor,0,,,明細コンテントフィルタ,フィルタリング手段。妥当なXPath記述でなければならない。XPathの結果はブール値でなければならない。結果がfalseの場合は、仕訳はF/S内の特定のfactsにマッピングされてはならない。,,CO12_SR12_05
+188,2,Attribute,,XBRL Information,Reporting Date Selector,xbrli:tokenItemType,,0..1,This holds the concepts in GL data to create FS contexts.  The value must be a list of QName. Each QName must be resolved to GL items. Order of the items defines priority to access.,gl-cor,0,,,報告日付セレクタ,F/Sのコンテキストを生成するためのGLデータの概念を示す。QNameのリストでなければならない。個々のQNameはGL項目を示さなければならない。項目の並びはアクセスの優先度を示す。,,CO12_SR12_06
+189,2,Attribute,,XBRL Information,Summary Operator,xbrli:stringItemType,,0..1,The operator applied to the amount or quantity when it is rolled up to a summary reporting element.,gl-cor,0,,,,,,CO12_SR12_07
+190,2,Attribute,,XBRL Information,Summary Unit Numerator,xbrli:tokenItemType,,1..1,This holds the list of measure information for unit numerator. The value must be a list of QName. Each QName must be resolved to be measure information such as iso4217:usd.,gl-cor,0,,,集約ユニット分子,集約のユニットの分子の測定情報のリスト。QNameのリストでなければならない。QNameはiso4217:usdのような、解決される測定情報でなければならない。,,CO12_SR12_08
+191,2,Attribute,,XBRL Information,Summary Unit Denominator,xbrli:tokenItemType,,0..1,This holds the list of measure information for unit denominator. The value must be a list of QName. Each QName must be resolved to be measure information such as iso4217:usd.,gl-cor,0,,,集約ユニット分母,集約のユニットの分母の測定情報のリスト。QNameのリストでなければならない。QNameはiso4217:usdのような、解決される測定情報でなければならない。,,CO12_SR12_09
+192,2,Attribute,,XBRL Information,Summary Reporting Taxonomy ID Reference,xbrli:stringItemType,,0..1,"Reference to the ID of the relevant target reporting taxonomy, defined in the [summaryReportingTaxonomies] structure at [documentInfo] level. Allows consuming applications to identify sets of [xbrlInfo] structures that point to a specific taxonomy.",gl-cor,0,,,集約報告タクソノミ識別子参照情報,関連する報告タクソノミの識別子への参照情報。documentInfo内のsummaryReportingTaxonomies構造体で定義される。特定のタクソノミを示すxbrlInfo構造体の集合を、アプリケーションが識別できるようにする。,,CO12_SR12_10
+193,1,Class,,Measurable,,,,0..*,"Parent for information regarding measurable items associated with the enclosing entryDetail line. Primary area used for holding performance measures. Based on needs for tracking inventory transactional detail, but suitable for anything assigned to an ""account"", ""reporting bucket"" or ""code"". Can be used to track any movements.",gl-bus,0,,,【計測可能物情報】,明細行に関係付けられた、計測可能物の情報の親タグ。おもにパフォーマンス測定のために使用される。在庫移動の詳細の追跡の必要性に基づき、「科目」、「報告バケット」、「コード」に関係付けられるあらゆるものに適する。あらゆる活動を追跡するために使用可能。,,BU15
+194,2,Attribute,PK,Measurable,Identification,xbrli:stringItemType,,0..1,Internal inventory part or SKU number or other code identifier for the measurable.,gl-bus,0,,,計測可能物識別子,計測可能物の社内在庫部分またはSKU番号またはその他のコード識別子。,,BU15_01
+195,2,Attribute,,Measurable,Code,xbrli:tokenItemType,,0..1,"Code for measurable item including BP - Business process, FA - Fixed asset/Capitalized item, IN - Inventory, KPI - Metric, NT - Intangible, SP - Supplies, SV-P - Service by employee, vendor or contractor, SV-M - Service by equipment/machinery, OT - Other",gl-bus,0,,,計測可能物コード,"計測可能物のコード。ビジネスプロセス、固定資産/資産化項目、在庫、測定基準、無形資産、貯蔵品、従業員/提供元/請負者によるサービス、装置/機械によるサービス、その他
+[設定値のリスト]
+(BP：ビジネスプロセス)、(FA：固定資産/資産化項目)、(IN：在庫)、(KPI：測定基準)、(NT：無形資産)、(SP：貯蔵品)、(SV-P：従業員/提供元/請負者によるサービス)、(SV-M：装置/機械によるサービス)、(OT：その他)",,BU15_02
+196,2,Attribute,,Measurable,Code Description,xbrli:stringItemType,,0..1,Free format description of the measurable code,gl-bus,0,,,計測可能物コード説明,計測可能物のコードの説明。,,BU15_03
+197,2,Attribute,,Measurable,Category,xbrli:stringItemType,,0..1,Category of the measurable,gl-bus,0,,,計測可能物カテゴリ,計測可能物のカテゴリ。,,BU15_04
+198,2,Attribute,,Measurable,Schema for Identification,xbrli:stringItemType,,0..1,URI or other identifier for schema with which measurable ID can be validated,gl-bus,0,,,計測可能物識別子スキーマ,計測可能物のIDを検証するスキーマの、URIまたはその他の識別子。,,BU15_05
+199,2,Attribute,,Measurable,Secondary Identifier,xbrli:stringItemType,,0..1,Second identifier (such as vendor's item number),gl-bus,0,,,計測可能物第二識別子,第二識別子。（例えば、ベンダーでの品目番号）。,,BU15_06
+200,2,Attribute,,Measurable,Schema for Secondary Identification,xbrli:stringItemType,,0..1,URI or other identifier for schema with which measurable ID Other can be validated,gl-bus,0,,,計測可能物第二識別子スキーマ,計測可能物の第二IDを検証するスキーマの、URIまたはその他の識別子。,,BU15_07
+201,2,Attribute,,Measurable,Description,xbrli:stringItemType,,0..1,Text description of measurable (e.g. inventory item or other identifier),gl-bus,0,,,計測可能物説明,計測可能物の説明。（たとえば、在庫やその他の識別子）,,BU15_08
+202,2,Attribute,,Measurable,Quantity,xbrli:decimalItemType,,0..1,"Number of units in this transaction; for non-monetary calculations; can be square footage, number of people, etc.",gl-bus,0,,,数量,この取引における、単位数量。金額計算用ではない。平方フィート、人数など。,,BU15_09
+203,2,Attribute,,Measurable,Qualifier,xbrli:tokenItemType,,0..1,"Field that can represent grading, inspection codes, ratings and other qualifiers to properly capture PKI/Balanced Scorecard information",gl-bus,0,,,修飾子,PKI又はバランススコアカード情報を適正に把握するための、等級付け、検査コード、格付けその他の修飾子を示す。,,BU15_10
+204,2,Attribute,,Measurable,Unit of Measure,xbrli:stringItemType,,0..1,"Description of unit: e.g. each, case, dozen, etc. ISO standard coding recommended.",gl-bus,0,,,計量単位,単位の説明。たとえば、個、箱、ダースなど。ISO標準のコードを推奨。,,BU15_11
+205,2,Attribute,,Measurable,Per Unit Cost Price,xbrli:monetaryItemType,,0..1,"Per unit price of the measurable. Although one might expect that measurableQuantity * measurableCostPerUnit = amount, this is not mandated except by external rules sets.",gl-bus,0,,,単価,"計測可能物の単価。
+measurableQuantity * measurableCostPerUnit = amountであることを期待するかもしれないが、外部規則がなければ必須ではない。",,BU15_12
+206,2,Attribute,,Measurable,Start Time,xbrli:dateTimeItemType,,0..1,Start time of the duration being measured,gl-bus,0,,,開始日時,計量期間の開始時刻。,,BU15_13
+207,2,Attribute,,Measurable,End Time,xbrli:dateTimeItemType,,0..1,End time of the duration being measured,gl-bus,0,,,終了日時,計量期間の終了時刻。,,BU15_14
+208,2,Attribute,,Measurable,Active,xbrli:booleanItemType,,0..1,"Boolean to indicate whether the measurable is active (=""true"") or inactive (=""false"")",gl-bus,0,,,計測可能物有効性,計測可能物が有効か無効かを示すブール値。,,BU15_15
+209,1,Class,,Job Information,,,,0..*,"Tuple for holding job related information, separate from jobs represented in account identifier. Would probably only have one jobinfo tuple for each entry line, but there may be a need to express more than one.",gl-bus,0,,,【ジョブ情報】,科目識別子で表現されるジョブとは別の、ジョブに関係する情報のタプル。個々の明細行に対してひとつだけ存在すると思われるが、複数必要かもしれない。,,BU16
+210,2,Attribute,PK,Job Information,Identifier,xbrli:stringItemType,,0..1,"Associated job number or code. This could be built into the account, but many systems maintain a separate job coding system. Use primarily if job identification is a separate system, and not considered part of the chart of accounts.",gl-bus,0,,,ジョブ識別子,関連するジョブ番号かジョブコード。 科目に組み込めるかもしれないが、多くのシステムでは独立したジョブコードシステムを持っている。おもに、ジョブの識別が別システムであり、科目体系に含まれないときに使用される。,,BU16_UK16_01
+211,2,Attribute,,Job Information,Description,xbrli:stringItemType,,0..1,Description of job,gl-bus,0,,,ジョブ説明,ジョブの説明。,,BU16_UK16_02
+212,2,Attribute,,Job Information,Phase,xbrli:stringItemType,,0..1,"Job code, phase, activity. Allows greater granularity than a simple job number. Although the core only reaches down from job to phases, this can be customized to extend down to cost codes.",gl-bus,0,,,ジョブフェーズ,ジョブコード、フェーズ、活動。 簡単なジョブ番号より詳細な定義が可能。基本的には、ジョブからフェーズを導くのみだが、コストコードにまでいたるように拡張可能。,,BU16_UK16_03
+213,2,Attribute,,Job Information,Phase Description,xbrli:stringItemType,,0..1,"Description of Job code, phase, activity",gl-bus,0,,,ジョブフェーズ説明,ジョブコード、フェーズ、活動の説明。,,BU16_UK16_04
+214,2,Attribute,,Job Information,Active,xbrli:booleanItemType,,0..1,"Boolean to indicate whether the job is active (=""true"") or inactive (=""false"")",gl-bus,0,,,ジョブ有効性,ジョブが有効か無効かを示すブール値。,,BU16_UK16_05
+215,1,Class,,Depreciation Mortgage,,,,0..*,"Parent for information related to depreciation, mortgages, etc.",gl-bus,0,,,【減価償却/抵当債務情報】,減価償却、抵当債務等に関連する情報の親タグ。,,BU17
+216,2,Attribute,,Depreciation Mortgage,Mortgage Jurisdiction,xbrli:tokenItemType,,0..1,"Jurisdiction (e.g. federal, state, local): e.g. US Federal, Province of Québec, other identifier. Enumerated as: F, federal, S, state, L, local, other.",gl-bus,0,,,抵当債務管轄,"管轄地区。（連邦、州、ローカル、等）。たとえば、米国連邦政府、ケベック州、その他の識別子。
+[設定値のリスト]
+(F)、(federal：連邦)、(S)、(state：州)、(L)、(local：地域)、(other：その他)",,BU17_01
+217,2,Attribute,,Depreciation Mortgage,Depreciation Method,xbrli:stringItemType,,0..1,"Type of depreciation method: used for information about the loan percentage for loan or the depreciation method. This is used for informational purposes only. Examples of entries are ""20%"", ""5 year DDB"" (Double Declining Balance).",gl-bus,0,,,減価償却方法,減価償却方法のタイプ。ローンのパーセンテージや減価償却方法に関する情報を含む。単なる情報提供を目的とする。たとえば、20%、5年、DDB(倍額定率)。,,BU17_02
+218,2,Attribute,,Depreciation Mortgage,Mortgage Life,xbrli:decimalItemType,,0..1,Length of life in number of periods.,gl-bus,0,,,抵当債務期間,存在する期間数。,,BU17_03
+219,2,Attribute,,Depreciation Mortgage,Description,xbrli:stringItemType,,0..1,"Description of each item related to depreciation, mortgage, loan, credit facility, etc.",gl-bus,0,,,債務説明,減価償却や債権債務、ローン、信用供与等に関する項目の説明。,,BU17_04
+220,2,Attribute,,Depreciation Mortgage,Start Date,xbrli:dateTimeItemType,,0..1,"Start of the applicable period of each item related to depreciation, mortgage, loan, credit facility, etc.",gl-bus,0,,,開始日付,減価償却や債権債務、ローン、信用供与等に関する項目の、適用期間の開始日。,,BU17_05
+221,2,Attribute,,Depreciation Mortgage,End Date,xbrli:dateTimeItemType,,0..1,"End of the applicable period of each item related to depreciation, mortgage, loan, credit facility, etc.",gl-bus,0,,,終了日付,減価償却や債権債務、ローン、信用供与等に関する項目の、適用期間の終了日。,,BU17_06
+222,2,Attribute,,Depreciation Mortgage,Amount,xbrli:monetaryItemType,,0..1,"Amount of a cost or fee charged for a mortgage, loan, credit facility, etc.",gl-bus,0,,,手数料,減価償却や債権債務、ローン、信用供与等で請求されるコストや手数料。,,BU17_07
+223,1,Class,,Serial or Lot,,,,0..*,"Tuple for holding information about serial numbers or lots (batches). As a tuple, this permits multiple serial numbers or multiple lot number batches within a single gl-cor:measurable structure.",gl-ehm,0,,,【シリアル番号・ロット情報】,シリアル番号やロット（バッチ）に関する情報を保持するタプル。単一の構造内に複数のシリアル番号やロット情報を保持可能。,,EH01
+224,2,Attribute,PK,Serial or Lot,Code,xbrli:tokenItemType,,0..1,"Is this item tracked by serial numbers or lot numbers? A serial number is usually a unique number assigned to a single; a lot or batch number is provided when a batch of items is fungible but must be differentiated from similar items from other batches. Enumerated indicator for serial or lot items. Enumeration are: serial, lot, other, neither. If not included within the tuple, neither is assumed.",gl-ehm,0,,,シリアル・ロット識別コード,この項目はシリアル番号またはロット番号で管理されているか？シリアル番号は一意に付番されたもので、ロット番号は同一バッチの区別を目的に使用される。,,EH01_01
+225,2,Attribute,,Serial or Lot,Description,xbrli:stringItemType,,0..1,Free format description associated with gl-ehm:serialLotCode to provide specialization and especially to provide clarification for the enumerated value of other in serialLotCode. Examples might be “batch” or “group”.,gl-ehm,0,,,シリアル・ロットの説明,gl-ehm:serialLotCode の「その他」の値のための自由記述の説明（例：バッチ、グループなど）。,,EH01_02
+226,2,Attribute,,Serial or Lot,Number,xbrli:stringItemType,,0..1,The holder for that actual serial number or lot (batch) number/code assigned to an item or a batch of items.,gl-ehm,0,,,シリアル番号・ロット番号,対象アイテムやロットに割り当てられた実際の番号／コードを保持する。,,EH01_03
+227,2,Attribute,,Serial or Lot,Next Number,xbrli:stringItemType,,0..1,"A field for holding the next expected serial or lot number to be given to future assignments, or for chaining between already assigned items.",gl-ehm,0,,,次のシリアル・ロット番号,今後割り当て予定の次のシリアル／ロット番号や、既に割り当てられたアイテムの連結に使用。,,EH01_04
+228,2,Attribute,,Serial or Lot,Quantity,xbrli:decimalItemType,,0..1,The quantity of units in this particular batch. Unit of measure is the gl-bus:measurableUnitofMeasure.,gl-ehm,0,,,シリアル・ロットの数量,該当ロット内の単位数。単位は gl-bus:measurableUnitofMeasure に基づく。,,EH01_05
+229,2,Attribute,,Serial or Lot,Original Quantity,xbrli:decimalItemType,,0..1,The quantity of units in this batch on inception.,gl-ehm,0,,,シリアル・ロット元数量,このロットが生成された時点の元の数量。,,EH01_06
+230,2,Attribute,,Serial or Lot,Remaining Quantity,xbrli:decimalItemType,,0..1,The remaining quantity of units from the original batch; may be the same as the quantity in this batch or include other batches from the same original batch.,gl-ehm,0,,,シリアル・ロット残数量,元ロットからの残りの数量。,,EH01_07
+231,2,Attribute,,Serial or Lot,Origination,xbrli:dateTimeItemType,,0..1,Date of manufacture or creation.,gl-ehm,0,,,シリアル・ロット生成日,製造日または作成日。,,EH01_08
+232,2,Attribute,,Serial or Lot,Expiration,xbrli:dateTimeItemType,,0..1,Expiration date of the batch.,gl-ehm,0,,,シリアル・ロット有効期限,ロットの有効期限。,,EH01_09
+233,2,Attribute,,Serial or Lot,Manufacturer,xbrli:stringItemType,,0..1,Manufacturer of the item (serial) or items (lot/batch).,gl-ehm,0,,,シリアル・ロット製造元,シリアル番号またはロットの製造者。,,EH01_10
+234,2,Attribute,,Serial or Lot,Batch Description,xbrli:stringItemType,,0..1,A name or description of the items in the lot or batch.,gl-ehm,0,,,シリアル・ロットバッチの説明,ロットまたはバッチ内のアイテムの名称や説明。,,EH01_11
+235,2,Attribute,,Serial or Lot,Warranty Start Date,xbrli:dateTimeItemType,,0..1,"If the items are covered by warranty, when that warranty covered will begin or has begun.",gl-ehm,0,,,保証開始日,保証対象となる場合の保証開始日。,,EH01_12
+236,2,Attribute,,Serial or Lot,Warranty End Date,xbrli:dateTimeItemType,,0..1,"If the items are covered by warranty, when that warranty covered will end or ended.",gl-ehm,0,,,保証終了日,保証対象となる場合の保証終了日。,,EH01_13
+237,2,Attribute,,Serial or Lot,Warranty Period,xbrli:decimalItemType,,0..1,"Warranty period – numeric portion; for a 30 day warranty period, the 30 would go here, and the day would go in gl-ehm:serialLotWarrantyPeriodUnit.",gl-ehm,0,,,保証期間（数値）,保証期間の数値部分（例：30日保証の場合は「30」）。,,EH01_14
+238,2,Attribute,,Serial or Lot,Warrant Period Unit,xbrli:stringItemType,,0..1,"Warrant period – time or cycle unit portion. Values from the XBRL Unit Registry (www.xbrl.org/utr/utr.xml) are suggested where possible. Examples might include: H (hours), D (days), M (months), Y (years), machine cycles, km (kilometers).",gl-ehm,0,,,保証期間（単位）,保証期間の単位（例：日、月、年、km、機械サイクルなど）。,,EH01_15
+239,2,Attribute,,Serial or Lot,Warranty Vendor,xbrli:stringItemType,,0..1,The vendor providing warranty; this may differ from the manufacturer.,gl-ehm,0,,,保証提供業者,保証を提供するベンダー（製造者とは異なる可能性あり）。,,EH01_16
+240,2,Attribute,,Serial or Lot,Warranty Contract,xbrli:stringItemType,,0..1,"Contract or document information related to the warranty, such as a contract number and date or a URL with more information.",gl-ehm,0,,,保証契約情報,保証に関する契約番号、日付、URL などの情報。,,EH01_17
+241,2,Attribute,,Serial or Lot,Comment,xbrli:stringItemType,,0..1,Free format text related to the serial number or lot.,gl-ehm,0,,,シリアル・ロット備考,シリアルまたはロットに関する自由形式のテキスト。,,EH01_18
+242,1,Class,,Tax Information,,,,0..*,Tuple for holding tax related information,gl-cor,0,,,【税情報】,税関連の情報のタプル。,,CO13
+243,2,Attribute,,Tax Information,Authority,xbrli:stringItemType,,0..1,Name of the relevant tax authority,gl-cor,0,,,課税庁,関係する課税庁の名前。,,CO13_01
+244,2,Attribute,,Tax Information,Table Code,xbrli:stringItemType,,0..1,Tax table code used by the relevant tax authority,gl-cor,0,,,税率表コード,関係する課税庁で使用される税率表のコード。,,CO13_02
+245,2,Attribute,,Tax Information,Description,xbrli:stringItemType,,0..1,Description of tax authority,gl-cor,0,,,課税庁説明,課税庁の説明。,,CO13_03
+246,2,Attribute,,Tax Information,Amount of Taxes,xbrli:monetaryItemType,,0..1,Amount of taxes,gl-cor,0,,,税額,税額。,,CO13_04
+247,2,Attribute,,Tax Information,Basis for Taxation,xbrli:monetaryItemType,,0..1,Basis for taxation,gl-cor,0,,,課税基準,課税基準。,,CO13_05
+248,2,Attribute,,Tax Information,Percentage Rate,xbrli:pureItemType,,0..1,Percent rate for VAT or other taxes normally a number between 0 and 1.0 - e.g. 50% is represented as 0.5,gl-cor,0,,,税率,"VAT(物品税)またはその他の税のパーセント比率。
+0から1.0の間の値。たとえば50%は0.5とあらわす。",,CO13_06
+249,2,Attribute,,Tax Information,Category,xbrli:stringItemType,,0..1,A class or category of taxes,gl-cor,0,,,税区分,税のクラス又はカテゴリ。,,CO13_07
+250,2,Attribute,,Tax Information,Comment/Exemption Reason,xbrli:stringItemType,,0..1,Additional text/code for exemption reasons or other comments.,gl-cor,0,,,税コメント/免税理由,免税理由やその他のコメントのための、追加の文またはコード。,,CO13_08
+251,2,Composition,,Tax Information,,,Foreign to Local Currency Conversion,0..1,,gl-cor,0,,,,,,CO13_MC13_09
+252,2,Composition,,Tax Information,,,Triangulation to Local Conversion,0..1,,gl-cor,0,,,,,,CO13_MC13_10
+253,2,Composition,,Tax Information,,,Foreign to Triangulation Conversion,0..1,,gl-cor,0,,,,,,CO13_MC13_11
+254,1,Class,,Originating Document,,,,0..*,"A tool to capture the flow of related documents in the business process. Some needs of end users require a greater history of the documents that are associated with a transaction, especially in the VAT audit area. Contains a repetitive structure of related documents.",gl-taf,0,,,【発生元文書情報】,業務プロセス上の、関連文書の流れを捕捉するためのもの。特にVAT監査では、エンドユーザの要求として、取引に関係する文書の履歴が必要とされる。関連文書情報の構造の繰り返しを含む。,,TA01
+255,2,Attribute,PK,Originating Document,Identifier Code,xbrli:stringItemType,,0..1,Originating document identifier code,gl-taf,0,,,発生元文書対象CVEコード,発生元文書の対象となるCVEのコード。,,TA01_01
+256,2,Attribute,,Originating Document,Type,xbrli:tokenItemType,,0..1,"Originating document type  check, debit-memo, credit-memo, finance-charge, invoice, order-customer, order-vendor, payment-other, reminder, tegata, voucher, shipment, receipt, manual-adjustment, other.",gl-taf,0,,,発生元文書種別,発生元文書の種別。小切手(check)、借方メモ(debit-memo)、貸方メモ(credit-memo)、財務費用(finance-charge)、顧客への請求書(invoice)、顧客オーダ(order-customer)、仕入先オーダ(order-vendor)、その他支払い(payment-other)、督促状(reminder)、手形(tegata)、ベンダからの請求書(voucher)、出荷票(shipment)、受領票(receipt)、手修正(manual-adjustment)、その他(other),,TA01_02
+257,2,Attribute,,Originating Document,Number,xbrli:stringItemType,,0..1,Originating document number,gl-taf,0,,,発生元文書番号,発生元文書の番号。,,TA01_03
+258,2,Attribute,,Originating Document,Date,xbrli:dateItemType,,0..1,Originating document date,gl-taf,0,,,発生元文書日付,発生元文書の日付。,,TA01_04
+259,2,Attribute,,Originating Document,Identifier Type,xbrli:tokenItemType,,0..1,"Originating document identifier type. Enumerated as: C, customer, E, employee, V, vendor, O, other, I, salesperson-internal, X, salesperson-external, N, contractor.",gl-taf,0,,,発生元文書対象CVE種別,"発生元文書の対象となるCVEの種別。 [設定値のリスト] (C)、(customer：顧客)、(E)、(employee：従業員)、(V)、(vendor：仕入先)、(O)、(other：その他)、(I)、(salesperson-internal：店舗内販売員)、(X)、(salesperson-external：外交販売員)、(N)、(contractor：請負者)",,TA01_05
+260,2,Attribute,,Originating Document,Identifier Tax Code,xbrli:stringItemType,,0..1,Originating document identifier tax code,gl-taf,0,,,発生元文書対象CVE納税者コード,発生元文書の対象となるCVEの納税者コード。,,TA01_06
+261,1,Class,,Entry Detail,,,,0..*,Parent for entry detail,gl-cor,0,,,【仕訳明細】,仕訳明細の親タグ。,,CO14
+262,2,Attribute,PK,Entry Detail,Line Number,xbrli:stringItemType,,0..1,Identifier for a particular entry detail,gl-cor,0,,,明細行番号,仕訳明細の識別子。,,CO14_01
+263,2,Attribute,,Entry Detail,Line Number Counter,xbrli:decimalItemType,,0..1,Unique reference for the line - a numeric counter,gl-cor,0,,,明細行番号カウンタ,明細行の一意なリファレンス　　カウンタ,,CO14_02
+264,2,Attribute,,Entry Detail,Monetary Amount,xbrli:monetaryItemType,,0..1,"This field (amount) represents the primary monetary amount related to the  subject of the entryDetail line. There is one primary monetary amount per entryDetail structure. It may, for example, represent the amount of one line of a journal entry, the balance on a document, or the extended amount of a line item on an invoice. Amount is not required if detailed entry is used for non-financial work and other elements are populated, in particular measurableQuantity. The amount field is a signed number (either positive or negative itself) and used in conjunction with a separate signOfAmount and a separate debitCreditCode, which together are considered for understanding the monetary amount. The unit of measure is determined by amountCurrency if present, and by the default or home currency if amountCurrency is not present.",gl-cor,0,,,金額,entryDetailの代表的な金額を示す。entryDetailごとにひとつの値を持つ。たとえば、仕訳帳の行、残高、請求書の行の金額。明細が会計業務用でなく、measurableQuantityなどの他の要素が設定されている場合は不要。符号付数値であり、金額を解釈するために用意されたsignOfAmountおよびdebitCreditCodeとあわせて使用される。通貨単位はamountCurrencyで決定される。amountCurrencyが指定されない場合は、既定または自国の通貨単位となる。,,CO14_03
+265,2,Attribute,,Entry Detail,Currency,xbrli:QNameItemType,,0..1,"The currency related to the amount can be entered here instead of the XBRL instance specified way, especially important in multi-currency situations. Recommend ISO 4217 coding.",gl-cor,0,,,通貨,XBRLインスタンス内に指定する方法のかわりに、金額の通貨を指定可能。多通貨環境で特に重要。ISO4217コード体系を推奨。,,CO14_MC14_04
+266,2,Attribute,,Entry Detail,Sign Indication for Amount,xbrli:tokenItemType,,0..1,Sign of amount; provides 4 possible fields only when used in conjunction with debitCreditCode; primarily used for correcting entries so total debits and credits after an entry error are not inflated. D + increase DebitsD - decrease debitsC + decreases creditC - increases credit,gl-cor,0,,,金額符号,"金額の符号。貸借識別子と関連して使用される場合にだけ、4つの可能なフィールドを提供する。記入エラー後の総貸借が膨張しないように、おもに仕訳の訂正に使用される。 D+は借方を増加させる。D-は借方を減少させる。C+は貸方を減少させる。C-は貸方を増加させる。
+[設定値のリスト]
+(+)、(-)、(plus：プラス)、(minus：マイナス)",,CO14_05
+267,2,Attribute,,Entry Detail,Debit/Credit Identifier,xbrli:tokenItemType,,0..1,"Optional identifier of whether the amount is a (D)ebit, a (C)redit or Undefined",gl-cor,0,,,貸借区分コード,"金額が借方か貸方か不定かを示す識別子。
+[設定値のリスト]
+(D)、(C)、(debit：借方)、(credit：貸方)、(undefined：不定)",,CO14_06
+268,2,Attribute,,Entry Detail,Posting Date,xbrli:dateTimeItemType,,0..1,"At the detail level, this represents the accounting significance date. No matter what date the document is received, entered, or posted, this signifies the accounting date of the entry. If you want to see the financial results for March 5, 2002 and this entry is given that date, the entry will be part of the results for March 5, 2002. This is different from the postedDate found at the entryHeader level. If you want the accounting significance to be a particular date, it goes here. A single entry could represent multiple dates, but would only be posted on one date.",gl-cor,0,,,転記日付,明細レベルで、会計上意義のある日付を示す。ドキュメントの受領、入力、転記の日付に関わらず、仕訳が会計処理された日付を示す。2002.03.05の財務結果を見たいときに、ここにその日付がある場合は、この明細は2002.03.05の結果の一部である。これは、entryHeaderにあるpostedDateとは異なる。特定の日付を会計上意義のある日付にしたいなら、ここに記述する。ひとつの仕訳が複数の日付をあらわせるが、ひとつの日でのみ転記される。,,CO14_07
+269,2,Attribute,,Entry Detail,Memo Line,xbrli:booleanItemType,,0..1,A boolean like entry that indicates whether an entryDetail line has been provided solely to provide additional details and that tools should not consider the amount in postings.,gl-cor,0,,,メモ行フラグ,明細行が単に追加の詳細を与えるものであり、転記金額に含めるべきでないことを示すブール値。,,CO14_BU14_08
+270,2,Attribute,,Entry Detail,Allocation Code,xbrli:stringItemType,,0..1,A code that is tied to the Enterprise's allocation system.,gl-cor,0,,,配分コード,配賦システムに結びつけるコード。,,CO14_BU14_09
+271,2,Attribute,,Entry Detail,Document Type,xbrli:tokenItemType,,0..1,"An enumerated field describing the original source document, with check, debit-memo, credit-memo, finance-charge, invoice, order-customer, order-vendor, payment-other, reminder, tegata, voucher, shipment, receipt, manual-adjustment, other.",gl-cor,0,,,元文書種別,"小切手、借方メモ、貸方メモ、財務費用、顧客への請求書、顧客オーダー、仕入先オーダー、その他支払い、督促状、手形、ベンダからの請求書、出荷票、受領票、手修正、その他の列挙値による、元文書の説明。[設定値のリスト] (check：小切手)、(debit-memo：借方メモ)、(credit-memo：貸方メモ)、(finance-charge：財務費用)、(invoice：顧客への請求書)、(order-customer：顧客オーダ)、(order-vendor：仕入先オーダ)、(payment-other：その他支払い)、(reminder：督促状)、(tegata：手形)、(voucher：ベンダからの請求書)、(shipment：出荷票)、(receipt：受領票)、(manual-adjustment：手修正)、(other：その他)",,CO14_10
+272,2,Attribute,,Entry Detail,Document Type Description,xbrli:stringItemType,,0..1,Free format description of the document type,gl-cor,0,,,元文書種別説明,元文書の種別の説明。,,CO14_11
+273,2,Attribute,,Entry Detail,Invoice Type,xbrli:tokenItemType,,0..1,"Invoice Type  (self-billed, ePoS enumerated values)",gl-cor,0,,,請求書種別,"請求書の種別。(self-billed、ePoS)
+[設定値のリスト]
+(ePos：POSシステムからの発行)、(self-billed：手動発行)",,CO14_12
+274,2,Attribute,,Entry Detail,Document Number,xbrli:stringItemType,,0..1,"Invoice, check, voucher, or other source document identifier",gl-cor,0,,,元文書番号,請求書、小切手、証憑、その他の元文書の識別子。,,CO14_13
+275,2,Attribute,,Entry Detail,Apply To Number,xbrli:stringItemType,,0..1,"Document number of primary invoice number, used to offset payments, debits and credits; for an invoice, usually the same as the documentNumber. When calculating open balance on an invoice, or open amount on payments in advance or not fully applied, this permits calculation of the open item.",gl-cor,0,,,適用先番号,"支払、借方、貸方の相殺に使用される、一次請求書の文書番号。請求書では通常documentNumberと等しい。
+未決済の請求書残高や、未決済の支払金額の計算時に、利用できる。",,CO14_14
+276,2,Attribute,,Entry Detail,Document Reference,xbrli:stringItemType,,0..1,Internal reference for the document above; number assigned internally to track the document,gl-cor,0,,,元文書参照情報,上の文書のための内部参照情報。文書を追跡するために内部的に割り当てた番号。,,CO14_15
+277,2,Attribute,,Entry Detail,Document Date,xbrli:dateTimeItemType,,0..1,"Date (and less likely in the paper world but possible in the e-world, time) on actual document (invoice, voucher, check date). Other dates control posting information.",gl-cor,0,,,元文書日付,実際の文書（請求書、証憑、小切手）の日付（および、紙の世界ではありそうにないが、電子的には時刻）。 転記の情報は別の日付で管理する。,,CO14_16
+278,2,Attribute,,Entry Detail,Received Date,xbrli:dateTimeItemType,,0..1,Date/time document was noted as received (if necessary). Represents actual date received. Posting dates are maintained separately.,gl-cor,0,,,元文書受領日付,（必要であれば）文書の受領が記録された日付/時刻。実際に受領された日付をあらわす。転記日付は別に管理される。,,CO14_BU14_17
+279,2,Attribute,,Entry Detail,Chargeable or Reimbursable,xbrli:stringItemType,,0..1,"Is this entry chargeable to client, reimbursable? Used by some systems to indicate that account on posting/validation should be posted to a customer or vendor's account.",gl-cor,0,,,請求支払可能フラグ,この仕訳は顧客に請求、支払可能か。いくつかのシステムでは転記/検証対象の科目が顧客や仕入先の科目に転記されるべきかどうかを示すために使用される。,,CO14_BU14_18
+280,2,Attribute,,Entry Detail,Document Location,xbrli:stringItemType,,0..1,"Document location as URI, file name or other reference. Alternatively, text of document can be placed here.",gl-cor,0,,,元文書格納場所,文書の格納場所である、URI、ファイル名またはその他の参照情報。代わりに、文書のテキストも記述可能。,,CO14_BU14_19
+281,2,Attribute,,Entry Detail,Payment Method,xbrli:stringItemType,,0..1,Method used or to be used to make the payment,gl-cor,0,,,支払方法,支払いのために使用された、または使用される方法。,,CO14_BU14_20
+282,2,Attribute,,Entry Detail,Posting Status,xbrli:tokenItemType,,0..1,"deferred: although entered, it cannot be posted until a later time
+posted: already posted
+proposed: a proposed item that must be approved
+simulated: a simulated item, for what-if
+tax: a tax-specific entry
+unposted:entered but not yet posted or validated
+cancelled:entered and later cancelled
+other:other status - should be described in postingStatusDescription",gl-cor,0,,,転記状態,"・据置：入力されたが、まだ転記できない。
+・転記済：転記済み。
+・提案済：検証が必要な項目。
+・シミュレーション：仮定のためにシミュレートされた項目。
+・税：税項目。
+・未転記：入力されたが、まだ検証も転記もされていない。
+・取消済：入力されたが、取り消された。
+・その他：その他の状態。postingStatusDescriptionで説明されるべき。
+[設定値のリスト]
+(deferred：据置)、(posted：転記済)、(proposed：提案済)、(simulated：シミュレーション)、(tax：税)、(unposted：未転記)、(cancelled：取消済)、(other：その他)",,CO14_21
+283,2,Attribute,,Entry Detail,Posting Status Description,xbrli:stringItemType,,0..1,Free format description of the posting status,gl-cor,0,,,転記状態説明,転記状態の説明。,,CO14_22
+284,2,Attribute,,Entry Detail,Description,xbrli:stringItemType,,0..1,Description of this line of detail only,gl-cor,0,,,説明,この明細行のみに対する説明。,,CO14_23
+285,2,Attribute,,Entry Detail,Acknowledgement Date,xbrli:dateTimeItemType,,0..1,Date of acknowledgement of goods/services shipped/received.,gl-cor,0,,,承認日付,出荷/受領済みの物品/サービスを承認した日付。,,CO14_24
+286,2,Attribute,,Entry Detail,Confirmation Date,xbrli:dateTimeItemType,,0..1,Date of confirmation of shipment/receipt.,gl-cor,0,,,確認日付,出荷/受領を確認した日付。,,CO14_25
+287,2,Attribute,,Entry Detail,Ship From,xbrli:stringItemType,,0..1,References organizationAddressLocationIdentifier where used. Otherwise freeform.,gl-cor,0,,,出荷元,organizationAddressLocationIdentifierの参照情報。または自由記述。,,CO14_26
+288,2,Attribute,,Entry Detail,Date Shipped/Received,xbrli:dateTimeItemType,,0..1,Date goods/services are shipped/received.,gl-cor,0,,,出荷/受領日付,物品/サービスを出荷/受領した日付。,,CO14_27
+289,2,Attribute,,Entry Detail,Maturity Date or Date Due,xbrli:dateTimeItemType,,0..1,Due date or other maturity date.,gl-cor,0,,,支払期日,支払期日やその他の期日。,,CO14_28
+290,2,Attribute,,Entry Detail,Payment Terms,xbrli:stringItemType,,0..1,Discount/payment terms.,gl-cor,0,,,支払条件,割引/支払い条件。,,CO14_29
+291,2,Attribute,,Entry Detail,Measurable Class Identifier,xbrli:tokenItemType,,0..1,"An enumerated code to identify the inventory, fixed asset or other measurable class. Enumerated as: raw material, work-in-process, finished goods, assemblies, supplies, land, building, machinery, furniture, vehicles, other.",gl-cor,0,,,測定可能分類コード,在庫、固定資産、その他の測定可能な分類を識別するための列挙コード。列挙例：原材料、仕掛品、製品、組立品、備品、土地、建物、機械、家具、車両、その他。,,CO14_EH14_30
+292,2,Attribute,,Entry Detail,Measurable Class Description,xbrli:stringItemType,,0..1,Free format description associated with gl-ehm:measurableClassID to provide specialization or clarification for the enumerated value of other.,gl-cor,0,,,測定可能分類の説明,「その他」の列挙値を補足・特定するための自由記述形式の説明。,,CO14_EH14_31
+293,2,Attribute,,Entry Detail,Costing Method Code,xbrli:tokenItemType,,0..1,"An enumerated code for the inventory (or other measurable) costing method. Enumerated as: LIFO, FIFO, average, weighted-average, standard-cost, tax-basis, book-basis, other.",gl-cor,0,,,原価計算方法コード,在庫または他の測定可能な対象の原価計算方法を示す列挙コード。列挙例：LIFO、FIFO、平均法、加重平均法、標準原価法、税基準、帳簿基準、その他。,,CO14_EH14_32
+294,2,Attribute,,Entry Detail,Costing Method Description,xbrli:stringItemType,,0..1,Free format description associated with gl-ehm:costingMethodCode to provide specialization of clarification for the enumerated value of other.,gl-cor,0,,,原価計算方法の説明,「その他」の列挙値に関する補足説明または特定のための自由記述形式。,,CO14_EH14_33
+295,2,Attribute,,Entry Detail,Geospatial Coordinate,xbrli:stringItemType,,0..1,"Enter a relevant location for this item. Format can be either:
+- Degrees, minutes, and seconds (DMS): 41°24'12.2""N 2°10'26.5""E
+- Degrees and decimal minutes (DMM): 41 24.2028, 2 10.4418
+- Decimal degrees (DD): 41.40338, 2.17403",gl-cor,0,,,地理座標,"本項目の関連位置を入力。形式は以下のいずれか：
+・度分秒 (DMS): 41°24'12.2""N 2°10'26.5""E
+・度と小数分 (DMM): 41 24.2028, 2 10.4418
+・10進度 (DD): 41.40338, 2.17403",,CO14_EH14_34
+296,2,Attribute,,Entry Detail,Ticking Field,xbrli:booleanItemType,,0..1,"Signifies that an item has been cleared, finished, finalized. When checking accounts are called for, the tick or letter showing this was done appears in this field. Can also be used for identifying that the
+original document against which a payment or DR/CR memo applies has been reconciled.",gl-cor,0,,,チェック欄,項目が消去または完了されたことを示す。勘定のチェックが要求される場合、処理済を示すチェックマークまたは文字が指定される。支払またはDR/CRのメモに対する元文書が、消し込まれたことを確認するためにも使用可能。,,CO14_TA14_35
+297,2,Attribute,,Entry Detail,Document Remaining Balance,xbrli:monetaryItemType,,0..1,Balance remaining on the document,gl-cor,0,,,文書上残高,文書上の残高。,,CO14_TA14_36
+298,2,Attribute,,Entry Detail,UCR,xbrli:stringItemType,,0..1,"Unique Consignment Reference or UCR. An ""origin to destination"" reference code for international consignments, developed in cooperation with the World Customs Organization and EAN International (EAN). (http://www.wcoomd.org/ie/EN/press/UCR_new_e.pdf)",gl-cor,0,,,UCRコード,"Unique Consignment ReferenceまたはUCR。国際委託販売のための""origin to destination""参照コード。World Customs OrganizationとEAN International (EAN)が共同で開発している。
+(http://www.wcoomd.org/ie/EN/press/UCR_new_e.pdf)",,CO14_TA14_37
+299,2,Composition,,Entry Detail,,,Account Identifier,0..*,,gl-cor,0,,,【科目識別子】,"タプル。勘定科目番号と識別子の親コンテナ。 ここには記入されないが、個々の明細行は、異なるGAAPでの報告や、日本の見返勘定や、連結勘定科目に対する個別情報の連結会計システムへの伝達などのための、複数の勘定科目を持ちうる。例えば、勘定科目4783HG-QOWI-192837-1000は、次のように表現されうる。
+/account/accountMainID 1000  
+/account/accountMainDescription Cash  
+/account/accountSub/accountSubID 4783HG  
+/account/accountSub/accountSubDescription Department  
+/account/accountSub/accountSubID QOWI  
+/account/accountSub/accountSubDescription Branch  
+/account/accountSub/accountSubID 192837  
+/account/accountSub/accountSubDescription Division",,CO14_38
+300,2,Composition,,Entry Detail,,,Multicurrency Detail,0..*,,gl-cor,0,,,【多通貨明細】,"原取引時の通貨と異なる、自国通貨と換算レートに関する追加情報のセクション。－現在および原取引時の、換算レートおよび金額の記録に使用される。
+トライアンギュレーション通貨としての第三通貨の換算レートを記録できる。EURの場合が多いがそれに限らない。この構造は、同日または異なる日の外貨での金額を記録する必要がある限り、繰り返し指定可能。",,CO14_MC14_39
+301,2,Composition,,Entry Detail,,,Identifier Reference,0..*,,gl-cor,0,,,【CVE情報】,顧客、仕入先、従業員のための識別子。,,CO14_40
+302,2,Composition,,Entry Detail,,,XBRL Information,0..*,,gl-cor,0,,,【XBRL情報】,XBRLレポート情報へのロールアップ情報。親タグであり、同じ項目が複数のタクソノミを通じて報告されうるように繰り返し可能。同一の勘定科目を異なるXBRL要素に転記した場合にどうなるか、注意深く考慮すべきである。,,CO14_41
+303,2,Composition,,Entry Detail,,,Measurable,0..*,,gl-cor,0,,,【計測可能物情報】,明細行に関係付けられた、計測可能物の情報の親タグ。おもにパフォーマンス測定のために使用される。在庫移動の詳細の追跡の必要性に基づき、「科目」、「報告バケット」、「コード」に関係付けられるあらゆるものに適する。あらゆる活動を追跡するために使用可能。,,CO14_BU14_42
+304,2,Composition,,Entry Detail,,,Job Information,0..*,,gl-cor,0,,,【ジョブ情報】,科目識別子で表現されるジョブとは別の、ジョブに関係する情報のタプル。個々の明細行に対してひとつだけ存在すると思われるが、複数必要かもしれない。,,CO14_BU14_43
+305,2,Composition,,Entry Detail,,,Depreciation Mortgage,0..*,,gl-cor,0,,,【減価償却/抵当債務情報】,減価償却、抵当債務等に関連する情報の親タグ。,,CO14_BU14_44
+306,2,Composition,,Entry Detail,,,Serial or Lot,0..*,,gl-cor,0,,,【シリアル番号・ロット情報】,シリアル番号やロット（バッチ）に関する情報を保持するタプル。単一の構造内に複数のシリアル番号やロット情報を保持可能。,,CO14_EH14_45
+307,2,Composition,,Entry Detail,,,Tax Information,0..*,,gl-cor,0,,,【税情報】,税関連の情報のタプル。,,CO14_46
+308,2,Composition,,Entry Detail,,,Originating Document,0..*,,gl-cor,0,,,【発生元文書情報】,業務プロセス上の、関連文書の流れを捕捉するためのもの。特にVAT監査では、エンドユーザの要求として、取引に関係する文書の履歴が必要とされる。関連文書情報の構造の繰り返しを含む。,,CO14_TA14_47
+309,2,Composition,,Entry Detail,,,Rich Text Comment,0..*,,gl-cor,0,,,【リッチテキストコメント】,XHTMLを含む、リッチテキスト形式のテキストを受け入れる。XBRLインスタンスのフットノートの生成や、文書や伝票のコメントの生成などの、さまざまな目的で利用可能。,,CO14_SR14_48
+310,1,Class,,Entry Header,,,,0..*,Parent for entry headers/journal entry headers.,gl-cor,0,,,【仕訳情報】,エントリヘッダー/仕訳記入ヘッダーの親タグ。,,CO15
+311,2,Attribute,PK,Entry Header,Entry Identifier,xbrli:stringItemType,,0..1,Identifier within source journal,gl-cor,0,,,仕訳識別子,元仕訳帳中の識別子。,,CO15_01
+312,2,Attribute,,Entry Header,Date Posted,xbrli:dateTimeItemType,,0..1,Date this entry was posted (validated) to the general ledger. May not represent the date of accounting significance which is represented by 'postingDate'.,gl-cor,0,,,転記済日付,この仕訳が総勘定元帳に転記された(検証された)日付。 postingDateで示されるような会計上意味のある日付を表さないかもしれない。,,CO15_02
+313,2,Attribute,,Entry Header,Source Journal,xbrli:tokenItemType,,0..1,"Source journal. The code of the journal in which the entry is processed. The code must be a unique indication for a journal and is selected from the following enumerated list:
+
+cd      cash disbursements (sending cheques to vendors)
+cr      cash receipts (receiving cheques from others)
+fa      fixed assets
+gi      giro/other bank adjustments
+gj      general journal
+im      inventory management
+jc      job cost
+pj      purchase journal (liabilities from purchases)
+pl      payroll journal
+sj      sales journal
+se      standard entries
+ud      user defined
+ot      other sources of entries",gl-cor,0,,,元仕訳帳種別,"元仕訳帳。仕訳が処理される仕訳帳のコード。コードは仕訳帳に一意な指標であり、以下から選択する。
+出金(仕入先への小切手送付)、入金(他者からの小切手受領)、固定資産、振替、一般仕訳帳、在庫管理、個別原価、仕入帳(仕入による負債)、賃金台帳、売上台帳、通常仕訳、ユーザ定義、その他
+[設定値のリスト]
+(cd：出金)、(cr：入金)、(fa：固定資産)、(gi：振替)、(gj：一般仕訳帳)、(im：在庫管理)、(jc：個別原価)、(pj：仕入帳)、(pl：賃金台帳)、(sj：売上台帳)、(se：通常仕訳)、(ud：ユーザ定義)、(ot：その他)",,CO15_03
+314,2,Attribute,,Entry Header,Journal Description,xbrli:stringItemType,,0..1,"Source journal (full description of general journal, payroll journal, accountant entries). A more easily readable journal indication. The most common journals are: Purchases, Sales, Cash, and General Journal.",gl-cor,0,,,元仕訳帳説明,元仕訳帳(一般仕訳、給与台帳、会計事務所入力の完全な説明)。 よりわかりやすい仕訳帳の指標。 最も一般的な仕訳帳は、次の通り。 仕入、売上、現金、一般仕訳。,,CO15_BU15_04
+315,2,Attribute,,Entry Header,Type Identifier,xbrli:tokenItemType,,0..1,"One of the following enumerated list: adjusting, budget, comparative, external-accountant, standard, passed-adjusting, eliminating, proposed, recurring, reclassifying, simulated, tax, other",gl-cor,0,,,種別識別子,"以下の値のうちのひとつ。
+整理、予算、比較、外部会計事務所、通常、無視、消去、提案、反復、組替、シミュレーション、税、その他
+[設定値のリスト]
+(adjusting：整理)、(budget：予算)、(comparative：比較)、(external-accountant：外部会計事務所)、(standard：通常)、(passed-adjusting：無視)、(eliminating：消去)、(proposed：提案)、(recurring：反復)、(reclassifying：組替)、(simulated：シミュレーション)、(tax：税)、(other：その他)",,CO15_05
+316,2,Attribute,,Entry Header,Entry Origin,xbrli:stringItemType,,0..1,"Origin of entry: accrual, manual entry, imported entry, exchange gain or loss",gl-cor,0,,,仕訳起源,仕訳の起源。発生、手入力、インポート入力、為替換算による損益。,,CO15_BU15_06
+317,2,Attribute,,Entry Header,Entry Description,xbrli:stringItemType,,0..1,Description of entry described by this entry header (e.g. Opening Balance),gl-cor,0,,,仕訳説明,このエントリヘッダーによって説明された仕訳の説明(例えば、期首残高),,CO15_07
+318,2,Attribute,,Entry Header,Entry Qualifier,xbrli:tokenItemType,,0..1,"Entry Qualifier - An enumerated field that qualifies the type of entry, specifically useful for general ledger and trial balance environments when it is important to state the values represented are summarized as of the reporting date - opening or closing balances. In accounting systems, this is often known as BBF (balance brought forward.) Permitted values are: standard, balance-brought-forward and other.",gl-cor,0,,,仕訳修飾子,"仕訳の修飾子。総勘定元帳や試算表で、開始残高や決算残高のように、記された値が報告日で集約されていることを明示することが重要なときに有用な、仕訳の種別を修飾するもの。会計システムにおいて、BBF（繰越残高）として知られるもの。指定可能な値は以下。標準、繰越残高、その他
+[設定値のリスト]
+(standard：標準)、(balance-brought-forward：繰越残高)、(other：その他)",,CO15_08
+319,2,Attribute,,Entry Header,Entry Qualifier Description,xbrli:stringItemType,,0..1,Free format description of the entry qualifier,gl-cor,0,,,仕訳修飾子説明,仕訳の修飾子の説明。,,CO15_09
+320,2,Attribute,,Entry Header,Posting Code,xbrli:stringItemType,,0..1,"Code for posting to period, e.g., period 1-13, based on codes in an accounting period file. We do not recommend that software vendors export here, but suggest providing period end numbers for the buckets. Possibilities W1 through W53, M1 through M13, Q1-Q4. Developers and others creating output files are encouraged to supply an actual end date.",gl-cor,0,,,転記コード,転記の期間を表すコード。例えば、会計期間ファイルのコードにもとづく期間１～１３。ソフトウエアベンダーが、この値をエクスポートすることは推奨しない。期間の最終番号を提供することを勧める。可能な値としては、W1からW53、M1からM13、Q1からQ4など。開発者や出力ファイルの作成者には、実際の終了日付を提供することを勧める。,,CO15_BU15_10
+321,2,Attribute,,Entry Header,Batch ID for Entry Group,xbrli:stringItemType,,0..1,ID for a batch for this group of entries,gl-cor,0,,,仕訳グループ識別子,この仕訳の集合に付ける、束の識別子。,,CO15_BU15_11
+322,2,Attribute,,Entry Header,Batch Description,xbrli:stringItemType,,0..1,Description of this batch,gl-cor,0,,,仕訳グループ説明,この仕訳の束の説明。,,CO15_BU15_12
+323,2,Attribute,,Entry Header,Document Type,xbrli:tokenItemType,,0..1,"An enumerated field describing the original source document, with check, debit-memo, credit-memo, finance-charge, invoice, order-customer, order-vendor, payment-other, reminder, tegata, voucher, shipment, receipt, manual-adjustment, other.",gl-cor,0,,,元文書種別,"小切手、借方メモ、貸方メモ、財務費用、顧客への請求書、顧客オーダー、仕入先オーダー、その他支払い、督促状、手形、ベンダからの請求書、出荷票、受領票、手修正、その他の列挙値による、元文書の説明。[設定値のリスト] (check：小切手)、(debit-memo：借方メモ)、(credit-memo：貸方メモ)、(finance-charge：財務費用)、(invoice：顧客への請求書)、(order-customer：顧客オーダ)、(order-vendor：仕入先オーダ)、(payment-other：その他支払い)、(reminder：督促状)、(tegata：手形)、(voucher：ベンダからの請求書)、(shipment：出荷票)、(receipt：受領票)、(manual-adjustment：手修正)、(other：その他)",,CO15_13
+324,2,Attribute,,Entry Header,Document Type Description,xbrli:stringItemType,,0..1,Free format description of the document type,gl-cor,0,,,元文書種別説明,元文書の種別の説明。,,CO15_14
+325,2,Attribute,,Entry Header,Invoice Type,xbrli:tokenItemType,,0..1,"Invoice Type  (self-billed, ePoS enumerated values)",gl-cor,0,,,請求書種別,"請求書の種別。(self-billed、ePoS)
+[設定値のリスト]
+(ePos：POSシステムからの発行)、(self-billed：手動発行)",,CO15_15
+326,2,Attribute,,Entry Header,Monetary Amount,xbrli:monetaryItemType,,0..1,"This field (amount) represents the primary monetary amount related to the  subject of the entryDetail line. There is one primary monetary amount per entryDetail structure. It may, for example, represent the amount of one line of a journal entry, the balance on a document, or the extended amount of a line item on an invoice. Amount is not required if detailed entry is used for non-financial work and other elements are populated, in particular measurableQuantity. The amount field is a signed number (either positive or negative itself) and used in conjunction with a separate signOfAmount and a separate debitCreditCode, which together are considered for understanding the monetary amount. The unit of measure is determined by amountCurrency if present, and by the default or home currency if amountCurrency is not present.",gl-cor,0,,,金額,entryDetailの代表的な金額を示す。entryDetailごとにひとつの値を持つ。たとえば、仕訳帳の行、残高、請求書の行の金額。明細が会計業務用でなく、measurableQuantityなどの他の要素が設定されている場合は不要。符号付数値であり、金額を解釈するために用意されたsignOfAmountおよびdebitCreditCodeとあわせて使用される。通貨単位はamountCurrencyで決定される。amountCurrencyが指定されない場合は、既定または自国の通貨単位となる。,,CO15_16
+327,2,Attribute,,Entry Header,Currency,xbrli:QNameItemType,,0..1,"The currency related to the amount can be entered here instead of the XBRL instance specified way, especially important in multi-currency situations. Recommend ISO 4217 coding.",gl-cor,0,,,通貨,XBRLインスタンス内に指定する方法のかわりに、金額の通貨を指定可能。多通貨環境で特に重要。ISO4217コード体系を推奨。,,CO15_MC15_17
+328,2,Attribute,,Entry Header,Sign Indication for Amount,xbrli:tokenItemType,,0..1,Sign of amount; provides 4 possible fields only when used in conjunction with debitCreditCode; primarily used for correcting entries so total debits and credits after an entry error are not inflated. D + increase DebitsD - decrease debitsC + decreases creditC - increases credit,gl-cor,0,,,金額符号,"金額の符号。貸借識別子と関連して使用される場合にだけ、4つの可能なフィールドを提供する。記入エラー後の総貸借が膨張しないように、おもに仕訳の訂正に使用される。 D+は借方を増加させる。D-は借方を減少させる。C+は貸方を減少させる。C-は貸方を増加させる。
+[設定値のリスト]
+(+)、(-)、(plus：プラス)、(minus：マイナス)",,CO15_18
+329,2,Composition,,Entry Header,,,Multicurrency Detail,0..*,,gl-cor,0,,,【多通貨明細】,"原取引時の通貨と異なる、自国通貨と換算レートに関する追加情報のセクション。－現在および原取引時の、換算レートおよび金額の記録に使用される。
+トライアンギュレーション通貨としての第三通貨の換算レートを記録できる。EURの場合が多いがそれに限らない。この構造は、同日または異なる日の外貨での金額を記録する必要がある限り、繰り返し指定可能。",,CO15_MC15_19
+330,2,Reference Association,,Entry Header,Document Number,,Originating Document,0..1,"Invoice, check, voucher, or other source document identifier",gl-cor,0,,,元文書番号,請求書、小切手、証憑、その他の元文書の識別子。,,CO15_20
+331,2,Reference Association,,Entry Header,Apply To Number,,Originating Document,0..1,"Document number of primary invoice number, used to offset payments, debits and credits; for an invoice, usually the same as the documentNumber. When calculating open balance on an invoice, or open amount on payments in advance or not fully applied, this permits calculation of the open item.",gl-cor,0,,,適用先番号,"支払、借方、貸方の相殺に使用される、一次請求書の文書番号。請求書では通常documentNumberと等しい。
+未決済の請求書残高や、未決済の支払金額の計算時に、利用できる。",,CO15_21
+332,2,Reference Association,,Entry Header,Document Reference,,Originating Document,0..1,Internal reference for the document above; number assigned internally to track the document,gl-cor,0,,,元文書参照情報,上の文書のための内部参照情報。文書を追跡するために内部的に割り当てた番号。,,CO15_22
+333,2,Attribute,,Entry Header,Document Date,xbrli:dateTimeItemType,,0..1,"Date (and less likely in the paper world but possible in the e-world, time) on actual document (invoice, voucher, check date). Other dates control posting information.",gl-cor,0,,,元文書日付,実際の文書（請求書、証憑、小切手）の日付（および、紙の世界ではありそうにないが、電子的には時刻）。 転記の情報は別の日付で管理する。,,CO15_23
+334,2,Attribute,,Entry Header,Received Date,xbrli:dateTimeItemType,,0..1,Date/time document was noted as received (if necessary). Represents actual date received. Posting dates are maintained separately.,gl-cor,0,,,元文書受領日付,（必要であれば）文書の受領が記録された日付/時刻。実際に受領された日付をあらわす。転記日付は別に管理される。,,CO15_BU15_24
+335,2,Attribute,,Entry Header,Chargeable or Reimbursable,xbrli:stringItemType,,0..1,"Is this entry chargeable to client, reimbursable? Used by some systems to indicate that account on posting/validation should be posted to a customer or vendor's account.",gl-cor,0,,,請求支払可能フラグ,この仕訳は顧客に請求、支払可能か。いくつかのシステムでは転記/検証対象の科目が顧客や仕入先の科目に転記されるべきかどうかを示すために使用される。,,CO15_BU15_25
+336,2,Attribute,,Entry Header,Document Location,xbrli:stringItemType,,0..1,"Document location as URI, file name or other reference. Alternatively, text of document can be placed here.",gl-cor,0,,,元文書格納場所,文書の格納場所である、URI、ファイル名またはその他の参照情報。代わりに、文書のテキストも記述可能。,,CO15_BU15_26
+337,2,Attribute,,Entry Header,Payment Method,xbrli:stringItemType,,0..1,Method used or to be used to make the payment,gl-cor,0,,,支払方法,支払いのために使用された、または使用される方法。,,CO15_BU15_27
+338,2,Attribute,,Entry Header,Number of Entries,xbrli:integerItemType,,0..1,The total number of entries.,gl-cor,0,,,仕訳総数,仕訳の総数。,,CO15_BU15_28
+339,2,Attribute,,Entry Header,Total Debits,xbrli:monetaryItemType,,0..1,The total of all debit amounts.,gl-cor,0,,,借方合計,借方金額の合計値。,,CO15_BU15_29
+340,2,Attribute,,Entry Header,Total Credits,xbrli:monetaryItemType,,0..1,The total of all credit amounts.,gl-cor,0,,,貸方合計,貸方金額の合計値。,,CO15_BU15_30
+341,2,Attribute,,Entry Header,Type of Difference,xbrli:tokenItemType,,0..1,"Enumerated field with possible values of permanent, temporary or none indicating the type of difference between book and tax accounting methods. Omission of this field is equivalent to ""none""",gl-cor,0,,,帳簿価税務簿価差異種別,"帳簿と税務会計処理方法との差異の種別を示す値。永久か一時的かまたは無し。値の省略時は「無し」と同じ。
+[設定値のリスト]
+(permanent：永久)、(temporary：一時的)、(none：無し)",,CO15_31
+342,2,Attribute,,Entry Header,Elimination Code,xbrli:stringItemType,,0..1,Informs destination ledger this is an intracompany entry which eliminates in consolidation,gl-cor,0,,,相殺消去コード,連結決算時に消去される連結会社間仕訳であることを、受取側の元帳に通知する。,,CO15_BU15_32
+343,2,Attribute,,Entry Header,Budget Scenario Period Start,xbrli:dateTimeItemType,,0..1,Start of period covered by associated budgetScenario,gl-cor,0,,,予算シナリオ期間開始日付,関係付けられたbudgetScenarioがカバーする期間の開始日。,,CO15_BU15_33
+344,2,Attribute,,Entry Header,Budget Scenario Period End,xbrli:dateTimeItemType,,0..1,End of period covered by associated budgetScenario,gl-cor,0,,,予算シナリオ期間終了日付,関係付けられたbudgetScenarioがカバーする期間の終了日。,,CO15_BU15_34
+345,2,Attribute,,Entry Header,Scenario Description,xbrli:stringItemType,,0..1,Text related to budgetScenario,gl-cor,0,,,シナリオ説明,budgetScenarioに関する記述。,,CO15_BU15_35
+346,2,Attribute,,Entry Header,Scenario Code,xbrli:stringItemType,,0..1,"Code for a budget scenario identifier (such as PB for 'preliminary budget', or RB for 'revised budget', or other identifier for entryType)",gl-cor,0,,,シナリオコード,予算シナリオの識別コード。例えば、「PB」（予備予算）、「RB」（補正予算）、または他の仕訳種別の識別子。,,CO15_BU15_36
+347,2,Attribute,,Entry Header,Budget Allocation Code,xbrli:tokenItemType,,0..1,"Code associated with the calculation formula: e.g. (D)ivide by number of periods, (T)otal for period given",gl-cor,0,,,予算配分コード,"計算式に関係付けられたコード。例えば、期間数での分割、与えられた期間の合計
+[設定値のリスト]
+(D：期間数での分割)、(T：与えられた期間の合計)",,CO15_BU15_37
+348,2,Reference Association,,Entry Header,ID for Associated Entry,,Entry Header,0..1,"For standard, reversing, master, cancelling or other entries an ID associated with those entries.",gl-cor,0,,,反対/通常/マスタ仕訳識別子,通常、反対、マスタ、取消または他の仕訳のための、それらの仕訳を関連付けるID。,,CO15_UK15_38
+349,2,Attribute,,Entry Header,Recurring Standard Description,xbrli:stringItemType,,0..1,Description to accompany standard or recurring ID,gl-cor,0,,,反復通常仕訳説明,通常仕訳または反復仕訳のIDの説明。,,CO15_UK15_39
+350,2,Attribute,,Entry Header,Frequency Interval,xbrli:decimalItemType,,0..1,"For standard or recurring journals, how often entry may be made: every frequencyInterval frequencyUnit, such as every 7 (interval) days (unit) or every 1 (interval) quarter (unit). This field represents the interval.",gl-cor,0,,,頻度間隔,通常または反復仕訳において、仕訳が記入される頻度。frequencyInterval、frequencyUnitごと、たとえば7(interval)日(unit)ごと、1(interval)四半期(unit)ごとなどにおける、intervalを示す。,,CO15_UK15_40
+351,2,Attribute,,Entry Header,Frequency Unit,xbrli:stringItemType,,0..1,"For standard or recurring journals, how often entry may be made: every frequencyInterval frequencyUnit, such as every 7 (interval) days (unit) or every 1 (interval) quarter (unit). This field represents the unit.",gl-cor,0,,,頻度単位,通常または反復仕訳において、仕訳が記入される頻度。frequencyInterval、frequencyUnitごと、たとえば7(interval)日(unit)ごと、1(interval)四半期(unit)ごとなどにおける、unitを示す。,,CO15_UK15_41
+352,2,Attribute,,Entry Header,Repetitions Remaining,xbrli:integerItemType,,0..1,Number of times that the recurring entry will repeat,gl-cor,0,,,反復残回数,反復仕訳の繰り返し予定数。,,CO15_UK15_42
+353,2,Attribute,,Entry Header,Next Date Repeat,xbrli:dateTimeItemType,,0..1,Date next repeated or standard posted,gl-cor,0,,,次回反復日付,次回の反復あるいは通常の転記日。,,CO15_UK15_43
+354,2,Attribute,,Entry Header,Last Date Repeat,xbrli:dateTimeItemType,,0..1,Date last repeated or standard posted,gl-cor,0,,,前回反復日付,前回の反復あるいは通常の転記日。,,CO15_UK15_44
+355,2,Attribute,,Entry Header,End Date of Repeating Entry,xbrli:dateTimeItemType,,0..1,"For standard or recurring journals, stop date/time for repetitive entry.",gl-cor,0,,,反復仕訳終了日付,通常仕訳または反復仕訳のための、反復入力の終了日付/時刻。,,CO15_UK15_45
+356,2,Attribute,,Entry Header,Reverse,xbrli:booleanItemType,,0..1,Should entry be reversed?,gl-cor,0,,,反対仕訳要否,仕訳が取り消されるべきか。,,CO15_UK15_46
+357,2,Attribute,,Entry Header,Reversing Date,xbrli:dateTimeItemType,,0..1,Date this entry should be reversed,gl-cor,0,,,反対仕訳日付,この仕訳が取り消されるべき日付。,,CO15_UK15_47
+358,2,Attribute,,Entry Header,Entry Number Counter,xbrli:decimalItemType,,0..1,Unique reference for the entry - a numeric counter,gl-cor,0,,,仕訳番号カウンタ,仕訳の一意なリファレンス　　カウンタ,,CO15_48
+359,2,Composition,,Entry Header,,,Entered,0..1,,gl-cor,0,,,,,,CO15_49
+360,2,Composition,,Entry Header,,,Approved,0..1,,gl-cor,0,,,,,,CO15_50
+361,2,Composition,,Entry Header,,,Last Modified,0..1,,gl-cor,0,,,,,,CO15_51
+362,2,Composition,,Entry Header,,,Entry Detail,0..*,,gl-cor,0,,,【仕訳明細】,仕訳明細の親タグ。,,CO15_52
+363,1,Class,,Accounting Entries,,,,1..*,Root for XBRL GL. No entry made here.,gl-cor,0,,,【会計仕訳】,XBRL GLのルート要素。 この要素にはデータは登録されない。,,CO16
+364,2,Composition,,Accounting Entries,,,Document Information,1..1,,gl-cor,0,,,【文書情報】,この会計仕訳に関する情報の親タグ。,,CO16_01
+365,2,Composition,,Accounting Entries,,,Entitry Information,0..1,,gl-cor,0,,,【事業体情報】,事業体情報（報告組織に関する情報）の入れ物。,,CO16_02
+366,2,Composition,,Accounting Entries,,,Entry Header,0..*,,gl-cor,0,,,【仕訳情報】,エントリヘッダー/仕訳記入ヘッダーの親タグ。,,CO16_03
+367,1,Class,,Summary Reporting Taxonomy,,,,0..*,Identifies and provides information about one or more target reporting taxonomies to which the data represented in the document rolls up to.,gl-srcd,0,,,【集約報告タクソノミ】,この文書で示されたデータのロールアップ先となる、1つ以上の報告タクソノミの情報を、識別し提供する。,,SR01
+368,2,Attribute,,Summary Reporting Taxonomy,ID,xbrli:stringItemType,,0..1,"Identifies a target reporting taxonomy so that, for example, it can be referenced in the [summaryReportingTaxonomyIDRef] data field at [xbrlInfo] level.",gl-srcd,0,,,集約報告タクソノミ識別子,たとえばxbrlInfo内のsummaryReportingTaxonomyIDRefで参照できるように、報告タクソノミを識別する。,,SR01_01
+369,2,Attribute,,Summary Reporting Taxonomy,Schema Reference Href,xbrli:stringItemType,,0..1,Value of the href attribute of schemaRef in the target reporting taxonomy.,gl-srcd,0,,,集約報告タクソノミスキーマ参照情報,報告タクソノミ内の、schemaRef要素のhref属性の値。,,SR01_02
+370,2,Attribute,,Summary Reporting Taxonomy,Header,xbrli:stringItemType,,0..1,An all-purpose data field where all the information necessary when it is too complex to be defined otherwise.,gl-srcd,0,,,集約報告タクソノミヘッダ,必要なすべての情報が、複雑すぎて他の方法では定義できないときに、それらを記述する汎用的なデータ域。,,SR01_03
+371,2,Attribute,,Summary Reporting Taxonomy,Description,xbrli:stringItemType,,0..1,A description of the taxonomy for human use.,gl-srcd,0,,,集約報告タクソノミ説明,人が利用するための、タクソノミの説明文。,,SR01_04
+372,1,Class,,Rich Text Comment,,,,0..*,"Accepts text in rich text format, including XHTML. It can be used for different purposes, such as to create footnotes in XBRL instances or to create a comment for a document or an entry.",gl-srcd,0,,,【リッチテキストコメント】,XHTMLを含む、リッチテキスト形式のテキストを受け入れる。XBRLインスタンスのフットノートの生成や、文書や伝票のコメントの生成などの、さまざまな目的で利用可能。,,SR02
+373,2,Attribute,,Rich Text Comment,Code,xbrli:stringItemType,,0..1,"An enumerated code that identifies the purpose of the rich text comment. Enumerated values: link_footnote, footnote, source_document, source_journal, batch, other.",gl-srcd,0,,,リッチテキストコメントコード,"リッチテキストコメントの用途を識別する、列挙コード。
+[設定値のリスト]
+link_footnote：リンクフットノート、footnote：フットノート、source_document：元文書、source_journal：元仕訳帳、batch：仕訳の束、other：その他",,SR02_01
+374,2,Attribute,,Rich Text Comment,Description,xbrli:stringItemType,,0..1,Free format description of the Rich text Comment Code.,gl-srcd,0,,,リッチテキストコメント説明,リッチテキストコメントコードの説明。,,SR02_02
+375,2,Attribute,,Rich Text Comment,Content,xbrli:stringItemType,,0..1,Content of the Rich Text Comment.,gl-srcd,0,,,リッチテキストコメント内容,リッチテキストコメントの内容。,,SR02_03
+376,2,Attribute,,Rich Text Comment,Locator,xbrli:stringItemType,,0..1,An XPath expression that identifies the item that the comment relates to.,gl-srcd,0,,,リッチテキストコメントロケータ,コメントが関係する項目を識別する、XPath表現。,,SR02_04
+377,1,Class,,Summary Segment Explicit Dimension,,,,0..*,This structure allows to explicitly indicate the information related to an explicit dimension in the segment of the context for a fact in the FR instance.,gl-srcd,0,,,【集約セグメントエクスプリシットディメンション】,集約セグメントのエクスプリシットディメンションの記述の指定場所。,,SR03
+378,2,Attribute,,Summary Segment Explicit Dimension,Element,xbrli:QNameItemType,,1..1,The QName value must be resolved to a valid explicit dimension item used in segment.,gl-srcd,0,,,集約セグメントエクスプリシットディメンション,セグメントで利用されるQNameの値は妥当なエクプリシットディメンション項目を示さなければならない。,,SR03_01
+379,1,Class,,Summary Segment Typed Dimension,,,,0..*,This structure allows to explicitly indicate the information related to a typed dimension in the segment of the context for a fact in the FR instance.,gl-srcd,0,,,【集約セグメントタイプトディメンション】,集約セグメントのタイプトディメンションの記述の指定場所。,,SR04
+380,2,Attribute,,Summary Segment Typed Dimension,Element,xbrli:QNameItemType,,1..1,The QName value must be resolved to a valid typed dimension item used in segment.,gl-srcd,0,,,集約セグメントタイプトディメンション,セグメントで利用されるQNameの値は妥当なタイプトディメンション項目を示さなければならない。,,SR04_01
+381,1,Class,,Summary Segment Simple Element,,,,0..*,This structure allows to explicitly indicate the information related to a simple element in the segment of  the context for a fact in the FR instance.,gl-srcd,0,,,【集約セグメントシンプルエレメントコンテント】,セグメントの単一要素を表現するためのタプル。,,SR05
+382,2,Attribute,,Summary Segment Simple Element,QName,xbrli:QNameItemType,,1..1,"QName for the segment simple element, if appropriate.",gl-srcd,0,,,集約セグメントシンプルエレメント名,集約セグメントシンプルエレメントの記述のQName,,SR05_01
+383,2,Attribute,,Summary Segment Simple Element,Value,xbrli:stringItemType,,1..1,The value of the segment simple element content.,gl-srcd,0,,,集約セグメントシンプルエレメント値,集約セグメントシンプルエレメントの値。,,SR05_02
+384,1,Class,,Summary Precision Decimals,,,,0..1,This structure allows to explicitly indicate the value for the precision or decimals attributes for a fact in an FR instance. Only one of the four elements in the structure has to be used.,gl-srcd,0,,,【集約有効桁数】,集約の有効桁数と小数部有効桁数の記述の指定場所。,,SR06
+385,2,Attribute,,Summary Precision Decimals,Summary Precision,xbrli:nonNegativeIntegerItemType,,1..1,This item indicates that the fact in the FR instance has a precision attribute with the value specified in this item value.,gl-srcd,0,,,集約有効桁数,集約の有効桁数の記述の指定場所。,,SR06_01
+386,2,Attribute,,Summary Precision Decimals,Summary Precision INF,xbrli:stringItemType,,1..1,"This item, when used, has no value. Its only presence indicates that the fact in the FR instance  has a precision attribute  and its value is INF.",gl-srcd,0,,,集約有効桁数無限,F/Sが、有効桁数属性を持っており、その値がINF(無限大)であること示す。,,SR06_02
+387,2,Attribute,,Summary Precision Decimals,Summary Decimals,xbrli:integerItemType,,1..1,This item indicates that the fact in the FR instance has a decimals attribute with the value specified in this item value.,gl-srcd,0,,,集約小数部有効桁数,F/Sが、ここで指定する値の小数部有効桁数属性を持っていることを示す。,,SR06_03
+388,2,Attribute,,Summary Precision Decimals,Summary Decimals INF,xbrli:stringItemType,,1..1,"This item, when used, has no value. Its only presence indicates that the fact in the FR instance  has a decimals attribute  and its value is INF.",gl-srcd,0,,,集約小数部有効桁数無限,F/Sが、小数部有効桁数属性を持っており、その値がINF(無限大)であることを示す。,,SR06_04
+389,1,Class,,Summary Entity Segment,,,,0..1,This structure allows to explicitly indicate the information related to the segment in the context for a fact in the FR instance.,gl-srcd,0,,,【集約エンティティセグメント】,集約のエンティティセグメントの記述の指定場所。,,SR07
+390,2,Composition,,Summary Entity Segment,,,Summary Segment Explicit Dimension,0..*,,gl-srcd,0,,,【集約セグメントエクスプリシットディメンション】,集約セグメントのエクスプリシットディメンションの記述の指定場所。,,SR07_01
+391,2,Composition,,Summary Entity Segment,,,Summary Segment Typed Dimension,0..*,,gl-srcd,0,,,【集約セグメントタイプトディメンション】,集約セグメントのタイプトディメンションの記述の指定場所。,,SR07_02
+392,2,Composition,,Summary Entity Segment,,,Summary Segment Simple Element,0..*,,gl-srcd,0,,,【集約セグメントシンプルエレメントコンテント】,セグメントの単一要素を表現するためのタプル。,,SR07_03
+393,2,Attribute,,Summary Entity Segment,Non Dimensional Contents,xbrli:stringItemType,,0..*,The value must be CDATA and a valid XML fragment.,gl-srcd,0,,,集約セグメント非ディメンションコンテント,CDATAであり、妥当なXML記述でなければならない。,,SR07_04
+394,1,Class,,Summary Scenario Explicit Dimension,,,,0..*,This structure allows to explicitly indicate the information related to an explicit dimension in the scenario of the context for a fact in the FR instance.,gl-srcd,0,,,【集約シナリオエクスプリシットディメンション】,集約シナリオのエクスプリシットディメンションの記述の指定場所。,,SR08
+395,2,Attribute,,Summary Scenario Explicit Dimension,Explicit Dimension Element,xbrli:QNameItemType,,1..1,The QName value must be resolved to a valid explicit dimension item used in scenario.,gl-srcd,0,,,集約シナリオエクスプリシットディメンション,シナリオで利用されるQNameの値は妥当なエクプリシットディメンション項目を示さなければならない。,,SR08_01
+396,1,Class,,Summary Scenario Typed Dimension,,,,0..*,This structure allows to explicitly indicate the information related to a typed dimension in the scenario of the context for a fact in the FR instance.,gl-srcd,0,,,【集約シナリオタイプトディメンション】,集約シナリオのタイプトディメンションの記述の指定場所。,,SR09
+397,2,Attribute,,Summary Scenario Typed Dimension,Element,xbrli:QNameItemType,,1..1,The QName value must be resolved to a valid typed dimension item used in scenario.,gl-srcd,0,,,集約シナリオタイプトディメンション,シナリオで利用されるQNameの値は妥当なタイプトディメンション項目を示さなければならない。,,SR09_01
+398,1,Class,,Summary Scenario Simple Element,,,,0..*,This structure allows to explicitly indicate the information related to a simple element in the scenario of the context for a fact in the FR instance.,gl-srcd,0,,,【集約シナリオシンプルエレメントコンテント】,シナリオの単一要素を表現するためのタプル。,,SR10
+399,2,Attribute,,Summary Scenario Simple Element,Element Qname,xbrli:QNameItemType,,1..1,"QName for the scenario simple element, if appropriate.",gl-srcd,0,,,集約シナリオシンプルエレメント名,集約シナリオシンプルエレメントの記述のQName,,SR10_01
+400,2,Attribute,,Summary Scenario Simple Element,Element Value,xbrli:stringItemType,,1..1,The value of the scenario simple element content.,gl-srcd,0,,,集約シナリオシンプルエレメント値,集約シナリオシンプルエレメントの値。,,SR10_02
+401,1,Class,,Summary Entity,,,,0..1,This structure allows to explicitly indicate the entity information for a fact in the FR instance.,gl-srcd,0,,,【集約エンティティ】,集約のエンティティの記述の指定場所。,,SR11
+402,2,Attribute,,Summary Entity,Identifier,xbrli:tokenItemType,,0..1,The value of the entity identifier.,gl-srcd,0,,,集約エンティティ識別子,集約のエンティティ識別子の記述の指定場所。,,SR11_01
+403,2,Attribute,,Summary Entity,Scheme,xbrli:anyURIItemType,,0..1,The value of the entity scheme.,gl-srcd,0,,,集約エンティティスキーム,集約のエンティティスキームの記述の指定場所。,/xbrli:xbrl/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo/gl-srcd:summaryContext/gl-srcd:summaryPeriod/gl-srcd:summaryStartDate,SR11_02
+404,2,Composition,,Summary Entity,,,Summary Entity Segment,0..1,,gl-srcd,0,,,【集約エンティティセグメント】,集約のエンティティセグメントの記述の指定場所。,/xbrli:xbrl/gl-cor:accountingEntries/gl-cor:entryHeader/gl-cor:entryDetail/gl-cor:xbrlInfo/gl-srcd:summaryContext/gl-srcd:summaryPeriod/gl-srcd:summaryEndDate,SR11_03
+405,1,Class,,Summary Period,,,,0..1,"This structure allows to explicitly indicate the period information for a fact in the FR instance. Instant, Period Start/End and Forever are alternative.",gl-srcd,0,,,【集約ピリオド】,集約のピリオドの記述の指定場所。,,SR12
+406,2,Attribute,,Summary Period,Instant,xbrli:dateTimeItemType,,1..1,The value of the instant date.,gl-srcd,0,,,集約ピリオドインスタント,集約のピリオドの特定の日付の記述の指定場所。,,SR12_01
+407,2,Attribute,,Summary Period,Forever,xbrli:stringItemType,,1..1,"If the context should indicate ""forever"", this concept must be used. It accepts no value.",gl-srcd,0,,,集約ピリオド無期限,集約のピリオドが無期限であることを示す指定場所。,,SR12_02
+408,2,Attribute,,Summary Period,Start Date,xbrli:dateTimeItemType,,1..1,The value of the start date of the period.,gl-srcd,0,,,集約ピリオド開始日付,集約のピリオドの開始日の記述の指定場所。,,SR12_03
+409,2,Attribute,,Summary Period,End Date,xbrli:dateTimeItemType,,1..1,The value of the end date of the period.,gl-srcd,0,,,集約ピリオド終了日付,集約のピリオドの終了日の記述の指定場所。,,SR12_04
+410,1,Class,,Summary Scenario,,,,0..1,This structure allows to explicitly indicate the scenario information for a fact in the FR instance.,gl-srcd,0,,,【集約シナリオ】,集約のシナリオの記述の指定場所。,,SR13
+411,2,Composition,,Summary Scenario,,,Summary Scenario Explicit Dimension,0..*,,gl-srcd,0,,,【集約シナリオエクスプリシットディメンション】,集約シナリオのエクスプリシットディメンションの記述の指定場所。,,SR13_01
+412,2,Composition,,Summary Scenario,,,Summary Scenario Typed Dimension,0..*,,gl-srcd,0,,,【集約シナリオタイプトディメンション】,集約シナリオのタイプトディメンションの記述の指定場所。,,SR13_02
+413,2,Composition,,Summary Scenario,,,Summary Scenario Simple Element,0..*,,gl-srcd,0,,,【集約シナリオシンプルエレメントコンテント】,シナリオの単一要素を表現するためのタプル。,,SR13_03
+414,2,Attribute,,Summary Scenario,Non Dimensional Contents,xbrli:stringItemType,,0..*,The value must be CDATA and a valid XML fragment.,gl-srcd,0,,,集約シナリオ非ディメンションコンテント,CDATAであり、妥当なXML記述でなければならない。,,SR13_04
+415,1,Class,,Summary Context,,,,0..1,This structure allows to explicitly indicate the context information for a fact in the FR instance.,gl-srcd,0,,,【集約コンテキスト】,集約のコンテキストの記述の指定場所。,,SR14
+416,2,Composition,,Summary Context,,,Summary Entity,0..1,,gl-srcd,0,,,【集約エンティティ】,集約のエンティティの記述の指定場所。,,SR14_01
+417,2,Composition,,Summary Context,,,Summary Period,0..1,,gl-srcd,0,,,【集約ピリオド】,集約のピリオドの記述の指定場所。,,SR14_02
+418,2,Composition,,Summary Context,,,Summary Scenario,0..1,,gl-srcd,0,,,【集約シナリオ】,集約のシナリオの記述の指定場所。,,SR14_03
+1,1,Class,,Tax Line Information JPN,,,,0..*,"A tuple structure used to capture tax-related attributes specific to Japanese taxation requirements at the line entry detail level. It includes the tax type, tax category, and applicable tax rate. In accordance with Japanese consumption tax rules, the tax amount must not be included in this structure.",gl-jpn,0,,,【明細行税情報】,日本の税制要件に基づき、明細行レベルでの税関連属性を保持するためのタプル構造。税区分、税カテゴリ、適用税率などを含む。日本の消費税制度に従い、この構造には税額を含めない。,,JP01
+243,2,Attribute,,Tax Line Information JPN,Authority,xbrli:stringItemType,,0..1,Name of the relevant tax authority,gl-jpn,0,,,課税庁,関係する課税庁の名前。,,JP01_CO13_01
+244,2,Attribute,,Tax Line Information JPN,Table Code,xbrli:stringItemType,,0..1,Tax table code used by the relevant tax authority,gl-jpn,0,,,税率表コード,関係する課税庁で使用される税率表のコード。,,JP01_CO13_02
+245,2,Attribute,,Tax Line Information JPN,Description,xbrli:stringItemType,,0..1,Description of tax authority,gl-jpn,0,,,課税庁説明,課税庁の説明。,,JP01_CO13_03
+248,2,Attribute,,Tax Line Information JPN,Percentage Rate,xbrli:pureItemType,,0..1,Percent rate for VAT or other taxes normally a number between 0 and 1.0 - e.g. 50% is represented as 0.5,gl-jpn,0,,,税率,"VAT(物品税)またはその他の税のパーセント比率。
+0から1.0の間の値。たとえば50%は0.5とあらわす。",,JP01_CO13_06
+249,2,Attribute,,Tax Line Information JPN,Category,xbrli:stringItemType,,0..1,A class or category of taxes,gl-jpn,0,,,税区分,税のクラス又はカテゴリ。,,JP01_CO13_07
+250,2,Attribute,,Tax Line Information JPN,Comment/Exemption Reason,xbrli:stringItemType,,0..1,Additional text/code for exemption reasons or other comments.,gl-jpn,0,,,税コメント/免税理由,免税理由やその他のコメントのための、追加の文またはコード。,,JP01_CO13_08
+251,2,Composition,,Tax Line Information JPN,,,Foreign to Local Currency Conversion,0..1,,gl-jpn,0,,,,,,JP01_MC13_09
+7,1,Class,,Tax Information JPN,,,,0..*,"A tuple structure used to hold tax-related information for a document, in accordance with Japanese taxation requirements. It includes the tax type, tax category, and applicable tax rate. Triangulation currency is not required under Japanese tax rules, and tax amounts must be included in this structure.",gl-jpn,0,,,【税情報】,日本の税制要件に従い、文書レベルの税関連情報を保持するためのタプル構造。税区分、税カテゴリ、適用税率を含む。日本の税制ではトライアングレーション通貨は不要とされており、この構造には税額を含める必要がある。,,JP02
+243,2,Attribute,,Tax Information JPN,Authority,xbrli:stringItemType,,0..1,Name of the relevant tax authority,gl-jpn,0,,,課税庁,関係する課税庁の名前。,,JP02_CO13_01
+244,2,Attribute,,Tax Information JPN,Table Code,xbrli:stringItemType,,0..1,Tax table code used by the relevant tax authority,gl-jpn,0,,,税率表コード,関係する課税庁で使用される税率表のコード。,,JP02_CO13_02
+245,2,Attribute,,Tax Information JPN,Description,xbrli:stringItemType,,0..1,Description of tax authority,gl-jpn,0,,,課税庁説明,課税庁の説明。,,JP02_CO13_03
+246,2,Attribute,,Tax Information JPN,Amount of Taxes,xbrli:monetaryItemType,,0..1,Amount of taxes,gl-jpn,0,,,税額,税額。,,JP02_CO13_04
+247,2,Attribute,,Tax Information JPN,Basis for Taxation,xbrli:monetaryItemType,,0..1,Basis for taxation,gl-jpn,0,,,課税基準,課税基準。,,JP02_CO13_05
+248,2,Attribute,,Tax Information JPN,Percentage Rate,xbrli:pureItemType,,0..1,Percent rate for VAT or other taxes normally a number between 0 and 1.0 - e.g. 50% is represented as 0.5,gl-jpn,0,,,税率,"VAT(物品税)またはその他の税のパーセント比率。
+0から1.0の間の値。たとえば50%は0.5とあらわす。",,JP02_CO13_06
+249,2,Attribute,,Tax Information JPN,Category,xbrli:stringItemType,,0..1,A class or category of taxes,gl-jpn,0,,,税区分,税のクラス又はカテゴリ。,,JP02_CO13_07
+250,2,Attribute,,Tax Information JPN,Comment/Exemption Reason,xbrli:stringItemType,,0..1,Additional text/code for exemption reasons or other comments.,gl-jpn,0,,,税コメント/免税理由,免税理由やその他のコメントのための、追加の文またはコード。,,JP02_CO13_08
+251,2,Composition,,Tax Information JPN,,,Foreign to Local Currency Conversion,0..1,,gl-jpn,0,,,,,,JP02_MC13_09
+11,1,Class,,Originating Document JPN,,,,0..*,"A tool to capture the flow of related documents in the business process. Some needs of end users require a greater history of the documents that are associated with a transaction, especially in the VAT audit area. Contains a repetitive structure of related documents.",gl-jpn,0,,,【発生元文書情報】,業務プロセス上の、関連文書の流れを捕捉するためのもの。特にVAT監査では、エンドユーザの要求として、取引に関係する文書の履歴が必要とされる。関連文書情報の構造の繰り返しを含む。,,JP03
+255,2,Attribute,PK,Originating Document JPN,Identifier Code,xbrli:stringItemType,,0..1,Originating document identifier code,gl-jpn,0,,,発生元文書対象CVEコード,発生元文書の対象となるCVEのコード。,,JP03_TA01_01
+256,2,Attribute,,Originating Document JPN,Type,xbrli:tokenItemType,,0..1,"Originating document type  check, debit-memo, credit-memo, finance-charge, invoice, order-customer, order-vendor, payment-other, reminder, tegata, voucher, shipment, receipt, manual-adjustment, other.",gl-jpn,0,,,発生元文書種別,発生元文書の種別。小切手(check)、借方メモ(debit-memo)、貸方メモ(credit-memo)、財務費用(finance-charge)、顧客への請求書(invoice)、顧客オーダ(order-customer)、仕入先オーダ(order-vendor)、その他支払い(payment-other)、督促状(reminder)、手形(tegata)、ベンダからの請求書(voucher)、出荷票(shipment)、受領票(receipt)、手修正(manual-adjustment)、その他(other),,JP03_TA01_02
+257,2,Attribute,,Originating Document JPN,Number,xbrli:stringItemType,,0..1,Originating document number,gl-jpn,0,,,発生元文書番号,発生元文書の番号。,,JP03_TA01_03
+258,2,Attribute,,Originating Document JPN,Date,xbrli:dateItemType,,0..1,Originating document date,gl-jpn,0,,,発生元文書日付,発生元文書の日付。,,JP03_TA01_04
+259,2,Attribute,,Originating Document JPN,Identifier Type,xbrli:tokenItemType,,0..1,"Originating document identifier type. Enumerated as: C, customer, E, employee, V, vendor, O, other, I, salesperson-internal, X, salesperson-external, N, contractor.",gl-jpn,0,,,発生元文書対象CVE種別,"発生元文書の対象となるCVEの種別。 [設定値のリスト] (C)、(customer：顧客)、(E)、(employee：従業員)、(V)、(vendor：仕入先)、(O)、(other：その他)、(I)、(salesperson-internal：店舗内販売員)、(X)、(salesperson-external：外交販売員)、(N)、(contractor：請負者)",,JP03_TA01_05
+260,2,Attribute,,Originating Document JPN,Identifier Tax Code,xbrli:stringItemType,,0..1,Originating document identifier tax code,gl-jpn,0,,,発生元文書対象CVE納税者コード,発生元文書の対象となるCVEの納税者コード。,,JP03_TA01_06
+13,2,Attribute,,Originating Document JPN,URL,xbrli:QNameItemType,,0..1,"The location where the document is stored or can be accessed, specified as a URL.",gl-jpn,0,,,,,,JP03_01
+14,1,Class,,Entry Header JPN,,,,0..*,Parent for entry headers/journal entry headers.,gl-jpn,0,,,【仕訳情報】,エントリヘッダー/仕訳記入ヘッダーの親タグ。,,JP04
+311,2,Attribute,PK,Entry Header JPN,Entry Identifier,xbrli:stringItemType,,0..1,Identifier within source journal,gl-jpn,0,,,仕訳識別子,元仕訳帳中の識別子。,,JP04_CO15_01
+312,2,Attribute,,Entry Header JPN,Date Posted,xbrli:dateTimeItemType,,0..1,Date this entry was posted (validated) to the general ledger. May not represent the date of accounting significance which is represented by 'postingDate'.,gl-jpn,0,,,転記済日付,この仕訳が総勘定元帳に転記された(検証された)日付。 postingDateで示されるような会計上意味のある日付を表さないかもしれない。,,JP04_CO15_02
+313,2,Attribute,,Entry Header JPN,Source Journal,xbrli:tokenItemType,,0..1,"Source journal. The code of the journal in which the entry is processed. The code must be a unique indication for a journal and is selected from the following enumerated list:
+
+cd      cash disbursements (sending cheques to vendors)
+cr      cash receipts (receiving cheques from others)
+fa      fixed assets
+gi      giro/other bank adjustments
+gj      general journal
+im      inventory management
+jc      job cost
+pj      purchase journal (liabilities from purchases)
+pl      payroll journal
+sj      sales journal
+se      standard entries
+ud      user defined
+ot      other sources of entries",gl-jpn,0,,,元仕訳帳種別,"元仕訳帳。仕訳が処理される仕訳帳のコード。コードは仕訳帳に一意な指標であり、以下から選択する。
+出金(仕入先への小切手送付)、入金(他者からの小切手受領)、固定資産、振替、一般仕訳帳、在庫管理、個別原価、仕入帳(仕入による負債)、賃金台帳、売上台帳、通常仕訳、ユーザ定義、その他
+[設定値のリスト]
+(cd：出金)、(cr：入金)、(fa：固定資産)、(gi：振替)、(gj：一般仕訳帳)、(im：在庫管理)、(jc：個別原価)、(pj：仕入帳)、(pl：賃金台帳)、(sj：売上台帳)、(se：通常仕訳)、(ud：ユーザ定義)、(ot：その他)",,JP04_CO15_03
+314,2,Attribute,,Entry Header JPN,Journal Description,xbrli:stringItemType,,0..1,"Source journal (full description of general journal, payroll journal, accountant entries). A more easily readable journal indication. The most common journals are: Purchases, Sales, Cash, and General Journal.",gl-jpn,0,,,元仕訳帳説明,元仕訳帳(一般仕訳、給与台帳、会計事務所入力の完全な説明)。 よりわかりやすい仕訳帳の指標。 最も一般的な仕訳帳は、次の通り。 仕入、売上、現金、一般仕訳。,,JP04_BU15_04
+315,2,Attribute,,Entry Header JPN,Type Identifier,xbrli:tokenItemType,,0..1,"One of the following enumerated list: adjusting, budget, comparative, external-accountant, standard, passed-adjusting, eliminating, proposed, recurring, reclassifying, simulated, tax, other",gl-jpn,0,,,種別識別子,"以下の値のうちのひとつ。
+整理、予算、比較、外部会計事務所、通常、無視、消去、提案、反復、組替、シミュレーション、税、その他
+[設定値のリスト]
+(adjusting：整理)、(budget：予算)、(comparative：比較)、(external-accountant：外部会計事務所)、(standard：通常)、(passed-adjusting：無視)、(eliminating：消去)、(proposed：提案)、(recurring：反復)、(reclassifying：組替)、(simulated：シミュレーション)、(tax：税)、(other：その他)",,JP04_CO15_05
+316,2,Attribute,,Entry Header JPN,Entry Origin,xbrli:stringItemType,,0..1,"Origin of entry: accrual, manual entry, imported entry, exchange gain or loss",gl-jpn,0,,,仕訳起源,仕訳の起源。発生、手入力、インポート入力、為替換算による損益。,,JP04_BU15_06
+317,2,Attribute,,Entry Header JPN,Entry Description,xbrli:stringItemType,,0..1,Description of entry described by this entry header (e.g. Opening Balance),gl-jpn,0,,,仕訳説明,このエントリヘッダーによって説明された仕訳の説明(例えば、期首残高),,JP04_CO15_07
+318,2,Attribute,,Entry Header JPN,Entry Qualifier,xbrli:tokenItemType,,0..1,"Entry Qualifier - An enumerated field that qualifies the type of entry, specifically useful for general ledger and trial balance environments when it is important to state the values represented are summarized as of the reporting date - opening or closing balances. In accounting systems, this is often known as BBF (balance brought forward.) Permitted values are: standard, balance-brought-forward and other.",gl-jpn,0,,,仕訳修飾子,"仕訳の修飾子。総勘定元帳や試算表で、開始残高や決算残高のように、記された値が報告日で集約されていることを明示することが重要なときに有用な、仕訳の種別を修飾するもの。会計システムにおいて、BBF（繰越残高）として知られるもの。指定可能な値は以下。標準、繰越残高、その他
+[設定値のリスト]
+(standard：標準)、(balance-brought-forward：繰越残高)、(other：その他)",,JP04_CO15_08
+319,2,Attribute,,Entry Header JPN,Entry Qualifier Description,xbrli:stringItemType,,0..1,Free format description of the entry qualifier,gl-jpn,0,,,仕訳修飾子説明,仕訳の修飾子の説明。,,JP04_CO15_09
+320,2,Attribute,,Entry Header JPN,Posting Code,xbrli:stringItemType,,0..1,"Code for posting to period, e.g., period 1-13, based on codes in an accounting period file. We do not recommend that software vendors export here, but suggest providing period end numbers for the buckets. Possibilities W1 through W53, M1 through M13, Q1-Q4. Developers and others creating output files are encouraged to supply an actual end date.",gl-jpn,0,,,転記コード,転記の期間を表すコード。例えば、会計期間ファイルのコードにもとづく期間１～１３。ソフトウエアベンダーが、この値をエクスポートすることは推奨しない。期間の最終番号を提供することを勧める。可能な値としては、W1からW53、M1からM13、Q1からQ4など。開発者や出力ファイルの作成者には、実際の終了日付を提供することを勧める。,,JP04_BU15_10
+321,2,Attribute,,Entry Header JPN,Batch ID for Entry Group,xbrli:stringItemType,,0..1,ID for a batch for this group of entries,gl-jpn,0,,,仕訳グループ識別子,この仕訳の集合に付ける、束の識別子。,,JP04_BU15_11
+322,2,Attribute,,Entry Header JPN,Batch Description,xbrli:stringItemType,,0..1,Description of this batch,gl-jpn,0,,,仕訳グループ説明,この仕訳の束の説明。,,JP04_BU15_12
+323,2,Attribute,,Entry Header JPN,Document Type,xbrli:tokenItemType,,0..1,"An enumerated field describing the original source document, with check, debit-memo, credit-memo, finance-charge, invoice, order-customer, order-vendor, payment-other, reminder, tegata, voucher, shipment, receipt, manual-adjustment, other.",gl-jpn,0,,,元文書種別,"小切手、借方メモ、貸方メモ、財務費用、顧客への請求書、顧客オーダー、仕入先オーダー、その他支払い、督促状、手形、ベンダからの請求書、出荷票、受領票、手修正、その他の列挙値による、元文書の説明。[設定値のリスト] (check：小切手)、(debit-memo：借方メモ)、(credit-memo：貸方メモ)、(finance-charge：財務費用)、(invoice：顧客への請求書)、(order-customer：顧客オーダ)、(order-vendor：仕入先オーダ)、(payment-other：その他支払い)、(reminder：督促状)、(tegata：手形)、(voucher：ベンダからの請求書)、(shipment：出荷票)、(receipt：受領票)、(manual-adjustment：手修正)、(other：その他)",,JP04_CO15_13
+324,2,Attribute,,Entry Header JPN,Document Type Description,xbrli:stringItemType,,0..1,Free format description of the document type,gl-jpn,0,,,元文書種別説明,元文書の種別の説明。,,JP04_CO15_14
+325,2,Attribute,,Entry Header JPN,Invoice Type,xbrli:tokenItemType,,0..1,"Invoice Type  (self-billed, ePoS enumerated values)",gl-jpn,0,,,請求書種別,"請求書の種別。(self-billed、ePoS)
+[設定値のリスト]
+(ePos：POSシステムからの発行)、(self-billed：手動発行)",,JP04_CO15_15
+26,2,Attribute,,Entry Header JPN,Monetary Amount,xbrli:monetaryItemType,,0..1,"This field (amount) represents the primary monetary amount related to the  subject of the entryDetail line. There is one primary monetary amount per entryDetail structure. It may, for example, represent the amount of one line of a journal entry, the balance on a document, or the extended amount of a line item on an invoice. Amount is not required if detailed entry is used for non-financial work and other elements are populated, in particular measurableQuantity. The amount field is a signed number (either positive or negative itself) and used in conjunction with a separate signOfAmount and a separate debitCreditCode, which together are considered for understanding the monetary amount. The unit of measure is determined by amountCurrency if present, and by the default or home currency if amountCurrency is not present.",gl-jpn,0,,,,,,JP04_11
+27,2,Attribute,,Entry Header JPN,Currency,xbrli:QNameItemType,,0..1,"The currency related to the amount can be entered here instead of the XBRL instance specified way, especially important in multi-currency situations. Recommend ISO 4217 coding.",gl-jpn,0,,,,,,JP04_12
+28,2,Attribute,,Entry Header JPN,Sign Indication for Amount,xbrli:tokenItemType,,0..1,Sign of amount; provides 4 possible fields only when used in conjunction with debitCreditCode; primarily used for correcting entries so total debits and credits after an entry error are not inflated. D + increase DebitsD - decrease debitsC + decreases creditC - increases credit,gl-jpn,0,,,,,,JP04_13
+30,2,Composition,,Entry Header JPN,,,Multicurrency Detail,0..1,,gl-jpn,0,,,【多通貨明細】,"原取引時の通貨と異なる、自国通貨と換算レートに関する追加情報のセクション。－現在および原取引時の、換算レートおよび金額の記録に使用される。
+トライアンギュレーション通貨としての第三通貨の換算レートを記録できる。EURの場合が多いがそれに限らない。この構造は、同日または異なる日の外貨での金額を記録する必要がある限り、繰り返し指定可能。",,JP04_15
+31,2,Reference Association,,Entry Header JPN,Document Number,,Originating Document,0..1,"Invoice, check, voucher, or other source document identifier",gl-jpn,0,,,元文書番号,請求書、小切手、証憑、その他の元文書の識別子。,,JP04_16
+32,2,Reference Association,,Entry Header JPN,Apply To Number,,Originating Document,0..1,"Document number of primary invoice number, used to offset payments, debits and credits; for an invoice, usually the same as the documentNumber. When calculating open balance on an invoice, or open amount on payments in advance or not fully applied, this permits calculation of the open item.",gl-jpn,0,,,適用先番号,"支払、借方、貸方の相殺に使用される、一次請求書の文書番号。請求書では通常documentNumberと等しい。
+未決済の請求書残高や、未決済の支払金額の計算時に、利用できる。",,JP04_17
+33,2,Reference Association,,Entry Header JPN,Document Reference,,Originating Document,0..1,Internal reference for the document above; number assigned internally to track the document,gl-jpn,0,,,元文書参照情報,上の文書のための内部参照情報。文書を追跡するために内部的に割り当てた番号。,,JP04_18
+333,2,Attribute,,Entry Header JPN,Document Date,xbrli:dateTimeItemType,,0..1,"Date (and less likely in the paper world but possible in the e-world, time) on actual document (invoice, voucher, check date). Other dates control posting information.",gl-jpn,0,,,元文書日付,実際の文書（請求書、証憑、小切手）の日付（および、紙の世界ではありそうにないが、電子的には時刻）。 転記の情報は別の日付で管理する。,,JP04_CO15_23
+334,2,Attribute,,Entry Header JPN,Received Date,xbrli:dateTimeItemType,,0..1,Date/time document was noted as received (if necessary). Represents actual date received. Posting dates are maintained separately.,gl-jpn,0,,,元文書受領日付,（必要であれば）文書の受領が記録された日付/時刻。実際に受領された日付をあらわす。転記日付は別に管理される。,,JP04_BU15_24
+335,2,Attribute,,Entry Header JPN,Chargeable or Reimbursable,xbrli:stringItemType,,0..1,"Is this entry chargeable to client, reimbursable? Used by some systems to indicate that account on posting/validation should be posted to a customer or vendor's account.",gl-jpn,0,,,請求支払可能フラグ,この仕訳は顧客に請求、支払可能か。いくつかのシステムでは転記/検証対象の科目が顧客や仕入先の科目に転記されるべきかどうかを示すために使用される。,,JP04_BU15_25
+336,2,Attribute,,Entry Header JPN,Document Location,xbrli:stringItemType,,0..1,"Document location as URI, file name or other reference. Alternatively, text of document can be placed here.",gl-jpn,0,,,元文書格納場所,文書の格納場所である、URI、ファイル名またはその他の参照情報。代わりに、文書のテキストも記述可能。,,JP04_BU15_26
+337,2,Attribute,,Entry Header JPN,Payment Method,xbrli:stringItemType,,0..1,Method used or to be used to make the payment,gl-jpn,0,,,支払方法,支払いのために使用された、または使用される方法。,,JP04_BU15_27
+338,2,Attribute,,Entry Header JPN,Number of Entries,xbrli:integerItemType,,0..1,The total number of entries.,gl-jpn,0,,,仕訳総数,仕訳の総数。,,JP04_BU15_28
+339,2,Attribute,,Entry Header JPN,Total Debits,xbrli:monetaryItemType,,0..1,The total of all debit amounts.,gl-jpn,0,,,借方合計,借方金額の合計値。,,JP04_BU15_29
+340,2,Attribute,,Entry Header JPN,Total Credits,xbrli:monetaryItemType,,0..1,The total of all credit amounts.,gl-jpn,0,,,貸方合計,貸方金額の合計値。,,JP04_BU15_30
+341,2,Attribute,,Entry Header JPN,Type of Difference,xbrli:tokenItemType,,0..1,"Enumerated field with possible values of permanent, temporary or none indicating the type of difference between book and tax accounting methods. Omission of this field is equivalent to ""none""",gl-jpn,0,,,帳簿価税務簿価差異種別,"帳簿と税務会計処理方法との差異の種別を示す値。永久か一時的かまたは無し。値の省略時は「無し」と同じ。
+[設定値のリスト]
+(permanent：永久)、(temporary：一時的)、(none：無し)",,JP04_CO15_31
+342,2,Attribute,,Entry Header JPN,Elimination Code,xbrli:stringItemType,,0..1,Informs destination ledger this is an intracompany entry which eliminates in consolidation,gl-jpn,0,,,相殺消去コード,連結決算時に消去される連結会社間仕訳であることを、受取側の元帳に通知する。,,JP04_BU15_32
+343,2,Attribute,,Entry Header JPN,Budget Scenario Period Start,xbrli:dateTimeItemType,,0..1,Start of period covered by associated budgetScenario,gl-jpn,0,,,予算シナリオ期間開始日付,関係付けられたbudgetScenarioがカバーする期間の開始日。,,JP04_BU15_33
+344,2,Attribute,,Entry Header JPN,Budget Scenario Period End,xbrli:dateTimeItemType,,0..1,End of period covered by associated budgetScenario,gl-jpn,0,,,予算シナリオ期間終了日付,関係付けられたbudgetScenarioがカバーする期間の終了日。,,JP04_BU15_34
+345,2,Attribute,,Entry Header JPN,Scenario Description,xbrli:stringItemType,,0..1,Text related to budgetScenario,gl-jpn,0,,,シナリオ説明,budgetScenarioに関する記述。,,JP04_BU15_35
+346,2,Attribute,,Entry Header JPN,Scenario Code,xbrli:stringItemType,,0..1,"Code for a budget scenario identifier (such as PB for 'preliminary budget', or RB for 'revised budget', or other identifier for entryType)",gl-jpn,0,,,シナリオコード,予算シナリオの識別コード。例えば、「PB」（予備予算）、「RB」（補正予算）、または他の仕訳種別の識別子。,,JP04_BU15_36
+347,2,Attribute,,Entry Header JPN,Budget Allocation Code,xbrli:tokenItemType,,0..1,"Code associated with the calculation formula: e.g. (D)ivide by number of periods, (T)otal for period given",gl-jpn,0,,,予算配分コード,"計算式に関係付けられたコード。例えば、期間数での分割、与えられた期間の合計
+[設定値のリスト]
+(D：期間数での分割)、(T：与えられた期間の合計)",,JP04_BU15_37
+358,2,Attribute,,Entry Header JPN,Entry Number Counter,xbrli:decimalItemType,,0..1,Unique reference for the entry - a numeric counter,gl-jpn,0,,,仕訳番号カウンタ,仕訳の一意なリファレンス　　カウンタ,,JP04_CO15_48
+359,2,Composition,,Entry Header JPN,,,Entered,0..1,,gl-jpn,0,,,,,,JP04_CO15_49
+360,2,Composition,,Entry Header JPN,,,Approved,0..1,,gl-jpn,0,,,,,,JP04_CO15_50
+361,2,Composition,,Entry Header JPN,,,Last Modified,0..1,,gl-jpn,0,,,,,,JP04_CO15_51
+29,2,Composition,,Entry Header JPN,,,Tax Information JPN,0..*,,gl-jpn,0,,,,,,JP04_14
+35,2,Composition,,Entry Header JPN,,,Entry Detail JPN,0..*,,gl-jpn,0,,,【仕訳明細】,仕訳明細の親タグ。,,JP04_20
+36,1,Class,,Entry Detail JPN,,,,0..*,,gl-jpn,0,,,,,,JP05
+262,2,Attribute,PK,Entry Detail JPN,Line Number,xbrli:stringItemType,,0..1,Identifier for a particular entry detail,gl-jpn,0,,,明細行番号,仕訳明細の識別子。,,JP05_CO14_01
+263,2,Attribute,,Entry Detail JPN,Line Number Counter,xbrli:decimalItemType,,0..1,Unique reference for the line - a numeric counter,gl-jpn,0,,,明細行番号カウンタ,明細行の一意なリファレンス　　カウンタ,,JP05_CO14_02
+264,2,Attribute,,Entry Detail JPN,Monetary Amount,xbrli:monetaryItemType,,0..1,"This field (amount) represents the primary monetary amount related to the  subject of the entryDetail line. There is one primary monetary amount per entryDetail structure. It may, for example, represent the amount of one line of a journal entry, the balance on a document, or the extended amount of a line item on an invoice. Amount is not required if detailed entry is used for non-financial work and other elements are populated, in particular measurableQuantity. The amount field is a signed number (either positive or negative itself) and used in conjunction with a separate signOfAmount and a separate debitCreditCode, which together are considered for understanding the monetary amount. The unit of measure is determined by amountCurrency if present, and by the default or home currency if amountCurrency is not present.",gl-jpn,0,,,金額,entryDetailの代表的な金額を示す。entryDetailごとにひとつの値を持つ。たとえば、仕訳帳の行、残高、請求書の行の金額。明細が会計業務用でなく、measurableQuantityなどの他の要素が設定されている場合は不要。符号付数値であり、金額を解釈するために用意されたsignOfAmountおよびdebitCreditCodeとあわせて使用される。通貨単位はamountCurrencyで決定される。amountCurrencyが指定されない場合は、既定または自国の通貨単位となる。,,JP05_CO14_03
+265,2,Attribute,,Entry Detail JPN,Currency,xbrli:QNameItemType,,0..1,"The currency related to the amount can be entered here instead of the XBRL instance specified way, especially important in multi-currency situations. Recommend ISO 4217 coding.",gl-jpn,0,,,通貨,XBRLインスタンス内に指定する方法のかわりに、金額の通貨を指定可能。多通貨環境で特に重要。ISO4217コード体系を推奨。,,JP05_MC14_04
+266,2,Attribute,,Entry Detail JPN,Sign Indication for Amount,xbrli:tokenItemType,,0..1,Sign of amount; provides 4 possible fields only when used in conjunction with debitCreditCode; primarily used for correcting entries so total debits and credits after an entry error are not inflated. D + increase DebitsD - decrease debitsC + decreases creditC - increases credit,gl-jpn,0,,,金額符号,"金額の符号。貸借識別子と関連して使用される場合にだけ、4つの可能なフィールドを提供する。記入エラー後の総貸借が膨張しないように、おもに仕訳の訂正に使用される。 D+は借方を増加させる。D-は借方を減少させる。C+は貸方を減少させる。C-は貸方を増加させる。
+[設定値のリスト]
+(+)、(-)、(plus：プラス)、(minus：マイナス)",,JP05_CO14_05
+267,2,Attribute,,Entry Detail JPN,Debit/Credit Identifier,xbrli:tokenItemType,,0..1,"Optional identifier of whether the amount is a (D)ebit, a (C)redit or Undefined",gl-jpn,0,,,貸借区分コード,"金額が借方か貸方か不定かを示す識別子。
+[設定値のリスト]
+(D)、(C)、(debit：借方)、(credit：貸方)、(undefined：不定)",,JP05_CO14_06
+268,2,Attribute,,Entry Detail JPN,Posting Date,xbrli:dateTimeItemType,,0..1,"At the detail level, this represents the accounting significance date. No matter what date the document is received, entered, or posted, this signifies the accounting date of the entry. If you want to see the financial results for March 5, 2002 and this entry is given that date, the entry will be part of the results for March 5, 2002. This is different from the postedDate found at the entryHeader level. If you want the accounting significance to be a particular date, it goes here. A single entry could represent multiple dates, but would only be posted on one date.",gl-jpn,0,,,転記日付,明細レベルで、会計上意義のある日付を示す。ドキュメントの受領、入力、転記の日付に関わらず、仕訳が会計処理された日付を示す。2002.03.05の財務結果を見たいときに、ここにその日付がある場合は、この明細は2002.03.05の結果の一部である。これは、entryHeaderにあるpostedDateとは異なる。特定の日付を会計上意義のある日付にしたいなら、ここに記述する。ひとつの仕訳が複数の日付をあらわせるが、ひとつの日でのみ転記される。,,JP05_CO14_07
+269,2,Attribute,,Entry Detail JPN,Memo Line,xbrli:booleanItemType,,0..1,A boolean like entry that indicates whether an entryDetail line has been provided solely to provide additional details and that tools should not consider the amount in postings.,gl-jpn,0,,,メモ行フラグ,明細行が単に追加の詳細を与えるものであり、転記金額に含めるべきでないことを示すブール値。,,JP05_BU14_08
+270,2,Attribute,,Entry Detail JPN,Allocation Code,xbrli:stringItemType,,0..1,A code that is tied to the Enterprise's allocation system.,gl-jpn,0,,,配分コード,配賦システムに結びつけるコード。,,JP05_BU14_09
+271,2,Attribute,,Entry Detail JPN,Document Type,xbrli:tokenItemType,,0..1,"An enumerated field describing the original source document, with check, debit-memo, credit-memo, finance-charge, invoice, order-customer, order-vendor, payment-other, reminder, tegata, voucher, shipment, receipt, manual-adjustment, other.",gl-jpn,0,,,元文書種別,"小切手、借方メモ、貸方メモ、財務費用、顧客への請求書、顧客オーダー、仕入先オーダー、その他支払い、督促状、手形、ベンダからの請求書、出荷票、受領票、手修正、その他の列挙値による、元文書の説明。[設定値のリスト] (check：小切手)、(debit-memo：借方メモ)、(credit-memo：貸方メモ)、(finance-charge：財務費用)、(invoice：顧客への請求書)、(order-customer：顧客オーダ)、(order-vendor：仕入先オーダ)、(payment-other：その他支払い)、(reminder：督促状)、(tegata：手形)、(voucher：ベンダからの請求書)、(shipment：出荷票)、(receipt：受領票)、(manual-adjustment：手修正)、(other：その他)",,JP05_CO14_10
+272,2,Attribute,,Entry Detail JPN,Document Type Description,xbrli:stringItemType,,0..1,Free format description of the document type,gl-jpn,0,,,元文書種別説明,元文書の種別の説明。,,JP05_CO14_11
+273,2,Attribute,,Entry Detail JPN,Invoice Type,xbrli:tokenItemType,,0..1,"Invoice Type  (self-billed, ePoS enumerated values)",gl-jpn,0,,,請求書種別,"請求書の種別。(self-billed、ePoS)
+[設定値のリスト]
+(ePos：POSシステムからの発行)、(self-billed：手動発行)",,JP05_CO14_12
+274,2,Attribute,,Entry Detail JPN,Document Number,xbrli:stringItemType,,0..1,"Invoice, check, voucher, or other source document identifier",gl-jpn,0,,,元文書番号,請求書、小切手、証憑、その他の元文書の識別子。,,JP05_CO14_13
+275,2,Attribute,,Entry Detail JPN,Apply To Number,xbrli:stringItemType,,0..1,"Document number of primary invoice number, used to offset payments, debits and credits; for an invoice, usually the same as the documentNumber. When calculating open balance on an invoice, or open amount on payments in advance or not fully applied, this permits calculation of the open item.",gl-jpn,0,,,適用先番号,"支払、借方、貸方の相殺に使用される、一次請求書の文書番号。請求書では通常documentNumberと等しい。
+未決済の請求書残高や、未決済の支払金額の計算時に、利用できる。",,JP05_CO14_14
+276,2,Attribute,,Entry Detail JPN,Document Reference,xbrli:stringItemType,,0..1,Internal reference for the document above; number assigned internally to track the document,gl-jpn,0,,,元文書参照情報,上の文書のための内部参照情報。文書を追跡するために内部的に割り当てた番号。,,JP05_CO14_15
+277,2,Attribute,,Entry Detail JPN,Document Date,xbrli:dateTimeItemType,,0..1,"Date (and less likely in the paper world but possible in the e-world, time) on actual document (invoice, voucher, check date). Other dates control posting information.",gl-jpn,0,,,元文書日付,実際の文書（請求書、証憑、小切手）の日付（および、紙の世界ではありそうにないが、電子的には時刻）。 転記の情報は別の日付で管理する。,,JP05_CO14_16
+278,2,Attribute,,Entry Detail JPN,Received Date,xbrli:dateTimeItemType,,0..1,Date/time document was noted as received (if necessary). Represents actual date received. Posting dates are maintained separately.,gl-jpn,0,,,元文書受領日付,（必要であれば）文書の受領が記録された日付/時刻。実際に受領された日付をあらわす。転記日付は別に管理される。,,JP05_BU14_17
+279,2,Attribute,,Entry Detail JPN,Chargeable or Reimbursable,xbrli:stringItemType,,0..1,"Is this entry chargeable to client, reimbursable? Used by some systems to indicate that account on posting/validation should be posted to a customer or vendor's account.",gl-jpn,0,,,請求支払可能フラグ,この仕訳は顧客に請求、支払可能か。いくつかのシステムでは転記/検証対象の科目が顧客や仕入先の科目に転記されるべきかどうかを示すために使用される。,,JP05_BU14_18
+280,2,Attribute,,Entry Detail JPN,Document Location,xbrli:stringItemType,,0..1,"Document location as URI, file name or other reference. Alternatively, text of document can be placed here.",gl-jpn,0,,,元文書格納場所,文書の格納場所である、URI、ファイル名またはその他の参照情報。代わりに、文書のテキストも記述可能。,,JP05_BU14_19
+281,2,Attribute,,Entry Detail JPN,Payment Method,xbrli:stringItemType,,0..1,Method used or to be used to make the payment,gl-jpn,0,,,支払方法,支払いのために使用された、または使用される方法。,,JP05_BU14_20
+282,2,Attribute,,Entry Detail JPN,Posting Status,xbrli:tokenItemType,,0..1,"deferred: although entered, it cannot be posted until a later time
+posted: already posted
+proposed: a proposed item that must be approved
+simulated: a simulated item, for what-if
+tax: a tax-specific entry
+unposted:entered but not yet posted or validated
+cancelled:entered and later cancelled
+other:other status - should be described in postingStatusDescription",gl-jpn,0,,,転記状態,"・据置：入力されたが、まだ転記できない。
+・転記済：転記済み。
+・提案済：検証が必要な項目。
+・シミュレーション：仮定のためにシミュレートされた項目。
+・税：税項目。
+・未転記：入力されたが、まだ検証も転記もされていない。
+・取消済：入力されたが、取り消された。
+・その他：その他の状態。postingStatusDescriptionで説明されるべき。
+[設定値のリスト]
+(deferred：据置)、(posted：転記済)、(proposed：提案済)、(simulated：シミュレーション)、(tax：税)、(unposted：未転記)、(cancelled：取消済)、(other：その他)",,JP05_CO14_21
+283,2,Attribute,,Entry Detail JPN,Posting Status Description,xbrli:stringItemType,,0..1,Free format description of the posting status,gl-jpn,0,,,転記状態説明,転記状態の説明。,,JP05_CO14_22
+284,2,Attribute,,Entry Detail JPN,Description,xbrli:stringItemType,,0..1,Description of this line of detail only,gl-jpn,0,,,説明,この明細行のみに対する説明。,,JP05_CO14_23
+285,2,Attribute,,Entry Detail JPN,Acknowledgement Date,xbrli:dateTimeItemType,,0..1,Date of acknowledgement of goods/services shipped/received.,gl-jpn,0,,,承認日付,出荷/受領済みの物品/サービスを承認した日付。,,JP05_CO14_24
+286,2,Attribute,,Entry Detail JPN,Confirmation Date,xbrli:dateTimeItemType,,0..1,Date of confirmation of shipment/receipt.,gl-jpn,0,,,確認日付,出荷/受領を確認した日付。,,JP05_CO14_25
+287,2,Attribute,,Entry Detail JPN,Ship From,xbrli:stringItemType,,0..1,References organizationAddressLocationIdentifier where used. Otherwise freeform.,gl-jpn,0,,,出荷元,organizationAddressLocationIdentifierの参照情報。または自由記述。,,JP05_CO14_26
+288,2,Attribute,,Entry Detail JPN,Date Shipped/Received,xbrli:dateTimeItemType,,0..1,Date goods/services are shipped/received.,gl-jpn,0,,,出荷/受領日付,物品/サービスを出荷/受領した日付。,,JP05_CO14_27
+289,2,Attribute,,Entry Detail JPN,Maturity Date or Date Due,xbrli:dateTimeItemType,,0..1,Due date or other maturity date.,gl-jpn,0,,,支払期日,支払期日やその他の期日。,,JP05_CO14_28
+290,2,Attribute,,Entry Detail JPN,Payment Terms,xbrli:stringItemType,,0..1,Discount/payment terms.,gl-jpn,0,,,支払条件,割引/支払い条件。,,JP05_CO14_29
+291,2,Attribute,,Entry Detail JPN,Measurable Class Identifier,xbrli:tokenItemType,,0..1,"An enumerated code to identify the inventory, fixed asset or other measurable class. Enumerated as: raw material, work-in-process, finished goods, assemblies, supplies, land, building, machinery, furniture, vehicles, other.",gl-jpn,0,,,測定可能分類コード,在庫、固定資産、その他の測定可能な分類を識別するための列挙コード。列挙例：原材料、仕掛品、製品、組立品、備品、土地、建物、機械、家具、車両、その他。,,JP05_EH14_30
+292,2,Attribute,,Entry Detail JPN,Measurable Class Description,xbrli:stringItemType,,0..1,Free format description associated with gl-ehm:measurableClassID to provide specialization or clarification for the enumerated value of other.,gl-jpn,0,,,測定可能分類の説明,「その他」の列挙値を補足・特定するための自由記述形式の説明。,,JP05_EH14_31
+293,2,Attribute,,Entry Detail JPN,Costing Method Code,xbrli:tokenItemType,,0..1,"An enumerated code for the inventory (or other measurable) costing method. Enumerated as: LIFO, FIFO, average, weighted-average, standard-cost, tax-basis, book-basis, other.",gl-jpn,0,,,原価計算方法コード,在庫または他の測定可能な対象の原価計算方法を示す列挙コード。列挙例：LIFO、FIFO、平均法、加重平均法、標準原価法、税基準、帳簿基準、その他。,,JP05_EH14_32
+294,2,Attribute,,Entry Detail JPN,Costing Method Description,xbrli:stringItemType,,0..1,Free format description associated with gl-ehm:costingMethodCode to provide specialization of clarification for the enumerated value of other.,gl-jpn,0,,,原価計算方法の説明,「その他」の列挙値に関する補足説明または特定のための自由記述形式。,,JP05_EH14_33
+295,2,Attribute,,Entry Detail JPN,Geospatial Coordinate,xbrli:stringItemType,,0..1,"Enter a relevant location for this item. Format can be either:
+- Degrees, minutes, and seconds (DMS): 41°24'12.2""N 2°10'26.5""E
+- Degrees and decimal minutes (DMM): 41 24.2028, 2 10.4418
+- Decimal degrees (DD): 41.40338, 2.17403",gl-jpn,0,,,地理座標,"本項目の関連位置を入力。形式は以下のいずれか：
+・度分秒 (DMS): 41°24'12.2""N 2°10'26.5""E
+・度と小数分 (DMM): 41 24.2028, 2 10.4418
+・10進度 (DD): 41.40338, 2.17403",,JP05_EH14_34
+296,2,Attribute,,Entry Detail JPN,Ticking Field,xbrli:booleanItemType,,0..1,"Signifies that an item has been cleared, finished, finalized. When checking accounts are called for, the tick or letter showing this was done appears in this field. Can also be used for identifying that the
+original document against which a payment or DR/CR memo applies has been reconciled.",gl-jpn,0,,,チェック欄,項目が消去または完了されたことを示す。勘定のチェックが要求される場合、処理済を示すチェックマークまたは文字が指定される。支払またはDR/CRのメモに対する元文書が、消し込まれたことを確認するためにも使用可能。,,JP05_TA14_35
+297,2,Attribute,,Entry Detail JPN,Document Remaining Balance,xbrli:monetaryItemType,,0..1,Balance remaining on the document,gl-jpn,0,,,文書上残高,文書上の残高。,,JP05_TA14_36
+298,2,Attribute,,Entry Detail JPN,UCR,xbrli:stringItemType,,0..1,"Unique Consignment Reference or UCR. An ""origin to destination"" reference code for international consignments, developed in cooperation with the World Customs Organization and EAN International (EAN). (http://www.wcoomd.org/ie/EN/press/UCR_new_e.pdf)",gl-jpn,0,,,UCRコード,"Unique Consignment ReferenceまたはUCR。国際委託販売のための""origin to destination""参照コード。World Customs OrganizationとEAN International (EAN)が共同で開発している。
+(http://www.wcoomd.org/ie/EN/press/UCR_new_e.pdf)",,JP05_TA14_37
+299,2,Composition,,Entry Detail JPN,,,Account Identifier,0..*,,gl-jpn,0,,,【科目識別子】,"タプル。勘定科目番号と識別子の親コンテナ。 ここには記入されないが、個々の明細行は、異なるGAAPでの報告や、日本の見返勘定や、連結勘定科目に対する個別情報の連結会計システムへの伝達などのための、複数の勘定科目を持ちうる。例えば、勘定科目4783HG-QOWI-192837-1000は、次のように表現されうる。
+/account/accountMainID 1000  
+/account/accountMainDescription Cash  
+/account/accountSub/accountSubID 4783HG  
+/account/accountSub/accountSubDescription Department  
+/account/accountSub/accountSubID QOWI  
+/account/accountSub/accountSubDescription Branch  
+/account/accountSub/accountSubID 192837  
+/account/accountSub/accountSubDescription Division",,JP05_CO14_38
+300,2,Composition,,Entry Detail JPN,,,Multicurrency Detail,0..*,,gl-jpn,0,,,【多通貨明細】,"原取引時の通貨と異なる、自国通貨と換算レートに関する追加情報のセクション。－現在および原取引時の、換算レートおよび金額の記録に使用される。
+トライアンギュレーション通貨としての第三通貨の換算レートを記録できる。EURの場合が多いがそれに限らない。この構造は、同日または異なる日の外貨での金額を記録する必要がある限り、繰り返し指定可能。",,JP05_MC14_39
+301,2,Composition,,Entry Detail JPN,,,Identifier Reference,0..*,,gl-jpn,0,,,【CVE情報】,顧客、仕入先、従業員のための識別子。,,JP05_CO14_40
+302,2,Composition,,Entry Detail JPN,,,XBRL Information,0..*,,gl-jpn,0,,,【XBRL情報】,XBRLレポート情報へのロールアップ情報。親タグであり、同じ項目が複数のタクソノミを通じて報告されうるように繰り返し可能。同一の勘定科目を異なるXBRL要素に転記した場合にどうなるか、注意深く考慮すべきである。,,JP05_CO14_41
+303,2,Composition,,Entry Detail JPN,,,Measurable,0..*,,gl-jpn,0,,,【計測可能物情報】,明細行に関係付けられた、計測可能物の情報の親タグ。おもにパフォーマンス測定のために使用される。在庫移動の詳細の追跡の必要性に基づき、「科目」、「報告バケット」、「コード」に関係付けられるあらゆるものに適する。あらゆる活動を追跡するために使用可能。,,JP05_BU14_42
+304,2,Composition,,Entry Detail JPN,,,Job Information,0..*,,gl-jpn,0,,,【ジョブ情報】,科目識別子で表現されるジョブとは別の、ジョブに関係する情報のタプル。個々の明細行に対してひとつだけ存在すると思われるが、複数必要かもしれない。,,JP05_BU14_43
+305,2,Composition,,Entry Detail JPN,,,Depreciation Mortgage,0..*,,gl-jpn,0,,,【減価償却/抵当債務情報】,減価償却、抵当債務等に関連する情報の親タグ。,,JP05_BU14_44
+306,2,Composition,,Entry Detail JPN,,,Serial or Lot,0..*,,gl-jpn,0,,,【シリアル番号・ロット情報】,シリアル番号やロット（バッチ）に関する情報を保持するタプル。単一の構造内に複数のシリアル番号やロット情報を保持可能。,,JP05_EH14_45
+309,2,Composition,,Entry Detail JPN,,,Rich Text Comment,0..*,,gl-jpn,0,,,【リッチテキストコメント】,XHTMLを含む、リッチテキスト形式のテキストを受け入れる。XBRLインスタンスのフットノートの生成や、文書や伝票のコメントの生成などの、さまざまな目的で利用可能。,,JP05_SR14_48
+39,2,Composition,,Entry Detail JPN,,,Originating Document JPN,0..*,,gl-jpn,0,,,,,,JP05_02
+41,2,Composition,,Entry Detail JPN,,,Tax Line Information JPN,0..1,,gl-jpn,0,,,,,,JP05_04
+42,1,Class,,Accounting Entries JPN,,,,1..*,Root for XBRL GL. No entry made here.,gl-jpn,0,,,【会計仕訳】,XBRL GLのルート要素。 この要素にはデータは登録されない。,,JP06
+364,2,Composition,,Accounting Entries JPN,,,Document Information,1..1,,gl-jpn,0,,,【文書情報】,この会計仕訳に関する情報の親タグ。,,JP06_CO16_01
+365,2,Composition,,Accounting Entries JPN,,,Entitry Information,0..1,,gl-jpn,0,,,【事業体情報】,事業体情報（報告組織に関する情報）の入れ物。,,JP06_CO16_02
+45,2,Composition,,Accounting Entries JPN,,,Entry Header JPN,0..*,,gl-jpn,0,,,【仕訳情報】,エントリヘッダー/仕訳記入ヘッダーの親タグ。,,JP06_02

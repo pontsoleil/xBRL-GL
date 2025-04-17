@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"
+    xmlns="http://www.xbrl.org/2003/linkbase"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+        <!-- gl-srcd:summaryReportingTaxonomies Summary Reporting Taxonomies -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryReportingTaxonomies" xlink:label="summaryReportingTaxonomies"/>
+        <label xlink:type="resource" xlink:label="summaryReportingTaxonomies_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryReportingTaxonomies_en" xml:lang="en">Summary Reporting Taxonomies</label>
+        <label xlink:type="resource" xlink:label="summaryReportingTaxonomies_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Identifies and provides information about one or more target reporting taxonomies to which the data represented in the document rolls up to.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryReportingTaxonomies" xlink:to="summaryReportingTaxonomies_lbl"/>
+        <!-- gl-srcd:summaryReportingTaxonomyID Summary Reporting Taxonomy ID -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryReportingTaxonomyID" xlink:label="summaryReportingTaxonomyID"/>
+        <label xlink:type="resource" xlink:label="summaryReportingTaxonomyID_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryReportingTaxonomyID_en" xml:lang="en">Summary Reporting Taxonomy ID</label>
+        <label xlink:type="resource" xlink:label="summaryReportingTaxonomyID_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Identifies a target reporting taxonomy so that, for example, it can be referenced in the [summaryReportingTaxonomyIDRef] data field at [xbrlInfo] level.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryReportingTaxonomyID" xlink:to="summaryReportingTaxonomyID_lbl"/>
+        <!-- gl-srcd:summaryReportingTaxonomySchemaRefHref Summary Reporting Taxonomy Schema Reference Href Attribute -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryReportingTaxonomySchemaRefHref" xlink:label="summaryReportingTaxonomySchemaRefHref"/>
+        <label xlink:type="resource" xlink:label="summaryReportingTaxonomySchemaRefHref_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryReportingTaxonomySchemaRefHref_en" xml:lang="en">Summary Reporting Taxonomy Schema Reference Href Attribute</label>
+        <label xlink:type="resource" xlink:label="summaryReportingTaxonomySchemaRefHref_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Value of the href attribute of schemaRef in the target reporting taxonomy.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryReportingTaxonomySchemaRefHref" xlink:to="summaryReportingTaxonomySchemaRefHref_lbl"/>
+        <!-- gl-srcd:summaryReportingTaxonomyHeader Summary Reporting Taxonomy Header -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryReportingTaxonomyHeader" xlink:label="summaryReportingTaxonomyHeader"/>
+        <label xlink:type="resource" xlink:label="summaryReportingTaxonomyHeader_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryReportingTaxonomyHeader_en" xml:lang="en">Summary Reporting Taxonomy Header</label>
+        <label xlink:type="resource" xlink:label="summaryReportingTaxonomyHeader_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">An all-purpose data field where all the information necessary when it is too complex to be defined otherwise.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryReportingTaxonomyHeader" xlink:to="summaryReportingTaxonomyHeader_lbl"/>
+        <!-- gl-srcd:summaryReportingTaxonomyDescription Summary Reporting Taxonomy Description -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryReportingTaxonomyDescription" xlink:label="summaryReportingTaxonomyDescription"/>
+        <label xlink:type="resource" xlink:label="summaryReportingTaxonomyDescription_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryReportingTaxonomyDescription_en" xml:lang="en">Summary Reporting Taxonomy Description</label>
+        <label xlink:type="resource" xlink:label="summaryReportingTaxonomyDescription_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">A description of the taxonomy for human use.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryReportingTaxonomyDescription" xlink:to="summaryReportingTaxonomyDescription_lbl"/>
+        <!-- gl-srcd:richTextComment Rich Text Comment -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_richTextComment" xlink:label="richTextComment"/>
+        <label xlink:type="resource" xlink:label="richTextComment_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_richTextComment_en" xml:lang="en">Rich Text Comment</label>
+        <label xlink:type="resource" xlink:label="richTextComment_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Accepts text in rich text format, including XHTML. It can be used for different purposes, such as to create footnotes in XBRL instances or to create a comment for a document or an entry.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="richTextComment" xlink:to="richTextComment_lbl"/>
+        <!-- gl-srcd:summaryTuplePath Summary Tuple Path -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryTuplePath" xlink:label="summaryTuplePath"/>
+        <label xlink:type="resource" xlink:label="summaryTuplePath_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryTuplePath_en" xml:lang="en">Summary Tuple Path</label>
+        <label xlink:type="resource" xlink:label="summaryTuplePath_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Specific filter for parent tuple structure. This value must be valid XPath. And the result of the XPath must be resolved to a node.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryTuplePath" xlink:to="summaryTuplePath_lbl"/>
+        <!-- gl-srcd:detailedContentFilter Detailed Content Filter -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_detailedContentFilter" xlink:label="detailedContentFilter"/>
+        <label xlink:type="resource" xlink:label="detailedContentFilter_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_detailedContentFilter_en" xml:lang="en">Detailed Content Filter</label>
+        <label xlink:type="resource" xlink:label="detailedContentFilter_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Filtering mechanism. This value must be valid XPath. And the result of the XPath must be resolved to boolean. If the resulting value is false, the entry  must not mapped into specified facts in F/S.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="detailedContentFilter" xlink:to="detailedContentFilter_lbl"/>
+        <!-- gl-srcd:reportingDateSelector Reporting Date Selector -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_reportingDateSelector" xlink:label="reportingDateSelector"/>
+        <label xlink:type="resource" xlink:label="reportingDateSelector_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_reportingDateSelector_en" xml:lang="en">Reporting Date Selector</label>
+        <label xlink:type="resource" xlink:label="reportingDateSelector_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This holds the concepts in GL data to create FS contexts.  The value must be a list of QName. Each QName must be resolved to GL items. Order of the items defines priority to access.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="reportingDateSelector" xlink:to="reportingDateSelector_lbl"/>
+        <!-- gl-srcd:summaryOperator Summary Operator -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryOperator" xlink:label="summaryOperator"/>
+        <label xlink:type="resource" xlink:label="summaryOperator_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryOperator_en" xml:lang="en">Summary Operator</label>
+        <label xlink:type="resource" xlink:label="summaryOperator_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The operator applied to the amount or quantity when it is rolled up to a summary reporting element.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryOperator" xlink:to="summaryOperator_lbl"/>
+        <!-- gl-srcd:summaryPrecisionDecimals Summary Precision Decimals (choice) -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryPrecisionDecimals" xlink:label="summaryPrecisionDecimals"/>
+        <label xlink:type="resource" xlink:label="summaryPrecisionDecimals_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryPrecisionDecimals_en" xml:lang="en">Summary Precision Decimals (choice)</label>
+        <label xlink:type="resource" xlink:label="summaryPrecisionDecimals_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This structure allows to explicitly indicate the value for the precision or decimals attributes for a fact in an FR instance. Only one of the four elements in the structure has to be used.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryPrecisionDecimals" xlink:to="summaryPrecisionDecimals_lbl"/>
+        <!-- gl-srcd:summaryContext Summary Context -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryContext" xlink:label="summaryContext"/>
+        <label xlink:type="resource" xlink:label="summaryContext_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryContext_en" xml:lang="en">Summary Context</label>
+        <label xlink:type="resource" xlink:label="summaryContext_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This structure allows to explicitly indicate the context information for a fact in the FR instance.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryContext" xlink:to="summaryContext_lbl"/>
+        <!-- gl-srcd:summaryUnit Summary Unit -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryUnit" xlink:label="summaryUnit"/>
+        <label xlink:type="resource" xlink:label="summaryUnit_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryUnit_en" xml:lang="en">Summary Unit</label>
+        <label xlink:type="resource" xlink:label="summaryUnit_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This structure allows to explicitly indicate the information related to the unit for a fact in the FR instance..</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryUnit" xlink:to="summaryUnit_lbl"/>
+        <!-- gl-srcd:summaryReportingTaxonomyIDRef Summary Reporting Taxonomy ID Reference -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryReportingTaxonomyIDRef" xlink:label="summaryReportingTaxonomyIDRef"/>
+        <label xlink:type="resource" xlink:label="summaryReportingTaxonomyIDRef_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryReportingTaxonomyIDRef_en" xml:lang="en">Summary Reporting Taxonomy ID Reference</label>
+        <label xlink:type="resource" xlink:label="summaryReportingTaxonomyIDRef_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Reference to the ID of the relevant target reporting taxonomy, defined in the [summaryReportingTaxonomies] structure at [documentInfo] level. Allows consuming applications to identify sets of [xbrlInfo] structures that point to a specific taxonomy.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryReportingTaxonomyIDRef" xlink:to="summaryReportingTaxonomyIDRef_lbl"/>
+        <!-- gl-srcd:summaryPrecision Summary Precision -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryPrecision" xlink:label="summaryPrecision"/>
+        <label xlink:type="resource" xlink:label="summaryPrecision_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryPrecision_en" xml:lang="en">Summary Precision</label>
+        <label xlink:type="resource" xlink:label="summaryPrecision_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This item indicates that the fact in the FR instance has a precision attribute with the value specified in this item value.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryPrecision" xlink:to="summaryPrecision_lbl"/>
+        <!-- gl-srcd:summaryPrecisionINF Summary Precision INF -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryPrecisionINF" xlink:label="summaryPrecisionINF"/>
+        <label xlink:type="resource" xlink:label="summaryPrecisionINF_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryPrecisionINF_en" xml:lang="en">Summary Precision INF</label>
+        <label xlink:type="resource" xlink:label="summaryPrecisionINF_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This item, when used, has no value. Its only presence indicates that the fact in the FR instance  has a precision attribute  and its value is INF.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryPrecisionINF" xlink:to="summaryPrecisionINF_lbl"/>
+        <!-- gl-srcd:summaryDecimals Summary Decimals -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryDecimals" xlink:label="summaryDecimals"/>
+        <label xlink:type="resource" xlink:label="summaryDecimals_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryDecimals_en" xml:lang="en">Summary Decimals</label>
+        <label xlink:type="resource" xlink:label="summaryDecimals_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This item indicates that the fact in the FR instance has a decimals attribute with the value specified in this item value.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryDecimals" xlink:to="summaryDecimals_lbl"/>
+        <!-- gl-srcd:summaryDecimalsINF Summary Decimals INF -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryDecimalsINF" xlink:label="summaryDecimalsINF"/>
+        <label xlink:type="resource" xlink:label="summaryDecimalsINF_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryDecimalsINF_en" xml:lang="en">Summary Decimals INF</label>
+        <label xlink:type="resource" xlink:label="summaryDecimalsINF_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This item, when used, has no value. Its only presence indicates that the fact in the FR instance  has a decimals attribute  and its value is INF.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryDecimalsINF" xlink:to="summaryDecimalsINF_lbl"/>
+        <!-- gl-srcd:summaryEntity Summary Entity -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryEntity" xlink:label="summaryEntity"/>
+        <label xlink:type="resource" xlink:label="summaryEntity_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryEntity_en" xml:lang="en">Summary Entity</label>
+        <label xlink:type="resource" xlink:label="summaryEntity_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This structure allows to explicitly indicate the entity information for a fact in the FR instance.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryEntity" xlink:to="summaryEntity_lbl"/>
+        <!-- gl-srcd:summaryPeriod Summary Period (choice) -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryPeriod" xlink:label="summaryPeriod"/>
+        <label xlink:type="resource" xlink:label="summaryPeriod_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryPeriod_en" xml:lang="en">Summary Period (choice)</label>
+        <label xlink:type="resource" xlink:label="summaryPeriod_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This structure allows to explicitly indicate the period information for a fact in the FR instance. Instant, Period Start/End and Forever are alternative.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryPeriod" xlink:to="summaryPeriod_lbl"/>
+        <!-- gl-srcd:summaryScenario Summary Scenario -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryScenario" xlink:label="summaryScenario"/>
+        <label xlink:type="resource" xlink:label="summaryScenario_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryScenario_en" xml:lang="en">Summary Scenario</label>
+        <label xlink:type="resource" xlink:label="summaryScenario_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This structure allows to explicitly indicate the scenario information for a fact in the FR instance.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryScenario" xlink:to="summaryScenario_lbl"/>
+        <!-- gl-srcd:summaryIdentifier Summary Entity Identifier -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryIdentifier" xlink:label="summaryIdentifier"/>
+        <label xlink:type="resource" xlink:label="summaryIdentifier_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryIdentifier_en" xml:lang="en">Summary Entity Identifier</label>
+        <label xlink:type="resource" xlink:label="summaryIdentifier_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value of the entity identifier.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryIdentifier" xlink:to="summaryIdentifier_lbl"/>
+        <!-- gl-srcd:summaryScheme Summary Entity Scheme -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryScheme" xlink:label="summaryScheme"/>
+        <label xlink:type="resource" xlink:label="summaryScheme_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryScheme_en" xml:lang="en">Summary Entity Scheme</label>
+        <label xlink:type="resource" xlink:label="summaryScheme_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value of the entity scheme.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryScheme" xlink:to="summaryScheme_lbl"/>
+        <!-- gl-srcd:summarySegment Summary Entity Segment -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summarySegment" xlink:label="summarySegment"/>
+        <label xlink:type="resource" xlink:label="summarySegment_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summarySegment_en" xml:lang="en">Summary Entity Segment</label>
+        <label xlink:type="resource" xlink:label="summarySegment_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This structure allows to explicitly indicate the information related to the segment in the context for a fact in the FR instance.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summarySegment" xlink:to="summarySegment_lbl"/>
+        <!-- gl-srcd:summarySegmentExplicitDimension Summary Segment Explicit Dimension -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summarySegmentExplicitDimension" xlink:label="summarySegmentExplicitDimension"/>
+        <label xlink:type="resource" xlink:label="summarySegmentExplicitDimension_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summarySegmentExplicitDimension_en" xml:lang="en">Summary Segment Explicit Dimension</label>
+        <label xlink:type="resource" xlink:label="summarySegmentExplicitDimension_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This structure allows to explicitly indicate the information related to an explicit dimension in the segment of the context for a fact in the FR instance.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summarySegmentExplicitDimension" xlink:to="summarySegmentExplicitDimension_lbl"/>
+        <!-- gl-srcd:summarySegmentTypedDimension Summary Segment Typed Dimension -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summarySegmentTypedDimension" xlink:label="summarySegmentTypedDimension"/>
+        <label xlink:type="resource" xlink:label="summarySegmentTypedDimension_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summarySegmentTypedDimension_en" xml:lang="en">Summary Segment Typed Dimension</label>
+        <label xlink:type="resource" xlink:label="summarySegmentTypedDimension_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This structure allows to explicitly indicate the information related to a typed dimension in the segment of the context for a fact in the FR instance.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summarySegmentTypedDimension" xlink:to="summarySegmentTypedDimension_lbl"/>
+        <!-- gl-srcd:summarySegmentSimpleElementContent Summary Segment Simple Element Content -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summarySegmentSimpleElementContent" xlink:label="summarySegmentSimpleElementContent"/>
+        <label xlink:type="resource" xlink:label="summarySegmentSimpleElementContent_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summarySegmentSimpleElementContent_en" xml:lang="en">Summary Segment Simple Element Content</label>
+        <label xlink:type="resource" xlink:label="summarySegmentSimpleElementContent_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This structure allows to explicitly indicate the information related to a simple element in the segment of  the context for a fact in the FR instance.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summarySegmentSimpleElementContent" xlink:to="summarySegmentSimpleElementContent_lbl"/>
+        <!-- gl-srcd:summarySegmentContents Summary Segment Non Dimensional Contents -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summarySegmentContents" xlink:label="summarySegmentContents"/>
+        <label xlink:type="resource" xlink:label="summarySegmentContents_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summarySegmentContents_en" xml:lang="en">Summary Segment Non Dimensional Contents</label>
+        <label xlink:type="resource" xlink:label="summarySegmentContents_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value must be CDATA and a valid XML fragment.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summarySegmentContents" xlink:to="summarySegmentContents_lbl"/>
+        <!-- gl-srcd:summarySegmentExplicitDimensionElement Summary Segment Explicit Dimension Element -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summarySegmentExplicitDimensionElement" xlink:label="summarySegmentExplicitDimensionElement"/>
+        <label xlink:type="resource" xlink:label="summarySegmentExplicitDimensionElement_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summarySegmentExplicitDimensionElement_en" xml:lang="en">Summary Segment Explicit Dimension Element</label>
+        <label xlink:type="resource" xlink:label="summarySegmentExplicitDimensionElement_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The QName value must be resolved to a valid explicit dimension item used in segment.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summarySegmentExplicitDimensionElement" xlink:to="summarySegmentExplicitDimensionElement_lbl"/>
+        <!-- gl-srcd:summarySegmentExplicitDimensionValue Summary Segment Explicit Dimension Value (choice) -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summarySegmentExplicitDimensionValue" xlink:label="summarySegmentExplicitDimensionValue"/>
+        <label xlink:type="resource" xlink:label="summarySegmentExplicitDimensionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summarySegmentExplicitDimensionValue_en" xml:lang="en">Summary Segment Explicit Dimension Value (choice)</label>
+        <label xlink:type="resource" xlink:label="summarySegmentExplicitDimensionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The QName value must be resolved to valid member item.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summarySegmentExplicitDimensionValue" xlink:to="summarySegmentExplicitDimensionValue_lbl"/>
+        <!-- gl-srcd:summarySegmentExplicitDimensionExpressionValue Summary Segment Explicit Dimension XPath Expression Value (choice) -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summarySegmentExplicitDimensionExpressionValue" xlink:label="summarySegmentExplicitDimensionExpressionValue"/>
+        <label xlink:type="resource" xlink:label="summarySegmentExplicitDimensionExpressionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summarySegmentExplicitDimensionExpressionValue_en" xml:lang="en">Summary Segment Explicit Dimension XPath Expression Value (choice)</label>
+        <label xlink:type="resource" xlink:label="summarySegmentExplicitDimensionExpressionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value must be evaluated as XPath Expression and resolved to valid member item.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summarySegmentExplicitDimensionExpressionValue" xlink:to="summarySegmentExplicitDimensionExpressionValue_lbl"/>
+        <!-- gl-srcd:summarySegmentTypedDimensionElement Summary Segment Typed Dimension Element -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summarySegmentTypedDimensionElement" xlink:label="summarySegmentTypedDimensionElement"/>
+        <label xlink:type="resource" xlink:label="summarySegmentTypedDimensionElement_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summarySegmentTypedDimensionElement_en" xml:lang="en">Summary Segment Typed Dimension Element</label>
+        <label xlink:type="resource" xlink:label="summarySegmentTypedDimensionElement_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The QName value must be resolved to a valid typed dimension item used in segment.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summarySegmentTypedDimensionElement" xlink:to="summarySegmentTypedDimensionElement_lbl"/>
+        <!-- gl-srcd:summarySegmentTypedDimensionValue Summary Segment Typed Dimension Value (choice) -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summarySegmentTypedDimensionValue" xlink:label="summarySegmentTypedDimensionValue"/>
+        <label xlink:type="resource" xlink:label="summarySegmentTypedDimensionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summarySegmentTypedDimensionValue_en" xml:lang="en">Summary Segment Typed Dimension Value (choice)</label>
+        <label xlink:type="resource" xlink:label="summarySegmentTypedDimensionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value must be CDATA and a valid XML fragment and also schema valid against an appropriate typed dimension schema.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summarySegmentTypedDimensionValue" xlink:to="summarySegmentTypedDimensionValue_lbl"/>
+        <!-- gl-srcd:summarySegmentTypedDimensionExpressionValue Summary Segment Typed Dimension XPath Expression Value (choice) -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summarySegmentTypedDimensionExpressionValue" xlink:label="summarySegmentTypedDimensionExpressionValue"/>
+        <label xlink:type="resource" xlink:label="summarySegmentTypedDimensionExpressionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summarySegmentTypedDimensionExpressionValue_en" xml:lang="en">Summary Segment Typed Dimension XPath Expression Value (choice)</label>
+        <label xlink:type="resource" xlink:label="summarySegmentTypedDimensionExpressionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value must be evaluated as XPath expression and the result must be a valid XML fragment and also schema valid against an appropriate typed dimension schema.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summarySegmentTypedDimensionExpressionValue" xlink:to="summarySegmentTypedDimensionExpressionValue_lbl"/>
+        <!-- gl-srcd:summarySegmentSimpleElementContentElement Summary Segment Simple Element -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summarySegmentSimpleElementContentElement" xlink:label="summarySegmentSimpleElementContentElement"/>
+        <label xlink:type="resource" xlink:label="summarySegmentSimpleElementContentElement_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summarySegmentSimpleElementContentElement_en" xml:lang="en">Summary Segment Simple Element</label>
+        <label xlink:type="resource" xlink:label="summarySegmentSimpleElementContentElement_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">QName for the segment simple element, if appropriate.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summarySegmentSimpleElementContentElement" xlink:to="summarySegmentSimpleElementContentElement_lbl"/>
+        <!-- gl-srcd:summarySegmentSimpleElementValue Summary Segment Simple Element Value -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summarySegmentSimpleElementValue" xlink:label="summarySegmentSimpleElementValue"/>
+        <label xlink:type="resource" xlink:label="summarySegmentSimpleElementValue_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summarySegmentSimpleElementValue_en" xml:lang="en">Summary Segment Simple Element Value</label>
+        <label xlink:type="resource" xlink:label="summarySegmentSimpleElementValue_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value of the segment simple element content.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summarySegmentSimpleElementValue" xlink:to="summarySegmentSimpleElementValue_lbl"/>
+        <!-- gl-srcd:summaryInstant Summary Period Instant -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryInstant" xlink:label="summaryInstant"/>
+        <label xlink:type="resource" xlink:label="summaryInstant_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryInstant_en" xml:lang="en">Summary Period Instant</label>
+        <label xlink:type="resource" xlink:label="summaryInstant_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value of the instant date.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryInstant" xlink:to="summaryInstant_lbl"/>
+        <!-- gl-srcd:summaryForever Summary Period Forever -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryForever" xlink:label="summaryForever"/>
+        <label xlink:type="resource" xlink:label="summaryForever_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryForever_en" xml:lang="en">Summary Period Forever</label>
+        <label xlink:type="resource" xlink:label="summaryForever_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">If the context should indicate "forever", this concept must be used. It accepts no value.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryForever" xlink:to="summaryForever_lbl"/>
+        <!-- gl-srcd:summaryStartDate Summary Period Start Date (sequence) -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryStartDate" xlink:label="summaryStartDate"/>
+        <label xlink:type="resource" xlink:label="summaryStartDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryStartDate_en" xml:lang="en">Summary Period Start Date (sequence)</label>
+        <label xlink:type="resource" xlink:label="summaryStartDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value of the start date of the period.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryStartDate" xlink:to="summaryStartDate_lbl"/>
+        <!-- gl-srcd:summaryEndDate Summary Period End Date (sequence) -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryEndDate" xlink:label="summaryEndDate"/>
+        <label xlink:type="resource" xlink:label="summaryEndDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryEndDate_en" xml:lang="en">Summary Period End Date (sequence)</label>
+        <label xlink:type="resource" xlink:label="summaryEndDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value of the end date of the period.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryEndDate" xlink:to="summaryEndDate_lbl"/>
+        <!-- gl-srcd:summaryScenarioExplicitDimension Summary Scenario Explicit Dimension -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryScenarioExplicitDimension" xlink:label="summaryScenarioExplicitDimension"/>
+        <label xlink:type="resource" xlink:label="summaryScenarioExplicitDimension_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryScenarioExplicitDimension_en" xml:lang="en">Summary Scenario Explicit Dimension</label>
+        <label xlink:type="resource" xlink:label="summaryScenarioExplicitDimension_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This structure allows to explicitly indicate the information related to an explicit dimension in the scenario of the context for a fact in the FR instance.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryScenarioExplicitDimension" xlink:to="summaryScenarioExplicitDimension_lbl"/>
+        <!-- gl-srcd:summaryScenarioTypedDimension Summary Scenario Typed Dimension -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryScenarioTypedDimension" xlink:label="summaryScenarioTypedDimension"/>
+        <label xlink:type="resource" xlink:label="summaryScenarioTypedDimension_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryScenarioTypedDimension_en" xml:lang="en">Summary Scenario Typed Dimension</label>
+        <label xlink:type="resource" xlink:label="summaryScenarioTypedDimension_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This structure allows to explicitly indicate the information related to a typed dimension in the scenario of the context for a fact in the FR instance.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryScenarioTypedDimension" xlink:to="summaryScenarioTypedDimension_lbl"/>
+        <!-- gl-srcd:summaryScenarioSimpleElementContent Summary Scenario Simple Element Content -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryScenarioSimpleElementContent" xlink:label="summaryScenarioSimpleElementContent"/>
+        <label xlink:type="resource" xlink:label="summaryScenarioSimpleElementContent_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryScenarioSimpleElementContent_en" xml:lang="en">Summary Scenario Simple Element Content</label>
+        <label xlink:type="resource" xlink:label="summaryScenarioSimpleElementContent_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This structure allows to explicitly indicate the information related to a simple element in the scenario of the context for a fact in the FR instance.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryScenarioSimpleElementContent" xlink:to="summaryScenarioSimpleElementContent_lbl"/>
+        <!-- gl-srcd:summaryScenarioContents Summary Scenaio Non Dimensional Contents -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryScenarioContents" xlink:label="summaryScenarioContents"/>
+        <label xlink:type="resource" xlink:label="summaryScenarioContents_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryScenarioContents_en" xml:lang="en">Summary Scenaio Non Dimensional Contents</label>
+        <label xlink:type="resource" xlink:label="summaryScenarioContents_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value must be CDATA and a valid XML fragment.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryScenarioContents" xlink:to="summaryScenarioContents_lbl"/>
+        <!-- gl-srcd:summaryScenarioExplicitDimensionElement Summary Scenario Explicit Dimension Element -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryScenarioExplicitDimensionElement" xlink:label="summaryScenarioExplicitDimensionElement"/>
+        <label xlink:type="resource" xlink:label="summaryScenarioExplicitDimensionElement_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryScenarioExplicitDimensionElement_en" xml:lang="en">Summary Scenario Explicit Dimension Element</label>
+        <label xlink:type="resource" xlink:label="summaryScenarioExplicitDimensionElement_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The QName value must be resolved to a valid explicit dimension item used in scenario.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryScenarioExplicitDimensionElement" xlink:to="summaryScenarioExplicitDimensionElement_lbl"/>
+        <!-- gl-srcd:summaryScenarioExplicitDimensionValue Summary Scenario Explicit Dimension Value (choice) -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryScenarioExplicitDimensionValue" xlink:label="summaryScenarioExplicitDimensionValue"/>
+        <label xlink:type="resource" xlink:label="summaryScenarioExplicitDimensionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryScenarioExplicitDimensionValue_en" xml:lang="en">Summary Scenario Explicit Dimension Value (choice)</label>
+        <label xlink:type="resource" xlink:label="summaryScenarioExplicitDimensionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The QName value must be resolved to valid member item.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryScenarioExplicitDimensionValue" xlink:to="summaryScenarioExplicitDimensionValue_lbl"/>
+        <!-- gl-srcd:summaryScenarioExplicitDimensionExpressionValue Summary Scenario Explicit Dimension XPath Expression Value (choice) -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryScenarioExplicitDimensionExpressionValue" xlink:label="summaryScenarioExplicitDimensionExpressionValue"/>
+        <label xlink:type="resource" xlink:label="summaryScenarioExplicitDimensionExpressionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryScenarioExplicitDimensionExpressionValue_en" xml:lang="en">Summary Scenario Explicit Dimension XPath Expression Value (choice)</label>
+        <label xlink:type="resource" xlink:label="summaryScenarioExplicitDimensionExpressionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value must be evaluated as XPath Expression and resolved to valid member item.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryScenarioExplicitDimensionExpressionValue" xlink:to="summaryScenarioExplicitDimensionExpressionValue_lbl"/>
+        <!-- gl-srcd:summaryScenarioTypedDimensionElement Summary Scenario Typed Dimension Element -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryScenarioTypedDimensionElement" xlink:label="summaryScenarioTypedDimensionElement"/>
+        <label xlink:type="resource" xlink:label="summaryScenarioTypedDimensionElement_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryScenarioTypedDimensionElement_en" xml:lang="en">Summary Scenario Typed Dimension Element</label>
+        <label xlink:type="resource" xlink:label="summaryScenarioTypedDimensionElement_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The QName value must be resolved to a valid typed dimension item used in scenario.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryScenarioTypedDimensionElement" xlink:to="summaryScenarioTypedDimensionElement_lbl"/>
+        <!-- gl-srcd:summaryScenarioTypedDimensionValue Summary Scenario Typed Dimension Value (choice) -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryScenarioTypedDimensionValue" xlink:label="summaryScenarioTypedDimensionValue"/>
+        <label xlink:type="resource" xlink:label="summaryScenarioTypedDimensionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryScenarioTypedDimensionValue_en" xml:lang="en">Summary Scenario Typed Dimension Value (choice)</label>
+        <label xlink:type="resource" xlink:label="summaryScenarioTypedDimensionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value must be CDATA and a valid XML fragment and also schema valid against an appropriate typed dimension schema.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryScenarioTypedDimensionValue" xlink:to="summaryScenarioTypedDimensionValue_lbl"/>
+        <!-- gl-srcd:summaryScenarioTypedDimensionExpressionValue Summary Scenario Typed Dimension XPath Expression Value (choice) -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryScenarioTypedDimensionExpressionValue" xlink:label="summaryScenarioTypedDimensionExpressionValue"/>
+        <label xlink:type="resource" xlink:label="summaryScenarioTypedDimensionExpressionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryScenarioTypedDimensionExpressionValue_en" xml:lang="en">Summary Scenario Typed Dimension XPath Expression Value (choice)</label>
+        <label xlink:type="resource" xlink:label="summaryScenarioTypedDimensionExpressionValue_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value must be evaluated as XPath expression and the result must be a valid XML fragment and also schema valid against an appropriate typed dimension schema.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryScenarioTypedDimensionExpressionValue" xlink:to="summaryScenarioTypedDimensionExpressionValue_lbl"/>
+        <!-- gl-srcd:summaryScenarioSimpleElementContentElement Summary Scenario Simple Element -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryScenarioSimpleElementContentElement" xlink:label="summaryScenarioSimpleElementContentElement"/>
+        <label xlink:type="resource" xlink:label="summaryScenarioSimpleElementContentElement_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryScenarioSimpleElementContentElement_en" xml:lang="en">Summary Scenario Simple Element</label>
+        <label xlink:type="resource" xlink:label="summaryScenarioSimpleElementContentElement_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">QName for the scenario simple element, if appropriate.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryScenarioSimpleElementContentElement" xlink:to="summaryScenarioSimpleElementContentElement_lbl"/>
+        <!-- gl-srcd:summaryScenarioSimpleElementValue Summary Scenario Simple Element Value -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryScenarioSimpleElementValue" xlink:label="summaryScenarioSimpleElementValue"/>
+        <label xlink:type="resource" xlink:label="summaryScenarioSimpleElementValue_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryScenarioSimpleElementValue_en" xml:lang="en">Summary Scenario Simple Element Value</label>
+        <label xlink:type="resource" xlink:label="summaryScenarioSimpleElementValue_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">The value of the scenario simple element content.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryScenarioSimpleElementValue" xlink:to="summaryScenarioSimpleElementValue_lbl"/>
+        <!-- gl-srcd:summaryNumerator Summary Unit Numerator -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryNumerator" xlink:label="summaryNumerator"/>
+        <label xlink:type="resource" xlink:label="summaryNumerator_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryNumerator_en" xml:lang="en">Summary Unit Numerator</label>
+        <label xlink:type="resource" xlink:label="summaryNumerator_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This holds the list of measure information for unit numerator. The value must be a list of QName. Each QName must be resolved to be measure information such as iso4217:usd.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryNumerator" xlink:to="summaryNumerator_lbl"/>
+        <!-- gl-srcd:summaryDenominator Summary Unit Denominator -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_summaryDenominator" xlink:label="summaryDenominator"/>
+        <label xlink:type="resource" xlink:label="summaryDenominator_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_summaryDenominator_en" xml:lang="en">Summary Unit Denominator</label>
+        <label xlink:type="resource" xlink:label="summaryDenominator_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">This holds the list of measure information for unit denominator. The value must be a list of QName. Each QName must be resolved to be measure information such as iso4217:usd.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="summaryDenominator" xlink:to="summaryDenominator_lbl"/>
+        <!-- gl-srcd:richTextCommentCode Rich Text Comment Code -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_richTextCommentCode" xlink:label="richTextCommentCode"/>
+        <label xlink:type="resource" xlink:label="richTextCommentCode_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_richTextCommentCode_en" xml:lang="en">Rich Text Comment Code</label>
+        <label xlink:type="resource" xlink:label="richTextCommentCode_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">An enumerated code that identifies the purpose of the rich text comment. Enumerated values: link_footnote, footnote, source_document, source_journal, batch, other.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="richTextCommentCode" xlink:to="richTextCommentCode_lbl"/>
+        <!-- gl-srcd:richTextCommentDescription Rich Text Comment Description -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_richTextCommentDescription" xlink:label="richTextCommentDescription"/>
+        <label xlink:type="resource" xlink:label="richTextCommentDescription_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_richTextCommentDescription_en" xml:lang="en">Rich Text Comment Description</label>
+        <label xlink:type="resource" xlink:label="richTextCommentDescription_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Free format description of the Rich text Comment Code.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="richTextCommentDescription" xlink:to="richTextCommentDescription_lbl"/>
+        <!-- gl-srcd:richTextCommentContent Rich Text Comment Content -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_richTextCommentContent" xlink:label="richTextCommentContent"/>
+        <label xlink:type="resource" xlink:label="richTextCommentContent_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_richTextCommentContent_en" xml:lang="en">Rich Text Comment Content</label>
+        <label xlink:type="resource" xlink:label="richTextCommentContent_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Content of the Rich Text Comment.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="richTextCommentContent" xlink:to="richTextCommentContent_lbl"/>
+        <!-- gl-srcd:richTextCommentLocator Rich Text Comment Locator -->
+        <loc xlink:type="locator" xlink:href="../gl-srcd-2025-12-01.xsd#gl-srcd_richTextCommentLocator" xlink:label="richTextCommentLocator"/>
+        <label xlink:type="resource" xlink:label="richTextCommentLocator_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-srcd_richTextCommentLocator_en" xml:lang="en">Rich Text Comment Locator</label>
+        <label xlink:type="resource" xlink:label="richTextCommentLocator_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">An XPath expression that identifies the item that the comment relates to.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="richTextCommentLocator" xlink:to="richTextCommentLocator_lbl"/>
+  </labelLink>
+</linkbase>

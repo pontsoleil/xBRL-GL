@@ -1,0 +1,106 @@
+﻿{
+    "documentInfo": {
+        "documentType": "https://xbrl.org/2021/xbrl-csv",
+        "namespaces": {
+            "xbrli": "http://www.xbrl.org/2003/instance",
+            "xbrll": "http://www.xbrl.org/2003/linkbase",
+            "xlink": "http://www.w3.org/1999/xlink",
+            "xsi": "http://www.w3.org/2001/XMLSchema-instance",
+            "gl-cor": "http://www.xbrl.org/int/gl/cor/2025-12-01",
+            "gl-muc": "http://www.xbrl.org/int/gl/muc/2025-12-01",
+            "gl-bus": "http://www.xbrl.org/int/gl/bus/2025-12-01",
+            "gl-usk": "http://www.xbrl.org/int/gl/usk/2025-12-01",
+            "gl-ehm": "http://www.xbrl.org/int/gl/ehm/2025-12-01",
+            "gl-taf": "http://www.xbrl.org/int/gl/taf/2025-12-01",
+            "gl-srcd": "http://www.xbrl.org/int/gl/srcd/2025-12-01",
+            "gl-plt": "http://www.xbrl.org/int/gl/plt/2025-12-01",
+            "iso4217": "http://www.xbrl.org/2003/iso4217",
+            "iso639": "http://www.xbrl.org/2005/iso639",
+            "ns0": "http://example.com",
+            "p0": "http://www.p0"
+        }
+    },
+    "tableTemplates": {
+        "xbrl-gl_template": {
+            "dimensions": {
+                "period": "2025-05-17T00:00:00",
+                "entity": "ns0:Example Co.",
+                "gl-plt:d_cor_accountingEntries": "$accountingEntries",
+                "gl-plt:d_cor_entryHeader": "$entryHeader",
+                "gl-plt:d_cor_entryDetail": "$entryDetail"
+            },
+            "columns": {
+                "accountingEntries": {},
+                "entryHeader": {},
+                "entryDetail": {},
+                "entriesType": {
+                    "dimensions": {
+                        "concept": "gl-cor:entriesType"
+                    }
+                },
+                "language": {
+                    "dimensions": {
+                        "concept": "gl-cor:language"
+                    }
+                },
+                "creationDate": {
+                    "dimensions": {
+                        "concept": "gl-cor:creationDate"
+                    }
+                },
+                "entriesComment": {
+                    "dimensions": {
+                        "concept": "gl-cor:entriesComment"
+                    }
+                },
+                "periodCoveredStart": {
+                    "dimensions": {
+                        "concept": "gl-cor:periodCoveredStart"
+                    }
+                },
+                "periodCoveredEnd": {
+                    "dimensions": {
+                        "concept": "gl-cor:periodCoveredEnd"
+                    }
+                },
+                "amount": {
+                    "dimensions": {
+                        "concept": "gl-cor:amount",
+                        "unit": "iso4217:USD"
+                    }
+                },
+                "amountCurrency": {
+                    "dimensions": {
+                        "concept": "gl-muc:amountCurrency"
+                    }
+                },
+                "summaryReportingElement": {
+                    "dimensions": {
+                        "concept": "gl-cor:summaryReportingElement"
+                    }
+                },
+                "detailMatchingElement": {
+                    "dimensions": {
+                        "concept": "gl-cor:detailMatchingElement"
+                    }
+                },
+                "summaryReportingTaxonomyIDRef": {
+                    "dimensions": {
+                        "concept": "gl-srcd:summaryReportingTaxonomyIDRef"
+                    }
+                },
+                "measurableQualifier": {
+                    "dimensions": {
+                        "concept": "gl-bus:measurableQualifier"
+                    }
+                }
+            }
+        }
+    },
+    "tables": {
+        "xbrl-gl_table": {
+            "template": "xbrl-gl_template",
+            "url": "1-GL-Generic-simple-context.csv"
+        }
+    }
+}

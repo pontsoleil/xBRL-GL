@@ -1,0 +1,12 @@
+﻿accountingEntries,entryHeader,entryDetail,entriesType,uniqueID,language,creationDate,creator,entriesComment,periodCoveredStart,periodCoveredEnd,sourceApplication,defaultCurrency,enteredBy,enteredDate,sourceJournalID,sourceJournalDescription,entryType,entryNumber,entryComment,bookTaxDifference,lineNumber,accountMainID,accountMainDescription,accountPurposeCode,accountType,amount,debitCreditCode,postingDate,postingStatus,detailComment
+1,,,entries,001,iso639:en,2005-07-05,XBRL GL Working Group,A best practice example of entries with book to tax differences instance document,2005-06-01,2005-06-30,Hitachi mapping tool,iso4217:usd,,,,,,,,,,,,,,,,,,
+1,1,,,,,,,,,,,,Otto Wellwood,2005-07-01,gj,JE,standard,1,Current period depreciation expense,temporary,,,,,,,,,,
+1,1,1,,,,,,,,,,,,,,,,,,,1,6200,Depreciation expense,usgaap,account,5000,D,2005-06-30,posted,Current period depreciation expense - books
+1,1,2,,,,,,,,,,,,,,,,,,,2,1451,Accumulated Depreciation,usgaap,account,5000,C,2005-06-30,posted,Current period depreciation expense - books
+1,1,3,,,,,,,,,,,,,,,,,,,3,6200,Depreciation Expense,tax,account,6000,D,2005-06-30,posted,Current period depreciation expense - tax
+1,1,4,,,,,,,,,,,,,,,,,,,4,1421,Accumulated Depreciation,tax,account,6000,C,2005-06-30,posted,
+1,2,,,,,,,,,,,,Otto Wellwood,2005-07-01,gj,JE,standard,2,Current period tax exempt interest,permanent,,,,,,,,,,
+1,2,1,,,,,,,,,,,,,,,,,,,1,1300,Accrued interest,usgaap,account,500,D,2005-06-30,posted,Record current period interest earned
+1,2,2,,,,,,,,,,,,,,,,,,,2,5200,Interest income,usgaap,account,500,C,2005-06-30,posted,Record current period interest earned
+1,2,3,,,,,,,,,,,,,,,,,,,3,1300,Accrued Interest,tax,account,500,D,2005-06-30,posted,Record current period tax exempt interest earned
+1,2,4,,,,,,,,,,,,,,,,,,,4,9999,Clearing,tax,account,500,C,2005-06-30,posted,Record current period tax exempt interest earned

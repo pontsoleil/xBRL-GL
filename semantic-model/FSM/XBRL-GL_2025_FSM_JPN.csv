@@ -1,0 +1,87 @@
+﻿seq,level,Property type,Identifier,Class,Property Term,BaseType,Associated Class,Multiplicity,Documentation,module,element,LocalLabel,LocalDocumentation
+1,1,Class,,Tax Line Information JPN,,,,0..*,"A tuple structure used to capture tax-related attributes specific to Japanese taxation requirements at the line entry detail level. It includes the tax type, tax category, and applicable tax rate. In accordance with Japanese consumption tax rules, the tax amount must not be included in this structure.",gl-jpn,,【明細行税情報】,日本の税制要件に基づき、明細行レベルでの税関連属性を保持するためのタプル構造。税区分、税カテゴリ、適用税率などを含む。日本の消費税制度に従い、この構造には税額を含めない。
+2,2,Specialization,,Tax Line Information JPN,,,Tax Information,1,,gl-jpn,,,
+3,2,Composition,,Tax Line Information JPN,,,Triangulation to Local Conversion,0,,gl-jpn,,,
+4,2,Composition,,Tax Line Information JPN,,,Foreign to Triangulation Conversion,0,,gl-jpn,,,
+5,2,Attribute,,Tax Line Information JPN,Amount of Taxes,xbrli:monetaryItemType,,0,,gl-jpn,,,
+6,2,Attribute,,Tax Line Information JPN,Basis for Taxation,xbrli:monetaryItemType,,0,,gl-jpn,,,
+7,1,Class,,Tax Information JPN,,,,0..*,"A tuple structure used to hold tax-related information for a document, in accordance with Japanese taxation requirements. It includes the tax type, tax category, and applicable tax rate. Triangulation currency is not required under Japanese tax rules, and tax amounts must be included in this structure.",gl-jpn,,【税情報】,日本の税制要件に従い、文書レベルの税関連情報を保持するためのタプル構造。税区分、税カテゴリ、適用税率を含む。日本の税制ではトライアングレーション通貨は不要とされており、この構造には税額を含める必要がある。
+8,2,Specialization,,Tax Information JPN,,,Tax Information,1,,gl-jpn,,,
+9,2,Composition,,Tax Information JPN,,,Triangulation to Local Conversion,0,,gl-jpn,,,
+10,2,Composition,,Tax Information JPN,,,Foreign to Triangulation Conversion,0,,gl-jpn,,,
+11,1,Class,,Originating Document JPN,,,,0..*,"A tool to capture the flow of related documents in the business process. Some needs of end users require a greater history of the documents that are associated with a transaction, especially in the VAT audit area. Contains a repetitive structure of related documents.",gl-jpn,,【発生元文書情報】,業務プロセス上の、関連文書の流れを捕捉するためのもの。特にVAT監査では、エンドユーザの要求として、取引に関係する文書の履歴が必要とされる。関連文書情報の構造の繰り返しを含む。
+12,2,Specialization,,Originating Document JPN,,,Originating Document,1,,gl-jpn,,,
+13,2,Attribute,,Originating Document JPN,URL,xbrli:QNameItemType,,0..1,"The location where the document is stored or can be accessed, specified as a URL.",gl-jpn,,,
+14,1,Class,,Entry Header JPN,,,,0..*,Parent for entry headers/journal entry headers.,gl-jpn,,【仕訳情報】,エントリヘッダー/仕訳記入ヘッダーの親タグ。
+15,2,Specialization,,Entry Header JPN,,,Entry Header,1,,gl-jpn,,,
+16,2,Reference Association,,Entry Header JPN,ID for Associated Entry,,Entry Header,0,"For standard, reversing, master, cancelling or other entries an ID associated with those entries.",gl-jpn,,反対/通常/マスタ仕訳識別子,通常、反対、マスタ、取消または他の仕訳のための、それらの仕訳を関連付けるID。
+17,2,Attribute,,Entry Header JPN,Recurring Standard Description,xbrli:stringItemType,,0,Description to accompany standard or recurring ID,gl-jpn,,反復通常仕訳説明,通常仕訳または反復仕訳のIDの説明。
+18,2,Attribute,,Entry Header JPN,Frequency Interval,xbrli:decimalItemType,,0,"For standard or recurring journals, how often entry may be made: every frequencyInterval frequencyUnit, such as every 7 (interval) days (unit) or every 1 (interval) quarter (unit). This field represents the interval.",gl-jpn,,頻度間隔,通常または反復仕訳において、仕訳が記入される頻度。frequencyInterval、frequencyUnitごと、たとえば7(interval)日(unit)ごと、1(interval)四半期(unit)ごとなどにおける、intervalを示す。
+19,2,Attribute,,Entry Header JPN,Frequency Unit,xbrli:stringItemType,,0,"For standard or recurring journals, how often entry may be made: every frequencyInterval frequencyUnit, such as every 7 (interval) days (unit) or every 1 (interval) quarter (unit). This field represents the unit.",gl-jpn,,頻度単位,通常または反復仕訳において、仕訳が記入される頻度。frequencyInterval、frequencyUnitごと、たとえば7(interval)日(unit)ごと、1(interval)四半期(unit)ごとなどにおける、unitを示す。
+20,2,Attribute,,Entry Header JPN,Repetitions Remaining,xbrli:integerItemType,,0,Number of times that the recurring entry will repeat,gl-jpn,,反復残回数,反復仕訳の繰り返し予定数。
+21,2,Attribute,,Entry Header JPN,Next Date Repeat,xbrli:dateTimeItemType,,0,Date next repeated or standard posted,gl-jpn,,次回反復日付,次回の反復あるいは通常の転記日。
+22,2,Attribute,,Entry Header JPN,Last Date Repeat,xbrli:dateTimeItemType,,0,Date last repeated or standard posted,gl-jpn,,前回反復日付,前回の反復あるいは通常の転記日。
+23,2,Attribute,,Entry Header JPN,End Date of Repeating Entry,xbrli:dateTimeItemType,,0,"For standard or recurring journals, stop date/time for repetitive entry.",gl-jpn,,反復仕訳終了日付,通常仕訳または反復仕訳のための、反復入力の終了日付/時刻。
+24,2,Attribute,,Entry Header JPN,Reverse,xbrli:booleanItemType,,0,Should entry be reversed?,gl-jpn,,反対仕訳要否,仕訳が取り消されるべきか。
+25,2,Attribute,,Entry Header JPN,Reversing Date,xbrli:dateTimeItemType,,0,Date this entry should be reversed,gl-jpn,,反対仕訳日付,この仕訳が取り消されるべき日付。
+26,2,Attribute,,Entry Header JPN,Monetary Amount,xbrli:monetaryItemType,,0..1,"This field (amount) represents the primary monetary amount related to the  subject of the entryDetail line. There is one primary monetary amount per entryDetail structure. It may, for example, represent the amount of one line of a journal entry, the balance on a document, or the extended amount of a line item on an invoice. Amount is not required if detailed entry is used for non-financial work and other elements are populated, in particular measurableQuantity. The amount field is a signed number (either positive or negative itself) and used in conjunction with a separate signOfAmount and a separate debitCreditCode, which together are considered for understanding the monetary amount. The unit of measure is determined by amountCurrency if present, and by the default or home currency if amountCurrency is not present.",gl-jpn,,,
+27,2,Attribute,,Entry Header JPN,Currency,xbrli:QNameItemType,,0..1,"The currency related to the amount can be entered here instead of the XBRL instance specified way, especially important in multi-currency situations. Recommend ISO 4217 coding.",gl-jpn,,,
+28,2,Attribute,,Entry Header JPN,Sign Indication for Amount,xbrli:tokenItemType,,0..1,Sign of amount; provides 4 possible fields only when used in conjunction with debitCreditCode; primarily used for correcting entries so total debits and credits after an entry error are not inflated. D + increase DebitsD - decrease debitsC + decreases creditC - increases credit,gl-jpn,,,
+29,2,Composition,,Entry Header JPN,,,Tax Information JPN,0..*,,gl-jpn,,,
+30,2,Composition,,Entry Header JPN,,,Multicurrency Detail,0..1,,gl-jpn,,【多通貨明細】,"原取引時の通貨と異なる、自国通貨と換算レートに関する追加情報のセクション。－現在および原取引時の、換算レートおよび金額の記録に使用される。
+トライアンギュレーション通貨としての第三通貨の換算レートを記録できる。EURの場合が多いがそれに限らない。この構造は、同日または異なる日の外貨での金額を記録する必要がある限り、繰り返し指定可能。"
+31,2,Reference Association,,Entry Header JPN,Document Number,,Originating Document,0..1,"Invoice, check, voucher, or other source document identifier",gl-jpn,,元文書番号,請求書、小切手、証憑、その他の元文書の識別子。
+32,2,Reference Association,,Entry Header JPN,Apply To Number,,Originating Document,0..1,"Document number of primary invoice number, used to offset payments, debits and credits; for an invoice, usually the same as the documentNumber. When calculating open balance on an invoice, or open amount on payments in advance or not fully applied, this permits calculation of the open item.",gl-jpn,,適用先番号,"支払、借方、貸方の相殺に使用される、一次請求書の文書番号。請求書では通常documentNumberと等しい。
+未決済の請求書残高や、未決済の支払金額の計算時に、利用できる。"
+33,2,Reference Association,,Entry Header JPN,Document Reference,,Originating Document,0..1,Internal reference for the document above; number assigned internally to track the document,gl-jpn,,元文書参照情報,上の文書のための内部参照情報。文書を追跡するために内部的に割り当てた番号。
+34,2,Composition,,Entry Header JPN,,,Entry Detail,0,,gl-jpn,,【仕訳明細】,仕訳明細の親タグ。
+35,2,Composition,,Entry Header JPN,,,Entry Detail JPN,0..*,,gl-jpn,,【仕訳明細】,仕訳明細の親タグ。
+36,1,Class,,Entry Detail JPN,,,,0..*,,gl-jpn,,,
+37,2,Specialization,,Entry Detail JPN,,,Entry Detail,1,,gl-jpn,,,
+38,2,Composition,,Entry Detail JPN,,,Originating Document,0,,gl-jpn,,,
+39,2,Composition,,Entry Detail JPN,,,Originating Document JPN,0..*,,gl-jpn,,,
+40,2,Composition,,Entry Detail JPN,,,Tax Information,0,,gl-jpn,,,
+41,2,Composition,,Entry Detail JPN,,,Tax Line Information JPN,0..1,,gl-jpn,,,
+42,2,Composition,,Entry Detail JPN,,,XBRL Information,0,,gl-jpn,,,
+43,2,Composition,,Entry Detail JPN,,,XBRL Information JPN,0..*,,gl-jpn,,,
+44,1,Class,,Accounting Entries JPN,,,,1..*,Root for XBRL GL. No entry made here.,gl-jpn,,【会計仕訳】,XBRL GLのルート要素。 この要素にはデータは登録されない。
+45,2,Specialization,,Accounting Entries JPN,,,Accounting Entries,1,,gl-jpn,,,
+46,2,Composition,,Accounting Entries JPN,,,Entry Header,0,,gl-jpn,,【仕訳情報】,エントリヘッダー/仕訳記入ヘッダーの親タグ。
+47,2,Composition,,Accounting Entries JPN,,,Entry Header JPN,0..*,,gl-jpn,,【仕訳情報】,エントリヘッダー/仕訳記入ヘッダーの親タグ。
+48,1,Class,,XBRL Information JPN,,,,0..*,This will roll up to XBRL reporting information - this is a parent - repeatable so that the same item can be reported through many taxonomies. Care should be taken to consider what happens if people post to the same account but different XBRL elements.,gl-cor,,【XBRL情報】,XBRLレポート情報へのロールアップ情報。親タグであり、同じ項目が複数のタクソノミを通じて報告されうるように繰り返し可能。同一の勘定科目を異なるXBRL要素に転記した場合にどうなるか、注意深く考慮すべきである。
+49,2,Specialization,,XBRL Information JPN,,,XBRL Information,0..*,This will roll up to XBRL reporting information - this is a parent - repeatable so that the same item can be reported through many taxonomies. Care should be taken to consider what happens if people post to the same account but different XBRL elements.,gl-cor,,【XBRL情報】,XBRLレポート情報へのロールアップ情報。親タグであり、同じ項目が複数のタクソノミを通じて報告されうるように繰り返し可能。同一の勘定科目を異なるXBRL要素に転記した場合にどうなるか、注意深く考慮すべきである。
+50,2,Attribute,,XBRL Information JPN,Summary Tuple Path,xbrli:stringItemType,,0,Specific filter for parent tuple structure. This value must be valid XPath. And the result of the XPath must be resolved to a node.,gl-srcd,,集約タプルパス,親タグ構造を特定するフィルタ。妥当なXPath記述でなければならない。XPathの結果はノードでなければならない。
+51,2,Attribute,,XBRL Information JPN,Detailed Content Filter,xbrli:stringItemType,,0,"Filtering mechanism. This value must be valid XPath. And the result of the XPath must be resolved to boolean. If the resulting value is false, the entry  must not mapped into specified facts in F/S.",gl-srcd,,明細コンテントフィルタ,フィルタリング手段。妥当なXPath記述でなければならない。XPathの結果はブール値でなければならない。結果がfalseの場合は、仕訳はF/S内の特定のfactsにマッピングされてはならない。
+52,2,Attribute,,XBRL Information JPN,Reporting Date Selector,xbrli:tokenItemType,,0,This holds the concepts in GL data to create FS contexts.  The value must be a list of QName. Each QName must be resolved to GL items. Order of the items defines priority to access.,gl-srcd,,報告日付セレクタ,F/Sのコンテキストを生成するためのGLデータの概念を示す。QNameのリストでなければならない。個々のQNameはGL項目を示さなければならない。項目の並びはアクセスの優先度を示す。
+53,2,Attribute,,XBRL Information JPN,Summary Operator,xbrli:stringItemType,,0,The operator applied to the amount or quantity when it is rolled up to a summary reporting element.,gl-srcd,,,
+54,2,Attribute,,XBRL Information JPN,Summary Unit Numerator,xbrli:tokenItemType,,0,This holds the list of measure information for unit numerator. The value must be a list of QName. Each QName must be resolved to be measure information such as iso4217:usd.,gl-srcd,,集約ユニット分子,集約のユニットの分子の測定情報のリスト。QNameのリストでなければならない。QNameはiso4217:usdのような、解決される測定情報でなければならない。
+55,2,Attribute,,XBRL Information JPN,Summary Unit Denominator,xbrli:tokenItemType,,0,This holds the list of measure information for unit denominator. The value must be a list of QName. Each QName must be resolved to be measure information such as iso4217:usd.,gl-srcd,,集約ユニット分母,集約のユニットの分母の測定情報のリスト。QNameのリストでなければならない。QNameはiso4217:usdのような、解決される測定情報でなければならない。
+56,2,Attribute,,XBRL Information JPN,Summary Reporting Taxonomy ID Reference,xbrli:stringItemType,,0,"Reference to the ID of the relevant target reporting taxonomy, defined in the [summaryReportingTaxonomies] structure at [documentInfo] level. Allows consuming applications to identify sets of [xbrlInfo] structures that point to a specific taxonomy.",gl-srcd,,集約報告タクソノミ識別子参照情報,関連する報告タクソノミの識別子への参照情報。documentInfo内のsummaryReportingTaxonomies構造体で定義される。特定のタクソノミを示すxbrlInfo構造体の集合を、アプリケーションが識別できるようにする。
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,

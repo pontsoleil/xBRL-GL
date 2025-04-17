@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- (c) XBRL International.  See http://www.xbrl.org/legal -->
+<linkbase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"
+    xmlns="http://www.xbrl.org/2003/linkbase"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+        <!-- gl-taf:tickingField Ticking Field -->
+        <loc xlink:type="locator" xlink:href="../gl-taf-2025-12-01.xsd#gl-taf_tickingField" xlink:label="tickingField"/>
+        <label xlink:type="resource" xlink:label="tickingField_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-taf_tickingField_en" xml:lang="en">Ticking Field</label>
+        <label xlink:type="resource" xlink:label="tickingField_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Signifies that an item has been cleared, finished, finalized. When checking accounts are called for, the tick or letter showing this was done appears in this field. Can also be used for identifying that the
+original document against which a payment or DR/CR memo applies has been reconciled.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="tickingField" xlink:to="tickingField_lbl"/>
+        <!-- gl-taf:documentRemainingBalance Document Remaining Balance -->
+        <loc xlink:type="locator" xlink:href="../gl-taf-2025-12-01.xsd#gl-taf_documentRemainingBalance" xlink:label="documentRemainingBalance"/>
+        <label xlink:type="resource" xlink:label="documentRemainingBalance_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-taf_documentRemainingBalance_en" xml:lang="en">Document Remaining Balance</label>
+        <label xlink:type="resource" xlink:label="documentRemainingBalance_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Balance remaining on the document</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="documentRemainingBalance" xlink:to="documentRemainingBalance_lbl"/>
+        <!-- gl-taf:uniqueConsignmentReference UCR -->
+        <loc xlink:type="locator" xlink:href="../gl-taf-2025-12-01.xsd#gl-taf_uniqueConsignmentReference" xlink:label="uniqueConsignmentReference"/>
+        <label xlink:type="resource" xlink:label="uniqueConsignmentReference_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-taf_uniqueConsignmentReference_en" xml:lang="en">UCR</label>
+        <label xlink:type="resource" xlink:label="uniqueConsignmentReference_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Unique Consignment Reference or UCR. An "origin to destination" reference code for international consignments, developed in cooperation with the World Customs Organization and EAN International (EAN). (http://www.wcoomd.org/ie/EN/press/UCR_new_e.pdf)</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="uniqueConsignmentReference" xlink:to="uniqueConsignmentReference_lbl"/>
+        <!-- gl-taf:originatingDocumentStructure Originating Document  - Heading -->
+        <loc xlink:type="locator" xlink:href="../gl-taf-2025-12-01.xsd#gl-taf_originatingDocumentStructure" xlink:label="originatingDocumentStructure"/>
+        <label xlink:type="resource" xlink:label="originatingDocumentStructure_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-taf_originatingDocumentStructure_en" xml:lang="en">Originating Document  - Heading</label>
+        <label xlink:type="resource" xlink:label="originatingDocumentStructure_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">A tool to capture the flow of related documents in the business process. Some needs of end users require a greater history of the documents that are associated with a transaction, especially in the VAT audit area. Contains a repetitive structure of related documents.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="originatingDocumentStructure" xlink:to="originatingDocumentStructure_lbl"/>
+        <!-- gl-taf:originatingDocumentType Originating Document Type -->
+        <loc xlink:type="locator" xlink:href="../gl-taf-2025-12-01.xsd#gl-taf_originatingDocumentType" xlink:label="originatingDocumentType"/>
+        <label xlink:type="resource" xlink:label="originatingDocumentType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-taf_originatingDocumentType_en" xml:lang="en">Originating Document Type</label>
+        <label xlink:type="resource" xlink:label="originatingDocumentType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Originating document type  check, debit-memo, credit-memo, finance-charge, invoice, order-customer, order-vendor, payment-other, reminder, tegata, voucher, shipment, receipt, manual-adjustment, other.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="originatingDocumentType" xlink:to="originatingDocumentType_lbl"/>
+        <!-- gl-taf:originatingDocumentNumber Originating Document Number -->
+        <loc xlink:type="locator" xlink:href="../gl-taf-2025-12-01.xsd#gl-taf_originatingDocumentNumber" xlink:label="originatingDocumentNumber"/>
+        <label xlink:type="resource" xlink:label="originatingDocumentNumber_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-taf_originatingDocumentNumber_en" xml:lang="en">Originating Document Number</label>
+        <label xlink:type="resource" xlink:label="originatingDocumentNumber_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Originating document number</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="originatingDocumentNumber" xlink:to="originatingDocumentNumber_lbl"/>
+        <!-- gl-taf:originatingDocumentDate Originating Document Date -->
+        <loc xlink:type="locator" xlink:href="../gl-taf-2025-12-01.xsd#gl-taf_originatingDocumentDate" xlink:label="originatingDocumentDate"/>
+        <label xlink:type="resource" xlink:label="originatingDocumentDate_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-taf_originatingDocumentDate_en" xml:lang="en">Originating Document Date</label>
+        <label xlink:type="resource" xlink:label="originatingDocumentDate_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Originating document date</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="originatingDocumentDate" xlink:to="originatingDocumentDate_lbl"/>
+        <!-- gl-taf:originatingDocumentIdentifierType Originating Document Identifier Type -->
+        <loc xlink:type="locator" xlink:href="../gl-taf-2025-12-01.xsd#gl-taf_originatingDocumentIdentifierType" xlink:label="originatingDocumentIdentifierType"/>
+        <label xlink:type="resource" xlink:label="originatingDocumentIdentifierType_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-taf_originatingDocumentIdentifierType_en" xml:lang="en">Originating Document Identifier Type</label>
+        <label xlink:type="resource" xlink:label="originatingDocumentIdentifierType_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Originating document identifier type. Enumerated as: C, customer, E, employee, V, vendor, O, other, I, salesperson-internal, X, salesperson-external, N, contractor.</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="originatingDocumentIdentifierType" xlink:to="originatingDocumentIdentifierType_lbl"/>
+        <!-- gl-taf:originatingDocumentIdentifierCode Originating Document Identifier Code -->
+        <loc xlink:type="locator" xlink:href="../gl-taf-2025-12-01.xsd#gl-taf_originatingDocumentIdentifierCode" xlink:label="originatingDocumentIdentifierCode"/>
+        <label xlink:type="resource" xlink:label="originatingDocumentIdentifierCode_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-taf_originatingDocumentIdentifierCode_en" xml:lang="en">Originating Document Identifier Code</label>
+        <label xlink:type="resource" xlink:label="originatingDocumentIdentifierCode_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Originating document identifier code</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="originatingDocumentIdentifierCode" xlink:to="originatingDocumentIdentifierCode_lbl"/>
+        <!-- gl-taf:originatingDocumentIdentifierTaxCode Originating Document Identifier Tax Code -->
+        <loc xlink:type="locator" xlink:href="../gl-taf-2025-12-01.xsd#gl-taf_originatingDocumentIdentifierTaxCode" xlink:label="originatingDocumentIdentifierTaxCode"/>
+        <label xlink:type="resource" xlink:label="originatingDocumentIdentifierTaxCode_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xlink:title="gl-taf_originatingDocumentIdentifierTaxCode_en" xml:lang="en">Originating Document Identifier Tax Code</label>
+        <label xlink:type="resource" xlink:label="originatingDocumentIdentifierTaxCode_lbl" xlink:role="http://www.xbrl.org/2003/role/documentation" xml:lang="ja">Originating document identifier tax code</label>
+        <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="originatingDocumentIdentifierTaxCode" xlink:to="originatingDocumentIdentifierTaxCode_lbl"/>
+  </labelLink>
+</linkbase>
